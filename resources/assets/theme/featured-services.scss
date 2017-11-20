@@ -1,0 +1,55 @@
+$featured-services-bg: darken($white, 2%);
+
+.featured-services {
+  background-color: $featured-services-bg;
+  border: none;
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.featured-services hr {
+  border-top: 1px darken($white, 10%) solid;
+}
+
+.featured-services .panel {
+  min-height: 530px;
+}
+
+.featured-services .panel-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-services .panel-body .panel-actions {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: auto;
+}
+
+.featured-services .panel-body .panel-actions a {
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  color: $white;
+  border: 2px $white solid;
+  font-weight: 500;
+  background-color: $red;
+}
+
+.featured-services .panel-body .panel-actions a:hover {
+  background-color: $dark;
+  color: $white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featured-services .panel-default {
+  display: flex;
+  border: none;
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2)
+}
+
+.featured-services h3 {
+  text-transform: uppercase;
+}

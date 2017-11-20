@@ -1,0 +1,23 @@
+.call-anytime {
+  margin-top: 50px;
+  width: 100%;
+  padding: 25px;
+  background: linear-gradient( rgba(42, 42, 42, 0.7), rgba(42, 42, 42, 0.7) ), url('../../../public/images/1.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $white;
+}
+
+.call-anytime h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  padding: 15px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.call-anytime p {
+  font-size: 20px;
+  font-weight: 700;
+}

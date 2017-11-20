@@ -1,0 +1,19 @@
+$countdown-text: $white;
+$countdown-bg: $red;
+
+/* Countdown */
+.countdown {
+  color: $countdown-text;
+  background-color: $countdown-bg;
+}
+
+.countdown-description {
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+.timer {
+  float: right !important;
+}
+
+

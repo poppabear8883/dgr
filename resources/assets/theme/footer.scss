@@ -1,0 +1,69 @@
+/* Footer Styles */
+
+footer {
+  background-color: $dark;
+  border-top: 5px $red solid;
+  color: darken($white, 30%);
+  padding: 25px;
+}
+
+footer .col-md-3 {
+  //border-left: 1px $white dashed;
+  //border-right: 1px $white dashed;
+  min-height: 380px;
+}
+
+footer .social ul {
+  overflow: auto;
+  padding: 0;
+}
+
+footer .social ul li {
+  list-style-type: none;
+  float: left;
+}
+
+footer .social ul li a i {
+  background: $red;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 15%;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .social ul li a i:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+footer .input-group-addon {
+  border: none;
+  border-radius: 0;
+}
+
+footer .form-control {
+  border-radius: 0;
+}
+
+footer .btn-default {
+  color: $red;
+  background-color: $dark;
+  border-color: $grey
+}
+
+footer .btn-default:hover {
+  color: lighten($grey, 35%);
+  background-color: darken($grey, 15%);
+  border-color: $grey;
+}
+
+footer .form-control:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);
+}
