@@ -1,7 +1,9 @@
 @extends('layouts.main')
 
 @section('title')
-    Home - D & G Roofing & Restorations | Roof Replacements and repairs | Siding | Gutters | Windows | Serving The Entire Greater Dayton Ohio Area
+    Home - D & G Roofing & Restorations |
+    Roof Replacements and repairs | Siding | Gutters | Windows |
+    Serving The Entire Greater Dayton Ohio Area
 @endsection
 
 @section('header')
