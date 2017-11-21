@@ -27,6 +27,40 @@
 
     }
 </script>
-<style>
+<style lang="scss">
+    @import "~Sass/_variables.scss";
+
+    .top-bar {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 15px;
+        top: 0;
+        position: fixed;
+        background-color: $white;
+        border-bottom: 1px darken($white, 20%) solid;
+        width: 100%;
+        z-index: 100;
+        color: lighten($dark, 20%);
+    }
+
+    .top-bar .img-responsive {
+        display: unset;
+    }
+
+    .top-bar .info {
+        float: right;
+        padding-right: 50px;
+    }
+
+    .top-bar .info > p {
+        font-size: 20px;
+        color: $dark;
+        margin-bottom: -20px;
+    }
+
+    .top-bar .info > h1 {
+        color: lighten($red, 10%);
+        font-weight: 700;
+    }
 
 </style>

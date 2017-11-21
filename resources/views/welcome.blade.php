@@ -4,8 +4,11 @@
     Home - D & G Roofing & Restorations | Roof Replacements and repairs | Siding | Gutters | Windows | Serving The Entire Greater Dayton Ohio Area
 @endsection
 
-@section('content')
+@section('header')
+    <dg-header></dg-header>
+@endsection
 
+@section('content')
     <div class="container-fluid">
         <div class="featured-services container">
 

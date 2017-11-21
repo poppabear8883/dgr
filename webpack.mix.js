@@ -16,8 +16,9 @@ mix.webpackConfig({
             Resources: path.resolve(__dirname, 'resources'),
             Components: path.resolve(__dirname, 'resources/components'),
             Mixins: path.resolve(__dirname, 'resources/assets/js/mixins'),
+            Sass: path.resolve(__dirname, 'resources/assets/sass'),
             Views: path.resolve(__dirname, 'resources/views'),
-            Public: path.resolve(__dirname, 'public')
+            Pub: path.resolve(__dirname, 'public')
         }
     }
 });

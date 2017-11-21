@@ -50,6 +50,27 @@
 
     }
 </script>
-<style>
+<style lang="scss">
+    @import "~Sass/_variables.scss";
 
+
+    /* Navbar */
+    .navbar-fixed-top {
+        top: 122px !important;
+    }
+
+    .navbar-inverse {
+        border-bottom: 2px $red solid !important;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: $white !important;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: lighten($red, 20%) !important;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 </style>
