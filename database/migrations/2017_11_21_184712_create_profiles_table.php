@@ -21,12 +21,12 @@ class CreateProfilesTable extends Migration
             $table->string('address');
             $table->string('city');
             $table->string('state');
-            $table->integer('zip');
-            $table->string('county');
-            $table->integer('primary_phone');
-            $table->integer('alt_phone');
-            $table->text('bio');
-            $table->string('image');
+            $table->string('zip');
+            $table->string('county')->nullable();
+            $table->string('primary_phone');
+            $table->string('alt_phone')->nullable();
+            $table->text('bio')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
