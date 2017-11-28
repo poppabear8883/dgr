@@ -1,0 +1,13 @@
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.nav > li > a {
+  color: $dark;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: lighten($grey, 50%);
+  background-color: $navs-bg;
+  border-left: solid $red 5px;
+}

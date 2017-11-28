@@ -21,39 +21,13 @@
 
 <body>
 <div id="app">
-
-    <!-- Top Bar -->
     <dg-top-bar></dg-top-bar>
 
     <!-- Navigation -->
     <dg-nav>
-        <li>
-            <a href="/about">About</a>
-        </li>
-        <li>
-            <a href="#">Services</a>
-        </li>
-        <li>
-            <a href="#">Portfolio</a>
-        </li>
-        <li>
-            <a href="#">News</a>
-        </li>
-        <li>
-            <a href="#">Testimonies</a>
-        </li>
-        <li>
-            <a href="#">Contests</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-        @guest
+        @if(Auth::guest())
             <li>
-                <a href="/login">Login</a>
-            </li>
-            <li>
-                <a href="/register">Register</a>
+                <a href="/">Home</a>
             </li>
         @else
             <li class="dropdown">
@@ -65,7 +39,7 @@
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
+                                     document.getElementById('logout-form').submit();">
                             Logout
                         </a>
 
@@ -75,14 +49,35 @@
                     </li>
                 </ul>
             </li>
-        @endguest
+        @endif
     </dg-nav>
 
-    <!-- Header -->
-    @yield('header')
+    <div class="container-fluid" style="padding-top: 50px; min-height: 600px">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
+                    @can('view users')
+                        <li class="active">
+                            <a href="#">Users</a>
+                        </li>
+                    @endcan
+                    @can('view galleries')
+                        <li>
+                            <a href="#">Galleries</a>
+                        </li>
+                    @endcan
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <!-- Page Content -->
+                @yield('content')
+            </div>
+        </div>
+    </div>
 
-    <!-- Page Content -->
-    @yield('content')
 
     <!-- Footer -->
     <dg-footer></dg-footer>

@@ -13,20 +13,25 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
+        $user = User::create([
             'username' => 'Mike.Wiley',
             'password' => bcrypt('secret'),
             'email' => 'servnx@gmail.com'
-        ])->profile()->create([
+        ]);
+
+        $user->profile()->create([
             'name' => 'Mike Wiley',
             'address' => '232 Wiesen Ln',
             'city' => 'Moraine',
             'state' => 'Ohio',
             'zip' => '45439',
             'county' => 'Montgomery',
-            'primary_phone' => '9375801999'
+            'primary_phone' => '(937) 555-1234'
         ]);
 
+        $user->assignRole('owner');
+
+        // Lets generate soem dummy data for testing
         factory(Profile::class, 20)->create();
     }
 }

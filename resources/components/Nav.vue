@@ -16,28 +16,8 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonies</a>
-                    </li>
-                    <li>
-                        <a href="#">Contests</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                <ul :class="['nav', 'navbar-nav', 'navbar-'+pos]">
+                    <slot></slot>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -47,7 +27,9 @@
 </template>
 <script>
     export default {
-
+        props: {
+            pos: {type: String, default: 'right'}
+        }
     }
 </script>
 <style lang="scss">

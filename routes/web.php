@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/about', function() {
     return view('about');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

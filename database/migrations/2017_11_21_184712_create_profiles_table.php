@@ -15,8 +15,13 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
+
             $table->unsignedInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
+
             $table->string('name');
             $table->string('address');
             $table->string('city');
@@ -25,8 +30,16 @@ class CreateProfilesTable extends Migration
             $table->string('county')->nullable();
             $table->string('primary_phone');
             $table->string('alt_phone')->nullable();
+
+            $table->string('avatar')->nullable();
             $table->text('bio')->nullable();
-            $table->string('image')->nullable();
+
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('google')->nullable();
+            $table->string('instagram')->nullable();
+
             $table->timestamps();
         });
     }
