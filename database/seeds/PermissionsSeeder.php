@@ -9,9 +9,6 @@ class PermissionsSeeder extends Seeder
     private $roles = [
         'owner',
         'admin',
-        'team',
-        'vendor',
-        'client',
         'user'
     ];
 

@@ -31,11 +31,15 @@
             </li>
         @else
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                   aria-haspopup="true">
                     {{ Auth::user()->profile->name }} <span class="caret"></span>
                 </a>
 
                 <ul class="dropdown-menu">
+                    <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -54,36 +58,51 @@
 
     <div class="container-fluid" style="padding-top: 50px; min-height: 600px">
         <div class="row">
-            <div class="col-md-2">
-                <ul class="nav nav-pills nav-stacked">
-                    <li>
-                        <a href="/dashboard">Dashboard</a>
-                    </li>
-                    @can('view users')
+            @if(!Auth::guest())
+                <div class="col-md-2">
+                    <ul class="nav nav-pills nav-stacked">
                         <li class="active">
-                            <a href="#">Users</a>
+                            <a href="/dashboard">Dashboard</a>
                         </li>
-                    @endcan
-                    @can('view galleries')
-                        <li>
-                            <a href="#">Galleries</a>
-                        </li>
-                    @endcan
-                </ul>
-            </div>
-            <div class="col-md-10">
-                <!-- Page Content -->
-                @yield('content')
+                        @can('view users')
+                            <li>
+                                <a href="#">Users</a>
+                            </li>
+                        @endcan
+                        @can('view galleries')
+                            <li>
+                                <a href="#">Galleries</a>
+                            </li>
+                        @endcan
+                    </ul>
+                </div>
+
+                <div class="col-md-10">
+            @else
+                <div class="col-md-6 col-md-offset-3">
+            @endif
+                    <div class="panel panel-default">
+                        <div class="panel-heading">@yield('page')</div>
+
+                        <div class="panel-body">
+                            @if (session('status'))
+                                <div class="alert alert-success">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
+
+                            <!-- Page Content -->
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <dg-footer></dg-footer>
     </div>
-
-
-    <!-- Footer -->
-    <dg-footer></dg-footer>
-
 </div>
-
 <script src="{{asset('js/app.js')}}"></script>
 @yield('scripts')
 

@@ -14991,6 +14991,18 @@ button.close {
   border-left: solid #a31521 5px;
 }
 
+.panel.card.card-red {
+  border-top: 5px solid #a31521;
+}
+
+.panel.card.card-purple {
+  border-top: 5px solid #663399;
+}
+
+.panel.card.card-magenta {
+  border-top: 5px solid #ff00ff;
+}
+
 /* Global Styles */
 
 html,
