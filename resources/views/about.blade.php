@@ -4,7 +4,7 @@
     Home - D & G Roofing & Restorations |
     Roof Replacements and repairs | Siding | Gutters | Windows |
     Serving The Entire Greater Dayton Ohio Area
-@endsection
+@stop
 
 @section('header')
     <dg-header>
@@ -26,7 +26,7 @@
             </div>
         </div>
     </dg-header>
-@endsection
+@stop
 
 @section('content')
     <div class="friendly-service">
@@ -310,4 +310,4 @@
         </div>
     </div>
 
-@endsection
+@stop

@@ -1,12 +1,17 @@
 @extends('layouts.main')
 
 @section('title')
-    Home - D & G Roofing & Restorations | Roof Replacements and repairs | Siding | Gutters | Windows | Serving The Entire Greater Dayton Ohio Area
-@endsection
+    Home - D & G Roofing & Restorations |
+    Roof Replacements and repairs |
+    Siding |
+    Gutters |
+    Windows |
+    Serving The Entire Greater Dayton Ohio Area
+@stop
 
 @section('header')
     <dg-header></dg-header>
-@endsection
+@stop
 
 @section('content')
     <div class="container-fluid">
@@ -230,4 +235,4 @@
             </div>
         </div>
     </div>
-@endsection
+@stop

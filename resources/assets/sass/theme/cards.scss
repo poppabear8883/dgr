@@ -1,11 +1,41 @@
-.panel.card.card-red {
-  border-top: 5px solid $red;
-}
+.card {
+  border: 1px solid transparent;
+  padding: 5px;
+  font-size: 14px;
 
-.panel.card.card-purple {
-  border-top: 5px solid #663399;
-}
+  .card-icon {
+    font-size: 6em;
+  }
 
-.panel.card.card-magenta {
-  border-top: 5px solid #ff00ff ;
+  .card-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .card-body {
+    padding-top: 5px;
+  }
+
+  .card-footer {
+    padding-top: 15px;
+    float: right;
+  }
+
+  &.card-red {
+    border-color: $red;
+    background-color: lighten($red, 25%);
+    color: lighten($red, 60%);
+  }
+
+  &.card-blue {
+    border-color: $blue;
+    background-color: lighten($blue, 25%);
+    color: lighten($blue, 60%);
+  }
+
+  &.card-green {
+    border-color: $green;
+    background-color: lighten($green, 25%);
+    color: lighten($green, 60%);
+  }
 }

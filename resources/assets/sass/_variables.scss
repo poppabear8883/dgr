@@ -17,9 +17,9 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: lighten($blue, 20%);
+$brand-primary: $red;
 $brand-info: lighten($dark, 80%);
-$brand-success: lighten($green, 20%);
+$brand-success: lighten($green, 10%);
 $brand-warning: $yellow;
 $brand-danger: lighten($red, 20%);
 
