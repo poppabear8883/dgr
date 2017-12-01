@@ -14991,48 +14991,6 @@ button.close {
   border-left: solid #a31521 5px;
 }
 
-.card {
-  border: 1px solid transparent;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.card .card-icon {
-  font-size: 6em;
-}
-
-.card .card-title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.card .card-body {
-  padding-top: 5px;
-}
-
-.card .card-footer {
-  padding-top: 15px;
-  float: right;
-}
-
-.card.card-red {
-  border-color: #a31521;
-  background-color: #e84f5c;
-  color: #fdedef;
-}
-
-.card.card-blue {
-  border-color: #33658A;
-  background-color: #72a5cb;
-  color: #f4f8fb;
-}
-
-.card.card-green {
-  border-color: #2a852f;
-  background-color: #61cd67;
-  color: #e9f8ea;
-}
-
 /* Global Styles */
 
 html,
