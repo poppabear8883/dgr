@@ -83,6 +83,10 @@
                     <li><a href="">Help</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">Email</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
                     <li><a href="">Users</a></li>
                     <li><a href="">Roles</a></li>
                     <li><a href="">Permissions</a></li>

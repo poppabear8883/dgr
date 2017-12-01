@@ -20,6 +20,9 @@ Vue.component('dg-nav', require('Components/Nav.vue'));
 Vue.component('dg-header', require('Components/Header.vue'));
 Vue.component('dg-footer', require('Components/Footer.vue'));
 
+// Admin
+Vue.component('card', require('Components/Card.vue'));
+
 const app = new Vue({
     el: '#app'
 });
