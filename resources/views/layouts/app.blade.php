@@ -70,10 +70,12 @@
 
     <div class="container-fluid">
         <div class="row">
+
+            @if(!Auth::guest())
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <li class="active">
-                        <a href="#">
+                        <a href="/dashboard">
                             Dashboard
                             <span class="sr-only">(current)</span>
                         </a>
@@ -83,7 +85,7 @@
                     <li><a href="">Help</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="/admin/contacts">Contacts</a></li>
                     <li><a href="">Email</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
@@ -93,9 +95,11 @@
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="">Galleries</a></li>
-                    <li><a href="">Images</a></li>
+                    <li><a href="">Photos</a></li>
                 </ul>
             </div>
+            @endif
+
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">@yield('page')</h1>
 

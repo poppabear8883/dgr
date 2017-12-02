@@ -22,12 +22,16 @@
                 </div>
             </div>
 
-            <div class="card-footer">
+            <div v-if="url !== null" class="card-footer">
                 <a :href="url">View {{title}} <i class="fa fa-arrow-right"></i></a>
             </div>
         </div>
 
-        <line-chart v-if="chart === 'line'" :data="chart_data" :options="chartOptions"></line-chart>
+        <line-chart v-if="chart === 'line' && cBorderColor !== null"
+                    :data="chart_data"
+                    :options="chartOptions"
+                    :height="200"
+                    :width="400"></line-chart>
     </div>
 </template>
 <script>
@@ -36,11 +40,11 @@
     export default {
 
         props: {
+            value: {default: '0'},
             color: {type: String, default: 'default'},
             icon: {type: String, default: 'users'},
-            value: {type: String, default: '0'},
             title: {type: String, default: 'Users'},
-            url: {type: String, default: '#'},
+            url: {type: String, default: null},
 
             chart: {type: String, default: null},
 
@@ -63,7 +67,8 @@
                 type: Object,
                 default() {
                     return {
-
+                        responsive: true,
+                        maintainAspectRatio: false
                     }
                 }
             },
@@ -73,8 +78,8 @@
         },
         data() {
             return {
-                _chartColor: '',
-                _chartBorderColor: ''
+                cColor: null,
+                cBorderColor: null
             }
         },
         computed: {
@@ -83,9 +88,9 @@
                     labels: this.chartLabels,
                     datasets: [
                         {
-                            label: `${this.title} Per Month`,
-                            backgroundColor: this._chartColor,
-                            borderColor: this._chartBorderColor,
+                            label: `${this.title}`,
+                            backgroundColor: this.cColor,
+                            borderColor: this.cBorderColor,
                             data: this.chartData
                         }
                     ]
@@ -96,16 +101,17 @@
             }
         },
         mounted() {
-            if(!this.chartBorderColor) {
-                this._chartBorderColor = this.cardColor;
+            if(this.chartBorderColor === null) {
+                console.log(this.cardColor);
+                this.cBorderColor = this.cardColor;
             } else {
-                this._chartBorderColor = this.chartBorderColor;
+                this.cBorderColor = this.chartBorderColor;
             }
 
-            if(!this.chartColor) {
-                this._chartColor = 'transparent';
+            if(this.chartColor === null) {
+                this.cColor = 'transparent';
             } else {
-                this._chartColor = this.chartColor;
+                this.cColor = this.chartColor;
             }
         }
     }
