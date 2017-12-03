@@ -82,7 +82,6 @@
                     </li>
                     <li><a href="">Company</a></li>
                     <li><a href="">Settings</a></li>
-                    <li><a href="">Help</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/contacts">Contacts</a></li>
@@ -94,7 +93,7 @@
                     <li><a href="">Permissions</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Galleries</a></li>
+                    <li><a href="/admin/galleries">Galleries</a></li>
                     <li><a href="">Photos</a></li>
                 </ul>
             </div>

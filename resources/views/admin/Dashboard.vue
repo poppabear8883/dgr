@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-4 hidden-xs">
             <card color="red"
                   icon="users"
                   title="Contacts"
@@ -8,7 +8,7 @@
                   value="65"
                   chart="line"></card>
         </div>
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-4 hidden-xs">
             <card color="blue"
                   icon="globe"
                   title="Visitors"
@@ -16,15 +16,7 @@
                   value="120"
                   chart="line"></card>
         </div>
-        <div class="col-md-3 hidden-xs">
-            <card color="green"
-                  icon="bar-chart"
-                  title="YTD Sales"
-                  url="/admin/sales"
-                  value="10k"
-                  chart="line"></card>
-        </div>
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-4 hidden-xs">
             <card color="purple"
                   icon="comments"
                   title="Reviews"

@@ -15,5 +15,6 @@ Route::middleware('auth')->group(function() {
 
     Route::prefix('admin')->group(function() {
         Route::resource('contacts', 'ContactsController');
+        Route::resource('galleries', 'GalleriesController');
     });
 });

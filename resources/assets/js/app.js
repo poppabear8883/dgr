@@ -22,6 +22,8 @@ Vue.component('dg-footer', require('Components/Footer.vue'));
 
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));
 Vue.component('admin-contacts', require('Views/admin/AdminContacts.vue'));
+Vue.component('admin-galleries', require('Views/admin/AdminGalleries.vue'));
+
 const app = new Vue({
     el: '#app'
 });

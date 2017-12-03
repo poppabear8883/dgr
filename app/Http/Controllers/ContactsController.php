@@ -16,15 +16,27 @@ class ContactsController extends Controller
     public function index()
     {
         $contacts = Contact::all();
-        $chartdata = $this->data();
+        $start = Carbon::now()->subDays(7);
+        $end = Carbon::now()->subDay();
 
-        //dd($chartdata);
+        $daily_data = $this->generateData(
+            Carbon::now()->subDays(7),
+            Carbon::now()->subDay(),
+            'm/d'
+        );
+
+        $monthly_data = $this->generateData(
+            Carbon::now()->subMonths(5),
+            Carbon::now(),
+            'M'
+        );
 
         return view(
             'admin.contacts',
             compact(
                 'contacts',
-                'chartdata'
+                'daily_data',
+                'monthly_data'
             )
         );
     }
@@ -95,23 +107,20 @@ class ContactsController extends Controller
         //
     }
 
-    private function data()
+    private function generateData($start, $end, $format = 'm/d/y')
     {
-
-        $start = Carbon::now()->subDays(7);
-        $end = Carbon::now()->subDay();
         $contacts = Contact::where('created_at', '>', $start)->get();
         $dates = [];
 
         for($date = $start; $date->lte($end); $date->addDay()) {
 
-            $dates[$date->format('m/d')] = 0;
+            $dates[$date->format($format)] = 0;
         }
 
         $weeks = collect($dates);
 
-        $merged = $weeks->merge($contacts->groupBy(function ($date) {
-            return Carbon::parse($date->created_at)->format('m/d');
+        $merged = $weeks->merge($contacts->groupBy(function ($date) use ($format) {
+            return Carbon::parse($date->created_at)->format($format);
         })->sortBy(function($key) {
             return $key;
         })->map(function ($item, $key) {

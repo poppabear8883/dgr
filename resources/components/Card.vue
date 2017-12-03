@@ -27,11 +27,10 @@
             </div>
         </div>
 
-        <line-chart v-if="chart === 'line' && cBorderColor !== null"
+        <line-chart v-if="chart === 'line' && chartReady"
                     :data="chart_data"
-                    :options="chartOptions"
-                    :height="200"
-                    :width="400"></line-chart>
+                    :options="cOptions"
+                    :height="200"></line-chart>
     </div>
 </template>
 <script>
@@ -47,7 +46,7 @@
             url: {type: String, default: null},
 
             chart: {type: String, default: null},
-
+            chartTitle: {type: String, default: null},
             chartColor: {type: String, default: null},
             chartBorderColor: {type: String, default: null},
 
@@ -66,10 +65,7 @@
             chartOptions: {
                 type: Object,
                 default() {
-                    return {
-                        responsive: true,
-                        maintainAspectRatio: false
-                    }
+                    return null
                 }
             },
         },
@@ -78,8 +74,10 @@
         },
         data() {
             return {
+                chartReady: false,
                 cColor: null,
-                cBorderColor: null
+                cBorderColor: null,
+                cTitle: null
             }
         },
         computed: {
@@ -98,20 +96,49 @@
             },
             cardColor() {
                 return $(`.card-${this.color}`).css('background-color');
+            },
+            cOptions() {
+                return {
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    title: {
+                        display: true,
+                        text: this.cTitle,
+                    },
+
+                    legend: {
+                        display: false,
+                    }
+                }
+            }
+        },
+        methods: {
+            setupChart() {
+                if(this.chartBorderColor === null) {
+                    this.cBorderColor = this.cardColor;
+                } else {
+                    this.cBorderColor = this.chartBorderColor;
+                }
+
+                if(this.chartColor === null) {
+                    this.cColor = 'transparent';
+                } else {
+                    this.cColor = this.chartColor;
+                }
+
+                if(this.chartTitle === null) {
+                    this.cTitle = this.title;
+                } else {
+                    this.cTitle = this.chartTitle;
+                }
+
+                return true;
             }
         },
         mounted() {
-            if(this.chartBorderColor === null) {
-                console.log(this.cardColor);
-                this.cBorderColor = this.cardColor;
-            } else {
-                this.cBorderColor = this.chartBorderColor;
-            }
-
-            if(this.chartColor === null) {
-                this.cColor = 'transparent';
-            } else {
-                this.cColor = this.chartColor;
+            if(this.chart !== null && this.setupChart()) {
+                this.chartReady = true;
             }
         }
     }

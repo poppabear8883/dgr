@@ -13,6 +13,6 @@ $factory->define(App\Contact::class, function (Faker $faker) {
         'state' => $faker->state,
         'zip' => $faker->postcode,
         'primary_phone' => $faker->phoneNumber,
-        'created_at' => $faker->dateTimeBetween('-5 weeks', 'now')
+        'created_at' => $faker->dateTimeBetween('-6 months', 'now')
     ];
 });

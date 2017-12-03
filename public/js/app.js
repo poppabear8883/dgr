@@ -18674,6 +18674,8 @@ Vue.component('dg-footer', __webpack_require__(184));
 
 Vue.component('dashboard', __webpack_require__(189));
 Vue.component('admin-contacts', __webpack_require__(277));
+Vue.component('admin-galleries', __webpack_require__(282));
+
 var app = new Vue({
   el: '#app'
 });
@@ -61538,14 +61540,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -61690,7 +61684,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -61704,7 +61697,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         url: { type: String, default: null },
 
         chart: { type: String, default: null },
-
+        chartTitle: { type: String, default: null },
         chartColor: { type: String, default: null },
         chartBorderColor: { type: String, default: null },
 
@@ -61723,10 +61716,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         chartOptions: {
             type: Object,
             default: function _default() {
-                return {
-                    responsive: true,
-                    maintainAspectRatio: false
-                };
+                return null;
             }
         }
     },
@@ -61735,8 +61725,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
+            chartReady: false,
             cColor: null,
-            cBorderColor: null
+            cBorderColor: null,
+            cTitle: null
         };
     },
 
@@ -61754,20 +61746,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         cardColor: function cardColor() {
             return $('.card-' + this.color).css('background-color');
+        },
+        cOptions: function cOptions() {
+            return {
+                responsive: true,
+                maintainAspectRatio: false,
+
+                title: {
+                    display: true,
+                    text: this.cTitle
+                },
+
+                legend: {
+                    display: false
+                }
+            };
+        }
+    },
+    methods: {
+        setupChart: function setupChart() {
+            if (this.chartBorderColor === null) {
+                this.cBorderColor = this.cardColor;
+            } else {
+                this.cBorderColor = this.chartBorderColor;
+            }
+
+            if (this.chartColor === null) {
+                this.cColor = 'transparent';
+            } else {
+                this.cColor = this.chartColor;
+            }
+
+            if (this.chartTitle === null) {
+                this.cTitle = this.title;
+            } else {
+                this.cTitle = this.chartTitle;
+            }
+
+            return true;
         }
     },
     mounted: function mounted() {
-        if (this.chartBorderColor === null) {
-            console.log(this.cardColor);
-            this.cBorderColor = this.cardColor;
-        } else {
-            this.cBorderColor = this.chartBorderColor;
-        }
-
-        if (this.chartColor === null) {
-            this.cColor = 'transparent';
-        } else {
-            this.cColor = this.chartColor;
+        if (this.chart !== null && this.setupChart()) {
+            this.chartReady = true;
         }
     }
 });
@@ -77916,14 +77937,9 @@ var render = function() {
           : _vm._e()
       ]),
       _vm._v(" "),
-      _vm.chart === "line" && _vm.cBorderColor !== null
+      _vm.chart === "line" && _vm.chartReady
         ? _c("line-chart", {
-            attrs: {
-              data: _vm.chart_data,
-              options: _vm.chartOptions,
-              height: 200,
-              width: 400
-            }
+            attrs: { data: _vm.chart_data, options: _vm.cOptions, height: 200 }
           })
         : _vm._e()
     ],
@@ -77951,7 +77967,7 @@ var render = function() {
   return _c("div", { staticClass: "row" }, [
     _c(
       "div",
-      { staticClass: "col-md-3 hidden-xs" },
+      { staticClass: "col-md-4 hidden-xs" },
       [
         _c("card", {
           attrs: {
@@ -77969,7 +77985,7 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "col-md-3 hidden-xs" },
+      { staticClass: "col-md-4 hidden-xs" },
       [
         _c("card", {
           attrs: {
@@ -77987,25 +78003,7 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "col-md-3 hidden-xs" },
-      [
-        _c("card", {
-          attrs: {
-            color: "green",
-            icon: "bar-chart",
-            title: "YTD Sales",
-            url: "/admin/sales",
-            value: "10k",
-            chart: "line"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "col-md-3 hidden-xs" },
+      { staticClass: "col-md-4 hidden-xs" },
       [
         _c("card", {
           attrs: {
@@ -78167,29 +78165,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
         contacts: { required: true },
-        chartData: { required: true }
+        dailyData: { required: true },
+        monthlyData: { required: true }
     },
     components: {
         Card: __WEBPACK_IMPORTED_MODULE_0_Components_Card_vue___default.a
     },
     computed: {
-        total: function total() {
-            return this.contacts.length;
+        monthly_total: function monthly_total() {
+            return _.sum(Object.values(this.monthlyData));
         },
-        total_new: function total_new() {
-            return _.sum(Object.values(this.chartData));
+        monthly_labels: function monthly_labels() {
+            return Object.keys(this.monthlyData);
         },
-        labels: function labels() {
-            return Object.keys(this.chartData);
+        monthly_cdata: function monthly_cdata() {
+            return Object.values(this.monthlyData);
         },
-        cdata: function cdata() {
-            return Object.values(this.chartData);
+        daily_total: function daily_total() {
+            return _.sum(Object.values(this.dailyData));
+        },
+        daily_labels: function daily_labels() {
+            return Object.keys(this.dailyData);
+        },
+        daily_cdata: function daily_cdata() {
+            return Object.values(this.dailyData);
         }
     }
 });
@@ -78212,9 +78221,12 @@ var render = function() {
             attrs: {
               color: "red",
               icon: "users",
-              title: "Total",
-              value: _vm.total,
-              chart: "line"
+              title: "Contacts",
+              value: _vm.monthly_total,
+              chart: "line",
+              "chart-title": "Past 6 Months",
+              "chart-labels": _vm.monthly_labels,
+              "chart-data": _vm.monthly_cdata
             }
           })
         ],
@@ -78229,11 +78241,12 @@ var render = function() {
             attrs: {
               color: "blue",
               icon: "star",
-              title: "This Week",
-              value: _vm.total_new,
+              title: "Contacts",
+              value: _vm.daily_total,
               chart: "line",
-              "chart-labels": _vm.labels,
-              "chart-data": _vm.cdata
+              "chart-title": "Past 7 Days",
+              "chart-labels": _vm.daily_labels,
+              "chart-data": _vm.daily_cdata
             }
           })
         ],
@@ -78241,12 +78254,10 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("h1", { staticClass: "page-header" }, [
-      _vm._v("\n        Manage Contacts\n    ")
-    ]),
+    _vm._m(0, false, false),
     _vm._v(" "),
     _c("table", { staticClass: "table table-condensed" }, [
-      _vm._m(0, false, false),
+      _vm._m(1, false, false),
       _vm._v(" "),
       _c(
         "tbody",
@@ -78258,7 +78269,7 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(contact.primary_phone))]),
             _vm._v(" "),
-            _vm._m(1, true, false)
+            _vm._m(2, true, false)
           ])
         })
       )
@@ -78266,6 +78277,17 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", { staticClass: "page-header padding-top" }, [
+      _vm._v("\n        Manage Contacts "),
+      _c("button", { staticClass: "btn btn-default" }, [
+        _c("i", { staticClass: "fa fa-plus" })
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -78351,7 +78373,213 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.page-header {\n  padding-top: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.padding-top {\n  padding-top: 50px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(287)
+}
+var normalizeComponent = __webpack_require__(8)
+/* script */
+var __vue_script__ = __webpack_require__(285)
+/* template */
+var __vue_template__ = __webpack_require__(286)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\views\\admin\\AdminGalleries.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-03efb901", Component.options)
+  } else {
+    hotAPI.reload("data-v-03efb901", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 283 */,
+/* 284 */,
+/* 285 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        galleries: { required: true }
+    }
+});
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "row" },
+    [
+      _vm.galleries.length <= 0
+        ? _c("div", { staticClass: "col-md-12 text-center" }, [
+            _c("h1", [_vm._v("No Galleries")])
+          ])
+        : _vm._l(_vm.galleries, function(gallery) {
+            return _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3" }, [
+                  _c("div", { staticClass: "gallery-name" }, [
+                    _vm._v(_vm._s(gallery.name))
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(0, true, false)
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "gallery-img" }, [
+                _c("img", {
+                  staticClass: "img-responsive img-portfolio",
+                  attrs: { src: "/images/1.jpg", alt: gallery.name }
+                })
+              ])
+            ])
+          })
+    ],
+    2
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-9" }, [
+      _c("div", { staticClass: "pull-right" }, [
+        _c("button", { staticClass: "btn btn-default btn-xs" }, [
+          _c("i", { staticClass: "fa fa-image" })
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-info btn-xs" }, [
+          _c("i", { staticClass: "fa fa-pencil" })
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-danger btn-xs" }, [
+          _c("i", { staticClass: "fa fa-trash" })
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-03efb901", module.exports)
+  }
+}
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(288);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(10)("f50d2db8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03efb901\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGalleries.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03efb901\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGalleries.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(9)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.gallery-name {\n  font-size: 24px;\n}\n.gallery-img {\n  background: #101010;\n  margin-top: 10px;\n}\n.gallery-img img {\n    opacity: .7;\n}\n", ""]);
 
 // exports
 
