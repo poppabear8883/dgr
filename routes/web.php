@@ -15,6 +15,7 @@ Route::middleware('auth')->group(function() {
 
     Route::prefix('admin')->group(function() {
         Route::resource('contacts', 'ContactsController');
+        Route::get('contacts/import/csv', 'ContactsController@importCsv');
         Route::resource('galleries', 'GalleriesController');
     });
 });

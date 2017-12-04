@@ -2,12 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
-use Carbon\Carbon;
+use App\Contact\Contracts\ContactInterface;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
 {
+
+    /**
+     * @var ContactInterface
+     */
+    private $repo;
+
+    public function __construct(ContactInterface $repo)
+    {
+        $this->repo = $repo;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -15,21 +26,9 @@ class ContactsController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::all();
-        $start = Carbon::now()->subDays(7);
-        $end = Carbon::now()->subDay();
-
-        $daily_data = $this->generateData(
-            Carbon::now()->subDays(7),
-            Carbon::now()->subDay(),
-            'm/d'
-        );
-
-        $monthly_data = $this->generateData(
-            Carbon::now()->subMonths(5),
-            Carbon::now(),
-            'M'
-        );
+        $contacts = $this->repo->all();
+        $daily_data = $this->repo->getDailyStats();
+        $monthly_data = $this->repo->getMonthlyStats();
 
         return view(
             'admin.contacts',
@@ -105,28 +104,5 @@ class ContactsController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    private function generateData($start, $end, $format = 'm/d/y')
-    {
-        $contacts = Contact::where('created_at', '>', $start)->get();
-        $dates = [];
-
-        for($date = $start; $date->lte($end); $date->addDay()) {
-
-            $dates[$date->format($format)] = 0;
-        }
-
-        $weeks = collect($dates);
-
-        $merged = $weeks->merge($contacts->groupBy(function ($date) use ($format) {
-            return Carbon::parse($date->created_at)->format($format);
-        })->sortBy(function($key) {
-            return $key;
-        })->map(function ($item, $key) {
-            return collect($item)->count();
-        }));
-
-        return $merged;
     }
 }
