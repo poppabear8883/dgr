@@ -60851,7 +60851,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -60905,7 +60904,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-md-12 text-center" }, [
       _c("h1", { staticClass: "animated slideInDown" }, [
         _vm._v(
-          '\n                            "Where Quality And Customer Service Comes Together!"\n                        '
+          '\n                            "Where Quality And Customer Service Come Together!"\n                        '
         )
       ])
     ])
@@ -60941,13 +60940,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-md-12 text-center" }, [
       _c("h1", { staticClass: "animated fadeIn cc-text" }, [
         _vm._v(
-          '\n                            "NOW ACCEPTING ALL MAJOR CREDIT CARDS"\n                        '
+          '\n                            "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"\n                        '
         )
       ]),
       _vm._v(" "),
       _c("img", {
         staticClass: "animated fadeInDown img-responsive cc-all",
-        attrs: { src: "images/cc-all.png", width: "550px" }
+        attrs: { src: "images/certainteed-certified-dealer.png" }
       })
     ])
   },

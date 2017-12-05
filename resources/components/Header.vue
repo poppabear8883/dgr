@@ -9,7 +9,7 @@
                     <slot>
                         <div class="col-md-12 text-center">
                             <h1 class="animated slideInDown">
-                                "Where Quality And Customer Service Comes Together!"
+                                "Where Quality And Customer Service Come Together!"
                             </h1>
                         </div>
 
@@ -27,11 +27,10 @@
 
                         <div class="col-md-12 text-center">
                             <h1 class="animated fadeIn cc-text">
-                                "NOW ACCEPTING ALL MAJOR CREDIT CARDS"
+                                "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"
                             </h1>
                             <img class="animated fadeInDown img-responsive cc-all"
-                                 src="images/cc-all.png"
-                                 width="550px">
+                                 src="images/certainteed-certified-dealer.png">
                         </div>
                     </slot>
                 </div>

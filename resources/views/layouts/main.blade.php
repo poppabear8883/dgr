@@ -28,32 +28,29 @@
     <!-- Navigation -->
     <dg-nav>
         <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
             <a href="/about">About</a>
         </li>
         <li>
-            <a href="#">Services</a>
+            <a href="/services">Services</a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
+            <a href="/galleries">Galleries</a>
         </li>
         <li>
-            <a href="#">News</a>
+            <a href="/testimonies">Testimonies</a>
         </li>
         <li>
-            <a href="#">Testimonies</a>
+            <a href="/giveaways">Giveaways</a>
         </li>
         <li>
-            <a href="#">Contests</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
         </li>
         @guest
             <li>
                 <a href="/login">Login</a>
-            </li>
-            <li>
-                <a href="/register">Register</a>
             </li>
         @else
             <li class="dropdown">

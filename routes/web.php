@@ -8,6 +8,27 @@ Route::get('/about', function() {
     return view('about');
 });
 
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('/galleries', function () {
+    return view('galleries');
+});
+
+Route::get('/testimonies', function() {
+    return view('testimonies');
+});
+
+Route::get('/giveaways', function () {
+    return view('giveaways');
+});
+
+Route::get('/contact', function() {
+    return view('contact');
+});
+
+
 Auth::routes();
 
 Route::middleware('auth')->group(function() {
