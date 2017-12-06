@@ -7,7 +7,7 @@
                     <a href="/"><img class="img-responsive" src="images/site-logo.png"></a>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md col-lg-4">
-
+                    <a href="/nrlb"><img class="img-responsive" src="images/no-roof-left-behind.png" width="350px"></a>
                 </div>
                 <div class="hidden-xs col-sm-6 col-md-6 col-lg-4">
                     <div class="info">

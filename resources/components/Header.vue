@@ -26,11 +26,31 @@
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <h1 class="animated fadeIn cc-text">
+                            <h1 class="animated fadeIn delay-2s">
                                 "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"
                             </h1>
-                            <img class="animated fadeInDown img-responsive cc-all"
-                                 src="images/certainteed-certified-dealer.png">
+
+                            <div class="row" style="padding-bottom: 10px">
+                                <div class="col-md-3 hidden-sm">
+                                    <img class="animated fadeInDown img-responsive delay-3s"
+                                         src="images/certainteed-certified-dealer.png" width="130px">
+                                </div>
+
+                                <div class="col-md-3 hidden-sm">
+                                    <img class="animated fadeInDown img-responsive delay-3s"
+                                         src="images/no-roof-left-behind2.png" width="150px">
+                                </div>
+
+                                <div class="col-md-3 hidden-sm">
+                                    <img class="animated fadeInDown img-responsive delay-3s"
+                                         src="images/homeadvisor_logo4.png" width="150px">
+                                </div>
+
+                                <div class="col-md-3 hidden-sm">
+                                    <img class="animated fadeInDown img-responsive delay-3s"
+                                         src="images/bbb2.png" width="100px">
+                                </div>
+                            </div>
                         </div>
                     </slot>
                 </div>
@@ -92,13 +112,13 @@
         text-decoration: none;
     }
 
-    header.main-header .main-header-inner .cc-text {
+    header.main-header .main-header-inner .delay-2s {
         animation-delay: 2s;
         -moz-animation-delay: 2s;
         -webkit-animation-delay: 2s;
     }
 
-    header.main-header .main-header-inner .cc-all {
+    header.main-header .main-header-inner .delay-3s {
         animation-delay: 3s;
         -moz-animation-delay: 3s;
         -webkit-animation-delay: 3s;
@@ -110,7 +130,7 @@
     // min-height: 200px;
         height: 100%;
         width: 100%;
-        background: linear-gradient( rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.5) ), url(/images/header-shake.jpg);
+        background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;

@@ -60459,7 +60459,14 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "hidden-xs hidden-sm hidden-md col-lg-4" }),
+          _c("div", { staticClass: "hidden-xs hidden-sm hidden-md col-lg-4" }, [
+            _c("a", { attrs: { href: "/nrlb" } }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: { src: "images/no-roof-left-behind.png", width: "350px" }
+              })
+            ])
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "hidden-xs col-sm-6 col-md-6 col-lg-4" }, [
             _c("div", { staticClass: "info" }, [
@@ -60781,7 +60788,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;\n  margin-bottom: -20px;\n}\nheader.main-header a {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #a31521;\n  animation-delay: 1s;\n  -webkit-animation-delay: 1s;\n  -moz-animation-delay: 1s;\n}\nheader.main-header a:hover {\n  background-color: #0E1116;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\nheader.main-header .main-header-inner .cc-text {\n  animation-delay: 2s;\n  -moz-animation-delay: 2s;\n  -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .cc-all {\n  animation-delay: 3s;\n  -moz-animation-delay: 3s;\n  -webkit-animation-delay: 3s;\n  margin-left: auto;\n  margin-right: auto;\n}\nheader.main-header .main-header-inner {\n  height: 100%;\n  width: 100%;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.5)), to(rgba(42, 42, 42, 0.5))), url(/images/header-shake.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.5)), url(/images/header-shake.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\nheader.main-header h1 {\n  color: #FFFFFF;\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  padding: 15px;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header .main-header-bottom {\n  background-color: #a31521;\n  padding-top: 30px;\n  padding-bottom: 30px;\n  color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p {\n  font-size: 22px;\n  padding-top: 10px;\n  line-height: 28px;\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;\n  margin-bottom: -20px;\n}\nheader.main-header a {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #a31521;\n  animation-delay: 1s;\n  -webkit-animation-delay: 1s;\n  -moz-animation-delay: 1s;\n}\nheader.main-header a:hover {\n  background-color: #0E1116;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\nheader.main-header .main-header-inner .delay-2s {\n  animation-delay: 2s;\n  -moz-animation-delay: 2s;\n  -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s {\n  animation-delay: 3s;\n  -moz-animation-delay: 3s;\n  -webkit-animation-delay: 3s;\n  margin-left: auto;\n  margin-right: auto;\n}\nheader.main-header .main-header-inner {\n  height: 100%;\n  width: 100%;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\nheader.main-header h1 {\n  color: #FFFFFF;\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  padding: 15px;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header .main-header-bottom {\n  background-color: #a31521;\n  padding-top: 30px;\n  padding-bottom: 30px;\n  color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p {\n  font-size: 22px;\n  padding-top: 10px;\n  line-height: 28px;\n}\n", ""]);
 
 // exports
 
@@ -60792,6 +60799,26 @@ exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -60938,16 +60965,48 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", { staticClass: "animated fadeIn cc-text" }, [
+      _c("h1", { staticClass: "animated fadeIn delay-2s" }, [
         _vm._v(
           '\n                            "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"\n                        '
         )
       ]),
       _vm._v(" "),
-      _c("img", {
-        staticClass: "animated fadeInDown img-responsive cc-all",
-        attrs: { src: "images/certainteed-certified-dealer.png" }
-      })
+      _c(
+        "div",
+        { staticClass: "row", staticStyle: { "padding-bottom": "10px" } },
+        [
+          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
+            _c("img", {
+              staticClass: "animated fadeInDown img-responsive delay-3s",
+              attrs: {
+                src: "images/certainteed-certified-dealer.png",
+                width: "130px"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
+            _c("img", {
+              staticClass: "animated fadeInDown img-responsive delay-3s",
+              attrs: { src: "images/no-roof-left-behind2.png", width: "150px" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
+            _c("img", {
+              staticClass: "animated fadeInDown img-responsive delay-3s",
+              attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
+            _c("img", {
+              staticClass: "animated fadeInDown img-responsive delay-3s",
+              attrs: { src: "images/bbb2.png", width: "100px" }
+            })
+          ])
+        ]
+      )
     ])
   },
   function() {
