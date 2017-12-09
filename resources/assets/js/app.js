@@ -14,6 +14,8 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+Vue.component('tabs', require('Components/Tabs.vue'));
+
 
 Vue.component('dg-top-bar', require('Components/TopBar.vue'));
 Vue.component('dg-nav', require('Components/Nav.vue'));
