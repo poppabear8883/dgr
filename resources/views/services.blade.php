@@ -45,18 +45,49 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="images/W-Carrollton-45449-Roofing-1.jpg" alt="" width="450px">
+                    <img class="img-responsive" src="images/Miamisburg-45342-Roofing.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header color-red">Our Services</h2>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        External Resources
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled resources">
+                            <li>
+                                <a href="#" target="_blank">
+                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
                 <tabs :tabs="['Roofing', 'Siding', 'Windows']">
                     <div slot="Roofing">
                         @include('partials.services.roofing')
@@ -156,4 +187,12 @@
         </div>
     </div>
 
+@stop
+
+@section('css')
+    <style>
+        .resources li {
+            padding-bottom: 15px;
+        }
+    </style>
 @stop
