@@ -23,7 +23,7 @@
         <div class="media">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object" src="images/certainteed-certified-dealer.png" alt="" width="350px">
+                    <img class="media-object" src="images/certainteed-certified-dealer.png" alt="" width="250px">
                 </a>
             </div>
             <div class="media-body">
