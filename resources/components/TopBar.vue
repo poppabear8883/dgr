@@ -49,7 +49,7 @@
 
     .top-bar .info {
         float: right;
-        padding-right: 15px;
+        //padding-right: 15px;
     }
 
     .top-bar .info > p {

@@ -60603,7 +60603,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 15px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n  padding-right: 15px;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 15px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
 
 // exports
 
@@ -60801,7 +60801,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #e53947 !important;\n  cursor: pointer;\n  text-decoration: underline;\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  line-height: 10px;\n  color: #FFFFFF !important;\n  margin-right: 25px;\n  border-bottom: solid #4D4D4D 2px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #e53947 !important;\n  cursor: pointer;\n  border-bottom: solid #e53947 2px;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -60812,19 +60812,6 @@ exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !import
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -60862,58 +60849,19 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0),
-        _vm._v(" "),
         _c(
           "div",
           {
             staticClass: "collapse navbar-collapse",
             attrs: { id: "bs-example-navbar-collapse-1" }
           },
-          [
-            _c(
-              "ul",
-              { class: ["nav", "navbar-nav", "navbar-" + _vm.pos] },
-              [_vm._t("default")],
-              2
-            )
-          ]
+          [_c("ul", { class: ["nav", "navbar-nav"] }, [_vm._t("default")], 2)]
         )
       ])
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggle",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#bs-example-navbar-collapse-1"
-          }
-        },
-        [
-          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" })
-        ]
-      ),
-      _vm._v(" "),
-      _c("a", { staticClass: "navbar-brand hidden-xs", attrs: { href: "/" } })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
