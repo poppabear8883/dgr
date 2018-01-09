@@ -14790,10 +14790,7 @@ button.close {
 }
 
 .featured-services {
-  background-color: #fafafa;
   border: none;
-  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
 
