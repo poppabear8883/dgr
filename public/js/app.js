@@ -60603,7 +60603,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 15px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n  padding-right: 50px;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 15px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n  padding-right: 15px;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
 
 // exports
 
@@ -60668,14 +60668,23 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "hidden-xs hidden-sm hidden-md col-lg-4" }, [
-            _c("a", { attrs: { href: "/nrlb" } }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/no-roof-left-behind.png", width: "350px" }
-              })
-            ])
-          ]),
+          _c(
+            "div",
+            {
+              staticClass: "hidden-xs hidden-sm hidden-md col-lg-4 text-center"
+            },
+            [
+              _c("a", { attrs: { href: "/nrlb" } }, [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: {
+                    src: "images/no-roof-left-behind.png",
+                    width: "350px"
+                  }
+                })
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "hidden-xs col-sm-6 col-md-6 col-lg-4" }, [
             _c("div", { staticClass: "info" }, [
@@ -60684,7 +60693,11 @@ var staticRenderFns = [
                 _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
               ]),
               _vm._v(" "),
-              _c("h1", [_vm._v("937-439-0554")])
+              _c("h1", [
+                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+                  _vm._v("937-439-0554")
+                ])
+              ])
             ])
           ])
         ])

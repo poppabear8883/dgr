@@ -6,7 +6,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <a href="/"><img class="img-responsive" src="images/site-logo.png"></a>
                 </div>
-                <div class="hidden-xs hidden-sm hidden-md col-lg-4">
+                <div class="hidden-xs hidden-sm hidden-md col-lg-4 text-center">
                     <a href="/nrlb"><img class="img-responsive" src="images/no-roof-left-behind.png" width="350px"></a>
                 </div>
                 <div class="hidden-xs col-sm-6 col-md-6 col-lg-4">
@@ -14,7 +14,7 @@
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>
                         </p>
-                        <h1>937-439-0554</h1>
+                        <h1><a href="tel:1-937-439-0554">937-439-0554</a></h1>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
     .top-bar .info {
         float: right;
-        padding-right: 50px;
+        padding-right: 15px;
     }
 
     .top-bar .info > p {
