@@ -60801,7 +60801,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  line-height: 10px;\n  color: #FFFFFF !important;\n  margin-right: 25px;\n  border-bottom: solid #4D4D4D 2px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #e53947 !important;\n  cursor: pointer;\n  border-bottom: solid #e53947 2px;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n.navbar-inverse .navbar-nav > li > a {\n    line-height: 10px;\n    color: #FFFFFF !important;\n    margin-right: 25px;\n    border-bottom: solid #4D4D4D 2px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n  .navbar-inverse .navbar-nav > li > a:focus {\n    color: #e53947 !important;\n    cursor: pointer;\n    border-bottom: solid #e53947 2px;\n}\n}\n", ""]);
 
 // exports
 

@@ -32,20 +32,6 @@
         border-bottom: 2px $red solid !important;
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-        line-height: 10px;
-        color: $white !important;
-        margin-right: 25px;
-        border-bottom: solid $grey 2px;
-    }
-
-    .navbar-inverse .navbar-nav > li > a:hover,
-    .navbar-inverse .navbar-nav > li > a:focus {
-        color: lighten($red, 20%) !important;
-        cursor: pointer;
-        border-bottom: solid lighten($red, 20%) 2px;
-    }
-
     @media (min-width: 768px) {
         .navbar .navbar-nav {
             display: inline-block;
@@ -54,6 +40,20 @@
 
         .navbar .navbar-collapse {
             text-align: center;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            line-height: 10px;
+            color: $white !important;
+            margin-right: 25px;
+            border-bottom: solid $grey 2px;
+        }
+
+        .navbar-inverse .navbar-nav > li > a:hover,
+        .navbar-inverse .navbar-nav > li > a:focus {
+            color: lighten($red, 20%) !important;
+            cursor: pointer;
+            border-bottom: solid lighten($red, 20%) 2px;
         }
     }
 </style>
