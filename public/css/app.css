@@ -14865,8 +14865,6 @@ button.close {
 }
 
 .call-anytime {
-  -webkit-clip-path: polygon(50% 0%, 100% 45%, 100% 100%, 0% 100%, 0% 45%);
-          clip-path: polygon(50% 0%, 100% 45%, 100% 100%, 0% 100%, 0% 45%);
   margin-top: 50px;
   width: 100%;
   height: 250px;
