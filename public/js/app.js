@@ -61078,7 +61078,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", { staticClass: "animated slideInDown" }, [
+      _c("h1", [
         _vm._v(
           '\n                            "Dependability You Can Rely On!"\n                        '
         )
@@ -61091,9 +61091,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
       _c("div", { staticClass: "pull-right" }, [
-        _c("a", { staticClass: "animated flipInY", attrs: { href: "#" } }, [
-          _vm._v("Refer A Friend")
-        ])
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Refer A Friend")])
       ])
     ])
   },
@@ -61103,9 +61101,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
       _c("div", { staticClass: "pull-left" }, [
-        _c("a", { staticClass: "animated flipInY", attrs: { href: "#" } }, [
-          _vm._v("Join Our Team")
-        ])
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Join Our Team")])
       ])
     ])
   },
@@ -61114,7 +61110,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", { staticClass: "animated fadeIn delay-2s" }, [
+      _c("h1", [
         _vm._v(
           '\n                            "Honesty You Deserve!"\n                        '
         )

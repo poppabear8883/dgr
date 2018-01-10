@@ -8,25 +8,25 @@
 
                     <slot>
                         <div class="col-md-12 text-center">
-                            <h1 class="animated slideInDown">
+                            <h1>
                                 "Dependability You Can Rely On!"
                             </h1>
                         </div>
 
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="pull-right">
-                                <a href="#" class="animated flipInY">Refer A Friend</a>
+                                <a href="#">Refer A Friend</a>
                             </div>
                         </div>
 
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="pull-left">
-                                <a href="#" class="animated flipInY">Join Our Team</a>
+                                <a href="#">Join Our Team</a>
                             </div>
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <h1 class="animated fadeIn delay-2s">
+                            <h1>
                                 "Honesty You Deserve!"
                             </h1>
                         </div>
