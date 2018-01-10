@@ -9,7 +9,7 @@
                     <slot>
                         <div class="col-md-12 text-center">
                             <h1 class="animated slideInDown">
-                                "Where Quality And Customer Service Come Together!"
+                                "Dependability You Can Rely On!"
                             </h1>
                         </div>
 
@@ -27,26 +27,28 @@
 
                         <div class="col-md-12 text-center">
                             <h1 class="animated fadeIn delay-2s">
-                                "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"
+                                "Honesty You Deserve!"
                             </h1>
+                        </div>
 
-                            <div class="row" style="padding-bottom: 10px">
-                                <div class="col-md-3 hidden-sm">
+                        <div class="col-md-12 text-center hidden-xs hidden-sm">
+                            <div class="row" style="padding-bottom: 20px">
+                                <div class="col-md-3">
                                     <img class="animated fadeInDown img-responsive delay-3s"
                                          src="images/certainteed-certified-dealer.png" width="130px">
                                 </div>
 
-                                <div class="col-md-3 hidden-sm">
+                                <div class="col-md-3">
                                     <img class="animated fadeInDown img-responsive delay-3s"
                                          src="images/no-roof-left-behind2.png" width="150px">
                                 </div>
 
-                                <div class="col-md-3 hidden-sm">
+                                <div class="col-md-3">
                                     <img class="animated fadeInDown img-responsive delay-3s"
                                          src="images/homeadvisor_logo4.png" width="150px">
                                 </div>
 
-                                <div class="col-md-3 hidden-sm">
+                                <div class="col-md-3">
                                     <img class="animated fadeInDown img-responsive delay-3s"
                                          src="images/bbb2.png" width="100px">
                                 </div>
@@ -128,6 +130,7 @@
 
     header.main-header .main-header-inner {
     // min-height: 200px;
+        margin-top: 30px;
         height: 100%;
         width: 100%;
         background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);
@@ -143,14 +146,15 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 1.2;
-        padding: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 
     header.main-header .main-header-bottom {
         background-color: $red;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         color: $white;
     }
 

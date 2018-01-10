@@ -4,7 +4,7 @@
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <a href="/"><img class="img-responsive" src="images/site-logo.png"></a>
+                    <a href="/"><img class="img-responsive" src="images/site-logo.jpg" width="175px"></a>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md col-lg-4 text-center">
                     <a href="/nrlb"><img class="img-responsive" src="images/no-roof-left-behind.png" width="350px"></a>
@@ -33,7 +33,7 @@
     .top-bar {
         margin-right: auto;
         margin-left: auto;
-        padding: 15px;
+        padding: 20px;
         top: 0;
         position: fixed;
         background-color: $white;

@@ -60603,7 +60603,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 15px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 20px;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  border-bottom: 1px #cccccc solid;\n  width: 100%;\n  z-index: 100;\n  color: #364154;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #0E1116;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #d01b2a;\n  font-weight: 700;\n}\n", ""]);
 
 // exports
 
@@ -60663,7 +60663,7 @@ var staticRenderFns = [
             _c("a", { attrs: { href: "/" } }, [
               _c("img", {
                 staticClass: "img-responsive",
-                attrs: { src: "images/site-logo.png" }
+                attrs: { src: "images/site-logo.jpg", width: "175px" }
               })
             ])
           ]),
@@ -60801,7 +60801,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 122px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n.navbar-inverse .navbar-nav > li > a {\n    line-height: 10px;\n    color: #FFFFFF !important;\n    margin-right: 25px;\n    border-bottom: solid #4D4D4D 2px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n  .navbar-inverse .navbar-nav > li > a:focus {\n    color: #e53947 !important;\n    cursor: pointer;\n    border-bottom: solid #e53947 2px;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar-fixed-top {\n  top: 150px !important;\n}\n.navbar-inverse {\n  border-bottom: 2px #a31521 solid !important;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    margin: 13px 0 6px 0;\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n.navbar-inverse .navbar-nav > li > a {\n    line-height: 10px;\n    color: #FFFFFF !important;\n    margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n  .navbar-inverse .navbar-nav > li > a:focus {\n    color: #e53947 !important;\n    cursor: pointer;\n}\n}\n", ""]);
 
 // exports
 
@@ -60958,7 +60958,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;\n  margin-bottom: -20px;\n}\nheader.main-header a {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #a31521;\n  animation-delay: 1s;\n  -webkit-animation-delay: 1s;\n  -moz-animation-delay: 1s;\n}\nheader.main-header a:hover {\n  background-color: #0E1116;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\nheader.main-header .main-header-inner .delay-2s {\n  animation-delay: 2s;\n  -moz-animation-delay: 2s;\n  -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s {\n  animation-delay: 3s;\n  -moz-animation-delay: 3s;\n  -webkit-animation-delay: 3s;\n  margin-left: auto;\n  margin-right: auto;\n}\nheader.main-header .main-header-inner {\n  height: 100%;\n  width: 100%;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\nheader.main-header h1 {\n  color: #FFFFFF;\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  padding: 15px;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header .main-header-bottom {\n  background-color: #a31521;\n  padding-top: 30px;\n  padding-bottom: 30px;\n  color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p {\n  font-size: 22px;\n  padding-top: 10px;\n  line-height: 28px;\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;\n  margin-bottom: -20px;\n}\nheader.main-header a {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #a31521;\n  animation-delay: 1s;\n  -webkit-animation-delay: 1s;\n  -moz-animation-delay: 1s;\n}\nheader.main-header a:hover {\n  background-color: #0E1116;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\nheader.main-header .main-header-inner .delay-2s {\n  animation-delay: 2s;\n  -moz-animation-delay: 2s;\n  -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s {\n  animation-delay: 3s;\n  -moz-animation-delay: 3s;\n  -webkit-animation-delay: 3s;\n  margin-left: auto;\n  margin-right: auto;\n}\nheader.main-header .main-header-inner {\n  margin-top: 30px;\n  height: 100%;\n  width: 100%;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\nheader.main-header h1 {\n  color: #FFFFFF;\n  text-transform: uppercase;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  padding-top: 50px;\n  padding-bottom: 50px;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header .main-header-bottom {\n  background-color: #a31521;\n  padding-top: 35px;\n  padding-bottom: 35px;\n  color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p {\n  font-size: 22px;\n  padding-top: 10px;\n  line-height: 28px;\n}\n", ""]);
 
 // exports
 
@@ -60969,6 +60969,8 @@ exports.push([module.i, "/* Main Header */\nheader.main-header {\n  width: 100%;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -61073,7 +61075,9 @@ var render = function() {
               _vm._v(" "),
               _vm._m(2),
               _vm._v(" "),
-              _vm._m(3)
+              _vm._m(3),
+              _vm._v(" "),
+              _vm._m(4)
             ])
           ],
           2
@@ -61086,7 +61090,7 @@ var render = function() {
         _c(
           "div",
           { staticClass: "row" },
-          [_vm._t("bottom", [_vm._m(4), _vm._v(" "), _vm._m(5)])],
+          [_vm._t("bottom", [_vm._m(5), _vm._v(" "), _vm._m(6)])],
           2
         )
       ])
@@ -61101,7 +61105,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-md-12 text-center" }, [
       _c("h1", { staticClass: "animated slideInDown" }, [
         _vm._v(
-          '\n                            "Where Quality And Customer Service Come Together!"\n                        '
+          '\n                            "Dependability You Can Rely On!"\n                        '
         )
       ])
     ])
@@ -61137,47 +61141,60 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-md-12 text-center" }, [
       _c("h1", { staticClass: "animated fadeIn delay-2s" }, [
         _vm._v(
-          '\n                            "CERTAINTEED SHINGLE MASTER CERTIFIED INSTALLER"\n                        '
+          '\n                            "Honesty You Deserve!"\n                        '
         )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row", staticStyle: { "padding-bottom": "10px" } },
-        [
-          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
-            _c("img", {
-              staticClass: "animated fadeInDown img-responsive delay-3s",
-              attrs: {
-                src: "images/certainteed-certified-dealer.png",
-                width: "130px"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
-            _c("img", {
-              staticClass: "animated fadeInDown img-responsive delay-3s",
-              attrs: { src: "images/no-roof-left-behind2.png", width: "150px" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
-            _c("img", {
-              staticClass: "animated fadeInDown img-responsive delay-3s",
-              attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 hidden-sm" }, [
-            _c("img", {
-              staticClass: "animated fadeInDown img-responsive delay-3s",
-              attrs: { src: "images/bbb2.png", width: "100px" }
-            })
-          ])
-        ]
-      )
+      ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-md-12 text-center hidden-xs hidden-sm" },
+      [
+        _c(
+          "div",
+          { staticClass: "row", staticStyle: { "padding-bottom": "20px" } },
+          [
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("img", {
+                staticClass: "animated fadeInDown img-responsive delay-3s",
+                attrs: {
+                  src: "images/certainteed-certified-dealer.png",
+                  width: "130px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("img", {
+                staticClass: "animated fadeInDown img-responsive delay-3s",
+                attrs: {
+                  src: "images/no-roof-left-behind2.png",
+                  width: "150px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("img", {
+                staticClass: "animated fadeInDown img-responsive delay-3s",
+                attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("img", {
+                staticClass: "animated fadeInDown img-responsive delay-3s",
+                attrs: { src: "images/bbb2.png", width: "100px" }
+              })
+            ])
+          ]
+        )
+      ]
+    )
   },
   function() {
     var _vm = this

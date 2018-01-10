@@ -25,7 +25,7 @@
 
     /* Navbar */
     .navbar-fixed-top {
-        top: 122px !important;
+        top: 150px !important;
     }
 
     .navbar-inverse {
@@ -34,6 +34,7 @@
 
     @media (min-width: 768px) {
         .navbar .navbar-nav {
+            margin: 13px 0 6px 0;
             display: inline-block;
             float: none;
         }
@@ -46,14 +47,14 @@
             line-height: 10px;
             color: $white !important;
             margin-right: 25px;
-            border-bottom: solid $grey 2px;
+            //border-bottom: solid $grey 2px;
         }
 
         .navbar-inverse .navbar-nav > li > a:hover,
         .navbar-inverse .navbar-nav > li > a:focus {
             color: lighten($red, 20%) !important;
             cursor: pointer;
-            border-bottom: solid lighten($red, 20%) 2px;
+            //border-bottom: solid lighten($red, 20%) 2px;
         }
     }
 </style>
