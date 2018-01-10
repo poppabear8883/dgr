@@ -130,8 +130,7 @@
 
     header.main-header .main-header-bottom {
         background-color: $red;
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding: 25px 0;
         color: $white;
     }
 

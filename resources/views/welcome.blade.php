@@ -199,22 +199,22 @@
     <div class="logos">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <img class="img-responsive"
                          src="images/certainteed-certified-dealer.png" width="130px">
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <img class="img-responsive"
                          src="images/no-roof-left-behind2.png" width="150px">
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <img class="img-responsive"
                          src="images/homeadvisor_logo4.png" width="150px">
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <img class="img-responsive"
                          src="images/bbb2.png" width="100px">
                 </div>
