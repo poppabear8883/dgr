@@ -14992,6 +14992,11 @@ button.close {
   border-left: solid #a31521 5px;
 }
 
+.logos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /* Global Styles */
 
 html,

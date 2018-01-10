@@ -196,6 +196,32 @@
         </div>
     </div>
 
+    <div class="logos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-responsive"
+                         src="images/certainteed-certified-dealer.png" width="130px">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="img-responsive"
+                         src="images/no-roof-left-behind2.png" width="150px">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="img-responsive"
+                         src="images/homeadvisor_logo4.png" width="150px">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="img-responsive"
+                         src="images/bbb2.png" width="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-home">
         <div class="container">
             <div class="row">

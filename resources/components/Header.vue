@@ -31,29 +31,6 @@
                             </h1>
                         </div>
 
-                        <div class="col-md-12 text-center hidden-xs hidden-sm">
-                            <div class="row" style="padding-bottom: 20px">
-                                <div class="col-md-3">
-                                    <img class="animated fadeInDown img-responsive delay-3s"
-                                         src="images/certainteed-certified-dealer.png" width="130px">
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img class="animated fadeInDown img-responsive delay-3s"
-                                         src="images/no-roof-left-behind2.png" width="150px">
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img class="animated fadeInDown img-responsive delay-3s"
-                                         src="images/homeadvisor_logo4.png" width="150px">
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img class="animated fadeInDown img-responsive delay-3s"
-                                         src="images/bbb2.png" width="100px">
-                                </div>
-                            </div>
-                        </div>
                     </slot>
                 </div>
             </div>

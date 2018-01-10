@@ -61027,29 +61027,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -61075,9 +61052,7 @@ var render = function() {
               _vm._v(" "),
               _vm._m(2),
               _vm._v(" "),
-              _vm._m(3),
-              _vm._v(" "),
-              _vm._m(4)
+              _vm._m(3)
             ])
           ],
           2
@@ -61090,7 +61065,7 @@ var render = function() {
         _c(
           "div",
           { staticClass: "row" },
-          [_vm._t("bottom", [_vm._m(5), _vm._v(" "), _vm._m(6)])],
+          [_vm._t("bottom", [_vm._m(4), _vm._v(" "), _vm._m(5)])],
           2
         )
       ])
@@ -61145,56 +61120,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-md-12 text-center hidden-xs hidden-sm" },
-      [
-        _c(
-          "div",
-          { staticClass: "row", staticStyle: { "padding-bottom": "20px" } },
-          [
-            _c("div", { staticClass: "col-md-3" }, [
-              _c("img", {
-                staticClass: "animated fadeInDown img-responsive delay-3s",
-                attrs: {
-                  src: "images/certainteed-certified-dealer.png",
-                  width: "130px"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
-              _c("img", {
-                staticClass: "animated fadeInDown img-responsive delay-3s",
-                attrs: {
-                  src: "images/no-roof-left-behind2.png",
-                  width: "150px"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
-              _c("img", {
-                staticClass: "animated fadeInDown img-responsive delay-3s",
-                attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
-              _c("img", {
-                staticClass: "animated fadeInDown img-responsive delay-3s",
-                attrs: { src: "images/bbb2.png", width: "100px" }
-              })
-            ])
-          ]
-        )
-      ]
-    )
   },
   function() {
     var _vm = this
