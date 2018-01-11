@@ -8,7 +8,7 @@
                     <h1>Featured Services</h1>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 siding">
                     <div class="panel panel-default siding-panel">
                         <div class="panel-body">
 
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 roofing">
                     <div class="panel panel-default roofing-panel">
                         <div class="panel-body">
 
@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 windows">
                     <div class="panel panel-default windows-panel">
                         <div class="panel-body">
 
@@ -121,30 +121,34 @@
 
         .panel-default {
             margin-top: 100px;
+        }
 
-            &.siding-panel {
-                padding-right: 12px;
-            }
+        .siding {
+            margin: 0;
+            padding: 0;
+        }
 
-            &.roofing-panel {
-                width: 430px;
-                margin-top: 70px;
-                margin-left: -60px;
-                height: 590px;
+        .roofing {
+            margin: 0;
+            padding: 0;
+            z-index: 2;
+
+            .roofing-panel {
+                margin-top: 80px;
+                height: 569px;
                 background-color: #323233;
                 color: #FFFFFF;
-                z-index: 999;
+                box-shadow: 0 4px 26px rgba(237, 27, 36, 0.5);
+
                 h3 {
                     color: $red;
                 }
             }
+        }
 
-            &.windows-panel {
-                padding-left: 12px;
-                margin-left: -60px;
-                z-index: -999;
-            }
-
+        .windows {
+            margin: 0;
+            padding: 0;
         }
     }
 
