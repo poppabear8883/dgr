@@ -6,40 +6,10 @@
 
                 <div class="col-md-12 text-center">
                     <h1>Featured Services</h1>
-                    <hr>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-
-                            <div class="text-center">
-                                <i class="fa fa-home fa-4x color-red"></i>
-                                <h3>Roofing</h3>
-                                <hr>
-                            </div>
-
-                            <p>
-                                When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is
-                                here
-                                to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to
-                                act
-                                as your first and final resource when it comes to all your roofing needs. When you're
-                                ready
-                                to take the next step, we're excited for the opportunity to help you benefit from our
-                                thorough attention to detail.
-                            </p>
-
-                            <div class="panel-actions">
-                                <a href="#">Read More</a>
-                                <a href="#">View Gallery</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default siding-panel">
                         <div class="panel-body">
 
                             <div class="text-center">
@@ -67,7 +37,36 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default roofing-panel">
+                        <div class="panel-body">
+
+                            <div class="text-center">
+                                <i class="fa fa-home fa-4x"></i>
+                                <h3>Roofing</h3>
+                                <hr>
+                            </div>
+
+                            <p>
+                                When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is
+                                here
+                                to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to
+                                act
+                                as your first and final resource when it comes to all your roofing needs. When you're
+                                ready
+                                to take the next step, we're excited for the opportunity to help you benefit from our
+                                thorough attention to detail.
+                            </p>
+
+                            <div class="panel-actions">
+                                <a href="#">Read More</a>
+                                <a href="#">View Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default windows-panel">
                         <div class="panel-body">
 
                             <div class="text-center">
@@ -117,10 +116,36 @@
     // todo: format to SCSS
 
     .featured-services {
-        //background-color: $featured-services-bg;
-        border: none;
-        //box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
         padding: 20px;
+        background-color: $white;
+
+        .panel-default {
+            margin-top: 100px;
+
+            &.siding-panel {
+                padding-right: 12px;
+            }
+
+            &.roofing-panel {
+                width: 430px;
+                margin-top: 70px;
+                margin-left: -60px;
+                height: 590px;
+                background-color: #323233;
+                color: #FFFFFF;
+                z-index: 999;
+                h3 {
+                    color: $red;
+                }
+            }
+
+            &.windows-panel {
+                padding-left: 12px;
+                margin-left: -60px;
+                z-index: -999;
+            }
+
+        }
     }
 
     .featured-services hr {
@@ -162,7 +187,8 @@
 
     .featured-services .panel-default {
         display: flex;
-        border: none;
+        background-color: #f7f7f7;
+        border: 1px #f2f2f2 solid;
         box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05)
     }
 

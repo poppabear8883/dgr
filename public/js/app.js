@@ -77522,7 +77522,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  border: none;\n  padding: 20px;\n}\n.featured-services hr[data-v-621b8fcd] {\n  border-top: 1px #e6e6e6 solid;\n}\n.featured-services .panel[data-v-621b8fcd] {\n  min-height: 530px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 5px;\n  margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #ed1b24;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n  background-color: #4b4b4c;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  border: none;\n  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services h3[data-v-621b8fcd] {\n  text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  padding: 20px;\n  background-color: #FFFFFF;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    margin-top: 100px;\n}\n.featured-services .panel-default.siding-panel[data-v-621b8fcd] {\n      padding-right: 12px;\n}\n.featured-services .panel-default.roofing-panel[data-v-621b8fcd] {\n      width: 430px;\n      margin-top: 70px;\n      margin-left: -60px;\n      height: 590px;\n      background-color: #323233;\n      color: #FFFFFF;\n      z-index: 999;\n}\n.featured-services .panel-default.roofing-panel h3[data-v-621b8fcd] {\n        color: #ed1b24;\n}\n.featured-services .panel-default.windows-panel[data-v-621b8fcd] {\n      padding-left: 12px;\n      margin-left: -60px;\n      z-index: -999;\n}\n.featured-services hr[data-v-621b8fcd] {\n  border-top: 1px #e6e6e6 solid;\n}\n.featured-services .panel[data-v-621b8fcd] {\n  min-height: 530px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 5px;\n  margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #ed1b24;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n  background-color: #4b4b4c;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  background-color: #f7f7f7;\n  border: 1px #f2f2f2 solid;\n  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services h3[data-v-621b8fcd] {\n  text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -77533,7 +77533,6 @@ exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -77655,39 +77654,11 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-12 text-center" }, [
-            _c("h1", [_vm._v("Featured Services")]),
-            _vm._v(" "),
-            _c("hr")
+            _c("h1", [_vm._v("Featured Services")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "panel panel-default" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("i", { staticClass: "fa fa-home fa-4x color-red" }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Roofing")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "panel panel-default" }, [
+            _c("div", { staticClass: "panel panel-default siding-panel" }, [
               _c("div", { staticClass: "panel-body" }, [
                 _c("div", { staticClass: "text-center" }, [
                   _c("i", { staticClass: "fa fa-bars fa-4x color-red" }),
@@ -77713,7 +77684,33 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "panel panel-default" }, [
+            _c("div", { staticClass: "panel panel-default roofing-panel" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _c("div", { staticClass: "text-center" }, [
+                  _c("i", { staticClass: "fa fa-home fa-4x" }),
+                  _vm._v(" "),
+                  _c("h3", [_vm._v("Roofing")]),
+                  _vm._v(" "),
+                  _c("hr")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel-actions" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "panel panel-default windows-panel" }, [
               _c("div", { staticClass: "panel-body" }, [
                 _c("div", { staticClass: "text-center" }, [
                   _c("i", { staticClass: "fa fa-clone fa-4x color-red" }),
@@ -77838,7 +77835,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n.call-anytime[data-v-1d672217] {\n  margin-top: 50px;\n  width: 100%;\n  height: 250px;\n  padding: 25px;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.7)), to(rgba(42, 42, 42, 0.7))), url(/images/1.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.7), rgba(42, 42, 42, 0.7)), url(/images/1.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\n.call-anytime > .container[data-v-1d672217] {\n  margin-top: 50px;\n}\n.call-anytime h1[data-v-1d672217] {\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n.call-anytime p[data-v-1d672217] {\n  font-size: 20px;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.call-anytime[data-v-1d672217] {\n  width: 100%;\n  height: 250px;\n  padding: 25px;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.7)), to(rgba(42, 42, 42, 0.7))), url(/images/1.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.7), rgba(42, 42, 42, 0.7)), url(/images/1.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\n.call-anytime > .container[data-v-1d672217] {\n  margin-top: 50px;\n}\n.call-anytime h1[data-v-1d672217] {\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n.call-anytime p[data-v-1d672217] {\n  font-size: 20px;\n  font-weight: 700;\n}\n", ""]);
 
 // exports
 
