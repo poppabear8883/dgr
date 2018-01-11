@@ -14,18 +14,30 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-Vue.component('tabs', require('Components/Tabs.vue'));
 
-
-Vue.component('dg-top-bar', require('Components/TopBar.vue'));
-Vue.component('dg-nav', require('Components/Nav.vue'));
-Vue.component('dg-header', require('Components/Header.vue'));
-Vue.component('dg-footer', require('Components/Footer.vue'));
-
+// Admin Views (Pages)
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));
 Vue.component('admin-contacts', require('Views/admin/AdminContacts.vue'));
 Vue.component('admin-galleries', require('Views/admin/AdminGalleries.vue'));
 
+// Global Layout Partials
+Vue.component('dg-top-bar', require('Views/partials/TopBar.vue'));
+Vue.component('dg-nav', require('Views/partials/Nav.vue'));
+Vue.component('dg-header', require('Views/partials/Header.vue'));
+Vue.component('dg-footer', require('Views/partials/Footer.vue'));
+
+// Page Partials
+import DgFeaturedServices from 'Views/partials/welcome/FeaturedServices';
+import DgCallAnytime from 'Views/partials/CallAnytime';
+import DgFriendlyService from 'Views/partials/FriendlyService';
+import DgWhyChooseUs from 'Views/partials/WhyChooseUs';
+
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components: {
+        DgWhyChooseUs,
+        DgFriendlyService,
+        DgFeaturedServices,
+        DgCallAnytime
+    }
 });

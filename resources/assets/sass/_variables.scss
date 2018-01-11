@@ -1,14 +1,16 @@
 // Colors
 $white: #FFFFFF;
-$red: #a31521;
+$red: #EA2B1F;
 $blue: #33658A;
 $green: #2a852f;
 $yellow: #bab90f;
 $magenta: #ff00ff;
 $purple: #800080;
-$dark: #0E1116;
-$grey: #4D4D4D;
-$body-bg: #f5f8fa;
+$grey: #7C7C7C;
+$dark: darken($grey, 5%);
+$dark-text: darken($grey, 20%);
+$light-text: lighten($grey, 15%);
+$body-bg: #f7f7f7;
 $navs-bg: #272727;
 
 // Borders

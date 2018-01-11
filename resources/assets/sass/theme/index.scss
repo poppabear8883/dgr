@@ -1,11 +1,3 @@
-@import "img";
-@import "countdown";
-@import "error-pages";
-@import "pricing";
-@import "featured-services";
-@import "friendly-service";
-@import "call-anytime";
-@import "why-choose-us";
 @import "portfolio-home";
 @import "colors";
 @import "social";
@@ -23,6 +15,53 @@ body {
   padding-top: 155px;
 }
 
+.img-portfolio {
+  margin-bottom: 30px;
+}
+
+.img-hover:hover {
+  opacity: 0.8;
+}
+
+$countdown-text: $white;
+$countdown-bg: $red;
+
+/* Countdown */
+.countdown {
+  color: $countdown-text;
+  background-color: $countdown-bg;
+}
+
+.countdown-description {
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+.timer {
+  float: right !important;
+}
+
+.error-404 {
+  font-size: 100px;
+}
+
+.price {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.price sup {
+  top: -20px;
+  left: 2px;
+  font-size: 20px;
+}
+
+.period {
+  display: block;
+  font-style: italic;
+}
+
 /* Responsive Styles */
 
 @media (max-width: 991px) {
@@ -33,15 +72,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .featured-services {
-    background-color: transparent;
-    padding-top: 100px;
-  }
-
-  header.main-header .main-header-inner .delay-2s {
-    padding-top: 80px;
-  }
-
   .timer {
     float: left !important;
   }
@@ -49,12 +79,4 @@ body {
   .img-portfolio {
     margin-bottom: 15px;
   }
-}
-
-@media (max-width: 425px) {
-  header.main-header .main-header-inner h1 {
-    font-size: 18px;
-    padding: 0;
-  }
-
 }

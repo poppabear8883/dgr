@@ -29,7 +29,9 @@
     }
 
     .navbar-inverse {
-        border-bottom: 2px $red solid !important;
+        background-color: $white !important;
+        border-bottom: 3px darken($dark, 25%) solid !important;
+
     }
 
     @media (min-width: 768px) {
@@ -45,14 +47,14 @@
 
         .navbar-inverse .navbar-nav > li > a {
             line-height: 10px;
-            color: $white !important;
+            color: $dark !important;
             margin-right: 25px;
             //border-bottom: solid $grey 2px;
         }
 
         .navbar-inverse .navbar-nav > li > a:hover,
         .navbar-inverse .navbar-nav > li > a:focus {
-            color: lighten($red, 20%) !important;
+            color: $red !important;
             cursor: pointer;
             //border-bottom: solid lighten($red, 20%) 2px;
         }
