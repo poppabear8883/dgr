@@ -114,7 +114,6 @@
         }
 
         .main-header-inner {
-            margin-top: 30px;
             height: 100%;
             width: 100%;
             background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);

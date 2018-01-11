@@ -25,18 +25,19 @@
 
     /* Navbar */
     .navbar-fixed-top {
-        top: 150px !important;
+        top: 130px !important;
     }
 
     .navbar-inverse {
         background-color: $white !important;
-        border-bottom: 3px $grey solid !important;
+        //border-bottom: 3px $grey solid !important;
+        border: 0;
 
     }
 
     @media (min-width: 768px) {
         .navbar .navbar-nav {
-            margin: 13px 0 6px 0;
+            //margin: 13px 0 6px 0;
             display: inline-block;
             float: none;
         }

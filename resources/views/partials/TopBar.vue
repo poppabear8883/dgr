@@ -33,11 +33,10 @@
     .top-bar {
         margin-right: auto;
         margin-left: auto;
-        padding: 20px;
+        padding: 10px 0;
         top: 0;
         position: fixed;
         background-color: $white;
-        border-bottom: 1px darken($white, 20%) solid;
         width: 100%;
         z-index: 100;
         color: lighten($dark, 20%);
