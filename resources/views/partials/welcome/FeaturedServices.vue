@@ -5,7 +5,7 @@
             <div class="row">
 
                 <div class="col-md-12 text-center">
-                    <h1 class="color-red">Featured Services</h1>
+                    <h1>Featured Services</h1>
                     <hr>
                 </div>
 

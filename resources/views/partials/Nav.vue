@@ -24,6 +24,11 @@
 
 
     /* Navbar */
+    .navbar {
+         min-height: 0;
+         margin-bottom: 0;
+    }
+
     .navbar-fixed-top {
         top: 130px !important;
     }
