@@ -41,7 +41,7 @@
 
     .why-choose-us {
         width: 100%;
-        background-color: lighten($dark, 5%);
+        background-color: darken($grey, 15%);
         padding-bottom: 50px;
 
         hr {

@@ -157,7 +157,7 @@
         }
 
         footer {
-            background-color: darken($dark, 25%);
+            background-color: darken($grey, 15%);
             border-top: 5px $red solid;
             color: darken($white, 30%);
             padding: 25px;

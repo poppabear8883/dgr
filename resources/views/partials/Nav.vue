@@ -30,7 +30,7 @@
 
     .navbar-inverse {
         background-color: $white !important;
-        border-bottom: 3px darken($dark, 25%) solid !important;
+        border-bottom: 3px $grey solid !important;
 
     }
 
