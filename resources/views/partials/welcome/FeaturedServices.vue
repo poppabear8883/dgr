@@ -136,9 +136,10 @@
             .roofing-panel {
                 margin-top: 80px;
                 height: 569px;
+                border: none;
                 background-color: #323233;
                 color: #FFFFFF;
-                box-shadow: 0 4px 26px rgba(237, 27, 36, 0.5);
+                box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);
 
                 h3 {
                     color: $red;
