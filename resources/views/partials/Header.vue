@@ -95,6 +95,7 @@
 
         a {
             font-size: 18px;
+            margin-bottom: 15px;
             padding: 10px 20px;
             display: block;
             color: $white;
