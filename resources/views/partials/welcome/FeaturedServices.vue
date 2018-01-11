@@ -116,7 +116,6 @@
     // todo: format to SCSS
 
     .featured-services {
-        padding: 20px;
         background-color: $white;
 
         .panel-default {
