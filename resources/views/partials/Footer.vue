@@ -142,6 +142,7 @@
 
     .footer {
         .logos {
+            background-color: #f7f7f7;
             padding-top: 50px;
             padding-bottom: 50px;
             border-bottom: 5px $dark solid;

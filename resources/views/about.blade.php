@@ -60,6 +60,8 @@
         </div>
     </div>
 
+    <dg-call-anytime></dg-call-anytime>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -226,19 +228,7 @@
         </div>
     </div>
 
-    <div class="call-anytime">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                    <h1>We are here to answer all your questions</h1>
-                    <p>
-                        Call us anytime at <span class="color-light-red" style="font-size: 25px">937-439-0554</span>
-                        and get direct help from our advisors
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <dg-why-choose-us></dg-why-choose-us>
 
     <div class="portfolio-home">
         <div class="container">
@@ -275,36 +265,6 @@
                     <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="why-choose-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="color-light">Why Choose Us ?</h2>
-                    <hr>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="images/bbb-logo.png" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="images/25-yrs-exp.png" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
                 </div>
             </div>
         </div>

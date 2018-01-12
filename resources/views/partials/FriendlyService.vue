@@ -53,8 +53,6 @@
 
     .friendly-service {
         width: 100%;
-        background-color: $white;
-        //margin-top: 25px;
         padding: 25px;
 
         img {
