@@ -29,36 +29,28 @@
 @stop
 
 @section('content')
-    <div class="friendly-service">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header color-red">About D & G Roofing & Restoration</h2>
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        D & G Roofing & Restoration is a General Contracting company based in Dayton, Ohio.
-                        We have over 20 years of combined service in the field. D & G Roofing services Dayton, C
-                        olumbus, Cincinnati and all surrounding areas. D & G Roofing & Restoration specializes in
-                        reroofs, siding and gutter installation. We also specialize in Insurance claim settlements.
-                        Our goal is always to provide excellent customer service and quality workmanship to every
-                        customer of D & G Roofing, while upholding professionalism, integrity, and company reputation
-                        as a leader in the construction industry.
-                    </p>
+    <media-section
+            title="About D & G Roofing & Restoration"
+            img="images/duaneandgerritrucklogo.jpg"
+            img-alt="Duane and Gerri">
+        <p>
+            D & G Roofing & Restoration is a General Contracting company based in Dayton, Ohio.
+            We have over 20 years of combined service in the field. D & G Roofing services Dayton, C
+            olumbus, Cincinnati and all surrounding areas. D & G Roofing & Restoration specializes in
+            reroofs, siding and gutter installation. We also specialize in Insurance claim settlements.
+            Our goal is always to provide excellent customer service and quality workmanship to every
+            customer of D & G Roofing, while upholding professionalism, integrity, and company reputation
+            as a leader in the construction industry.
+        </p>
 
-                    <div class="h4 color-red">Our Mission</div>
+        <div class="h4 color-red">Our Mission</div>
 
-                    <p>
-                        To provide every customer with highest quality workmanship and materials while providing
-                        excellent customer service with the highest integrity.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-responsive" src="images/duaneandgerritrucklogo.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+        <p>
+            To provide every customer with highest quality workmanship and materials while providing
+            excellent customer service with the highest integrity.
+        </p>
+
+    </media-section>
 
     <dg-call-anytime></dg-call-anytime>
 

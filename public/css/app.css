@@ -14777,12 +14777,24 @@ button.close {
   background: #3b5998 !important;
 }
 
+.fa-facebook-square {
+  color: #3b5998 !important;
+}
+
 .fa-linkedin {
   background: #007bb6 !important;
 }
 
+.fa-linkedin-square {
+  color: #007bb6 !important;
+}
+
 .fa-twitter {
   background: #00aced !important;
+}
+
+.fa-twitter-square {
+  color: #00aced !important;
 }
 
 .fa-google-plus {

@@ -22,7 +22,38 @@
         <dg-call-anytime></dg-call-anytime>
 
         <!-- Friendly Service -->
-        <dg-friendly-service></dg-friendly-service>
+        <media-section
+                title="Service With A Friendly Approach"
+                img="images/gerri-with-customer-01.jpg"
+                img-alt="Dayton Oh Roofing Customer">
+            <p>
+                If you're in the market for a Dayton, Cincinnati, OH, roofer, our experienced team is ready to
+                help. At D & G Roofing & Restoration, we understand that a roof is more than simply another part
+                of your property. It also protects your loved ones and the valuable belongings that make your
+                house a home. We have helped many people throughout Dayton, Cincinnati, OH, address their
+                roofing needs with efficiency and ease. We're ready to use our extensive experience to help you
+                do the same. Regardless, of the nature of the project, our crew will begin as soon as possible,
+                and we’ll complete the job in a timely manner. Your satisfaction is one of our highest
+                priorities.
+            </p>
+
+            {{--<p>
+                We'll begin by gaining a firmer understanding of your individual needs. A better grasp of your
+                goals allows us to design a plan with a higher rate of success. Over the course of the job, our
+                knowledgeable team will remain available to address your concerns or answer any questions you
+                may have. Whether you're looking for residential re-roofing, home roofing, roof installation, or
+                commercial roofing in Dayton, our staff is ready to help you take the next step. Providing you
+                with high caliber workmanship on every job is simply the way we've operated since opening our
+                doors.
+            </p>
+
+            <p>
+                When you need a Dayton, or Cincinnati, OH, roofer, our friendly staff can provide you with the
+                quality handiwork you need to feel confident moving forward. At D & G Roofing & Restoration,
+                we'll handle your roofing needs with the same respect and careful attention that we would use to
+                tackle our own. Come visit us in Dayton, OH, or call today to learn more.
+            </p>--}}
+        </media-section>
 
         <!-- Why Choose Us -->
         <dg-why-choose-us></dg-why-choose-us>
@@ -66,7 +97,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 @stop

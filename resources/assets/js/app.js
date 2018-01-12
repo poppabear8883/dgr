@@ -15,6 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//Components
+Vue.component('media-section', require('Components/MediaSection.vue'));
+Vue.component('divider-section', require('Components/DividerSection.vue'));
+
 // Admin Views (Pages)
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));
 Vue.component('admin-contacts', require('Views/admin/AdminContacts.vue'));
@@ -29,14 +33,12 @@ Vue.component('dg-footer', require('Views/partials/Footer.vue'));
 // Page Partials
 import DgFeaturedServices from 'Views/partials/welcome/FeaturedServices';
 import DgCallAnytime from 'Views/partials/CallAnytime';
-import DgFriendlyService from 'Views/partials/FriendlyService';
 import DgWhyChooseUs from 'Views/partials/WhyChooseUs';
 
 const app = new Vue({
     el: '#app',
     components: {
         DgWhyChooseUs,
-        DgFriendlyService,
         DgFeaturedServices,
         DgCallAnytime
     }
