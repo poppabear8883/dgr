@@ -48,8 +48,7 @@
 
     .navbar-inverse {
         background-color: $white !important;
-        border: 0;
-
+        border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
     }
 
     .navbar-inverse .navbar-toggle .icon-bar {
