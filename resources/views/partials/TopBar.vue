@@ -3,13 +3,19 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <a href="/"><img class="img-responsive" src="images/site-logo.jpg" width="175px"></a>
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+                    <div class="nrlb">
+                        <a href="/nrlb">
+                            <img class="img-responsive" src="images/no-roof-left-behind.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="hidden-xs hidden-sm hidden-md col-lg-4 text-center">
-                    <a href="/nrlb"><img class="img-responsive" src="images/no-roof-left-behind.png" width="350px"></a>
+                <div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 site-logo">
+                    <a href="/">
+                        <img class="img-responsive" src="images/site-logo.jpg">
+                    </a>
                 </div>
-                <div class="hidden-xs col-sm-6 col-md-6 col-lg-4">
+                <div class="col-xs-8 col-sm-6 col-md-4 col-lg-4">
                     <div class="info">
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>
@@ -40,26 +46,60 @@
         width: 100%;
         z-index: 100;
         color: lighten($dark, 20%);
-    }
 
-    .top-bar .img-responsive {
-        display: unset;
-    }
+        .img-responsive {
+            display: inline-block;
+        }
 
-    .top-bar .info {
-        float: right;
-        //padding-right: 15px;
-    }
+        .site-logo {
+            img {
+                width: 175px;
+            }
 
-    .top-bar .info > p {
-        font-size: 20px;
-        color: $dark;
-        margin-bottom: -20px;
-    }
+            @media (min-width: 991px) {
+                text-align: center;
+            }
+        }
 
-    .top-bar .info > h1 {
-        color: lighten($red, 10%);
-        font-weight: 700;
+        .nrlb {
+            margin-top: 20px;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .info {
+            float: right;
+            margin-top: 20px;
+
+            h1 {
+                color: $red;
+                font-weight: 700;
+
+                @media (max-width: 615px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 275px) {
+                    font-size: 12px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                color: $dark;
+                margin-bottom: -20px;
+
+                @media (max-width: 615px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: 275px) {
+                    font-size: 8px;
+                }
+            }
+        }
     }
 
 </style>

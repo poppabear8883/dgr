@@ -3,22 +3,22 @@
         <div class="logos">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <img class="img-responsive"
                              src="images/certainteed-certified-dealer.png" width="130px">
                     </div>
 
-                    <div class="col-md-3 text-center">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <img class="img-responsive"
                              src="images/no-roof-left-behind2.png" width="150px">
                     </div>
 
-                    <div class="col-md-3 text-center">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <img class="img-responsive"
                              src="images/homeadvisor_logo4.png" width="150px">
                     </div>
 
-                    <div class="col-md-3 text-center">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <img class="img-responsive"
                              src="images/bbb2.png" width="100px">
                     </div>
@@ -109,11 +109,6 @@
                                 <li>
                                     <a href="http://linkedin.com/">
                                         <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://twitter.com/">
-                                        <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>

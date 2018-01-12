@@ -117,6 +117,7 @@
 
     .featured-services {
         background-color: $white;
+        padding-bottom: 50px;
 
         .panel-default {
             margin-top: 100px;

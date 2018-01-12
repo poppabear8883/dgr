@@ -77570,7 +77570,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #7e7e7f;\n}\n.top-bar .img-responsive {\n  display: unset;\n}\n.top-bar .info {\n  float: right;\n}\n.top-bar .info > p {\n  font-size: 20px;\n  color: #4b4b4c;\n  margin-bottom: -20px;\n}\n.top-bar .info > h1 {\n  color: #ff223b;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #7e7e7f;\n}\n.top-bar .img-responsive {\n    display: inline-block;\n}\n.top-bar .site-logo img {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo {\n      text-align: center;\n}\n}\n.top-bar .nrlb {\n    margin-top: 20px;\n}\n.top-bar .nrlb img {\n      width: 250px;\n}\n.top-bar .info {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1 {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1 {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1 {\n          font-size: 12px;\n}\n}\n.top-bar .info p {\n      font-size: 20px;\n      color: #4b4b4c;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p {\n          font-size: 8px;\n}\n}\n", ""]);
 
 // exports
 
@@ -77581,6 +77581,12 @@ exports.push([module.i, "\n.top-bar {\n  margin-right: auto;\n  margin-left: aut
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -77626,34 +77632,31 @@ var staticRenderFns = [
     return _c("div", { staticClass: "top-bar" }, [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12 col-sm-6 col-md-6 col-lg-4" }, [
-            _c("a", { attrs: { href: "/" } }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/site-logo.jpg", width: "175px" }
-              })
+          _c("div", { staticClass: "hidden-xs hidden-sm col-md-4 col-lg-4" }, [
+            _c("div", { staticClass: "nrlb" }, [
+              _c("a", { attrs: { href: "/nrlb" } }, [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "images/no-roof-left-behind.png" }
+                })
+              ])
             ])
           ]),
           _vm._v(" "),
           _c(
             "div",
-            {
-              staticClass: "hidden-xs hidden-sm hidden-md col-lg-4 text-center"
-            },
+            { staticClass: "col-xs-4 col-sm-6 col-md-4 col-lg-4 site-logo" },
             [
-              _c("a", { attrs: { href: "/nrlb" } }, [
+              _c("a", { attrs: { href: "/" } }, [
                 _c("img", {
                   staticClass: "img-responsive",
-                  attrs: {
-                    src: "images/no-roof-left-behind.png",
-                    width: "350px"
-                  }
+                  attrs: { src: "images/site-logo.jpg" }
                 })
               ])
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "hidden-xs col-sm-6 col-md-6 col-lg-4" }, [
+          _c("div", { staticClass: "col-xs-8 col-sm-6 col-md-4 col-lg-4" }, [
             _c("div", { staticClass: "info" }, [
               _c("p", [
                 _vm._v("\n                        Free Inspections - "),
@@ -77768,7 +77771,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bottom: 0;\n}\n.navbar-fixed-top {\n  top: 130px !important;\n}\n.navbar-inverse {\n  background-color: #FFFFFF !important;\n  border: 0;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n.navbar-inverse .navbar-nav > li > a {\n    line-height: 10px;\n    color: #4b4b4c !important;\n    margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n  .navbar-inverse .navbar-nav > li > a:focus {\n    color: #EE001B !important;\n    cursor: pointer;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bottom: 0;\n}\n.navbar-fixed-top {\n  top: 130px !important;\n}\n@media (max-width: 425px) {\n.navbar-fixed-top {\n      top: 80px !important;\n}\n}\n.navbar-inverse {\n  background-color: #FFFFFF !important;\n  border: 0;\n}\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #4b4b4c !important;\n}\n.navbar-header {\n  color: #4b4b4c !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  line-height: 10px;\n  color: #4b4b4c !important;\n  margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -77779,6 +77782,15 @@ exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bot
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -77816,6 +77828,8 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "container-fluid" }, [
+        _vm._m(0, false, false),
+        _vm._v(" "),
         _c(
           "div",
           {
@@ -77828,7 +77842,36 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-header" }, [
+      _c(
+        "button",
+        {
+          staticClass: "navbar-toggle collapsed",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#bs-example-navbar-collapse-1",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" })
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -77925,7 +77968,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-bottom: -20px;\n}\n@media (max-width: 425px) {\nheader.main-header .main-header-inner h1[data-v-0e24ada1] {\n      font-size: 18px;\n      padding: 0;\n}\n}\n@media (max-width: 767px) {\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      padding-top: 80px;\n}\n}\nheader.main-header h1[data-v-0e24ada1] {\n    color: #FFFFFF;\n    text-transform: uppercase;\n    font-weight: 700;\n    font-size: 30px;\n    line-height: 1.2;\n    padding-top: 50px;\n    padding-bottom: 50px;\n    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header a[data-v-0e24ada1] {\n    font-size: 18px;\n    margin-bottom: 15px;\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n    animation-delay: 1s;\n    -webkit-animation-delay: 1s;\n    -moz-animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n      background-color: #4b4b4c;\n      color: #FFFFFF;\n      cursor: pointer;\n      text-decoration: none;\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      animation-delay: 2s;\n      -moz-animation-delay: 2s;\n      -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      animation-delay: 3s;\n      -moz-animation-delay: 3s;\n      -webkit-animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\nheader.main-header .main-header-bottom[data-v-0e24ada1] {\n    background-color: #EE001B;\n    padding: 25px 0;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p[data-v-0e24ada1] {\n      font-size: 22px;\n      padding-top: 10px;\n      line-height: 28px;\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-bottom: -20px;\n}\n@media (max-width: 425px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: -40px;\n}\n}\n@media (max-width: 425px) {\nheader.main-header .main-header-inner h1[data-v-0e24ada1] {\n      font-size: 18px;\n      padding: 0;\n}\n}\n@media (max-width: 767px) {\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      padding-top: 80px;\n}\n}\nheader.main-header h1[data-v-0e24ada1] {\n    color: #FFFFFF;\n    text-transform: uppercase;\n    font-weight: 700;\n    font-size: 30px;\n    line-height: 1.2;\n    padding-top: 50px;\n    padding-bottom: 50px;\n    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header a[data-v-0e24ada1] {\n    font-size: 18px;\n    margin-bottom: 15px;\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n    animation-delay: 1s;\n    -webkit-animation-delay: 1s;\n    -moz-animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n      background-color: #4b4b4c;\n      color: #FFFFFF;\n      cursor: pointer;\n      text-decoration: none;\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      animation-delay: 2s;\n      -moz-animation-delay: 2s;\n      -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      animation-delay: 3s;\n      -moz-animation-delay: 3s;\n      -webkit-animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\nheader.main-header .main-header-bottom[data-v-0e24ada1] {\n    background-color: #EE001B;\n    padding: 25px 0;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p[data-v-0e24ada1] {\n      font-size: 22px;\n      padding-top: 10px;\n      line-height: 28px;\n}\n", ""]);
 
 // exports
 
@@ -78354,11 +78397,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -78381,7 +78419,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "logos" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-3 text-center" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
               _c("img", {
                 staticClass: "img-responsive",
                 attrs: {
@@ -78391,7 +78429,7 @@ var staticRenderFns = [
               })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 text-center" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
               _c("img", {
                 staticClass: "img-responsive",
                 attrs: {
@@ -78401,14 +78439,14 @@ var staticRenderFns = [
               })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 text-center" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
               _c("img", {
                 staticClass: "img-responsive",
                 attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
               })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 text-center" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
               _c("img", {
                 staticClass: "img-responsive",
                 attrs: { src: "images/bbb2.png", width: "100px" }
@@ -78555,12 +78593,6 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("li", [
-                    _c("a", { attrs: { href: "http://twitter.com/" } }, [
-                      _c("i", { staticClass: "fa fa-twitter" })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
                     _c(
                       "a",
                       {
@@ -78698,7 +78730,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  background-color: #FFFFFF;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    margin-top: 100px;\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      height: 569px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services hr[data-v-621b8fcd] {\n  border-top: 1px #e6e6e6 solid;\n}\n.featured-services .panel[data-v-621b8fcd] {\n  min-height: 530px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 5px;\n  margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #EE001B;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n  background-color: #4b4b4c;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  background-color: #f7f7f7;\n  border: 1px #f2f2f2 solid;\n  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services h3[data-v-621b8fcd] {\n  text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  background-color: #FFFFFF;\n  padding-bottom: 50px;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    margin-top: 100px;\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      height: 569px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services hr[data-v-621b8fcd] {\n  border-top: 1px #e6e6e6 solid;\n}\n.featured-services .panel[data-v-621b8fcd] {\n  min-height: 530px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 5px;\n  margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  border: 2px #FFFFFF solid;\n  font-weight: 500;\n  background-color: #EE001B;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n  background-color: #4b4b4c;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  background-color: #f7f7f7;\n  border: 1px #f2f2f2 solid;\n  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services h3[data-v-621b8fcd] {\n  text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -79011,7 +79043,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n.call-anytime[data-v-1d672217] {\n  width: 100%;\n  height: 250px;\n  padding: 25px;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.7)), to(rgba(42, 42, 42, 0.7))), url(/images/1.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.7), rgba(42, 42, 42, 0.7)), url(/images/1.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\n.call-anytime > .container[data-v-1d672217] {\n  margin-top: 50px;\n}\n.call-anytime h1[data-v-1d672217] {\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n.call-anytime p[data-v-1d672217] {\n  font-size: 20px;\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.call-anytime[data-v-1d672217] {\n  width: 100%;\n  padding: 25px;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.7)), to(rgba(42, 42, 42, 0.7))), url(/images/1.jpg);\n  background: linear-gradient(rgba(42, 42, 42, 0.7), rgba(42, 42, 42, 0.7)), url(/images/1.jpg);\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n  color: #FFFFFF;\n}\n.call-anytime h1[data-v-1d672217] {\n    margin-bottom: 20px;\n    font-weight: 700;\n    font-size: 30px;\n    line-height: 1.2;\n    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n@media (max-width: 375px) {\n.call-anytime h1[data-v-1d672217] {\n        font-size: 20px;\n}\n}\n.call-anytime p[data-v-1d672217] {\n    font-size: 20px;\n    font-weight: 700;\n}\n.call-anytime p span[data-v-1d672217] {\n      font-size: 25px;\n}\n@media (max-width: 320px) {\n.call-anytime p span[data-v-1d672217] {\n          font-size: 16px;\n}\n}\n@media (max-width: 425px) {\n.call-anytime p span[data-v-1d672217] {\n          font-size: 20px;\n}\n}\n@media (max-width: 320px) {\n.call-anytime p[data-v-1d672217] {\n        font-size: 12px;\n}\n}\n@media (max-width: 425px) {\n.call-anytime p[data-v-1d672217] {\n        font-size: 16px;\n}\n}\n", ""]);
 
 // exports
 
@@ -79074,18 +79106,11 @@ var staticRenderFns = [
                 _vm._v(
                   "\n                    Call us anytime at\n                    "
                 ),
-                _c(
-                  "span",
-                  {
-                    staticClass: "color-light-red",
-                    staticStyle: { "font-size": "25px" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        937-439-0554\n                    "
-                    )
-                  ]
-                ),
+                _c("span", { staticClass: "color-light-red" }, [
+                  _vm._v(
+                    "\n                        937-439-0554\n                    "
+                  )
+                ]),
                 _vm._v(
                   "\n                    and get direct help from our advisors\n                "
                 )

@@ -1,6 +1,15 @@
 <template>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul :class="['nav', 'navbar-nav']">
@@ -31,38 +40,47 @@
 
     .navbar-fixed-top {
         top: 130px !important;
+
+        @media (max-width: 425px) {
+            top: 80px !important;
+        }
     }
 
     .navbar-inverse {
         background-color: $white !important;
-        //border-bottom: 3px $grey solid !important;
         border: 0;
 
     }
 
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $dark !important;
+    }
+
+    .navbar-header {
+        color: $dark !important;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        line-height: 10px;
+        color: $dark !important;
+        margin-right: 25px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: $red !important;
+        cursor: pointer;
+    }
+
     @media (min-width: 768px) {
+
         .navbar .navbar-nav {
-            //margin: 13px 0 6px 0;
             display: inline-block;
             float: none;
         }
 
         .navbar .navbar-collapse {
             text-align: center;
-        }
-
-        .navbar-inverse .navbar-nav > li > a {
-            line-height: 10px;
-            color: $dark !important;
-            margin-right: 25px;
-            //border-bottom: solid $grey 2px;
-        }
-
-        .navbar-inverse .navbar-nav > li > a:hover,
-        .navbar-inverse .navbar-nav > li > a:focus {
-            color: $red !important;
-            cursor: pointer;
-            //border-bottom: solid lighten($red, 20%) 2px;
         }
     }
 </style>

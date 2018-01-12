@@ -70,6 +70,10 @@
         margin-bottom: -20px;
 
         @media (max-width: 425px) {
+            margin-top: -40px;
+        }
+
+        @media (max-width: 425px) {
             .main-header-inner h1 {
                 font-size: 18px;
                 padding: 0;

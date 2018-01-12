@@ -40,19 +40,13 @@
             <a href="/galleries">Galleries</a>
         </li>
         <li>
-            <a href="/testimonies">Testimonies</a>
-        </li>
-        <li>
             <a href="/giveaways">Giveaways</a>
         </li>
         <li>
             <a href="/contact">Contact</a>
         </li>
-        @guest
-            <li>
-                <a href="/login">Login</a>
-            </li>
-        @else
+
+        @if(!Auth::guest())
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                     {{ Auth::user()->profile->name }} <span class="caret"></span>
