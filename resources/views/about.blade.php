@@ -52,9 +52,11 @@
 
     </media-section>
 
+    <dg-our-team></dg-our-team>
+
     <dg-call-anytime></dg-call-anytime>
 
-    <div class="container">
+    {{--<div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header color-red">Our Team</h2>
@@ -218,9 +220,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <dg-why-choose-us></dg-why-choose-us>
+    </div>--}}
 
     <div class="portfolio-home">
         <div class="container">
@@ -261,5 +261,7 @@
             </div>
         </div>
     </div>
+
+    <dg-why-choose-us></dg-why-choose-us>
 
 @stop

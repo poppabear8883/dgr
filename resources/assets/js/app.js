@@ -31,15 +31,11 @@ Vue.component('dg-header', require('Views/partials/Header.vue'));
 Vue.component('dg-footer', require('Views/partials/Footer.vue'));
 
 // Page Partials
-import DgFeaturedServices from 'Views/partials/welcome/FeaturedServices';
-import DgCallAnytime from 'Views/partials/CallAnytime';
-import DgWhyChooseUs from 'Views/partials/WhyChooseUs';
+Vue.component('dg-our-team', require('Views/partials/about/OurTeam.vue'));
+Vue.component('dg-featured-services', require('Views/partials/welcome/FeaturedServices.vue'));
+Vue.component('dg-call-anytime', require('Views/partials/CallAnytime.vue'));
+Vue.component('dg-why-choose-us', require('Views/partials/WhyChooseUs.vue'));
 
 const app = new Vue({
     el: '#app',
-    components: {
-        DgWhyChooseUs,
-        DgFeaturedServices,
-        DgCallAnytime
-    }
 });
