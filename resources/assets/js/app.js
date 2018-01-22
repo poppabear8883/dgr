@@ -18,6 +18,7 @@ window.Vue = require('vue');
 //Components
 Vue.component('media-section', require('Components/MediaSection.vue'));
 Vue.component('divider-section', require('Components/DividerSection.vue'));
+Vue.component('tabs', require('Components/Tabs.vue'));
 
 // Admin Views (Pages)
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));

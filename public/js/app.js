@@ -18722,6 +18722,7 @@ window.Vue = __webpack_require__(166);
 //Components
 Vue.component('media-section', __webpack_require__(169));
 Vue.component('divider-section', __webpack_require__(175));
+Vue.component('tabs', __webpack_require__(319));
 
 // Admin Views (Pages)
 Vue.component('dashboard', __webpack_require__(180));
@@ -80211,6 +80212,214 @@ exports.push([module.i, "\n.our-team img[data-v-41f8c7e3] {\n  display: inline-b
 
 // exports
 
+
+/***/ }),
+/* 319 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(320)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(322)
+/* template */
+var __vue_template__ = __webpack_require__(323)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/Tabs.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5883b222", Component.options)
+  } else {
+    hotAPI.reload("data-v-5883b222", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(321);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("12d10136", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5883b222\",\"scoped\":false,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Tabs.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5883b222\",\"scoped\":false,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Tabs.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 322 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        tabs: {
+            type: Array,
+            default: function _default() {
+                return ['Tab1', 'Tab2'];
+            }
+        }
+    },
+    data: function data() {
+        return {
+            active: 0
+        };
+    }
+});
+
+/***/ }),
+/* 323 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "tabs" } },
+    [
+      _c(
+        "ul",
+        { staticClass: "nav nav-tabs" },
+        _vm._l(_vm.tabs, function(tab, index) {
+          return _c("li", { class: _vm.active === index ? "active" : "" }, [
+            _c(
+              "a",
+              {
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.active = index
+                  }
+                }
+              },
+              [_vm._v(_vm._s(tab))]
+            )
+          ])
+        })
+      ),
+      _vm._v(" "),
+      _vm._l(_vm.tabs, function(tab, index) {
+        return index === _vm.active
+          ? _c(
+              "div",
+              [
+                _vm._t(tab, [
+                  _c("h1", [_vm._v("Default content for " + _vm._s(tab))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Hint:")]),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "well",
+                    domProps: {
+                      textContent: _vm._s(
+                        '<div :slot="' +
+                          tab +
+                          '">Custom content for ' +
+                          tab +
+                          " goes here !!</div>"
+                      )
+                    }
+                  })
+                ])
+              ],
+              2
+            )
+          : _vm._e()
+      })
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5883b222", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
