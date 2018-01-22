@@ -177,10 +177,12 @@
         font-size: 18px;
         padding: 10px 20px;
         display: block;
-        color: $white;
-        border: 2px $white solid;
+        color: #FFFFFF;
+        /* border: 2px #FFFFFF solid; */
         font-weight: 500;
         background-color: $red;
+        margin: 3px;
+        transition: .15s ease;
     }
 
     .featured-services .panel-body .panel-actions a:hover {

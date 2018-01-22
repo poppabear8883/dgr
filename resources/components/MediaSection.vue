@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
                 <div v-if="title" class="col-lg-12">
-                    <h2 class="page-header color-red">{{ title }}</h2>
+                    <h2 class="page-header color-red">{{ title }} <small v-if="subtitle">({{subtitle}})</small></h2>
                 </div>
                 <div class="col-md-6">
                     <slot></slot>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" :src="img" :alt="imgAlt">
+                    <img :width="imgWidth ? imgWidth : null" class="img-responsive" :src="img" :alt="imgAlt">
                 </div>
             </div>
         </div>
@@ -21,8 +21,10 @@
         name: "media-section",
         props: {
             title: {type: String},
+            subtitle: {type: String},
             img: {type: String, required: true},
-            imgAlt: {type: String, required: true}
+            imgAlt: {type: String, required: true},
+            imgWidth: {type: String}
         }
     }
 </script>

@@ -52,9 +52,9 @@
 
     </media-section>
 
-    <dg-our-team></dg-our-team>
-
     <dg-call-anytime></dg-call-anytime>
+
+    <dg-our-team></dg-our-team>
 
     {{--<div class="container">
         <div class="row">
@@ -222,6 +222,8 @@
         </div>
     </div>--}}
 
+    <dg-why-choose-us></dg-why-choose-us>
+
     <div class="portfolio-home">
         <div class="container">
             <div class="row">
@@ -261,7 +263,5 @@
             </div>
         </div>
     </div>
-
-    <dg-why-choose-us></dg-why-choose-us>
 
 @stop
