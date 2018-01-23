@@ -80896,47 +80896,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -81385,74 +81344,24 @@ var render = function() {
               "media-section",
               {
                 attrs: {
-                  title: "Roofing",
-                  subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
-                  img: "images/certainteed-home.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Residential Roofing From CertainTeed",
-                  subtitle: "CertainTeed has you covered",
-                  img: "images/certainteed.png",
-                  "img-alt": "RESIDENTIAL ROOFING FROM CERTAINTEED"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "CertainTeed Certified Installer",
-                  subtitle: "Professionals in every aspect",
-                  img: "images/certainteed-certified-dealer.png",
+                  title: "Door Replacement",
+                  subtitle:
+                    "Professional door installation at an affordable price!",
+                  img: "images/door.png",
                   "img-width": "350px",
-                  "img-alt": "CertainTeed Certified Installer"
+                  "img-alt": "dayton cincinnati ohio doors"
                 }
               },
               [
                 _c("p", [
                   _vm._v(
-                    "\n                At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                installers have been with us since we opened our doors.\n            "
+                    "\n                Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing\n                and Restoration, we offer the quality replacement doors and the outstanding service you’re\n                looking for. We are committed to offering the great service our customers deserve, while\n                providing well crafted, meticulously installed doors in a variety of styles, and welcome the\n                opportunity to walk you through the products we have to offer.\n            "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                available and the best warranty. The Landmark Series shingle endure time and weather\n                beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                thickness and dimension it offers.\n            "
+                    "\n                When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n                OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n                Call us today to learn more and schedule a free consultation.\n            "
                   )
                 ])
               ]

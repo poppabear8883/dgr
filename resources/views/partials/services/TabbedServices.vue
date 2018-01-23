@@ -296,64 +296,23 @@
         <!-- DOORS -->
         <div v-if="active === 4" class="row">
             <media-section
-                    title="Roofing"
-                    subtitle="#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY"
-                    img="images/certainteed-home.jpg"
-                    img-width="550px"
-                    img-alt="dayton cincinnati ohio roofing contractors">
-
-                <p>
-                    Whether you are in need of a new roof on your exiting home or are re-roofing an addition to
-                    your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati
-                    area. Our dedicated, professional roofers are on hand to provide you with quality residential or
-                    commercial re-roofing services.
-                </p>
-                <p>
-                    Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and
-                    Restoration and let us show you why we are worthy of your business. Call today to learn more
-                    or to schedule an estimate today. 937-439-0554
-                </p>
-            </media-section>
-
-            <media-section
-                    title="Residential Roofing From CertainTeed"
-                    subtitle="CertainTeed has you covered"
-                    img="images/certainteed.png"
-                    img-alt="RESIDENTIAL ROOFING FROM CERTAINTEED">
-
-                <p>
-                    No matter your business or building size, D&G Roofing and Restoration offers quality
-                    commercial roofing solutions in the Dayton and Cincinnati area.
-                </p>
-                <p>
-                    D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t
-                    believe in cutting corners or skimping on quality of materials, instead we believe in doing things
-                    right the first time so that you walk away more than satisfied. We want to earn your trust as a
-                    client, and we will go the extra mile to complete your project on time and within budget. We
-                    also specialize in working with your property managers to make sure your employees or
-                    tenants are safe throughout the repairs.
-                </p>
-            </media-section>
-
-            <media-section
-                    title="CertainTeed Certified Installer"
-                    subtitle="Professionals in every aspect"
-                    img="images/certainteed-certified-dealer.png"
+                    title="Door Replacement"
+                    subtitle="Professional door installation at an affordable price!"
+                    img="images/door.png"
                     img-width="350px"
-                    img-alt="CertainTeed Certified Installer">
+                    img-alt="dayton cincinnati ohio doors">
 
                 <p>
-                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our
-                    installers have been with us since we opened our doors.
+                    Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing
+                    and Restoration, we offer the quality replacement doors and the outstanding service you’re
+                    looking for. We are committed to offering the great service our customers deserve, while
+                    providing well crafted, meticulously installed doors in a variety of styles, and welcome the
+                    opportunity to walk you through the products we have to offer.
                 </p>
                 <p>
-                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their
-                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material
-                    available and the best warranty. The Landmark Series shingle endure time and weather
-                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from
-                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of
-                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,
-                    thickness and dimension it offers.
+                    When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati
+                    OH home or business, the professionals at D&G Roofing and Restoration have you covered.
+                    Call us today to learn more and schedule a free consultation.
                 </p>
             </media-section>
         </div>
