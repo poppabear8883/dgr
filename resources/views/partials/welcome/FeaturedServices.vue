@@ -184,7 +184,6 @@
                     padding: 10px 20px;
                     display: block;
                     color: #FFFFFF;
-                    /* border: 2px #FFFFFF solid; */
                     font-weight: 500;
                     background-color: $red;
                     margin: 3px;
