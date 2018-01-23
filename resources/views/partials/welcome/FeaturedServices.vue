@@ -13,7 +13,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <i class="fa fa-bars fa-4x color-red"></i>
+                                <img src="images/icon_siding_red.png" alt="siding ico" class="img-responsive">
                                 <h3>Siding</h3>
                                 <hr>
                             </div>
@@ -41,7 +41,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <i class="fa fa-home fa-4x"></i>
+                                <img src="images/icon_roofing_circle.png" alt="roofing ico" class="img-responsive">
                                 <h3>Roofing</h3>
                                 <hr>
                             </div>
@@ -70,7 +70,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <i class="fa fa-clone fa-4x color-red"></i>
+                                <img src="images/icon_windows_red.png" alt="windows ico" class="img-responsive">
                                 <h3>Windows</h3>
                                 <hr>
                             </div>
@@ -119,10 +119,6 @@
         background-color: $white;
         padding-bottom: 50px;
 
-        .panel-default {
-            margin-top: 100px;
-        }
-
         .siding {
             margin: 0;
             padding: 0;
@@ -144,6 +140,10 @@
                 h3 {
                     color: $red;
                 }
+
+                img {
+                    width: 75px;
+                }
             }
         }
 
@@ -151,56 +151,61 @@
             margin: 0;
             padding: 0;
         }
-    }
 
-    .featured-services hr {
-        border-top: 1px darken($white, 10%) solid;
-    }
+        .panel {
+            min-height: 530px;
+        }
 
-    .featured-services .panel {
-        min-height: 530px;
-    }
+        .panel-default {
+            margin-top: 100px;
+            display: flex;
+            background-color: #f7f7f7;
+            border: 1px #f2f2f2 solid;
+            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);
 
-    .featured-services .panel-body {
-        display: flex;
-        flex-direction: column;
-    }
+            img {
+                display: inline-block;
+                width: 55px;
+            }
+        }
 
-    .featured-services .panel-body .panel-actions {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        margin-top: auto;
-    }
+        .panel-body {
+            display: flex;
+            flex-direction: column;
 
-    .featured-services .panel-body .panel-actions a {
-        font-size: 18px;
-        padding: 10px 20px;
-        display: block;
-        color: #FFFFFF;
-        /* border: 2px #FFFFFF solid; */
-        font-weight: 500;
-        background-color: $red;
-        margin: 3px;
-        transition: .15s ease;
-    }
+            .panel-actions {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                margin-top: auto;
 
-    .featured-services .panel-body .panel-actions a:hover {
-        background-color: $dark;
-        color: $white;
-        cursor: pointer;
-        text-decoration: none;
-    }
+                a {
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    display: block;
+                    color: #FFFFFF;
+                    /* border: 2px #FFFFFF solid; */
+                    font-weight: 500;
+                    background-color: $red;
+                    margin: 3px;
+                    transition: .15s ease;
 
-    .featured-services .panel-default {
-        display: flex;
-        background-color: #f7f7f7;
-        border: 1px #f2f2f2 solid;
-        box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05)
-    }
+                    &:hover {
+                        background-color: $dark;
+                        color: $white;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
 
-    .featured-services h3 {
-        text-transform: uppercase;
-    }
+        hr {
+            border-top: 1px darken($white, 10%) solid;
+        }
 
+        h3 {
+            text-transform: uppercase;
+        }
+    }
 </style>

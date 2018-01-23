@@ -79823,7 +79823,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  background-color: #FFFFFF;\n  padding-bottom: 50px;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    margin-top: 100px;\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      height: 569px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services hr[data-v-621b8fcd] {\n  border-top: 1px #e6e6e6 solid;\n}\n.featured-services .panel[data-v-621b8fcd] {\n  min-height: 530px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 5px;\n  margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n  font-size: 18px;\n  padding: 10px 20px;\n  display: block;\n  color: #FFFFFF;\n  /* border: 2px #FFFFFF solid; */\n  font-weight: 500;\n  background-color: #EE001B;\n  margin: 3px;\n  -webkit-transition: .15s ease;\n  transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n  background-color: #353636;\n  color: #FFFFFF;\n  cursor: pointer;\n  text-decoration: none;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  background-color: #f7f7f7;\n  border: 1px #f2f2f2 solid;\n  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services h3[data-v-621b8fcd] {\n  text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\n@media (max-width: 767px) {\n.featured-services[data-v-621b8fcd] {\n    background-color: transparent;\n    padding-top: 100px;\n}\n}\n.featured-services[data-v-621b8fcd] {\n  background-color: #FFFFFF;\n  padding-bottom: 50px;\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      height: 569px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .roofing .roofing-panel img[data-v-621b8fcd] {\n        width: 75px;\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .panel[data-v-621b8fcd] {\n    min-height: 530px;\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    margin-top: 100px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    background-color: #f7f7f7;\n    border: 1px #f2f2f2 solid;\n    -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n}\n.featured-services .panel-default img[data-v-621b8fcd] {\n      display: inline-block;\n      width: 55px;\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      padding: 5px;\n      margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n        font-size: 18px;\n        padding: 10px 20px;\n        display: block;\n        color: #FFFFFF;\n        /* border: 2px #FFFFFF solid; */\n        font-weight: 500;\n        background-color: #EE001B;\n        margin: 3px;\n        -webkit-transition: .15s ease;\n        transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n.featured-services hr[data-v-621b8fcd] {\n    border-top: 1px #e6e6e6 solid;\n}\n.featured-services h3[data-v-621b8fcd] {\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -79962,7 +79962,13 @@ var staticRenderFns = [
             _c("div", { staticClass: "panel panel-default siding-panel" }, [
               _c("div", { staticClass: "panel-body" }, [
                 _c("div", { staticClass: "text-center" }, [
-                  _c("i", { staticClass: "fa fa-bars fa-4x color-red" }),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "images/icon_siding_red.png",
+                      alt: "siding ico"
+                    }
+                  }),
                   _vm._v(" "),
                   _c("h3", [_vm._v("Siding")]),
                   _vm._v(" "),
@@ -79988,7 +79994,13 @@ var staticRenderFns = [
             _c("div", { staticClass: "panel panel-default roofing-panel" }, [
               _c("div", { staticClass: "panel-body" }, [
                 _c("div", { staticClass: "text-center" }, [
-                  _c("i", { staticClass: "fa fa-home fa-4x" }),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "images/icon_roofing_circle.png",
+                      alt: "roofing ico"
+                    }
+                  }),
                   _vm._v(" "),
                   _c("h3", [_vm._v("Roofing")]),
                   _vm._v(" "),
@@ -80014,7 +80026,13 @@ var staticRenderFns = [
             _c("div", { staticClass: "panel panel-default windows-panel" }, [
               _c("div", { staticClass: "panel-body" }, [
                 _c("div", { staticClass: "text-center" }, [
-                  _c("i", { staticClass: "fa fa-clone fa-4x color-red" }),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "images/icon_windows_red.png",
+                      alt: "windows ico"
+                    }
+                  }),
                   _vm._v(" "),
                   _c("h3", [_vm._v("Windows")]),
                   _vm._v(" "),
