@@ -156,6 +156,15 @@
                     you through your options and help you select the windows that will best serve your property’s
                     needs.
                 </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="images/atrium-logo.png" alt="Atrium Windows">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Windows">
+                    </div>
+                </div>
             </media-section>
 
             <media-section

@@ -80753,6 +80753,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -81037,6 +81046,28 @@ var render = function() {
                   _vm._v(
                     "\n                Our windows come in a wide variety of sizes and styles, and we would be happy to walk\n                you through your options and help you select the windows that will best serve your property’s\n                needs.\n            "
                   )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/atrium-logo.png",
+                        alt: "Atrium Windows"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/marvin-doors-windows.png",
+                        alt: "Marvin Windows"
+                      }
+                    })
+                  ])
                 ])
               ]
             ),
