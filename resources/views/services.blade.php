@@ -29,83 +29,25 @@
 @stop
 
 @section('content')
-    <div class="friendly-service">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header color-red">Introduction</h2>
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is here to
-                        provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to act as
-                        your first and final resource when it comes to all your needs. When you're ready to
-                        take the next step, we're excited for the opportunity to help you benefit from our thorough
-                        attention to detail.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-responsive" src="images/Miamisburg-45342-Roofing.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <media-section
+            title="Services Introduction"
+            img="images/Miamisburg-45342-Roofing.jpg"
+            img-alt="Dayton Oh Roofing Contractor Image">
+        <p>
+            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is here to
+            provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to act as
+            your first and final resource when it comes to all your needs. When you're ready to
+            take the next step, we're excited for the opportunity to help you benefit from our thorough
+            attention to detail.
+        </p>
+
+    </media-section>
+
+    {{-- tabbed services --}}
+    <dg-tabbed-services></dg-tabbed-services>
 
     <dg-call-anytime></dg-call-anytime>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header color-red">Our Services</h2>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        External Resources
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-unstyled resources">
-                            <li>
-                                <a href="#" target="_blank">
-                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    Certainteed Landmark: CertainTeed’s tried-and-true architectural laminate roofing shingle.
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <tabs :tabs="['Roofing', 'Siding', 'Windows']">
-                    <div slot="Roofing">
-                        @include('partials.services.roofing')
-                    </div>
-                    <div slot="Siding">
-                        @include('partials.services.siding')
-                    </div>
-                    <div slot="Windows">
-                        @include('partials.services.windows')
-                    </div>
-                </tabs>
-            </div>
-        </div>
-    </div>
-
-    <dg-why-choose-us></dg-why-choose-us>
 
     <div class="portfolio-home">
         <div class="container">

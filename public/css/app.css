@@ -1405,7 +1405,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #FFFFFF;
 }
 
@@ -3840,7 +3840,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: white;
+  color: whitesmoke;
 }
 
 @media (min-width: 768px) {
@@ -3994,7 +3994,7 @@ select[multiple].input-lg,
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #cbcbcc;
+  color: #b4b6b6;
   text-decoration: none;
 }
 
@@ -4022,20 +4022,20 @@ fieldset[disabled] a.btn {
 }
 
 .btn-default {
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #fff;
   border-color: #ccc;
 }
 
 .btn-default:focus,
 .btn-default.focus {
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #e6e5e5;
   border-color: #8c8c8c;
 }
 
 .btn-default:hover {
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #e6e5e5;
   border-color: #adadad;
 }
@@ -4043,7 +4043,7 @@ fieldset[disabled] a.btn {
 .btn-default:active,
 .btn-default.active,
 .open > .btn-default.dropdown-toggle {
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #e6e5e5;
   border-color: #adadad;
 }
@@ -4057,7 +4057,7 @@ fieldset[disabled] a.btn {
 .open > .btn-default.dropdown-toggle:hover,
 .open > .btn-default.dropdown-toggle:focus,
 .open > .btn-default.dropdown-toggle.focus {
-  color: #cbcbcc;
+  color: #b4b6b6;
   background-color: #d4d4d4;
   border-color: #8c8c8c;
 }
@@ -4083,7 +4083,7 @@ fieldset[disabled] .btn-default.focus {
 
 .btn-default .badge {
   color: #fff;
-  background-color: #cbcbcc;
+  background-color: #b4b6b6;
 }
 
 .btn-primary {
@@ -6332,7 +6332,7 @@ a.badge:focus {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #cbcbcc;
+  color: #b4b6b6;
 }
 
 a.thumbnail:hover,
@@ -14766,7 +14766,7 @@ button.close {
 }
 
 .color-dark {
-  color: #4b4b4c;
+  color: #353636;
 }
 
 .color-light {
@@ -14832,7 +14832,7 @@ button.close {
 }
 
 .nav > li > a {
-  color: #4b4b4c;
+  color: #353636;
 }
 
 .nav-pills > li.active > a,
@@ -14943,7 +14943,7 @@ body {
 }
 
 .color-dark {
-  color: #4b4b4c;
+  color: #353636;
 }
 
 .color-light {

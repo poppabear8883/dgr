@@ -5,10 +5,10 @@
                 <div v-if="title" class="col-lg-12">
                     <h2 class="page-header color-red">{{ title }} <small v-if="subtitle">({{subtitle}})</small></h2>
                 </div>
-                <div class="col-md-6">
+                <div :class="[img ? 'col-md-6' : 'col-md-12']">
                     <slot></slot>
                 </div>
-                <div class="col-md-6">
+                <div v-if="img" class="col-md-6">
                     <img :width="imgWidth ? imgWidth : null" class="img-responsive" :src="img" :alt="imgAlt">
                 </div>
             </div>
@@ -22,8 +22,8 @@
         props: {
             title: {type: String},
             subtitle: {type: String},
-            img: {type: String, required: true},
-            imgAlt: {type: String, required: true},
+            img: {type: String},
+            imgAlt: {type: String},
             imgWidth: {type: String}
         }
     }
