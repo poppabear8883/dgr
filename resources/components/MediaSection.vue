@@ -9,7 +9,11 @@
                     <slot></slot>
                 </div>
                 <div v-if="img" class="col-md-6">
-                    <img :width="imgWidth ? imgWidth : null" class="img-responsive" :src="img" :alt="imgAlt">
+                    <img :style="styles"
+                         :width="imgWidth ? imgWidth : null"
+                         class="img-responsive"
+                         :src="img"
+                         :alt="imgAlt">
                 </div>
             </div>
         </div>
@@ -24,7 +28,13 @@
             subtitle: {type: String},
             img: {type: String},
             imgAlt: {type: String},
-            imgWidth: {type: String}
+            imgWidth: {type: String},
+            noShadow: {type: Boolean, default: false}
+        },
+        computed: {
+            styles() {
+                return this.noShadow ? null : 'box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);';
+            }
         }
     }
 </script>
@@ -35,9 +45,5 @@
     .media-section {
         width: 100%;
         padding: 25px;
-
-        img {
-            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
-        }
     }
 </style>
