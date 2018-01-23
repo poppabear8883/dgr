@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="col-md-3 text-center">
-                    <img :class="['img-responsive', 'img-circle', active === 0 ? 'active' : null]"
+                    <img :class="['tab', 'img-responsive', 'img-circle', active === 0 ? 'active' : null]"
                          @click="active = 0"
                          src="images/duane.jpg"
                          alt="">
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="col-md-3 text-center">
-                    <img :class="['img-responsive', 'img-circle', active === 1 ? 'active' : null]"
+                    <img :class="['tab', 'img-responsive', 'img-circle', active === 1 ? 'active' : null]"
                          @click="active = 1"
                          src="images/gerri.jpg"
                          alt="">
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="col-md-3 text-center">
-                    <img :class="['img-responsive', 'img-circle', active === 2 ? 'active' : null]"
+                    <img :class="['tab', 'img-responsive', 'img-circle', active === 2 ? 'active' : null]"
                          @click="active = 2"
                          src="images/mike.jpg"
                          alt="">
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="col-md-3 text-center">
-                    <img :class="['img-responsive', 'img-circle', active === 3 ? 'active' : null]"
+                    <img :class="['tab', 'img-responsive', 'img-circle', active === 3 ? 'active' : null]"
                          @click="active = 3"
                          src="images/amanda.jpg"
                          alt="">
@@ -200,17 +200,20 @@
 
     .our-team {
         img {
-            display: inline-block !important;
-            margin: 10px;
-            width: 200px;
-            filter: grayscale(100%);
-            transition: .30s ease;
 
-            &:hover, &.active {
+            &.tab {
+                display: inline-block !important;
+                margin: 10px;
+                width: 200px;
+                filter: grayscale(100%);
                 transition: .30s ease;
-                transform: scale(1.05);
-                cursor: pointer;
-                filter: grayscale(0%);
+
+                &:hover, &.active {
+                    transition: .30s ease;
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    filter: grayscale(0%);
+                }
             }
         }
     }

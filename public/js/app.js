@@ -79187,7 +79187,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.our-team img[data-v-41f8c7e3] {\n  display: inline-block !important;\n  margin: 10px;\n  width: 200px;\n  -webkit-filter: grayscale(100%);\n          filter: grayscale(100%);\n  -webkit-transition: .30s ease;\n  transition: .30s ease;\n}\n.our-team img[data-v-41f8c7e3]:hover, .our-team img.active[data-v-41f8c7e3] {\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n    cursor: pointer;\n    -webkit-filter: grayscale(0%);\n            filter: grayscale(0%);\n}\n", ""]);
+exports.push([module.i, "\n.our-team img.tab[data-v-41f8c7e3] {\n  display: inline-block !important;\n  margin: 10px;\n  width: 200px;\n  -webkit-filter: grayscale(100%);\n          filter: grayscale(100%);\n  -webkit-transition: .30s ease;\n  transition: .30s ease;\n}\n.our-team img.tab[data-v-41f8c7e3]:hover, .our-team img.tab.active[data-v-41f8c7e3] {\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n    cursor: pointer;\n    -webkit-filter: grayscale(0%);\n            filter: grayscale(0%);\n}\n", ""]);
 
 // exports
 
@@ -79409,6 +79409,7 @@ var render = function() {
         _c("div", { staticClass: "col-md-3 text-center" }, [
           _c("img", {
             class: [
+              "tab",
               "img-responsive",
               "img-circle",
               _vm.active === 0 ? "active" : null
@@ -79436,6 +79437,7 @@ var render = function() {
         _c("div", { staticClass: "col-md-3 text-center" }, [
           _c("img", {
             class: [
+              "tab",
               "img-responsive",
               "img-circle",
               _vm.active === 1 ? "active" : null
@@ -79463,6 +79465,7 @@ var render = function() {
         _c("div", { staticClass: "col-md-3 text-center" }, [
           _c("img", {
             class: [
+              "tab",
               "img-responsive",
               "img-circle",
               _vm.active === 2 ? "active" : null
@@ -79490,6 +79493,7 @@ var render = function() {
         _c("div", { staticClass: "col-md-3 text-center" }, [
           _c("img", {
             class: [
+              "tab",
               "img-responsive",
               "img-circle",
               _vm.active === 3 ? "active" : null
@@ -80499,7 +80503,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.services[data-v-f2d0c612] {\n  color: #353636;\n  padding: 15px;\n  margin-top: 25px;\n}\n.services img[data-v-f2d0c612] {\n    display: inline-block;\n    width: 100px;\n    -webkit-filter: grayscale(100%);\n            filter: grayscale(100%);\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n}\n.services img[data-v-f2d0c612]:hover, .services img.active[data-v-f2d0c612] {\n      -webkit-transition: .30s ease;\n      transition: .30s ease;\n      -webkit-filter: grayscale(0%);\n              filter: grayscale(0%);\n      cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.services[data-v-f2d0c612] {\n  color: #353636;\n  padding: 15px;\n  margin-top: 25px;\n}\n.services img.tab[data-v-f2d0c612] {\n    display: inline-block;\n    width: 100px;\n    -webkit-filter: grayscale(100%);\n            filter: grayscale(100%);\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n}\n.services img.tab[data-v-f2d0c612]:hover, .services img.tab.active[data-v-f2d0c612] {\n      -webkit-transition: .30s ease;\n      transition: .30s ease;\n      -webkit-filter: grayscale(0%);\n              filter: grayscale(0%);\n      cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -80510,153 +80514,6 @@ exports.push([module.i, "\n.services[data-v-f2d0c612] {\n  color: #353636;\n  pa
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -80919,7 +80776,11 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 0 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 0 ? "active" : null
+            ],
             attrs: { src: "images/icon_roofing_circle.png" },
             on: {
               click: function($event) {
@@ -80934,7 +80795,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 1 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 1 ? "active" : null
+            ],
             attrs: { src: "images/icon_siding_circle.png" },
             on: {
               click: function($event) {
@@ -80949,7 +80814,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 2 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 2 ? "active" : null
+            ],
             attrs: { src: "images/icon_windows_circle.png" },
             on: {
               click: function($event) {
@@ -80964,7 +80833,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 3 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 3 ? "active" : null
+            ],
             attrs: { src: "images/icon_gutters_circle.png" },
             on: {
               click: function($event) {
@@ -80979,7 +80852,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 4 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 4 ? "active" : null
+            ],
             attrs: { src: "images/icon_doors_circle.png" },
             on: {
               click: function($event) {
@@ -80994,7 +80871,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
-            class: ["img-responsive", _vm.active === 5 ? "active" : null],
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 5 ? "active" : null
+            ],
             attrs: { src: "images/icon_commercial_circle.png" },
             on: {
               click: function($event) {
@@ -81036,22 +80917,8 @@ var render = function() {
                   _vm._v(
                     "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
                   )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Residential Roofing From CertainTeed",
-                  img: "images/certainteed.png",
-                  "no-shadow": true,
-                  "img-width": "350px",
-                  "img-alt": "RESIDENTIAL ROOFING FROM CERTAINTEED"
-                }
-              },
-              [
+                ]),
+                _vm._v(" "),
                 _c("p", [
                   _vm._v(
                     "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
@@ -81062,6 +80929,28 @@ var render = function() {
                   _vm._v(
                     "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
                   )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/certainteed.png",
+                        alt: "CertainTeed"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/mueller-roofing.png",
+                        alt: "Mueller Roofing Dayton Ohio"
+                      }
+                    })
+                  ])
                 ])
               ]
             ),
@@ -81103,77 +80992,10 @@ var render = function() {
           [
             _c(
               "media-section",
-              {
-                attrs: {
-                  title: "Roofing",
-                  subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
-                  img: "images/certainteed-home.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
-                }
-              },
+              { attrs: { title: "Siding", subtitle: "Siding subtext" } },
               [
                 _c("p", [
-                  _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Residential Roofing From CertainTeed",
-                  subtitle: "CertainTeed has you covered",
-                  img: "images/certainteed.png",
-                  "img-alt": "RESIDENTIAL ROOFING FROM CERTAINTEED"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "CertainTeed Certified Installer",
-                  subtitle: "Professionals in every aspect",
-                  img: "images/certainteed-certified-dealer.png",
-                  "img-width": "350px",
-                  "img-alt": "CertainTeed Certified Installer"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                installers have been with us since we opened our doors.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                available and the best warranty. The Landmark Series shingle endure time and weather\n                beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                thickness and dimension it offers.\n            "
-                  )
+                  _vm._v("\n                Siding content\n            ")
                 ])
               ]
             )
@@ -81256,77 +81078,10 @@ var render = function() {
           [
             _c(
               "media-section",
-              {
-                attrs: {
-                  title: "Roofing",
-                  subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
-                  img: "images/certainteed-home.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
-                }
-              },
+              { attrs: { title: "Gutters", subtitle: "Gutters subtext" } },
               [
                 _c("p", [
-                  _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Residential Roofing From CertainTeed",
-                  subtitle: "CertainTeed has you covered",
-                  img: "images/certainteed.png",
-                  "img-alt": "RESIDENTIAL ROOFING FROM CERTAINTEED"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "CertainTeed Certified Installer",
-                  subtitle: "Professionals in every aspect",
-                  img: "images/certainteed-certified-dealer.png",
-                  "img-width": "350px",
-                  "img-alt": "CertainTeed Certified Installer"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                installers have been with us since we opened our doors.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                available and the best warranty. The Landmark Series shingle endure time and weather\n                beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                thickness and dimension it offers.\n            "
-                  )
+                  _vm._v("\n                Gutters content\n            ")
                 ])
               ]
             )
@@ -81363,6 +81118,28 @@ var render = function() {
                   _vm._v(
                     "\n                When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n                OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n                Call us today to learn more and schedule a free consultation.\n            "
                   )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/provia-doors.jpg",
+                        alt: "ProVia Doors"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "images/marvin-doors-windows.png",
+                        alt: "Marvin Doors & Windows"
+                      }
+                    })
+                  ])
                 ])
               ]
             )
@@ -81380,74 +81157,14 @@ var render = function() {
               "media-section",
               {
                 attrs: {
-                  title: "Roofing",
-                  subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
-                  img: "images/certainteed-home.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
+                  title: "Commercial Roofing",
+                  subtitle: "Commercial Roofing subtext"
                 }
               },
               [
                 _c("p", [
                   _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Residential Roofing From CertainTeed",
-                  subtitle: "CertainTeed has you covered",
-                  img: "images/certainteed.png",
-                  "img-alt": "RESIDENTIAL ROOFING FROM CERTAINTEED"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "CertainTeed Certified Installer",
-                  subtitle: "Professionals in every aspect",
-                  img: "images/certainteed-certified-dealer.png",
-                  "img-width": "350px",
-                  "img-alt": "CertainTeed Certified Installer"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                installers have been with us since we opened our doors.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                available and the best warranty. The Landmark Series shingle endure time and weather\n                beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                thickness and dimension it offers.\n            "
+                    "\n                Commercial Roofing content\n            "
                   )
                 ])
               ]
