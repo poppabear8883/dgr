@@ -81,15 +81,6 @@
                         given Duane plenty of skill with customer service, organization, management, and the necessary
                         field experience to ensure every D & G customer's needs are met.
                     </p>
-
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
                 </media-section>
             </div>
 
@@ -112,15 +103,6 @@
                         expert in training, Gerri passes on her knowledge and high integrity to all new recruits
                         that come aboard with our D & G team. Quality and customer service is Gerri’s #1 goal.
                     </p>
-
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
                 </media-section>
             </div>
 
@@ -138,15 +120,6 @@
                         of all new recruits at D & G Roofing and Restoration and has proven to be a quality leader
                         with the company. Mike’s top priority is customer satisfaction.
                     </p>
-
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
                 </media-section>
             </div>
 
@@ -163,15 +136,6 @@
                         She is currently attending school for business management. She is a great asset to D & G
                         Roofing and Restoration and customer service is Amanda’s top priority.
                     </p>
-
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
                 </media-section>
             </div>
 
