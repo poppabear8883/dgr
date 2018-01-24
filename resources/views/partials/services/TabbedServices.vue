@@ -124,7 +124,25 @@
                     subtitle="Siding subtext">
 
                 <p>
-                    Siding content
+                    Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the right
+                    siding can make all the difference in the look and feel of your property. With a wide variety of
+                    styles and options for you to choose from, we're confident our knowledgeable team can make the
+                    dreams you have for your home's appearance a reality. Our range of choices allows us to work with
+                    your goals to make sure the job is done right. We'll be here when you’re ready to take the next
+                    step.
+                </p>
+
+                <p>
+                    We use Mastic Home Exterior by Ply Gem. Mastic by Ply Gem provides you with a wide range of home
+                    exterior design options - from styles and textures to popular colors and accessories. With Mastic
+                    you can create custom curb appeal that will be the envy of the neighborhood. Mastic Siding is made
+                    in the U.S.A. and Green Certified.
+                </p>
+
+                <p>
+                    If you're in the market for a home siding service, we're here for you.
+                    At D & G Roofing & Restoration, we're committed to ensuring your satisfaction and peace of mind.
+                    Call today to set up an appointment.
                 </p>
             </media-section>
         </div>
@@ -194,7 +212,22 @@
                     subtitle="Gutters subtext">
 
                 <p>
-                    Gutters content
+                    Gutters serve the very important function of diverting rain from your roof to avoid structural damage,
+                    damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a
+                    company with the right experience and selection of products. That's where D & G Roofing & Restoration in
+                    Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior
+                    service and quality gutter solutions.
+                </p>
+
+                <h4 class="page-header color-red">BENEFIT FROM OUR EXPERTISE</h4>
+                <p>
+                    At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.
+                    Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our
+                    way to keep our pricing reasonable and affordable.
+
+                    With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a
+                    whole while adding to its overall value. So let's get the process started: Call today to schedule your
+                    estimate and learn more about the products we offer.
                 </p>
             </media-section>
         </div>

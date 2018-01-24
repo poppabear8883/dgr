@@ -80667,6 +80667,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -80909,7 +80942,21 @@ var render = function() {
               { attrs: { title: "Siding", subtitle: "Siding subtext" } },
               [
                 _c("p", [
-                  _vm._v("\n                Siding content\n            ")
+                  _vm._v(
+                    "\n                Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the right\n                siding can make all the difference in the look and feel of your property. With a wide variety of\n                styles and options for you to choose from, we're confident our knowledgeable team can make the\n                dreams you have for your home's appearance a reality. Our range of choices allows us to work with\n                your goals to make sure the job is done right. We'll be here when you’re ready to take the next\n                step.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                We use Mastic Home Exterior by Ply Gem. Mastic by Ply Gem provides you with a wide range of home\n                exterior design options - from styles and textures to popular colors and accessories. With Mastic\n                you can create custom curb appeal that will be the envy of the neighborhood. Mastic Siding is made\n                in the U.S.A. and Green Certified.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                If you're in the market for a home siding service, we're here for you.\n                At D & G Roofing & Restoration, we're committed to ensuring your satisfaction and peace of mind.\n                Call today to set up an appointment.\n            "
+                  )
                 ])
               ]
             )
@@ -81017,7 +81064,19 @@ var render = function() {
               { attrs: { title: "Gutters", subtitle: "Gutters subtext" } },
               [
                 _c("p", [
-                  _vm._v("\n                Gutters content\n            ")
+                  _vm._v(
+                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a\n                company with the right experience and selection of products. That's where D & G Roofing & Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("BENEFIT FROM OUR EXPERTISE")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule your\n                estimate and learn more about the products we offer.\n            "
+                  )
                 ])
               ]
             )
