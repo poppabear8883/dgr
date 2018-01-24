@@ -236,7 +236,10 @@
         <div v-if="active === 5" class="row">
             <media-section
                     title="Commercial Roofing"
-                    subtitle="Commercial Roofing subtext">
+                    subtitle="Commercial Roofing subtext"
+                    img="images/commercial-roofing-2.jpg"
+                    img-width="550px"
+                    img-alt="dayton cincinnati ohio commercial roofing contractors">
 
                 <p>
                     Commercial Roofing content
