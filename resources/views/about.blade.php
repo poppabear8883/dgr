@@ -13,18 +13,6 @@
                 About Us
             </h1>
         </div>
-        <div slot="bottom">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <div class="pull-left">
-                    <p>Want an exciting career with D & G Roofing & Restoration?</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 hidden-xs">
-                <div class="pull-right">
-                    <a href="#">Join Our Team</a>
-                </div>
-            </div>
-        </div>
     </dg-header>
 @stop
 

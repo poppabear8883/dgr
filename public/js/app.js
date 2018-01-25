@@ -81193,7 +81193,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass: "navbar-brand color-dark hidden-sm hidden-md hidden-lg",
-          attrs: { href: "#" }
+          attrs: { href: "/" }
         },
         [
           _vm._v("\n                D & G "),

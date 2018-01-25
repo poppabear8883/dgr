@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand color-dark hidden-sm hidden-md hidden-lg" href="#">
+                <a class="navbar-brand color-dark hidden-sm hidden-md hidden-lg" href="/">
                     D & G <span class="color-red">Roofing</span>
                 </a>
             </div>
