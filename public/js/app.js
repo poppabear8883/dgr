@@ -78453,7 +78453,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    margin-top: 10px;\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        margin-top: 0;\n        margin-bottom: 15px;\n        animation-delay: 1s;\n        -webkit-animation-delay: 1s;\n        -moz-animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      animation-delay: 2s;\n      -moz-animation-delay: 2s;\n      -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      animation-delay: 3s;\n      -moz-animation-delay: 3s;\n      -webkit-animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\nheader.main-header .main-header-bottom[data-v-0e24ada1] {\n    background-color: #EE001B;\n    padding: 25px 0;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p[data-v-0e24ada1] {\n      font-size: 22px;\n      padding-top: 10px;\n      line-height: 28px;\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      -webkit-animation-delay: 3s;\n              animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -78541,35 +78541,29 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("header", { staticClass: "main-header" }, [
     _c("div", { staticClass: "main-header-inner" }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "div",
-          { staticClass: "row" },
-          [
-            _vm._t("default", [
-              _vm._m(0),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3)
-            ])
-          ],
-          2
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _vm._t("default", [
+            _vm._m(0),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _vm._m(2)
+          ])
+        ],
+        2
+      )
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "main-header-bottom" }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "div",
-          { staticClass: "row" },
-          [_vm._t("bottom", [_vm._m(4), _vm._v(" "), _vm._m(5)])],
-          2
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "container" },
+        [_vm._t("bottom", [_vm._m(3)])],
+        2
+      )
     ])
   ])
 }
@@ -78578,20 +78572,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", { staticClass: "hidden-xs" }, [
-        _vm._v(
-          '\n                            "Dependability You Can Rely On!"\n                        '
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "hidden-sm hidden-md hidden-lg" }, [
-        _c("h1", [
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 text-center" }, [
+        _c("h1", { staticClass: "hidden-xs" }, [
           _vm._v(
-            "\n                                Free Inspections\n                                "
-          ),
-          _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
-            _vm._v("937-439-0554")
+            '\n                            "Dependability You Can Rely On!"\n                        '
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "hidden-sm hidden-md hidden-lg" }, [
+          _c("h1", [
+            _vm._v(
+              "\n                                Free Inspections\n                                "
+            ),
+            _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+              _vm._v("937-439-0554")
+            ])
           ])
         ])
       ])
@@ -78601,42 +78597,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
-      _c("div", { staticClass: "pull-right" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Refer A Friend")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
-      _c("div", { staticClass: "pull-left" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Join Our Team")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
-      _c("h1", [
-        _vm._v(
-          '\n                            "Honesty You Deserve!"\n                        '
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-8 col-sm-6 col-xs-12" }, [
-      _c("div", { staticClass: "pull-left" }, [
-        _c("p", [
-          _vm._v("Need a painless inspection? We are here to help you!")
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
+        _c("div", { staticClass: "pull-right" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Refer A Friend")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
+        _c("div", { staticClass: "pull-left" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Join Our Team")])
         ])
       ])
     ])
@@ -78645,9 +78615,31 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4 col-sm-6 hidden-xs" }, [
-      _c("div", { staticClass: "pull-right" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Get A Free Inspection")])
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
+        _c("h1", [
+          _vm._v(
+            '\n                            "Honesty You Deserve!"\n                        '
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-8 col-sm-6 col-xs-12" }, [
+        _c("h4", [
+          _vm._v("Need a painless inspection? We are here to help you!")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4 col-sm-6 hidden-xs" }, [
+        _c("div", { staticClass: "pull-right" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Get A Free Inspection")])
+        ])
       ])
     ])
   }
