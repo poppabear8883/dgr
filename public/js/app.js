@@ -78697,39 +78697,55 @@ var staticRenderFns = [
       _c("div", { staticClass: "logos" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: {
-                  src: "images/certainteed-certified-dealer.png",
-                  width: "130px"
-                }
-              })
-            ]),
+            _c(
+              "div",
+              { staticClass: "hidden-xs col-sm-4 col-md-3 text-center" },
+              [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: {
+                    src: "images/certainteed-certified-dealer.png",
+                    width: "130px"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: {
-                  src: "images/no-roof-left-behind2.png",
-                  width: "150px"
-                }
-              })
-            ]),
+            _c(
+              "div",
+              { staticClass: "hidden-xs hidden-sm col-md-3 text-center" },
+              [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: {
+                    src: "images/no-roof-left-behind2.png",
+                    width: "150px"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
-              })
-            ]),
+            _c(
+              "div",
+              { staticClass: "col-xs-6 col-sm-4 col-md-3 text-center" },
+              [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6 col-md-3 text-center" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/bbb2.png", width: "100px" }
-              })
-            ])
+            _c(
+              "div",
+              { staticClass: "col-xs-6 col-sm-4 col-md-3 text-center" },
+              [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "images/bbb2.png", width: "100px" }
+                })
+              ]
+            )
           ])
         ])
       ]),
