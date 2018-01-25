@@ -5,9 +5,7 @@
 
                 <div class="hidden-sm col-md-4 col-lg-4">
                     <div class="nrlb">
-                        <a href="/nrlb">
-                            <img class="img-responsive" src="images/no-roof-left-behind.png">
-                        </a>
+                        <img class="img-responsive" src="images/no-roof-left-behind.png">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 site-logo">
@@ -33,7 +31,7 @@
 
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     @import "~Sass/_variables.scss";
 
     .top-bar {

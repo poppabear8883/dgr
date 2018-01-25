@@ -7,7 +7,9 @@
                 <div class="col-md-12 text-center">
                     <h1>Featured Services</h1>
                 </div>
+            </div>
 
+            <div class="row">
                 <div class="col-md-4 siding">
                     <div class="panel panel-default siding-panel">
                         <div class="panel-body">
@@ -104,20 +106,15 @@
 <style lang="scss" scoped>
     @import "~Sass/_variables.scss";
 
-    $featured-services-bg: darken($white, 2%);
-
-    @media (max-width: 767px) {
-        .featured-services {
-            background-color: transparent;
-            padding-top: 100px;
-        }
-    }
-
-    // todo: format to SCSS
-
     .featured-services {
-        background-color: $white;
-        padding-bottom: 50px;
+        background-color: transparent;
+        padding-top: 30px;
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+            background-color: $white;
+            padding-bottom: 50px;
+        }
 
         .siding {
             margin: 0;
@@ -131,7 +128,6 @@
 
             .roofing-panel {
                 margin-top: 80px;
-                height: 569px;
                 border: none;
                 background-color: #323233;
                 color: #FFFFFF;
@@ -144,6 +140,10 @@
                 img {
                     width: 75px;
                 }
+
+                @media (min-width: 992px) {
+                    height: 569px;
+                }
             }
         }
 
@@ -153,19 +153,26 @@
         }
 
         .panel {
-            min-height: 530px;
+            @media (min-width: 992px) {
+                min-height: 530px;
+            }
         }
 
         .panel-default {
-            margin-top: 100px;
             display: flex;
+            margin: 50px;
+            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);
             background-color: #f7f7f7;
             border: 1px #f2f2f2 solid;
-            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);
 
             img {
                 display: inline-block;
                 width: 55px;
+            }
+
+            @media (min-width: 992px) {
+                margin: 0;
+                margin-top: 100px;
             }
         }
 
