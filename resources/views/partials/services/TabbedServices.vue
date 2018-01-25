@@ -1,5 +1,4 @@
 <template>
-    <!--, Siding, Windows, , Gutters, Doors-->
     <div class="services">
         <div class="container">
             <div class="row">
