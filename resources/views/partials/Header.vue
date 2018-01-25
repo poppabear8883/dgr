@@ -87,6 +87,10 @@
 
 
         h1 {
+            a {
+                font-size: 35px;
+            }
+
             @media (min-width: 768px) {
                 margin-bottom: 0;
                 color: $white;

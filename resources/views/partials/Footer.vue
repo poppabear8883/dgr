@@ -30,7 +30,6 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-3">
-
                         <h3 class="color-red">Stay Updated</h3>
                         <p>
                             You want to get updates about promotions and/or contests?
@@ -48,7 +47,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-3">
@@ -102,17 +100,14 @@
                         <div class="social">
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/DgRoofingRestoration/">
+                                    <a href="https://www.facebook.com/DgRoofingRestoration/"
+                                       target="_blank">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://linkedin.com/">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en">
+                                    <a href="https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en"
+                                       target="_blank">
                                         <i class="fa fa-google-plus"></i>
                                     </a>
                                 </li>
@@ -183,12 +178,6 @@
                     background-color: darken($grey, 15%);
                     border-color: $grey;
                 }
-            }
-
-            .col-md-3 {
-                //border-left: 1px $white dashed;
-                //border-right: 1px $white dashed;
-                min-height: 380px;
             }
 
             .social ul {

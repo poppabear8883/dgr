@@ -49419,13 +49419,15 @@ module.exports = function spread(callback) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
- * Vue.js v2.5.3
+ * Vue.js v2.5.9
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
 
 
 /*  */
+
+var emptyObject = Object.freeze({});
 
 // these helpers produces better vm code in JS engines due to their
 // explicitness and function inlining
@@ -49844,8 +49846,6 @@ var config = ({
 
 /*  */
 
-var emptyObject = Object.freeze({});
-
 /**
  * Check if a string starts with $ or _
  */
@@ -49886,17 +49886,20 @@ function parsePath (path) {
 
 /*  */
 
+
 // can we use __proto__?
 var hasProto = '__proto__' in {};
 
 // Browser environment sniffing
 var inBrowser = typeof window !== 'undefined';
+var inWeex = typeof WXEnvironment !== 'undefined' && !!WXEnvironment.platform;
+var weexPlatform = inWeex && WXEnvironment.platform.toLowerCase();
 var UA = inBrowser && window.navigator.userAgent.toLowerCase();
 var isIE = UA && /msie|trident/.test(UA);
 var isIE9 = UA && UA.indexOf('msie 9.0') > 0;
 var isEdge = UA && UA.indexOf('edge/') > 0;
-var isAndroid = UA && UA.indexOf('android') > 0;
-var isIOS = UA && /iphone|ipad|ipod|ios/.test(UA);
+var isAndroid = (UA && UA.indexOf('android') > 0) || (weexPlatform === 'android');
+var isIOS = (UA && /iphone|ipad|ipod|ios/.test(UA)) || (weexPlatform === 'ios');
 var isChrome = UA && /chrome\/\d+/.test(UA) && !isEdge;
 
 // Firefox has a "watch" function on Object.prototype...
@@ -50134,9 +50137,9 @@ var VNode = function VNode (
   this.elm = elm;
   this.ns = undefined;
   this.context = context;
-  this.functionalContext = undefined;
-  this.functionalOptions = undefined;
-  this.functionalScopeId = undefined;
+  this.fnContext = undefined;
+  this.fnOptions = undefined;
+  this.fnScopeId = undefined;
   this.key = data && data.key;
   this.componentOptions = componentOptions;
   this.componentInstance = undefined;
@@ -50195,6 +50198,9 @@ function cloneVNode (vnode, deep) {
   cloned.isStatic = vnode.isStatic;
   cloned.key = vnode.key;
   cloned.isComment = vnode.isComment;
+  cloned.fnContext = vnode.fnContext;
+  cloned.fnOptions = vnode.fnOptions;
+  cloned.fnScopeId = vnode.fnScopeId;
   cloned.isCloned = true;
   if (deep) {
     if (vnode.children) {
@@ -51111,7 +51117,7 @@ function logError (err, vm, info) {
     warn(("Error in " + info + ": \"" + (err.toString()) + "\""), vm);
   }
   /* istanbul ignore else */
-  if (inBrowser && typeof console !== 'undefined') {
+  if ((inBrowser || inWeex) && typeof console !== 'undefined') {
     console.error(err);
   } else {
     throw err
@@ -51331,6 +51337,43 @@ if (true) {
       vm._renderProxy = vm;
     }
   };
+}
+
+/*  */
+
+var seenObjects = new _Set();
+
+/**
+ * Recursively traverse an object to evoke all converted
+ * getters, so that every nested property inside the object
+ * is collected as a "deep" dependency.
+ */
+function traverse (val) {
+  _traverse(val, seenObjects);
+  seenObjects.clear();
+}
+
+function _traverse (val, seen) {
+  var i, keys;
+  var isA = Array.isArray(val);
+  if ((!isA && !isObject(val)) || Object.isFrozen(val)) {
+    return
+  }
+  if (val.__ob__) {
+    var depId = val.__ob__.dep.id;
+    if (seen.has(depId)) {
+      return
+    }
+    seen.add(depId);
+  }
+  if (isA) {
+    i = val.length;
+    while (i--) { _traverse(val[i], seen); }
+  } else {
+    keys = Object.keys(val);
+    i = keys.length;
+    while (i--) { _traverse(val[keys[i]], seen); }
+  }
 }
 
 /*  */
@@ -51904,7 +51947,7 @@ function resolveSlots (
     }
     // named slots should only be respected if the vnode was rendered in the
     // same context.
-    if ((child.context === context || child.functionalContext === context) &&
+    if ((child.context === context || child.fnContext === context) &&
       data && data.slot != null
     ) {
       var name = child.data.slot;
@@ -51928,7 +51971,7 @@ function resolveSlots (
 }
 
 function isWhitespace (node) {
-  return node.isComment || node.text === ' '
+  return (node.isComment && !node.asyncFactory) || node.text === ' '
 }
 
 function resolveScopedSlots (
@@ -52124,7 +52167,10 @@ function mountComponent (
     };
   }
 
-  vm._watcher = new Watcher(vm, updateComponent, noop);
+  // we set this to vm._watcher inside the watcher's constructor
+  // since the watcher's initial patch may call $forceUpdate (e.g. inside child
+  // component's mounted hook), which relies on vm._watcher being already defined
+  new Watcher(vm, updateComponent, noop, null, true /* isRenderWatcher */);
   hydrating = false;
 
   // manually mounted instance, call mounted on self
@@ -52411,9 +52457,13 @@ var Watcher = function Watcher (
   vm,
   expOrFn,
   cb,
-  options
+  options,
+  isRenderWatcher
 ) {
   this.vm = vm;
+  if (isRenderWatcher) {
+    vm._watcher = this;
+  }
   vm._watchers.push(this);
   // options
   if (options) {
@@ -52606,40 +52656,6 @@ Watcher.prototype.teardown = function teardown () {
     this.active = false;
   }
 };
-
-/**
- * Recursively traverse an object to evoke all converted
- * getters, so that every nested property inside the object
- * is collected as a "deep" dependency.
- */
-var seenObjects = new _Set();
-function traverse (val) {
-  seenObjects.clear();
-  _traverse(val, seenObjects);
-}
-
-function _traverse (val, seen) {
-  var i, keys;
-  var isA = Array.isArray(val);
-  if ((!isA && !isObject(val)) || !Object.isExtensible(val)) {
-    return
-  }
-  if (val.__ob__) {
-    var depId = val.__ob__.dep.id;
-    if (seen.has(depId)) {
-      return
-    }
-    seen.add(depId);
-  }
-  if (isA) {
-    i = val.length;
-    while (i--) { _traverse(val[i], seen); }
-  } else {
-    keys = Object.keys(val);
-    i = keys.length;
-    while (i--) { _traverse(val[keys[i]], seen); }
-  }
-}
 
 /*  */
 
@@ -53218,12 +53234,19 @@ function bindObjectProps (
  */
 function renderStatic (
   index,
-  isInFor
+  isInFor,
+  isOnce
 ) {
-  // static trees can be rendered once and cached on the contructor options
-  // so every instance shares the same cached trees
-  var options = this.$options;
-  var cached = options.cached || (options.cached = []);
+  // render fns generated by compiler < 2.5.4 does not provide v-once
+  // information to runtime so be conservative
+  var isOldVersion = arguments.length < 3;
+  // if a static tree is generated by v-once, it is cached on the instance;
+  // otherwise it is purely static and can be cached on the shared options
+  // across all instances.
+  var renderFns = this.$options.staticRenderFns;
+  var cached = isOldVersion || isOnce
+    ? (this._staticTrees || (this._staticTrees = []))
+    : (renderFns.cached || (renderFns.cached = []));
   var tree = cached[index];
   // if has already-rendered static tree and not inside v-for,
   // we can reuse the same tree by doing a shallow clone.
@@ -53233,7 +53256,7 @@ function renderStatic (
       : cloneVNode(tree)
   }
   // otherwise, render a fresh tree.
-  tree = cached[index] = options.staticRenderFns[index].call(this._renderProxy, null, this);
+  tree = cached[index] = renderFns[index].call(this._renderProxy, null, this);
   markStatic(tree, ("__static__" + index), false);
   return tree
 }
@@ -53351,8 +53374,8 @@ function FunctionalRenderContext (
     this._c = function (a, b, c, d) {
       var vnode = createElement(contextVm, a, b, c, d, needNormalization);
       if (vnode) {
-        vnode.functionalScopeId = options._scopeId;
-        vnode.functionalContext = parent;
+        vnode.fnScopeId = options._scopeId;
+        vnode.fnContext = parent;
       }
       return vnode
     };
@@ -53393,8 +53416,8 @@ function createFunctionalComponent (
   var vnode = options.render.call(null, renderContext._c, renderContext);
 
   if (vnode instanceof VNode) {
-    vnode.functionalContext = contextVm;
-    vnode.functionalOptions = options;
+    vnode.fnContext = contextVm;
+    vnode.fnOptions = options;
     if (data.slot) {
       (vnode.data || (vnode.data = {})).slot = data.slot;
     }
@@ -53765,6 +53788,7 @@ function applyNS (vnode, ns, force) {
 
 function initRender (vm) {
   vm._vnode = null; // the root of the child tree
+  vm._staticTrees = null; // v-once cached trees
   var options = vm.$options;
   var parentVnode = vm.$vnode = options._parentVnode; // the placeholder node in parent tree
   var renderContext = parentVnode && parentVnode.context;
@@ -53816,7 +53840,9 @@ function renderMixin (Vue) {
       // last render. They need to be cloned to ensure "freshness" for this render.
       for (var key in vm.$slots) {
         var slot = vm.$slots[key];
-        if (slot._rendered) {
+        // _rendered is a flag added by renderSlot, but may not be present
+        // if the slot is passed from manually written render functions
+        if (slot._rendered || (slot[0] && slot[0].elm)) {
           vm.$slots[key] = cloneVNodes(slot, true /* deep */);
         }
       }
@@ -54226,7 +54252,7 @@ function pruneCacheEntry (
   current
 ) {
   var cached$$1 = cache[key];
-  if (cached$$1 && cached$$1 !== current) {
+  if (cached$$1 && (!current || cached$$1.tag !== current.tag)) {
     cached$$1.componentInstance.$destroy();
   }
   cache[key] = null;
@@ -54268,21 +54294,27 @@ var KeepAlive = {
   },
 
   render: function render () {
-    var vnode = getFirstComponentChild(this.$slots.default);
+    var slot = this.$slots.default;
+    var vnode = getFirstComponentChild(slot);
     var componentOptions = vnode && vnode.componentOptions;
     if (componentOptions) {
       // check pattern
       var name = getComponentName(componentOptions);
-      if (name && (
-        (this.exclude && matches(this.exclude, name)) ||
-        (this.include && !matches(this.include, name))
-      )) {
+      var ref = this;
+      var include = ref.include;
+      var exclude = ref.exclude;
+      if (
+        // not included
+        (include && (!name || !matches(include, name))) ||
+        // excluded
+        (exclude && name && matches(exclude, name))
+      ) {
         return vnode
       }
 
-      var ref = this;
-      var cache = ref.cache;
-      var keys = ref.keys;
+      var ref$1 = this;
+      var cache = ref$1.cache;
+      var keys = ref$1.keys;
       var key = vnode.key == null
         // same constructor may get registered as different local components
         // so cid alone is not enough (#3269)
@@ -54304,7 +54336,7 @@ var KeepAlive = {
 
       vnode.data.keepAlive = true;
     }
-    return vnode
+    return vnode || (slot && slot[0])
   }
 };
 
@@ -54371,7 +54403,7 @@ Object.defineProperty(Vue$3.prototype, '$ssrContext', {
   }
 });
 
-Vue$3.version = '2.5.3';
+Vue$3.version = '2.5.9';
 
 /*  */
 
@@ -54798,7 +54830,23 @@ function createPatchFunction (backend) {
     }
   }
 
-  var inPre = 0;
+  function isUnknownElement$$1 (vnode, inVPre) {
+    return (
+      !inVPre &&
+      !vnode.ns &&
+      !(
+        config.ignoredElements.length &&
+        config.ignoredElements.some(function (ignore) {
+          return isRegExp(ignore)
+            ? ignore.test(vnode.tag)
+            : ignore === vnode.tag
+        })
+      ) &&
+      config.isUnknownElement(vnode.tag)
+    )
+  }
+
+  var creatingElmInVPre = 0;
   function createElm (vnode, insertedVnodeQueue, parentElm, refElm, nested) {
     vnode.isRootInsert = !nested; // for transition enter check
     if (createComponent(vnode, insertedVnodeQueue, parentElm, refElm)) {
@@ -54811,21 +54859,9 @@ function createPatchFunction (backend) {
     if (isDef(tag)) {
       if (true) {
         if (data && data.pre) {
-          inPre++;
+          creatingElmInVPre++;
         }
-        if (
-          !inPre &&
-          !vnode.ns &&
-          !(
-            config.ignoredElements.length &&
-            config.ignoredElements.some(function (ignore) {
-              return isRegExp(ignore)
-                ? ignore.test(tag)
-                : ignore === tag
-            })
-          ) &&
-          config.isUnknownElement(tag)
-        ) {
+        if (isUnknownElement$$1(vnode, creatingElmInVPre)) {
           warn(
             'Unknown custom element: <' + tag + '> - did you ' +
             'register the component correctly? For recursive components, ' +
@@ -54849,7 +54885,7 @@ function createPatchFunction (backend) {
       }
 
       if ("development" !== 'production' && data && data.pre) {
-        inPre--;
+        creatingElmInVPre--;
       }
     } else if (isTrue(vnode.isComment)) {
       vnode.elm = nodeOps.createComment(vnode.text);
@@ -54966,7 +55002,7 @@ function createPatchFunction (backend) {
   // of going through the normal attribute patching process.
   function setScope (vnode) {
     var i;
-    if (isDef(i = vnode.functionalScopeId)) {
+    if (isDef(i = vnode.fnScopeId)) {
       nodeOps.setAttribute(vnode.elm, i, '');
     } else {
       var ancestor = vnode;
@@ -54980,7 +55016,7 @@ function createPatchFunction (backend) {
     // for slot content they should also get the scopeId from the host instance.
     if (isDef(i = activeInstance) &&
       i !== vnode.context &&
-      i !== vnode.functionalContext &&
+      i !== vnode.fnContext &&
       isDef(i = i.$options._scopeId)
     ) {
       nodeOps.setAttribute(vnode.elm, i, '');
@@ -55204,27 +55240,32 @@ function createPatchFunction (backend) {
     }
   }
 
-  var bailed = false;
+  var hydrationBailed = false;
   // list of modules that can skip create hook during hydration because they
   // are already rendered on the client or has no need for initialization
-  var isRenderedModule = makeMap('attrs,style,class,staticClass,staticStyle,key');
+  // Note: style is excluded because it relies on initial clone for future
+  // deep updates (#7063).
+  var isRenderedModule = makeMap('attrs,class,staticClass,staticStyle,key');
 
   // Note: this is a browser-only function so we can assume elms are DOM nodes.
-  function hydrate (elm, vnode, insertedVnodeQueue) {
-    if (isTrue(vnode.isComment) && isDef(vnode.asyncFactory)) {
-      vnode.elm = elm;
-      vnode.isAsyncPlaceholder = true;
-      return true
-    }
-    if (true) {
-      if (!assertNodeMatch(elm, vnode)) {
-        return false
-      }
-    }
-    vnode.elm = elm;
+  function hydrate (elm, vnode, insertedVnodeQueue, inVPre) {
+    var i;
     var tag = vnode.tag;
     var data = vnode.data;
     var children = vnode.children;
+    inVPre = inVPre || (data && data.pre);
+    vnode.elm = elm;
+
+    if (isTrue(vnode.isComment) && isDef(vnode.asyncFactory)) {
+      vnode.isAsyncPlaceholder = true;
+      return true
+    }
+    // assert node match
+    if (true) {
+      if (!assertNodeMatch(elm, vnode, inVPre)) {
+        return false
+      }
+    }
     if (isDef(data)) {
       if (isDef(i = data.hook) && isDef(i = i.init)) { i(vnode, true /* hydrating */); }
       if (isDef(i = vnode.componentInstance)) {
@@ -55245,9 +55286,9 @@ function createPatchFunction (backend) {
               /* istanbul ignore if */
               if ("development" !== 'production' &&
                 typeof console !== 'undefined' &&
-                !bailed
+                !hydrationBailed
               ) {
-                bailed = true;
+                hydrationBailed = true;
                 console.warn('Parent: ', elm);
                 console.warn('server innerHTML: ', i);
                 console.warn('client innerHTML: ', elm.innerHTML);
@@ -55259,7 +55300,7 @@ function createPatchFunction (backend) {
             var childrenMatch = true;
             var childNode = elm.firstChild;
             for (var i$1 = 0; i$1 < children.length; i$1++) {
-              if (!childNode || !hydrate(childNode, children[i$1], insertedVnodeQueue)) {
+              if (!childNode || !hydrate(childNode, children[i$1], insertedVnodeQueue, inVPre)) {
                 childrenMatch = false;
                 break
               }
@@ -55271,9 +55312,9 @@ function createPatchFunction (backend) {
               /* istanbul ignore if */
               if ("development" !== 'production' &&
                 typeof console !== 'undefined' &&
-                !bailed
+                !hydrationBailed
               ) {
-                bailed = true;
+                hydrationBailed = true;
                 console.warn('Parent: ', elm);
                 console.warn('Mismatching childNodes vs. VNodes: ', elm.childNodes, children);
               }
@@ -55283,11 +55324,17 @@ function createPatchFunction (backend) {
         }
       }
       if (isDef(data)) {
+        var fullInvoke = false;
         for (var key in data) {
           if (!isRenderedModule(key)) {
+            fullInvoke = true;
             invokeCreateHooks(vnode, insertedVnodeQueue);
             break
           }
+        }
+        if (!fullInvoke && data['class']) {
+          // ensure collecting deps for deep class bindings for future updates
+          traverse(data['class']);
         }
       }
     } else if (elm.data !== vnode.text) {
@@ -55296,10 +55343,10 @@ function createPatchFunction (backend) {
     return true
   }
 
-  function assertNodeMatch (node, vnode) {
+  function assertNodeMatch (node, vnode, inVPre) {
     if (isDef(vnode.tag)) {
-      return (
-        vnode.tag.indexOf('vue-component') === 0 ||
+      return vnode.tag.indexOf('vue-component') === 0 || (
+        !isUnknownElement$$1(vnode, inVPre) &&
         vnode.tag.toLowerCase() === (node.tagName && node.tagName.toLowerCase())
       )
     } else {
@@ -55559,7 +55606,7 @@ function updateAttrs (oldVnode, vnode) {
   // #4391: in IE9, setting type can reset value for input[type=radio]
   // #6666: IE/Edge forces progress value down to 1 before setting a max
   /* istanbul ignore if */
-  if ((isIE9 || isEdge) && attrs.value !== oldAttrs.value) {
+  if ((isIE || isEdge) && attrs.value !== oldAttrs.value) {
     setAttr(elm, 'value', attrs.value);
   }
   for (key in oldAttrs) {
@@ -55599,6 +55646,23 @@ function setAttr (el, key, value) {
     if (isFalsyAttrValue(value)) {
       el.removeAttribute(key);
     } else {
+      // #7138: IE10 & 11 fires input event when setting placeholder on
+      // <textarea>... block the first input event and remove the blocker
+      // immediately.
+      /* istanbul ignore if */
+      if (
+        isIE && !isIE9 &&
+        el.tagName === 'TEXTAREA' &&
+        key === 'placeholder' && !el.__ieph
+      ) {
+        var blocker = function (e) {
+          e.stopImmediatePropagation();
+          el.removeEventListener('input', blocker);
+        };
+        el.addEventListener('input', blocker);
+        // $flow-disable-line
+        el.__ieph = true; /* IE placeholder patched */
+      }
       el.setAttribute(key, value);
     }
   }
@@ -55787,39 +55851,59 @@ function addHandler (
   important,
   warn
 ) {
+  modifiers = modifiers || emptyObject;
   // warn prevent and passive modifier
   /* istanbul ignore if */
   if (
     "development" !== 'production' && warn &&
-    modifiers && modifiers.prevent && modifiers.passive
+    modifiers.prevent && modifiers.passive
   ) {
     warn(
       'passive and prevent can\'t be used together. ' +
       'Passive handler can\'t prevent default event.'
     );
   }
+
   // check capture modifier
-  if (modifiers && modifiers.capture) {
+  if (modifiers.capture) {
     delete modifiers.capture;
     name = '!' + name; // mark the event as captured
   }
-  if (modifiers && modifiers.once) {
+  if (modifiers.once) {
     delete modifiers.once;
     name = '~' + name; // mark the event as once
   }
   /* istanbul ignore if */
-  if (modifiers && modifiers.passive) {
+  if (modifiers.passive) {
     delete modifiers.passive;
     name = '&' + name; // mark the event as passive
   }
+
+  // normalize click.right and click.middle since they don't actually fire
+  // this is technically browser-specific, but at least for now browsers are
+  // the only target envs that have right/middle clicks.
+  if (name === 'click') {
+    if (modifiers.right) {
+      name = 'contextmenu';
+      delete modifiers.right;
+    } else if (modifiers.middle) {
+      name = 'mouseup';
+    }
+  }
+
   var events;
-  if (modifiers && modifiers.native) {
+  if (modifiers.native) {
     delete modifiers.native;
     events = el.nativeEvents || (el.nativeEvents = {});
   } else {
     events = el.events || (el.events = {});
   }
-  var newHandler = { value: value, modifiers: modifiers };
+
+  var newHandler = { value: value };
+  if (modifiers !== emptyObject) {
+    newHandler.modifiers = modifiers;
+  }
+
   var handlers = events[name];
   /* istanbul ignore if */
   if (Array.isArray(handlers)) {
@@ -56150,6 +56234,19 @@ function genDefaultModel (
   modifiers
 ) {
   var type = el.attrsMap.type;
+
+  // warn if v-bind:value conflicts with v-model
+  if (true) {
+    var value$1 = el.attrsMap['v-bind:value'] || el.attrsMap[':value'];
+    if (value$1) {
+      var binding = el.attrsMap['v-bind:value'] ? 'v-bind:value' : ':value';
+      warn$1(
+        binding + "=\"" + value$1 + "\" conflicts with v-model on the same element " +
+        'because the latter already expands to a value binding internally'
+      );
+    }
+  }
+
   var ref = modifiers || {};
   var lazy = ref.lazy;
   var number = ref.number;
@@ -56913,12 +57010,12 @@ function leave (vnode, rm) {
   }
 
   var data = resolveTransition(vnode.data.transition);
-  if (isUndef(data)) {
+  if (isUndef(data) || el.nodeType !== 1) {
     return rm()
   }
 
   /* istanbul ignore if */
-  if (isDef(el._leaveCb) || el.nodeType !== 1) {
+  if (isDef(el._leaveCb)) {
     return
   }
 
@@ -57373,7 +57470,7 @@ var Transition = {
   render: function render (h) {
     var this$1 = this;
 
-    var children = this.$options._renderChildren;
+    var children = this.$slots.default;
     if (!children) {
       return
     }
@@ -57452,7 +57549,9 @@ var Transition = {
       oldChild &&
       oldChild.data &&
       !isSameChild(child, oldChild) &&
-      !isAsyncPlaceholder(oldChild)
+      !isAsyncPlaceholder(oldChild) &&
+      // #6687 component root is a comment node
+      !(oldChild.componentInstance && oldChild.componentInstance._vnode.isComment)
     ) {
       // replace old child transition data with fresh one
       // important for dynamic transitions!
@@ -58178,7 +58277,8 @@ function parseHTML (html, options) {
 var onRE = /^@|^v-on:/;
 var dirRE = /^v-|^@|^:/;
 var forAliasRE = /(.*?)\s+(?:in|of)\s+(.*)/;
-var forIteratorRE = /\((\{[^}]*\}|[^,]*),([^,]*)(?:,([^,]*))?\)/;
+var forIteratorRE = /\((\{[^}]*\}|[^,{]*),([^,]*)(?:,([^,]*))?\)/;
+var stripParensRE = /^\(|\)$/g;
 
 var argRE = /:(.*)$/;
 var bindRE = /^:|^v-bind:/;
@@ -58519,7 +58619,7 @@ function processFor (el) {
         el.iterator2 = iteratorMatch[3].trim();
       }
     } else {
-      el.alias = alias;
+      el.alias = alias.replace(stripParensRE, '');
     }
   }
 }
@@ -58615,6 +58715,15 @@ function processSlot (el) {
       }
       el.slotScope = slotScope || getAndRemoveAttr(el, 'slot-scope');
     } else if ((slotScope = getAndRemoveAttr(el, 'slot-scope'))) {
+      /* istanbul ignore if */
+      if ("development" !== 'production' && el.attrsMap['v-for']) {
+        warn$2(
+          "Ambiguous combined usage of slot-scope and v-for on <" + (el.tag) + "> " +
+          "(v-for takes higher priority). Use a wrapper <template> for the " +
+          "scoped slot to make it clearer.",
+          true
+        );
+      }
       el.slotScope = slotScope;
     }
     var slotTarget = getBindingAttr(el, 'slot');
@@ -59092,18 +59201,7 @@ function genHandlers (
 ) {
   var res = isNative ? 'nativeOn:{' : 'on:{';
   for (var name in events) {
-    var handler = events[name];
-    // #5330: warn click.right, since right clicks do not actually fire click events.
-    if ("development" !== 'production' &&
-      name === 'click' &&
-      handler && handler.modifiers && handler.modifiers.right
-    ) {
-      warn(
-        "Use \"contextmenu\" instead of \"click.right\" since right clicks " +
-        "do not actually fire \"click\" events."
-      );
-    }
-    res += "\"" + name + "\":" + (genHandler(name, handler)) + ",";
+    res += "\"" + name + "\":" + (genHandler(name, events[name])) + ",";
   }
   return res.slice(0, -1) + '}'
 }
@@ -59270,10 +59368,10 @@ function genElement (el, state) {
 }
 
 // hoist static sub-trees out
-function genStatic (el, state) {
+function genStatic (el, state, once$$1) {
   el.staticProcessed = true;
   state.staticRenderFns.push(("with(this){return " + (genElement(el, state)) + "}"));
-  return ("_m(" + (state.staticRenderFns.length - 1) + (el.staticInFor ? ',true' : '') + ")")
+  return ("_m(" + (state.staticRenderFns.length - 1) + "," + (el.staticInFor ? 'true' : 'false') + "," + (once$$1 ? 'true' : 'false') + ")")
 }
 
 // v-once
@@ -59299,7 +59397,7 @@ function genOnce (el, state) {
     }
     return ("_o(" + (genElement(el, state)) + "," + (state.onceId++) + "," + key + ")")
   } else {
-    return genStatic(el, state)
+    return genStatic(el, state, true)
   }
 }
 
@@ -59666,9 +59764,6 @@ var unaryOperatorsRE = new RegExp('\\b' + (
   'delete,typeof,void'
 ).split(',').join('\\s*\\([^\\)]*\\)|\\b') + '\\s*\\([^\\)]*\\)');
 
-// check valid identifier for v-for
-var identRE = /[A-Za-z_$][\w$]*/;
-
 // strip strings in expressions
 var stripStringRE = /'(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"|`(?:[^`\\]|\\.)*\$\{|\}(?:[^`\\]|\\.)*`|`(?:[^`\\]|\\.)*`/g;
 
@@ -59726,9 +59821,18 @@ function checkFor (node, text, errors) {
   checkIdentifier(node.iterator2, 'v-for iterator', text, errors);
 }
 
-function checkIdentifier (ident, type, text, errors) {
-  if (typeof ident === 'string' && !identRE.test(ident)) {
-    errors.push(("invalid " + type + " \"" + ident + "\" in expression: " + (text.trim())));
+function checkIdentifier (
+  ident,
+  type,
+  text,
+  errors
+) {
+  if (typeof ident === 'string') {
+    try {
+      new Function(("var " + ident + "=_"));
+    } catch (e) {
+      errors.push(("invalid " + type + " \"" + ident + "\" in expression: " + (text.trim())));
+    }
   }
 }
 
@@ -77285,7 +77389,7 @@ module.exports = {
 /* 253 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[[{"raw":"vue-chartjs","scope":null,"escapedName":"vue-chartjs","name":"vue-chartjs","rawSpec":"","spec":"latest","type":"tag"},"/home/tech/projects/www/dgr"]],"_from":"vue-chartjs@latest","_id":"vue-chartjs@3.0.2","_inCache":true,"_location":"/vue-chartjs","_nodeVersion":"8.8.1","_npmOperationalInternal":{"host":"s3://npm-registry-packages","tmp":"tmp/vue-chartjs-3.0.2.tgz_1510048951093_0.36970060248859227"},"_npmUser":{"name":"apertureless","email":"juszczak.j@googlemail.com"},"_npmVersion":"5.5.1","_phantomChildren":{},"_requested":{"raw":"vue-chartjs","scope":null,"escapedName":"vue-chartjs","name":"vue-chartjs","rawSpec":"","spec":"latest","type":"tag"},"_requiredBy":["#USER","/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.0.2.tgz","_shasum":"960d0ba9c2f3720b85ff02417707adc02f953de9","_shrinkwrap":null,"_spec":"vue-chartjs","_where":"/home/tech/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{"lodash.merge":"^4.6.0"},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^3.2.4","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","nightwatch":"^0.9.14","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"directories":{},"dist":{"integrity":"sha512-m6ItjL8o3ff4JpbF083RzZ4KPiNBFsqMKmWCcAtlisOdm1vvB/9mUDJePmxYKJkvl2AcpvLPiH1cUrhq46r8vA==","shasum":"960d0ba9c2f3720b85ff02417707adc02f953de9","tarball":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.0.2.tgz"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"gitHead":"a5f112e952538b11739b25fafe486b56f3479f45","greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"apertureless","email":"juszczak.j@googlemail.com"}],"module":"es/index.js","name":"vue-chartjs","optionalDependencies":{},"peerDependencies":{"chart.js":"2.7.x"},"readme":"ERROR: No README data found!","repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.0.2"}
+module.exports = {"_from":"vue-chartjs@^3.0.2","_id":"vue-chartjs@3.0.2","_inBundle":false,"_integrity":"sha512-m6ItjL8o3ff4JpbF083RzZ4KPiNBFsqMKmWCcAtlisOdm1vvB/9mUDJePmxYKJkvl2AcpvLPiH1cUrhq46r8vA==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"vue-chartjs@^3.0.2","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"^3.0.2","saveSpec":null,"fetchSpec":"^3.0.2"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.0.2.tgz","_shasum":"960d0ba9c2f3720b85ff02417707adc02f953de9","_spec":"vue-chartjs@^3.0.2","_where":"/home/poppabear/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"bundleDependencies":false,"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{"lodash.merge":"^4.6.0"},"deprecated":false,"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^3.2.4","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","nightwatch":"^0.9.14","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.0.2"}
 
 /***/ }),
 /* 254 */
@@ -77669,10 +77773,10 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _vm._m(0, false, false),
     _vm._v(" "),
     _c("table", { staticClass: "table table-condensed" }, [
-      _vm._m(1),
+      _vm._m(1, false, false),
       _vm._v(" "),
       _c(
         "tbody",
@@ -77684,7 +77788,7 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(contact.primary_phone))]),
             _vm._v(" "),
-            _vm._m(2, true)
+            _vm._m(2, true, false)
           ])
         })
       )
@@ -77911,7 +78015,7 @@ var render = function() {
                   ])
                 ]),
                 _vm._v(" "),
-                _vm._m(0, true)
+                _vm._m(0, true, false)
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "gallery-img" }, [
@@ -77964,13 +78068,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(330)
+  __webpack_require__(267)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(269)
 /* template */
-var __vue_template__ = __webpack_require__(332)
+var __vue_template__ = __webpack_require__(270)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -78010,8 +78114,46 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 267 */,
-/* 268 */,
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(268);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("71654b07", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686969;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo[data-v-550cb112] {\n      text-align: center;\n}\n}\n.top-bar .nrlb[data-v-550cb112] {\n    margin-top: 20px;\n}\n.top-bar .nrlb img[data-v-550cb112] {\n      width: 250px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353636;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 269 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -78049,20 +78191,83 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
-/* 270 */,
+/* 270 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0, false, false)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "top-bar hidden-xs" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "hidden-sm col-md-4 col-lg-4" }, [
+            _c("div", { staticClass: "nrlb" }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: { src: "images/no-roof-left-behind.png" }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
+            _c("a", { attrs: { href: "/" } }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: { src: "images/site-logo.jpg" }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
+            _c("div", { staticClass: "info" }, [
+              _c("p", [
+                _vm._v("\n                        Free Inspections - "),
+                _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
+              ]),
+              _vm._v(" "),
+              _c("h1", [
+                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+                  _vm._v("937-439-0554")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-550cb112", module.exports)
+  }
+}
+
+/***/ }),
 /* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(327)
+  __webpack_require__(272)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(274)
 /* template */
-var __vue_template__ = __webpack_require__(329)
+var __vue_template__ = __webpack_require__(275)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -78102,8 +78307,46 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 272 */,
-/* 273 */,
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(273);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("4467d40c", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* Navbar */\n.navbar[data-v-49a0a682] {\n  min-height: 0;\n  margin-bottom: 0;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    top: 130px !important;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #353636 !important;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  line-height: 10px;\n  color: #353636 !important;\n  margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 274 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -78143,7 +78386,87 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 275 */,
+/* 275 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "nav",
+    {
+      staticClass: "navbar navbar-inverse navbar-fixed-top",
+      attrs: { role: "navigation" }
+    },
+    [
+      _c("div", { staticClass: "container-fluid" }, [
+        _vm._m(0, false, false),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "bs-example-navbar-collapse-1" }
+          },
+          [_c("ul", { class: ["nav", "navbar-nav"] }, [_vm._t("default")], 2)]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-header" }, [
+      _c(
+        "button",
+        {
+          staticClass: "navbar-toggle collapsed",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#bs-example-navbar-collapse-1",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "navbar-brand color-dark hidden-sm hidden-md hidden-lg",
+          attrs: { href: "/" }
+        },
+        [
+          _vm._v("\n                D & G "),
+          _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-49a0a682", module.exports)
+  }
+}
+
+/***/ }),
 /* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -78230,7 +78553,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      -webkit-animation-delay: 3s;\n              animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      -webkit-animation-delay: 3s;\n              animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -78327,13 +78650,13 @@ var render = function() {
         { staticClass: "container" },
         [
           _vm._t("default", [
-            _vm._m(0),
+            _vm._m(0, false, false),
             _vm._v(" "),
-            _vm._m(1),
+            _vm._m(1, false, false),
             _vm._v(" "),
-            _vm._m(2),
+            _vm._m(2, false, false),
             _vm._v(" "),
-            _vm._m(3)
+            _vm._m(3, false, false)
           ])
         ],
         2
@@ -78344,7 +78667,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "container" },
-        [_vm._t("bottom", [_vm._m(4)])],
+        [_vm._t("bottom", [_vm._m(4, false, false)])],
         2
       )
     ])
@@ -78530,7 +78853,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.footer .logos[data-v-261b6ca2] {\n  background-color: #f7f7f7;\n  padding-top: 50px;\n  padding-bottom: 50px;\n  border-bottom: 5px #353636 solid;\n}\n.footer .logos img[data-v-261b6ca2] {\n    display: inline-block !important;\n}\n.footer footer[data-v-261b6ca2] {\n  background-color: #323233;\n  border-top: 5px #EE001B solid;\n  color: #b3b3b3;\n  padding: 25px;\n}\n.footer footer .input-group-addon[data-v-261b6ca2] {\n    border: none;\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2] {\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2]:focus {\n      border-color: transparent;\n      outline: 0;\n      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n}\n.footer footer .btn-default[data-v-261b6ca2] {\n    color: #EE001B;\n    background-color: #353636;\n    border-color: #585859;\n}\n.footer footer .btn-default[data-v-261b6ca2]:hover {\n      color: #b1b1b2;\n      background-color: #323233;\n      border-color: #585859;\n}\n.footer footer .col-md-3[data-v-261b6ca2] {\n    min-height: 380px;\n}\n.footer footer .social ul[data-v-261b6ca2] {\n    overflow: auto;\n    padding: 0;\n}\n.footer footer .social ul li[data-v-261b6ca2] {\n      list-style-type: none;\n      float: left;\n}\n.footer footer .social ul li a i[data-v-261b6ca2] {\n        background: #EE001B;\n        color: #fff;\n        width: 40px;\n        height: 40px;\n        border-radius: 20px;\n        font-size: 25px;\n        text-align: center;\n        margin-right: 10px;\n        padding-top: 15%;\n        -webkit-transition: all 0.2s ease-in-out;\n        transition: all 0.2s ease-in-out;\n}\n.footer footer .social ul li a i[data-v-261b6ca2]:hover {\n          opacity: .7;\n          cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.footer .logos[data-v-261b6ca2] {\n  background-color: #f7f7f7;\n  padding-top: 50px;\n  padding-bottom: 50px;\n  border-bottom: 5px #353636 solid;\n}\n.footer .logos img[data-v-261b6ca2] {\n    display: inline-block !important;\n}\n.footer footer[data-v-261b6ca2] {\n  background-color: #323233;\n  border-top: 5px #EE001B solid;\n  color: #b3b3b3;\n  padding: 25px;\n}\n.footer footer .input-group-addon[data-v-261b6ca2] {\n    border: none;\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2] {\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2]:focus {\n      border-color: transparent;\n      outline: 0;\n      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n}\n.footer footer .btn-default[data-v-261b6ca2] {\n    color: #EE001B;\n    background-color: #353636;\n    border-color: #585859;\n}\n.footer footer .btn-default[data-v-261b6ca2]:hover {\n      color: #b1b1b2;\n      background-color: #323233;\n      border-color: #585859;\n}\n.footer footer .social ul[data-v-261b6ca2] {\n    overflow: auto;\n    padding: 0;\n}\n.footer footer .social ul li[data-v-261b6ca2] {\n      list-style-type: none;\n      float: left;\n}\n.footer footer .social ul li a i[data-v-261b6ca2] {\n        background: #EE001B;\n        color: #fff;\n        width: 40px;\n        height: 40px;\n        border-radius: 20px;\n        font-size: 25px;\n        text-align: center;\n        margin-right: 10px;\n        padding-top: 15%;\n        -webkit-transition: all 0.2s ease-in-out;\n        transition: all 0.2s ease-in-out;\n}\n.footer footer .social ul li a i[data-v-261b6ca2]:hover {\n          opacity: .7;\n          cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -78541,11 +78864,6 @@ exports.push([module.i, "\n.footer .logos[data-v-261b6ca2] {\n  background-color
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
 //
 //
 //
@@ -78686,7 +79004,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _vm._m(0, false, false)
 }
 var staticRenderFns = [
   function() {
@@ -78873,17 +79191,13 @@ var staticRenderFns = [
                       "a",
                       {
                         attrs: {
-                          href: "https://www.facebook.com/DgRoofingRestoration/"
+                          href:
+                            "https://www.facebook.com/DgRoofingRestoration/",
+                          target: "_blank"
                         }
                       },
                       [_c("i", { staticClass: "fa fa-facebook" })]
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "http://linkedin.com/" } }, [
-                      _c("i", { staticClass: "fa fa-linkedin" })
-                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", [
@@ -78892,7 +79206,8 @@ var staticRenderFns = [
                       {
                         attrs: {
                           href:
-                            "https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en"
+                            "https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en",
+                          target: "_blank"
                         }
                       },
                       [_c("i", { staticClass: "fa fa-google-plus" })]
@@ -79205,7 +79520,7 @@ var render = function() {
   return _c("div", { staticClass: "our-team" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
-        _vm._m(0),
+        _vm._m(0, false, false),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-3 text-center" }, [
           _c("img", {
@@ -79667,7 +79982,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _vm._m(0, false, false)
 }
 var staticRenderFns = [
   function() {
@@ -80543,7 +80858,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -81076,245 +81390,6 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(328);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("4467d40c", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 328 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* Navbar */\n.navbar[data-v-49a0a682] {\n  min-height: 0;\n  margin-bottom: 0;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    top: 130px !important;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #353636 !important;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  line-height: 10px;\n  color: #353636 !important;\n  margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 329 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      staticClass: "navbar navbar-inverse navbar-fixed-top",
-      attrs: { role: "navigation" }
-    },
-    [
-      _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "collapse navbar-collapse",
-            attrs: { id: "bs-example-navbar-collapse-1" }
-          },
-          [_c("ul", { class: ["nav", "navbar-nav"] }, [_vm._t("default")], 2)]
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggle collapsed",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#bs-example-navbar-collapse-1",
-            "aria-expanded": "false"
-          }
-        },
-        [
-          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" })
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "navbar-brand color-dark hidden-sm hidden-md hidden-lg",
-          attrs: { href: "/" }
-        },
-        [
-          _vm._v("\n                D & G "),
-          _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")])
-        ]
-      )
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-49a0a682", module.exports)
-  }
-}
-
-/***/ }),
-/* 330 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(331);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("71654b07", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 331 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686969;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo[data-v-550cb112] {\n      text-align: center;\n}\n}\n.top-bar .nrlb[data-v-550cb112] {\n    margin-top: 20px;\n}\n.top-bar .nrlb img[data-v-550cb112] {\n      width: 250px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353636;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 332 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top-bar hidden-xs" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "hidden-sm col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "nrlb" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/no-roof-left-behind.png" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
-            _c("a", { attrs: { href: "/" } }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/site-logo.jpg" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "info" }, [
-              _c("p", [
-                _vm._v("\n                        Free Inspections - "),
-                _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
-              ]),
-              _vm._v(" "),
-              _c("h1", [
-                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
-                  _vm._v("937-439-0554")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-550cb112", module.exports)
-  }
-}
 
 /***/ })
 /******/ ]);
