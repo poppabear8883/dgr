@@ -71,3 +71,23 @@ body {
   padding-left: 8px !important;
   padding-top: 10px !important;
 }
+
+.img-portfolio {
+  margin-bottom: 15px;
+}
+
+.customer-img,
+.img-related {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .img-portfolio {
+    margin-bottom: 0;
+  }
+
+  .customer-img,
+  .img-related {
+    margin-bottom: 0;
+  }
+}
