@@ -9,11 +9,13 @@
                     <slot></slot>
                 </div>
                 <div v-if="img" class="col-md-6">
+                    <slot name="aimg"></slot>
                     <img :style="styles"
                          :width="imgWidth ? imgWidth : null"
                          class="img-responsive"
                          :src="img"
                          :alt="imgAlt">
+                    <slot name="bimg"></slot>
                 </div>
             </div>
         </div>

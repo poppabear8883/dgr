@@ -14754,23 +14754,23 @@ button.close {
 }
 
 .color-light-red {
-  color: #ff6f7f;
+  color: #ff6f7f !important;
 }
 
 .color-red {
-  color: #EE001B;
+  color: #EE001B !important;
 }
 
 .color-dark-red {
-  color: #6f000d;
+  color: #6f000d !important;
 }
 
 .color-dark {
-  color: #353636;
+  color: #353636 !important;
 }
 
 .color-light {
-  color: #e6e5e5;
+  color: #e6e5e5 !important;
 }
 
 .fa-facebook {
@@ -14843,89 +14843,16 @@ button.close {
   border-left: solid #EE001B 5px;
 }
 
-/* Global Styles */
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  padding-top: 155px;
-}
-
-.img-portfolio {
-  margin-bottom: 30px;
-}
-
-.img-hover:hover {
-  opacity: 0.8;
-}
-
-/* Countdown */
-
-.countdown {
-  color: #FFFFFF;
-  background-color: #EE001B;
-}
-
-.countdown-description {
-  padding-top: 15px;
-  font-size: 22px;
-}
-
-.timer {
-  float: right !important;
-}
-
-.error-404 {
-  font-size: 100px;
-}
-
-.price {
-  display: block;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.price sup {
-  top: -20px;
-  left: 2px;
-  font-size: 20px;
-}
-
-.period {
-  display: block;
-  font-style: italic;
-}
-
-/* Responsive Styles */
-
-@media (max-width: 991px) {
-  .customer-img,
-  .img-related {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .timer {
-    float: left !important;
-  }
-
-  .img-portfolio {
-    margin-bottom: 15px;
-  }
-}
-
 html,
 body {
   height: 100%;
   color: #252526;
 }
 
-body {
-  padding-top: 155px;
+@media (min-width: 768px) {
+  body {
+    padding-top: 155px;
+  }
 }
 
 /* colors */

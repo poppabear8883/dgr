@@ -1,19 +1,19 @@
 .color-light-red {
-  color: lighten($red, 25%);
+  color: lighten($red, 25%) !important;
 }
 
 .color-red {
-  color: $red;
+  color: $red !important;
 }
 
 .color-dark-red {
-  color: darken($red, 25%);
+  color: darken($red, 25%) !important;
 }
 
 .color-dark {
-  color: $dark;
+  color: $dark !important;
 }
 
 .color-light {
-  color: darken($white, 10%);
+  color: darken($white, 10%) !important;
 }

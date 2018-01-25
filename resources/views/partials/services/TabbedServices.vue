@@ -51,6 +51,7 @@
         <!-- ROOFING -->
         <div v-if="active === 0" class="row">
             <media-section
+                    class="pull-right"
                     title="Roofing"
                     subtitle="#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY"
                     img="images/certainteed-home.jpg"
@@ -83,37 +84,39 @@
                     tenants are safe throughout the repairs.
                 </p>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="images/certainteed.png" alt="CertainTeed">
-                    </div>
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="images/mueller-roofing.png" alt="Mueller Roofing Dayton Ohio">
+                <img class="img-responsive" src="images/W-Carrollton-45449-Roofing-A4-41.jpg" alt="45449 roofing">
+
+                <div slot="aimg" style="margin-bottom: 10px">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/certainteed.png" alt="CertainTeed">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/mueller-roofing.png" alt="Mueller Roofing Dayton Ohio">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/certainteed-certified-dealer.png" alt="CertainTeed Certified Installer">
+                        </div>
                     </div>
                 </div>
 
-            </media-section>
+                <div slot="bimg">
+                    <h4 class="page-header color-red">CertainTeed Certified Installer</h4>
+                    <p>
+                        At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our
+                        installers have been with us since we opened our doors.
+                    </p>
+                    <p>
+                        Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their
+                        shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material
+                        available and the best warranty. The Landmark Series shingle endure time and weather
+                        beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from
+                        streaking that can be caused by airborne algae. The Landmark Series also has four levels of
+                        high performance shingles in weight and thickness. The heavier the shingle, the more depth,
+                        thickness and dimension it offers.
+                    </p>
+                </div>
 
-            <media-section
-                    title="CertainTeed Certified Installer"
-                    img="images/certainteed-certified-dealer.png"
-                    :no-shadow="true"
-                    img-width="350px"
-                    img-alt="CertainTeed Certified Installer">
-
-                <p>
-                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our
-                    installers have been with us since we opened our doors.
-                </p>
-                <p>
-                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their
-                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material
-                    available and the best warranty. The Landmark Series shingle endure time and weather
-                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from
-                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of
-                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,
-                    thickness and dimension it offers.
-                </p>
             </media-section>
         </div>
 
@@ -175,34 +178,34 @@
                     needs.
                 </p>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="images/atrium-logo.png" alt="Atrium Windows">
+                <div slot="bimg" style="margin-top: 10px">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="images/atrium-logo.png" alt="Atrium Windows">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Windows">
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Windows">
+                    <h4 class="page-header color-red">Save money and help our planet</h4>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>
+                                We are always looking for ways to help our environment.
+                                Our energy efficient windows can do more than just save you money;
+                                they can also help you conserve resources, which mean our planet benefits as well.
+                            </p>
+
+                            <p>
+                                <strong>Start saving money and the environment today!</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/recycle-planet.png" alt="D & G Roofing cares about our planet">
+                        </div>
                     </div>
                 </div>
             </media-section>
-
-            <media-section
-                    title="Save money and help our planet"
-                    img="images/recycle-planet.png"
-                    :no-shadow="true"
-                    img-width="350px"
-                    img-alt="D & G Roofing cares about our planet">
-
-                <p>
-                    We are always looking for ways to help our environment.
-                    Our energy efficient windows can do more than just save you money;
-                    they can also help you conserve resources, which mean our planet benefits as well.
-                </p>
-
-                <p>
-                    <strong>Start saving money and the environment today!</strong>
-                </p>
-            </media-section>
-
         </div>
 
         <!-- GUTTERS -->

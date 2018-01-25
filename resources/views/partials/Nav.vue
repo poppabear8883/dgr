@@ -8,6 +8,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand color-dark hidden-sm hidden-md hidden-lg" href="#">
+                    D & G <span class="color-red">Roofing</span>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +34,6 @@
 <style lang="scss">
     @import "~Sass/_variables.scss";
 
-
     /* Navbar */
     .navbar {
          min-height: 0;
@@ -39,10 +41,8 @@
     }
 
     .navbar-fixed-top {
-        top: 130px !important;
-
-        @media (max-width: 425px) {
-            top: 80px !important;
+        @media (min-width: 768px) {
+            top: 130px !important;
         }
     }
 

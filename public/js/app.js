@@ -60441,6 +60441,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "media-section",
@@ -60489,17 +60491,26 @@ var render = function() {
         ),
         _vm._v(" "),
         _vm.img
-          ? _c("div", { staticClass: "col-md-6" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                style: _vm.styles,
-                attrs: {
-                  width: _vm.imgWidth ? _vm.imgWidth : null,
-                  src: _vm.img,
-                  alt: _vm.imgAlt
-                }
-              })
-            ])
+          ? _c(
+              "div",
+              { staticClass: "col-md-6" },
+              [
+                _vm._t("aimg"),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "img-responsive",
+                  style: _vm.styles,
+                  attrs: {
+                    width: _vm.imgWidth ? _vm.imgWidth : null,
+                    src: _vm.img,
+                    alt: _vm.imgAlt
+                  }
+                }),
+                _vm._v(" "),
+                _vm._t("bimg")
+              ],
+              2
+            )
           : _vm._e()
       ])
     ])
@@ -78092,10 +78103,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top-bar" }, [
+    return _c("div", { staticClass: "top-bar hidden-xs" }, [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "hidden-xs hidden-sm col-md-4 col-lg-4" }, [
+          _c("div", { staticClass: "hidden-sm col-md-4 col-lg-4" }, [
             _c("div", { staticClass: "nrlb" }, [
               _c("a", { attrs: { href: "/nrlb" } }, [
                 _c("img", {
@@ -78106,20 +78117,16 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-xs-4 col-sm-6 col-md-4 col-lg-4 site-logo" },
-            [
-              _c("a", { attrs: { href: "/" } }, [
-                _c("img", {
-                  staticClass: "img-responsive",
-                  attrs: { src: "images/site-logo.jpg" }
-                })
-              ])
-            ]
-          ),
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
+            _c("a", { attrs: { href: "/" } }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: { src: "images/site-logo.jpg" }
+              })
+            ])
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-xs-8 col-sm-6 col-md-4 col-lg-4" }, [
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
             _c("div", { staticClass: "info" }, [
               _c("p", [
                 _vm._v("\n                        Free Inspections - "),
@@ -78234,7 +78241,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bottom: 0;\n}\n.navbar-fixed-top {\n  top: 130px !important;\n}\n@media (max-width: 425px) {\n.navbar-fixed-top {\n      top: 80px !important;\n}\n}\n.navbar-inverse {\n  background-color: #FFFFFF !important;\n  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #353636 !important;\n}\n.navbar-header {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  line-height: 10px;\n  color: #353636 !important;\n  margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bottom: 0;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top {\n    top: 130px !important;\n}\n}\n.navbar-inverse {\n  background-color: #FFFFFF !important;\n  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #353636 !important;\n}\n.navbar-header {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a {\n  line-height: 10px;\n  color: #353636 !important;\n  margin-right: 25px;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -78245,6 +78252,9 @@ exports.push([module.i, "/* Navbar */\n.navbar {\n  min-height: 0;\n  margin-bot
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -78330,6 +78340,18 @@ var staticRenderFns = [
           _c("span", { staticClass: "icon-bar" }),
           _vm._v(" "),
           _c("span", { staticClass: "icon-bar" })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "navbar-brand color-dark hidden-sm hidden-md hidden-lg",
+          attrs: { href: "#" }
+        },
+        [
+          _vm._v("\n                D & G "),
+          _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")])
         ]
       )
     ])
@@ -78431,7 +78453,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-bottom: -20px;\n}\n@media (max-width: 425px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: -40px;\n}\n}\n@media (max-width: 425px) {\nheader.main-header .main-header-inner h1[data-v-0e24ada1] {\n      font-size: 18px;\n      padding: 0;\n}\n}\n@media (max-width: 767px) {\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      padding-top: 80px;\n}\n}\nheader.main-header h1[data-v-0e24ada1] {\n    color: #FFFFFF;\n    text-transform: uppercase;\n    font-weight: 700;\n    font-size: 30px;\n    line-height: 1.2;\n    padding-top: 50px;\n    padding-bottom: 50px;\n    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header a[data-v-0e24ada1] {\n    font-size: 18px;\n    margin-bottom: 15px;\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n    animation-delay: 1s;\n    -webkit-animation-delay: 1s;\n    -moz-animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n      background-color: #353636;\n      color: #FFFFFF;\n      cursor: pointer;\n      text-decoration: none;\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      animation-delay: 2s;\n      -moz-animation-delay: 2s;\n      -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      animation-delay: 3s;\n      -moz-animation-delay: 3s;\n      -webkit-animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\nheader.main-header .main-header-bottom[data-v-0e24ada1] {\n    background-color: #EE001B;\n    padding: 25px 0;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p[data-v-0e24ada1] {\n      font-size: 22px;\n      padding-top: 10px;\n      line-height: 28px;\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    margin-top: 10px;\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        margin-top: 0;\n        margin-bottom: 15px;\n        animation-delay: 1s;\n        -webkit-animation-delay: 1s;\n        -moz-animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    height: 100%;\n    width: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      animation-delay: 2s;\n      -moz-animation-delay: 2s;\n      -webkit-animation-delay: 2s;\n}\nheader.main-header .main-header-inner .delay-3s[data-v-0e24ada1] {\n      animation-delay: 3s;\n      -moz-animation-delay: 3s;\n      -webkit-animation-delay: 3s;\n      margin-left: auto;\n      margin-right: auto;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\nheader.main-header .main-header-bottom[data-v-0e24ada1] {\n    background-color: #EE001B;\n    padding: 25px 0;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-bottom .pull-left p[data-v-0e24ada1] {\n      font-size: 22px;\n      padding-top: 10px;\n      line-height: 28px;\n}\n", ""]);
 
 // exports
 
@@ -78442,6 +78464,12 @@ exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -78551,10 +78579,21 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", [
+      _c("h1", { staticClass: "hidden-xs" }, [
         _vm._v(
           '\n                            "Dependability You Can Rely On!"\n                        '
         )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hidden-sm hidden-md hidden-lg" }, [
+        _c("h1", [
+          _vm._v(
+            "\n                                Free Inspections\n                                "
+          ),
+          _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+            _vm._v("937-439-0554")
+          ])
+        ])
       ])
     ])
   },
@@ -78582,7 +78621,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12 text-center" }, [
+    return _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
       _c("h1", [
         _vm._v(
           '\n                            "Honesty You Deserve!"\n                        '
@@ -78606,7 +78645,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-12" }, [
+    return _c("div", { staticClass: "col-md-4 col-sm-6 hidden-xs" }, [
       _c("div", { staticClass: "pull-right" }, [
         _c("a", { attrs: { href: "#" } }, [_vm._v("Get A Free Inspection")])
       ])
@@ -80700,6 +80739,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -80845,6 +80887,7 @@ var render = function() {
             _c(
               "media-section",
               {
+                staticClass: "pull-right",
                 attrs: {
                   title: "Roofing",
                   subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
@@ -80878,52 +80921,72 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "images/certainteed.png",
-                        alt: "CertainTeed"
-                      }
-                    })
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: {
+                    src: "images/W-Carrollton-45449-Roofing-A4-41.jpg",
+                    alt: "45449 roofing"
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticStyle: { "margin-bottom": "10px" },
+                    attrs: { slot: "aimg" },
+                    slot: "aimg"
+                  },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/certainteed.png",
+                            alt: "CertainTeed"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/mueller-roofing.png",
+                            alt: "Mueller Roofing Dayton Ohio"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/certainteed-certified-dealer.png",
+                            alt: "CertainTeed Certified Installer"
+                          }
+                        })
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("CertainTeed Certified Installer")
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "images/mueller-roofing.png",
-                        alt: "Mueller Roofing Dayton Ohio"
-                      }
-                    })
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                    installers have been with us since we opened our doors.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                    available and the best warranty. The Landmark Series shingle endure time and weather\n                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                    thickness and dimension it offers.\n                "
+                    )
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "CertainTeed Certified Installer",
-                  img: "images/certainteed-certified-dealer.png",
-                  "no-shadow": true,
-                  "img-width": "350px",
-                  "img-alt": "CertainTeed Certified Installer"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                installers have been with us since we opened our doors.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                available and the best warranty. The Landmark Series shingle endure time and weather\n                beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                thickness and dimension it offers.\n            "
-                  )
                 ])
               ]
             )
@@ -81000,53 +81063,69 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "images/atrium-logo.png",
-                        alt: "Atrium Windows"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "images/marvin-doors-windows.png",
-                        alt: "Marvin Windows"
-                      }
-                    })
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Save money and help our planet",
-                  img: "images/recycle-planet.png",
-                  "no-shadow": true,
-                  "img-width": "350px",
-                  "img-alt": "D & G Roofing cares about our planet"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                We are always looking for ways to help our environment.\n                Our energy efficient windows can do more than just save you money;\n                they can also help you conserve resources, which mean our planet benefits as well.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [
-                    _vm._v("Start saving money and the environment today!")
-                  ])
-                ])
+                _c(
+                  "div",
+                  {
+                    staticStyle: { "margin-top": "10px" },
+                    attrs: { slot: "bimg" },
+                    slot: "bimg"
+                  },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/atrium-logo.png",
+                            alt: "Atrium Windows"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/marvin-doors-windows.png",
+                            alt: "Marvin Windows"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "page-header color-red" }, [
+                      _vm._v("Save money and help our planet")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-8" }, [
+                        _c("p", [
+                          _vm._v(
+                            "\n                            We are always looking for ways to help our environment.\n                            Our energy efficient windows can do more than just save you money;\n                            they can also help you conserve resources, which mean our planet benefits as well.\n                        "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c("strong", [
+                            _vm._v(
+                              "Start saving money and the environment today!"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/recycle-planet.png",
+                            alt: "D & G Roofing cares about our planet"
+                          }
+                        })
+                      ])
+                    ])
+                  ]
+                )
               ]
             )
           ],

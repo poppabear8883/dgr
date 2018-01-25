@@ -24,7 +24,9 @@ body {
 }
 
 body {
-  padding-top: 155px;
+  @media (min-width: 768px) {
+    padding-top: 155px;
+  }
 }
 
 /* colors */

@@ -1,21 +1,21 @@
 <template>
-    <div class="top-bar">
+    <div class="top-bar hidden-xs">
         <div class="container-fluid">
             <div class="row">
 
-                <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+                <div class="hidden-sm col-md-4 col-lg-4">
                     <div class="nrlb">
                         <a href="/nrlb">
                             <img class="img-responsive" src="images/no-roof-left-behind.png">
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 site-logo">
+                <div class="col-sm-6 col-md-4 col-lg-4 site-logo">
                     <a href="/">
                         <img class="img-responsive" src="images/site-logo.jpg">
                     </a>
                 </div>
-                <div class="col-xs-8 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="info">
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>
