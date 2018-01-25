@@ -10,12 +10,16 @@
                             <h1 class="hidden-xs">
                                 "Dependability You Can Rely On!"
                             </h1>
-                            <div class="hidden-sm hidden-md hidden-lg">
-                                <h1>
-                                    Free Inspections
-                                    <a href="tel:1-937-439-0554">937-439-0554</a>
-                                </h1>
-                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hidden-sm hidden-md hidden-lg">
+                        <div class="col-md-12 text-center">
+                            <h1>Free Inspections</h1>
+                        </div>
+
+                        <div class="col-md-3 col-md-offset-3 text-center">
+                            <h1><a href="tel:1-937-439-0554">937-439-0554</a></h1>
                         </div>
                     </div>
 
@@ -84,6 +88,7 @@
 
         h1 {
             @media (min-width: 768px) {
+                margin-bottom: 0;
                 color: $white;
                 text-transform: uppercase;
                 font-weight: 700;
