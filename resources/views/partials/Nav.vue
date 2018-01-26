@@ -84,8 +84,8 @@
     @media (min-width: 768px) {
 
         .navbar .navbar-nav {
-            display: inline-block;
-            float: none;
+            //display: inline-block;
+            //float: none;
         }
 
         .navbar .navbar-collapse {
