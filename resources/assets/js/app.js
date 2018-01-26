@@ -37,6 +37,7 @@ Vue.component('dg-featured-services', require('Views/partials/welcome/FeaturedSe
 Vue.component('dg-call-anytime', require('Views/partials/CallAnytime.vue'));
 Vue.component('dg-why-choose-us', require('Views/partials/WhyChooseUs.vue'));
 Vue.component('dg-tabbed-services', require('Views/partials/services/TabbedServices.vue'));
+Vue.component('dg-contact-form', require('Views/partials/contact/ContactForm.vue'));
 
 const app = new Vue({
     el: '#app',

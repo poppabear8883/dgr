@@ -83,7 +83,7 @@
                     tenants are safe throughout the repairs.
                 </p>
 
-                <img class="img-responsive" src="images/dayton-cincinnati-ohio-259600.jpeg" alt="45449 roofing">
+                <img class="img-responsive img-shadow" src="images/dayton-cincinnati-ohio-259600.jpg" alt="45449 roofing">
 
                 <div slot="aimg" style="margin-bottom: 10px">
                     <div class="row">
@@ -123,7 +123,9 @@
         <div v-if="active === 1" class="row">
             <media-section
                     title="Siding"
-                    subtitle="Siding subtext">
+                    img="images/dayton-cincinnati-ohio-259601.jpg"
+                    img-width="550px"
+                    img-alt="dayton cincinnati ohio roofing contractors">
 
                 <p>
                     Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the right
@@ -135,17 +137,28 @@
                 </p>
 
                 <p>
-                    We use Mastic Home Exterior by Ply Gem. Mastic by Ply Gem provides you with a wide range of home
-                    exterior design options - from styles and textures to popular colors and accessories. With Mastic
-                    you can create custom curb appeal that will be the envy of the neighborhood. Mastic Siding is made
-                    in the U.S.A. and Green Certified.
-                </p>
-
-                <p>
                     If you're in the market for a home siding service, we're here for you.
                     At D & G Roofing & Restoration, we're committed to ensuring your satisfaction and peace of mind.
                     Call today to set up an appointment.
                 </p>
+
+                <div slot="bimg" style="margin-top: 10px">
+                    <p>
+                        We use Mastic Home Exterior by Ply Gem. Mastic by Ply Gem provides you with a wide range of home
+                        exterior design options - from styles and textures to popular colors and accessories. With Mastic
+                        you can create custom curb appeal that will be the envy of the neighborhood. Mastic Siding is made
+                        in the U.S.A. and Green Certified.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="images/mastic-logo.png" alt="Mastic Home Exteriors">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="images/James-Hardie-logo-small.png" alt="James hardie Siding">
+                        </div>
+                    </div>
+                </div>
             </media-section>
         </div>
 

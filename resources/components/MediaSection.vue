@@ -10,9 +10,8 @@
                 </div>
                 <div v-if="img" class="col-md-6">
                     <slot name="aimg"></slot>
-                    <img :style="styles"
-                         :width="imgWidth ? imgWidth : null"
-                         class="img-responsive"
+                    <img :width="imgWidth ? imgWidth : null"
+                         :class="['img-responsive', noShadow ? null : 'img-shadow']"
                          :src="img"
                          :alt="imgAlt">
                     <slot name="bimg"></slot>
@@ -33,11 +32,6 @@
             imgWidth: {type: String},
             noShadow: {type: Boolean, default: false}
         },
-        computed: {
-            styles() {
-                return this.noShadow ? null : 'box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);';
-            }
-        }
     }
 </script>
 
