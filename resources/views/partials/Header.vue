@@ -129,8 +129,7 @@
             width: 100%;
             height: 100%;
             background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);
-            background-position: 17% 17%;
-            //background-position: center;
+            background-position: center;
             background-attachment: fixed;
             background-size: cover;
             color: $white;

@@ -42,7 +42,7 @@
                          @click="active = 5"
                          src="images/icon_commercial_circle.png" />
                     <br />
-                    Commercial Roofing
+                    Commercial
                 </div>
             </div>
         </div>
@@ -267,18 +267,65 @@
             </media-section>
         </div>
 
-        <!-- COMMERCIAL ROOFING -->
+        <!-- COMMERCIAL -->
         <div v-if="active === 5" class="row">
             <media-section
-                    title="Commercial Roofing"
-                    subtitle="Commercial Roofing subtext"
+                    title="Commercial"
+                    subtitle="We have you covered"
                     img="images/commercial-roofing-2.jpg"
                     img-width="550px"
-                    img-alt="dayton cincinnati ohio commercial roofing contractors">
+                    img-alt="dayton cincinnati ohio commercial contractors">
 
                 <p>
-                    Commercial Roofing content
+                    At D&G Roofing and Restoration, we offer a wide variety of applications for your business or
+                    multi-family units. Whether you are in need of a repair or a full replacement, we have you
+                    covered.
                 </p>
+
+                <h4 class="page-header color-red">Roofing</h4>
+                <p>
+                    <strong>Asphalt Shingles:</strong> D&G Roofing and Restoration are CertainTeed Master Elite Certified
+                    Installers. We are not just here to put a roof on, we are here to help solve problems. We use
+                    top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.
+
+                    <strong>EPDM Rubber Roofing:</strong> This application is used for flat surfaces. It’s proven hail resistant and
+                    has superior resistance to extreme heat and fire.
+
+                    <strong>TPO Membrane Roofing:</strong> This application is used for flat surfaces. TPO has become the fastest
+                    growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is
+                    Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO
+                    can significantly reduce air conditioning costs. Particularly for buildings in hot climates.
+                </p>
+
+                <h4 class="page-header color-red">Siding</h4>
+                <p>
+                    We offer a wide variety of products for your commercial property, whether you need a
+                    repair or a full replacement, we are here to help. Check out our siding section for more
+                    details on our siding selections.
+                </p>
+
+                <h4 class="page-header color-red">Gutters</h4>
+                <p>
+                    Gutters serve the very important function of diverting rain from your roof to avoid structural
+                    damage, damp walls and mold. When it comes to gutter installation, it's important to use a
+                    company with the right experience and quality products. That's where D&G Roofing and
+                    Restoration comes in.
+                </p>
+
+                <div slot="bimg">
+                    <h4 class="page-header color-red">Windows & Doors</h4>
+                    <p>
+                        At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.
+                        Check out our window and door section on this site for more information.
+                    </p>
+
+                    <h4 class="page-header color-red">BENEFIT FROM OUR EXPERTISE</h4>
+                    <p>
+                        At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally
+                        trained installers are dedicated to your complete satisfaction, and we go out of our way to keep
+                        our pricing reasonable and affordable. Call today and join our family of satisfied customers.
+                    </p>
+                </div>
             </media-section>
         </div>
     </div>

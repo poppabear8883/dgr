@@ -78449,7 +78449,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: 17% 17%;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-1s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n}\nheader.main-header .main-header-inner .delay-1-5s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, 0.8)), to(rgba(42, 42, 42, 0.3))), url(/images/header-shake.jpg);\n    background: linear-gradient(rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3)), url(/images/header-shake.jpg);\n    background-position: center;\n    background-attachment: fixed;\n    background-size: cover;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-1s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n}\nheader.main-header .main-header-inner .delay-1-5s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -80754,6 +80754,53 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -80886,7 +80933,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Commercial Roofing\n            ")
+          _vm._v("\n                Commercial\n            ")
         ])
       ])
     ]),
@@ -81243,19 +81290,79 @@ var render = function() {
               "media-section",
               {
                 attrs: {
-                  title: "Commercial Roofing",
-                  subtitle: "Commercial Roofing subtext",
+                  title: "Commercial",
+                  subtitle: "We have you covered",
                   img: "images/commercial-roofing-2.jpg",
                   "img-width": "550px",
-                  "img-alt":
-                    "dayton cincinnati ohio commercial roofing contractors"
+                  "img-alt": "dayton cincinnati ohio commercial contractors"
                 }
               },
               [
                 _c("p", [
                   _vm._v(
-                    "\n                Commercial Roofing content\n            "
+                    "\n                At D&G Roofing and Restoration, we offer a wide variety of applications for your business or\n                multi-family units. Whether you are in need of a repair or a full replacement, we have you\n                covered.\n            "
                   )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Roofing")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Asphalt Shingles:")]),
+                  _vm._v(
+                    " D&G Roofing and Restoration are CertainTeed Master Elite Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n\n                "
+                  ),
+                  _c("strong", [_vm._v("EPDM Rubber Roofing:")]),
+                  _vm._v(
+                    " This application is used for flat surfaces. It’s proven hail resistant and\n                has superior resistance to extreme heat and fire.\n\n                "
+                  ),
+                  _c("strong", [_vm._v("TPO Membrane Roofing:")]),
+                  _vm._v(
+                    " This application is used for flat surfaces. TPO has become the fastest\n                growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n                Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n                can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Siding")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                We offer a wide variety of products for your commercial property, whether you need a\n                repair or a full replacement, we are here to help. Check out our siding section for more\n                details on our siding selections.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Gutters")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural\n                damage, damp walls and mold. When it comes to gutter installation, it's important to use a\n                company with the right experience and quality products. That's where D&G Roofing and\n                Restoration comes in.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("Windows & Doors")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.\n                    Check out our window and door section on this site for more information.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("BENEFIT FROM OUR EXPERTISE")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally\n                    trained installers are dedicated to your complete satisfaction, and we go out of our way to keep\n                    our pricing reasonable and affordable. Call today and join our family of satisfied customers.\n                "
+                    )
+                  ])
                 ])
               ]
             )
