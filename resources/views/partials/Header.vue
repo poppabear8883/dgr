@@ -7,7 +7,7 @@
                 <slot>
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h1 class="hidden-xs">
+                            <h1 class="hidden-xs animated bounceInLeft">
                                 "Dependability You Can Rely On!"
                             </h1>
                         </div>
@@ -25,13 +25,13 @@
 
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
-                            <div class="pull-right">
+                            <div class="pull-right animated flipInX delay-2s">
                                 <a href="#">Refer A Friend</a>
                             </div>
                         </div>
 
                         <div class="col-xs-6 col-sm-6 col-md-6">
-                            <div class="pull-left">
+                            <div class="pull-left animated flipInX delay-2s">
                                 <a href="#">Join Our Team</a>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
 
                     <div class="row">
                         <div class="col-md-12 text-center hidden-xs">
-                            <h1>
+                            <h1 class="animated bounceInRight delay-1s">
                                 "Honesty You Deserve!"
                             </h1>
                         </div>
@@ -126,22 +126,20 @@
 
         .main-header-inner {
             padding-bottom: 25px;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
+            background: linear-gradient( rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.1) ), url(/images/header-shake.jpg);
+            background-position: 17% 17%;
             color: $white;
+
+            .delay-1s {
+                animation-delay: 1s;
+            }
+
+            .delay-1-5s {
+                animation-delay: 1.5s;
+            }
 
             .delay-2s {
                 animation-delay: 2s;
-            }
-
-            .delay-3s {
-                animation-delay: 3s;
-                margin-left: auto;
-                margin-right: auto;
             }
 
             @media (min-width: 768px) {

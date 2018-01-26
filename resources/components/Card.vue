@@ -145,7 +145,7 @@
 </script>
 <style lang="scss">
     $default: #373737;
-    $red: #a31521;
+    $red: #a31724;
     $blue: #33658A;
     $green: #2a852f;
     $yellow: #bab90f;

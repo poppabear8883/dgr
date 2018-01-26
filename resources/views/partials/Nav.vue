@@ -35,6 +35,25 @@
     @import "~Sass/_variables.scss";
 
     /* Navbar */
+    .navbar-nav {
+        font-size: 20px;
+        padding-top: 5px;
+
+        li {
+            text-align: center;
+            border-right: 1px lighten($grey, 50%) solid;
+
+            a {
+                padding-right: 25px;
+                padding-left: 25px;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
     .navbar {
          min-height: 0;
          margin-bottom: 0;
@@ -47,8 +66,9 @@
     }
 
     .navbar-inverse {
-        background-color: $white !important;
-        border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+        background-color: lighten($dark, 77%) !important;
+        // border-top: 1px lighten($grey, 50%) solid;
+        border-bottom: 5px $dark solid;
     }
 
     .navbar-inverse .navbar-toggle .icon-bar {
@@ -60,9 +80,9 @@
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        line-height: 10px;
+        //line-height: 10px;
         color: $dark !important;
-        margin-right: 25px;
+        // margin-right: 25px;
     }
 
     .navbar-inverse .navbar-nav > li > a:hover,

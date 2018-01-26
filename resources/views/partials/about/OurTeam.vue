@@ -169,14 +169,12 @@
                 display: inline-block !important;
                 margin: 10px;
                 width: 200px;
-                filter: grayscale(100%);
                 transition: .30s ease;
 
                 &:hover, &.active {
                     transition: .30s ease;
                     transform: scale(1.05);
                     cursor: pointer;
-                    filter: grayscale(0%);
                 }
             }
         }
