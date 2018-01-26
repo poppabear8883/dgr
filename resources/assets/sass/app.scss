@@ -29,49 +29,6 @@ body {
   }
 }
 
-/* colors */
-.color-light-red {
-  color: lighten($red, 25%);
-}
-
-.color-red {
-  color: $red;
-}
-
-.color-dark-red {
-  color: darken($red, 25%);
-}
-
-.color-dark {
-  color: $dark;
-}
-
-.color-light {
-  color: darken($white, 10%);
-}
-
-.fa-facebook {
-  background: #3b5998 !important;
-}
-
-.fa-linkedin {
-  background: #007bb6 !important;
-}
-
-.fa-twitter {
-  background: #00aced !important;
-}
-
-.fa-google-plus {
-  background: #dd4b39 !important;
-}
-
-.fa-angieslist {
-  background: #7FBB01 !important;
-  padding-left: 8px !important;
-  padding-top: 10px !important;
-}
-
 .img-portfolio {
   margin-bottom: 15px;
 }

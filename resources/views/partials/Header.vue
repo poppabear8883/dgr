@@ -1,7 +1,7 @@
 <template>
     <header class="main-header">
 
-        <div class="main-header-inner">
+        <div class="main-header-inner" :style="styles">
 
             <div class="container">
                 <slot>
@@ -68,7 +68,25 @@
 </template>
 <script>
     export default {
-
+        props: {
+            bgImg: {type: String, default: 'images/header.jpg'},
+            bgColor: {type: String, default: '#FFFFFF'},
+            color: {type: String, default: '#000000'}
+        },
+        computed: {
+            styles() {
+                if(this.bgImg) {
+                    return `
+                    background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/${this.bgImg});
+                    background-position: center;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    `;
+                } else {
+                    return `background-color: ${this.bgColor};color: ${this.color}`;
+                }
+            }
+        }
     }
 </script>
 <style lang="scss" scoped>
@@ -128,10 +146,10 @@
             padding-bottom: 25px;
             width: 100%;
             height: 100%;
-            background: linear-gradient( rgba(42, 42, 42, 0.8), rgba(42, 42, 42, 0.3) ), url(/images/header-shake.jpg);
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
+            //background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/);
+            //background-position: center;
+            //background-attachment: fixed;
+            //background-size: cover;
             color: $white;
 
             .delay-1s {

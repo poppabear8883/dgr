@@ -83,7 +83,7 @@
                     tenants are safe throughout the repairs.
                 </p>
 
-                <img class="img-responsive" src="images/W-Carrollton-45449-Roofing-A4-41.jpg" alt="45449 roofing">
+                <img class="img-responsive" src="images/dayton-cincinnati-ohio-259600.jpeg" alt="45449 roofing">
 
                 <div slot="aimg" style="margin-bottom: 10px">
                     <div class="row">
