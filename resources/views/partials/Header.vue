@@ -18,7 +18,7 @@
                             <h1>Free Inspections</h1>
                         </div>
 
-                        <div class="col-md-3 col-md-offset-3 text-center">
+                        <div class="col-md-6 col-md-offset-3 text-center">
                             <h1><a href="tel:1-937-439-0554">937-439-0554</a></h1>
                         </div>
                     </div>
@@ -69,7 +69,8 @@
 <script>
     export default {
         props: {
-            bgImg: {type: String, default: 'images/header.jpg'},
+            bgImg: {type: String, default: 'images/headers/header.jpg'},
+            bgPos: {type: String, default: 'center top 75px'},
             bgColor: {type: String, default: '#FFFFFF'},
             color: {type: String, default: '#000000'}
         },
@@ -78,7 +79,7 @@
                 if(this.bgImg) {
                     return `
                     background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/${this.bgImg});
-                    background-position: center;
+                    background-position: ${this.bgPos};
                     background-attachment: fixed;
                     background-size: cover;
                     `;
@@ -97,7 +98,6 @@
         width: 100%;
         margin-top: 40px;
         margin-bottom: -20px;
-
 
         @media (min-width: 768px) {
             margin-top: 0;
@@ -165,6 +165,7 @@
             }
 
             @media (min-width: 768px) {
+                min-height: 350px;
                 padding: 0;
             }
         }

@@ -7,9 +7,9 @@
 @stop
 
 @section('header')
-    <dg-header bg-img="images/services-header.jpg">
+    <dg-header bg-img="images/headers/services-header.jpg" bg-pos="center">
         <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px">
+            <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
                 Services
             </h1>
         </div>

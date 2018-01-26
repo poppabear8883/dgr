@@ -78231,7 +78231,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-nav[data-v-49a0a682] {\n  font-size: 20px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #d8d8d8 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n.navbar[data-v-49a0a682] {\n  min-height: 0;\n  margin-bottom: 0;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    top: 130px !important;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #fafafa !important;\n  border-bottom: 5px #353636 solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #353636 !important;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar-nav[data-v-49a0a682] {\n  font-size: 20px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #d8d8d8 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    top: 130px !important;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #fafafa !important;\n  border-bottom: 5px #353636 solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #353636 !important;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #353636 !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -78269,11 +78269,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        pos: { type: String, default: 'right' }
-    }
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 /* 275 */
@@ -78299,7 +78295,7 @@ var render = function() {
             staticClass: "collapse navbar-collapse",
             attrs: { id: "bs-example-navbar-collapse-1" }
           },
-          [_c("ul", { class: ["nav", "navbar-nav"] }, [_vm._t("default")], 2)]
+          [_c("ul", { staticClass: "nav navbar-nav" }, [_vm._t("default")], 2)]
         )
       ])
     ]
@@ -78443,7 +78439,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-1s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n}\nheader.main-header .main-header-inner .delay-1-5s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 0;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353636;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\nheader.main-header .main-header-inner .delay-1s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n}\nheader.main-header .main-header-inner .delay-1-5s[data-v-0e24ada1] {\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s;\n}\nheader.main-header .main-header-inner .delay-2s[data-v-0e24ada1] {\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 350px;\n        padding: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -78525,14 +78521,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
-        bgImg: { type: String, default: 'images/header.jpg' },
+        bgImg: { type: String, default: 'images/headers/header.jpg' },
+        bgPos: { type: String, default: 'center top 75px' },
         bgColor: { type: String, default: '#FFFFFF' },
         color: { type: String, default: '#000000' }
     },
     computed: {
         styles: function styles() {
             if (this.bgImg) {
-                return '\n                background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/' + this.bgImg + ');\n                background-position: center;\n                background-attachment: fixed;\n                background-size: cover;\n                ';
+                return '\n                background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-attachment: fixed;\n                background-size: cover;\n                ';
             } else {
                 return 'background-color: ' + this.bgColor + ';color: ' + this.color;
             }
@@ -78602,7 +78599,7 @@ var staticRenderFns = [
         _c("h1", [_vm._v("Free Inspections")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-3 col-md-offset-3 text-center" }, [
+      _c("div", { staticClass: "col-md-6 col-md-offset-3 text-center" }, [
         _c("h1", [
           _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
             _vm._v("937-439-0554")

@@ -15,7 +15,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul :class="['nav', 'navbar-nav']">
+                <ul class="nav navbar-nav">
                     <slot></slot>
                 </ul>
             </div>
@@ -26,9 +26,7 @@
 </template>
 <script>
     export default {
-        props: {
-            pos: {type: String, default: 'right'}
-        }
+
     }
 </script>
 <style lang="scss" scoped>
@@ -54,11 +52,6 @@
         }
     }
 
-    .navbar {
-         min-height: 0;
-         margin-bottom: 0;
-    }
-
     .navbar-fixed-top {
         @media (min-width: 768px) {
             top: 130px !important;
@@ -67,7 +60,6 @@
 
     .navbar-inverse {
         background-color: lighten($dark, 77%) !important;
-        // border-top: 1px lighten($grey, 50%) solid;
         border-bottom: 5px $dark solid;
     }
 
@@ -80,9 +72,7 @@
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        //line-height: 10px;
         color: $dark !important;
-        // margin-right: 25px;
     }
 
     .navbar-inverse .navbar-nav > li > a:hover,

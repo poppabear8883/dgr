@@ -7,12 +7,13 @@
 @stop
 
 @section('header')
-    <dg-header bg-img="images/contact-header.jpg">
+    <dg-header bg-img="images/contact-header.jpg" bg-pos="top 0 left 0">
         <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px">
+            <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
                 Contact Us
             </h1>
         </div>
+
         <div slot="bottom">
             <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="pull-left">
