@@ -70,7 +70,7 @@
     export default {
         props: {
             bgImg: {type: String, default: 'images/headers/header.jpg'},
-            bgPos: {type: String, default: 'center top 75px'},
+            bgPos: {type: String, default: 'center'},
             bgColor: {type: String, default: '#FFFFFF'},
             color: {type: String, default: '#000000'}
         },
@@ -80,7 +80,6 @@
                     return `
                     background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/${this.bgImg});
                     background-position: ${this.bgPos};
-                    background-attachment: fixed;
                     background-size: cover;
                     `;
                 } else {
@@ -96,7 +95,7 @@
     /* Main Header */
     header.main-header {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 50px;
         margin-bottom: -20px;
 
         @media (min-width: 768px) {

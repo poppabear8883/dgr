@@ -39,7 +39,7 @@
         margin-left: auto;
         padding: 10px 0;
         top: 0;
-        position: fixed;
+        //position: fixed;
         background-color: $white;
         width: 100%;
         z-index: 100;

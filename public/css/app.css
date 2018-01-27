@@ -14853,12 +14853,6 @@ body {
   color: #252526;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding-top: 155px;
-  }
-}
-
 .delay-1s {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;

@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav :class="['navbar', 'navbar-inverse', fixedTop ? 'navbar-fixed-top' : null]" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -45,7 +45,32 @@
 </template>
 <script>
     export default {
+      data() {
+        return {
+            fixedTop: false
+        }
+      },
+      methods: {
+        handleScroll() {
+          if (document.documentElement.scrollTop >= 137 || window.innerWidth < 768) {
+            this.fixedTop = true;
+          } else {
+            this.fixedTop = false;
+          }
+        }
+      },
 
+      created() {
+        if (window.innerWidth < 768) {
+          this.fixedTop = true;
+        }
+
+        window.addEventListener('scroll', this.handleScroll);
+      },
+
+      destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
     }
 </script>
 <style lang="scss" scoped>
@@ -55,6 +80,11 @@
     .navbar-brand {
         font-size: 38px;
         color: $white;
+    }
+
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
     }
 
     .navbar-nav {
@@ -78,7 +108,8 @@
 
     .navbar-fixed-top {
         @media (min-width: 768px) {
-            top: 130px !important;
+            transition: .5s ease;
+            //top: 130px !important;
         }
     }
 

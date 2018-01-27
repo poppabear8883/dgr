@@ -78142,7 +78142,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  position: fixed;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo[data-v-550cb112] {\n      text-align: center;\n}\n}\n.top-bar .nrlb[data-v-550cb112] {\n    margin-top: 20px;\n}\n.top-bar .nrlb img[data-v-550cb112] {\n      width: 250px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo[data-v-550cb112] {\n      text-align: center;\n}\n}\n.top-bar .nrlb[data-v-550cb112] {\n    margin-top: 20px;\n}\n.top-bar .nrlb img[data-v-550cb112] {\n      width: 250px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
 
 // exports
 
@@ -78335,7 +78335,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-brand[data-v-49a0a682] {\n  font-size: 38px;\n  color: #FFFFFF;\n}\n.navbar-nav[data-v-49a0a682] {\n  font-size: 18px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #585859 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    top: 130px !important;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #353536 !important;\n  border-bottom: 1px #EE001B solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n  border-color: #FFFFFF;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.navbar-brand[data-v-49a0a682] {\n  font-size: 38px;\n  color: #FFFFFF;\n}\n.navbar[data-v-49a0a682] {\n  border-radius: 0;\n  margin-bottom: 0;\n}\n.navbar-nav[data-v-49a0a682] {\n  font-size: 18px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #585859 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    -webkit-transition: .5s ease;\n    transition: .5s ease;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #353536 !important;\n  border-bottom: 1px #EE001B solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n  border-color: #FFFFFF;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -78392,7 +78392,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      fixedTop: false
+    };
+  },
+
+  methods: {
+    handleScroll: function handleScroll() {
+      if (document.documentElement.scrollTop >= 137 || window.innerWidth < 768) {
+        this.fixedTop = true;
+      } else {
+        this.fixedTop = false;
+      }
+    }
+  },
+
+  created: function created() {
+    if (window.innerWidth < 768) {
+      this.fixedTop = true;
+    }
+
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed: function destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+});
 
 /***/ }),
 /* 275 */
@@ -78405,7 +78432,11 @@ var render = function() {
   return _c(
     "nav",
     {
-      staticClass: "navbar navbar-inverse navbar-fixed-top",
+      class: [
+        "navbar",
+        "navbar-inverse",
+        _vm.fixedTop ? "navbar-fixed-top" : null
+      ],
       attrs: { role: "navigation" }
     },
     [
@@ -78636,7 +78667,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n        padding-bottom: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n        padding-bottom: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -78719,14 +78750,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
         bgImg: { type: String, default: 'images/headers/header.jpg' },
-        bgPos: { type: String, default: 'center top 75px' },
+        bgPos: { type: String, default: 'center' },
         bgColor: { type: String, default: '#FFFFFF' },
         color: { type: String, default: '#000000' }
     },
     computed: {
         styles: function styles() {
             if (this.bgImg) {
-                return '\n                background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-attachment: fixed;\n                background-size: cover;\n                ';
+                return '\n                background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ';
             } else {
                 return 'background-color: ' + this.bgColor + ';color: ' + this.color;
             }
