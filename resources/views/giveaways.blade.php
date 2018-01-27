@@ -10,7 +10,7 @@
     <dg-header bg-img="images/giveaways-header.jpg">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">
                     Giveaways
                 </h1>
             </div>

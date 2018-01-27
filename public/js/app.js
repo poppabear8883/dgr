@@ -78486,7 +78486,7 @@ var staticRenderFns = [
           _c(
             "span",
             {
-              staticClass: "color-light",
+              staticClass: "color-light hidden-xs",
               staticStyle: { "font-size": "14px" }
             },
             [_vm._v("and Restoration")]

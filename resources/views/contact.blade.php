@@ -10,7 +10,7 @@
     <dg-header bg-img="images/headers/contact-header.jpg" bg-pos="top 0 left 0">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">
                     Contact Us
                 </h1>
             </div>

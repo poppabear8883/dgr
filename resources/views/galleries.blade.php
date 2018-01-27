@@ -10,7 +10,7 @@
     <dg-header bg-img="images/headers/galleries-header.jpg" bg-pos="center">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">
                     Galleries
                 </h1>
             </div>

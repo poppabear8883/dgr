@@ -10,7 +10,7 @@
                 </button>
                 <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/">
                     D&G <span class="color-red">Roofing</span>
-                    <span class="color-light" style="font-size: 14px">and Restoration</span>
+                    <span class="color-light hidden-xs" style="font-size: 14px">and Restoration</span>
                 </a>
             </div>
 
