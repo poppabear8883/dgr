@@ -38,8 +38,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-12 text-center hidden-xs">
-                            <h1 class="animated bounceInRight delay-1s">
+                        <div class="col-sm-12 col-md-12 text-center hidden-xs">
+                            <h1 class="animated bounceIn delay-1s">
                                 "Honesty You Deserve!"
                             </h1>
                         </div>
@@ -110,7 +110,7 @@
             }
 
             @media (min-width: 768px) {
-                margin-bottom: 0;
+                margin-bottom: 12.5px;
                 color: $white;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -146,27 +146,11 @@
             padding-bottom: 25px;
             width: 100%;
             height: 100%;
-            //background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/);
-            //background-position: center;
-            //background-attachment: fixed;
-            //background-size: cover;
             color: $white;
-
-            .delay-1s {
-                animation-delay: 1s;
-            }
-
-            .delay-1-5s {
-                animation-delay: 1.5s;
-            }
-
-            .delay-2s {
-                animation-delay: 2s;
-            }
 
             @media (min-width: 768px) {
                 min-height: 350px;
-                padding: 0;
+                padding-bottom: 0;
             }
         }
     }

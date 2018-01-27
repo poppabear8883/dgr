@@ -14,7 +14,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="info">
+                    <div class="info clearfix">
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>
                         </p>

@@ -8,20 +8,25 @@
 
 @section('header')
     <dg-header bg-img="images/headers/services-header.jpg" bg-pos="center">
-        <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
-                Services
-            </h1>
-        </div>
-        <div slot="bottom">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <div class="pull-left">
-                    <p>Need a FREE and Painless inspection ? We can help!</p>
-                </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                    Services
+                </h1>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pull-right">
-                    <a href="#">Get A Free Inspection</a>
+        </div>
+
+        <div slot="bottom">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="pull-left">
+                        <p>Need a FREE and Painless inspection ? We can help!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 hidden-xs">
+                    <div class="pull-right">
+                        <a href="#">Get A Free Inspection</a>
+                    </div>
                 </div>
             </div>
         </div>

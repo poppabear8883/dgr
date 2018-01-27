@@ -16,6 +16,24 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/services">Services</a>
+                    </li>
+                    <li>
+                        <a href="/galleries">Galleries</a>
+                    </li>
+                    <li>
+                        <a href="/giveaways">Giveaways</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
                     <slot></slot>
                 </ul>
             </div>
@@ -84,8 +102,8 @@
     @media (min-width: 768px) {
 
         .navbar .navbar-nav {
-            //display: inline-block;
-            //float: none;
+            display: inline-block;
+            float: none;
         }
 
         .navbar .navbar-collapse {
