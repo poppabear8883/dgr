@@ -78221,13 +78221,13 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "info clearfix" }, [
+            _c("div", { staticClass: "info" }, [
               _c("p", [
                 _vm._v("\n                        Free Inspections - "),
                 _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
               ]),
               _vm._v(" "),
-              _c("h1", [
+              _c("h1", { staticClass: "animated swing delay-1s" }, [
                 _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
                   _vm._v("937-439-0554")
                 ])
@@ -78636,7 +78636,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n        -webkit-animation-delay: 1s;\n                animation-delay: 1s;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n        padding-bottom: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 40px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n        padding-bottom: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -78850,7 +78850,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "col-md-4 col-sm-6 hidden-xs" }, [
         _c("div", { staticClass: "pull-right" }, [
-          _c("a", { attrs: { href: "#" } }, [_vm._v("Get A Free Inspection")])
+          _c(
+            "a",
+            { staticClass: "animated tada delay-3s", attrs: { href: "#" } },
+            [_vm._v("Get A Free Inspection")]
+          )
         ])
       ])
     ])

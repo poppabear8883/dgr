@@ -14889,6 +14889,11 @@ body {
           animation-delay: 3.5s;
 }
 
+.delay-5s {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
 .img-shadow {
   -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 26px rgba(0, 0, 0, 0.2);

@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6 hidden-xs">
                             <div class="pull-right">
-                                <a href="#">Get A Free Inspection</a>
+                                <a class="animated tada delay-3s" href="#">Get A Free Inspection</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,6 @@
 
             @media (min-width: 768px) {
                 font-size: 18px;
-                animation-delay: 1s;
 
                 &:hover {
                     background-color: $dark;

@@ -14,11 +14,11 @@
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="info clearfix">
+                    <div class="info">
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>
                         </p>
-                        <h1><a href="tel:1-937-439-0554">937-439-0554</a></h1>
+                        <h1 class="animated swing delay-1s"><a href="tel:1-937-439-0554">937-439-0554</a></h1>
                     </div>
                 </div>
             </div>
