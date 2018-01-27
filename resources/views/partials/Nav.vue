@@ -8,8 +8,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand color-dark hidden-sm hidden-md hidden-lg" href="/">
-                    D & G <span class="color-red">Roofing</span>
+                <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/">
+                    D&G <span class="color-red">Roofing</span>
+                    <span class="color-light" style="font-size: 14px">and Restoration</span>
                 </a>
             </div>
 
@@ -51,13 +52,18 @@
     @import "~Sass/_variables.scss";
 
     /* Navbar */
+    .navbar-brand {
+        font-size: 38px;
+        color: $white;
+    }
+
     .navbar-nav {
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 5px;
 
         li {
             text-align: center;
-            border-right: 1px lighten($grey, 50%) solid;
+            border-right: 1px $grey solid;
 
             a {
                 padding-right: 25px;
@@ -77,20 +83,30 @@
     }
 
     .navbar-inverse {
-        background-color: lighten($dark, 77%) !important;
-        border-bottom: 5px $dark solid;
+        background-color: $dark !important;
+        border-bottom: 1px $red solid;
     }
 
     .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: $dark !important;
+        background-color: $white !important;
     }
 
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: #333;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: $white;
+    }
+
+
     .navbar-header {
-        color: $dark !important;
+        color: $white !important;
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        color: $dark !important;
+        color: $white !important;
     }
 
     .navbar-inverse .navbar-nav > li > a:hover,

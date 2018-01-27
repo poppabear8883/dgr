@@ -8,21 +8,11 @@
 
 @section('header')
     <dg-header bg-img="images/headers/galleries-header.jpg" bg-pos="center">
-        <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
-                Galleries
-            </h1>
-        </div>
-        <div slot="bottom">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <div class="pull-left">
-                    <p>Want an exciting career with D & G Roofing & Restoration?</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pull-right">
-                    <a href="#">Join Our Team</a>
-                </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                    Galleries
+                </h1>
             </div>
         </div>
     </dg-header>

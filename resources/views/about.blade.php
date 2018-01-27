@@ -7,11 +7,13 @@
 @stop
 
 @section('header')
-    <dg-header bg-img="images/about-header.jpg">
-        <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
-                About Us
-            </h1>
+    <dg-header bg-img="images/headers/about-header.jpg">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 100px">
+                    About Us
+                </h1>
+            </div>
         </div>
     </dg-header>
 @stop

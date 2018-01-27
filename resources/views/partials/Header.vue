@@ -78,7 +78,7 @@
             styles() {
                 if(this.bgImg) {
                     return `
-                    background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/${this.bgImg});
+                    background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/${this.bgImg});
                     background-position: ${this.bgPos};
                     background-attachment: fixed;
                     background-size: cover;
@@ -149,7 +149,7 @@
             color: $white;
 
             @media (min-width: 768px) {
-                min-height: 350px;
+                min-height: 300px;
                 padding-bottom: 0;
             }
         }
