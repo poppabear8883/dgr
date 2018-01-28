@@ -78391,8 +78391,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -78431,47 +78429,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { class: _vm.fixedTop ? "fixed-top" : null }, [
-    _c(
-      "nav",
-      { staticClass: "navbar navbar-inverse", attrs: { role: "navigation" } },
-      [
-        _c("div", { staticClass: "container-fluid" }, [
-          _vm._m(0, false, false),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse",
-              attrs: { id: "bs-example-navbar-collapse-1" }
-            },
-            [
-              _c(
-                "ul",
-                { staticClass: "nav navbar-nav" },
-                [
-                  _vm._m(1, false, false),
-                  _vm._v(" "),
-                  _vm._m(2, false, false),
-                  _vm._v(" "),
-                  _vm._m(3, false, false),
-                  _vm._v(" "),
-                  _vm._m(4, false, false),
-                  _vm._v(" "),
-                  _vm._m(5, false, false),
-                  _vm._v(" "),
-                  _vm._m(6, false, false),
-                  _vm._v(" "),
-                  _vm._t("default")
-                ],
-                2
-              )
-            ]
-          )
-        ])
-      ]
-    )
-  ])
+  return _c(
+    "nav",
+    {
+      class: ["navbar", "navbar-inverse", _vm.fixedTop ? "fixed-top" : null],
+      attrs: { role: "navigation" }
+    },
+    [
+      _c("div", { staticClass: "container-fluid" }, [
+        _vm._m(0, false, false),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "bs-example-navbar-collapse-1" }
+          },
+          [
+            _c(
+              "ul",
+              { staticClass: "nav navbar-nav" },
+              [
+                _vm._m(1, false, false),
+                _vm._v(" "),
+                _vm._m(2, false, false),
+                _vm._v(" "),
+                _vm._m(3, false, false),
+                _vm._v(" "),
+                _vm._m(4, false, false),
+                _vm._v(" "),
+                _vm._m(5, false, false),
+                _vm._v(" "),
+                _vm._m(6, false, false),
+                _vm._v(" "),
+                _vm._t("default")
+              ],
+              2
+            )
+          ]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -78508,7 +78507,7 @@ var staticRenderFns = [
           attrs: { href: "/" }
         },
         [
-          _vm._v("\n                    D&G "),
+          _vm._v("\n                D&G "),
           _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
           _vm._v(" "),
           _c(
