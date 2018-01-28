@@ -52,7 +52,7 @@
       },
       methods: {
         handleScroll() {
-          if (document.documentElement.scrollTop >= 200 || window.innerWidth < 768) {
+          if (document.documentElement.scrollTop >= 198 || window.innerWidth < 768) {
             this.fixedTop = true;
           } else {
             this.fixedTop = false;
@@ -79,92 +79,88 @@
     @import "~Sass/_variables.scss";
 
     /* Navbar */
-    .fixed-top {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100% !important;
-        z-index: 99;
-        transition: top 500ms;
-    }
-
-    .navbar-brand {
-        font-size: 38px;
-        color: $white;
-    }
 
     .navbar {
+        position: static;
         border-radius: 0;
         margin-bottom: 0;
-    }
+        transition: top 500ms;
+        top: -64px;
 
-    .navbar-nav {
-        font-size: 18px;
-        padding-top: 5px;
+        &.fixed-top {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            z-index: 99;
+            transition: top 500ms;
+        }
 
-        li {
-            text-align: center;
-            border-right: 1px $grey solid;
+        &.navbar-inverse {
+            background-color: $dark !important;
+            border-bottom: 1px $red solid;
 
-            a {
-                padding-right: 25px;
-                padding-left: 25px;
+            .navbar-toggle {
+                border-color: $white;
+
+                .icon-bar {
+                    background-color: $white !important;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: #333;
+                }
+            }
+        }
+
+        .navbar-brand {
+            font-size: 38px;
+            color: $white;
+        }
+
+        .navbar-nav {
+            font-size: 18px;
+            padding-top: 5px;
+
+            li {
+                text-align: center;
+                border-right: 1px $grey solid;
+
+                a {
+                    color: $white !important;
+                    padding-right: 25px;
+                    padding-left: 25px;
+
+                    &:hover,
+                    &:focus {
+                        color: $red !important;
+                        cursor: pointer;
+                    }
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
             }
 
-            &:last-child {
-                border-right: none;
+            @media (min-width: 768px) {
+                display: inline-block;
+                float: none;
             }
         }
-    }
 
-    .navbar-fixed-top {
-        @media (min-width: 768px) {
-            //top: 130px !important;
-        }
-    }
-
-    .navbar-inverse {
-        background-color: $dark !important;
-        border-bottom: 1px $red solid;
-    }
-
-    .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: $white !important;
-    }
-
-    .navbar-inverse .navbar-toggle:hover,
-    .navbar-inverse .navbar-toggle:focus {
-        background-color: #333;
-    }
-
-    .navbar-inverse .navbar-toggle {
-        border-color: $white;
-    }
-
-
-    .navbar-header {
-        color: $white !important;
-    }
-
-    .navbar-inverse .navbar-nav > li > a {
-        color: $white !important;
-    }
-
-    .navbar-inverse .navbar-nav > li > a:hover,
-    .navbar-inverse .navbar-nav > li > a:focus {
-        color: $red !important;
-        cursor: pointer;
-    }
-
-    @media (min-width: 768px) {
-
-        .navbar .navbar-nav {
-            display: inline-block;
-            float: none;
+        .navbar-header {
+            color: $white !important;
         }
 
-        .navbar .navbar-collapse {
-            text-align: center;
+        .navbar-collapse {
+            text-align: left;
+
+            @media (min-width: 768px) {
+                text-align: center;
+            }
         }
+
     }
 </style>
