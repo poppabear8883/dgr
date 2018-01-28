@@ -80110,7 +80110,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   methods: {
     handleScroll: function handleScroll() {
-      console.log(document.documentElement.scrollTop);
+      //console.log(document.documentElement.scrollTop);
 
       if (document.documentElement.scrollTop >= 280 || window.innerWidth < 768) {
         this.scrolled = true;
