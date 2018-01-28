@@ -79989,7 +79989,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.featured-services[data-v-621b8fcd] {\n  background-color: transparent;\n  padding-top: 30px;\n}\n@media (min-width: 768px) {\n.featured-services[data-v-621b8fcd] {\n      padding-top: 0;\n      background-color: #FFFFFF;\n      padding-bottom: 50px;\n}\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .roofing .roofing-panel img[data-v-621b8fcd] {\n        width: 75px;\n}\n@media (min-width: 992px) {\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n          height: 569px;\n}\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n@media (min-width: 992px) {\n.featured-services .panel[data-v-621b8fcd] {\n      min-height: 530px;\n}\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin: 50px;\n    -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n    background-color: #f7f7f7;\n    border: 1px #f2f2f2 solid;\n}\n.featured-services .panel-default img[data-v-621b8fcd] {\n      display: inline-block;\n      width: 55px;\n}\n@media (min-width: 992px) {\n.featured-services .panel-default[data-v-621b8fcd] {\n        margin: 0;\n        margin-top: 100px;\n}\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      padding: 5px;\n      margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n        font-size: 18px;\n        padding: 10px 20px;\n        display: block;\n        color: #FFFFFF;\n        font-weight: 500;\n        background-color: #EE001B;\n        margin: 3px;\n        -webkit-transition: .15s ease;\n        transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n.featured-services hr[data-v-621b8fcd] {\n    border-top: 1px #e6e6e6 solid;\n}\n.featured-services h3[data-v-621b8fcd] {\n    text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\n.featured-services[data-v-621b8fcd] {\n  min-height: 800px;\n  background-color: transparent;\n  padding-top: 30px;\n}\n@media (min-width: 768px) {\n.featured-services[data-v-621b8fcd] {\n      padding-top: 0;\n      background-color: #FFFFFF;\n      padding-bottom: 50px;\n}\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .roofing .roofing-panel img[data-v-621b8fcd] {\n        width: 75px;\n}\n@media (min-width: 992px) {\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n          height: 569px;\n}\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n@media (min-width: 992px) {\n.featured-services .panel[data-v-621b8fcd] {\n      min-height: 530px;\n}\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin: 50px;\n    -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n    background-color: #f7f7f7;\n    border: 1px #f2f2f2 solid;\n}\n.featured-services .panel-default img[data-v-621b8fcd] {\n      display: inline-block;\n      width: 55px;\n}\n@media (min-width: 992px) {\n.featured-services .panel-default[data-v-621b8fcd] {\n        margin: 0;\n        margin-top: 100px;\n}\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      padding: 5px;\n      margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n        font-size: 18px;\n        padding: 10px 20px;\n        display: block;\n        color: #FFFFFF;\n        font-weight: 500;\n        background-color: #EE001B;\n        margin: 3px;\n        -webkit-transition: .15s ease;\n        transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n          -webkit-transition: .15s ease;\n          transition: .15s ease;\n}\n.featured-services hr[data-v-621b8fcd] {\n    border-top: 1px #e6e6e6 solid;\n}\n.featured-services h3[data-v-621b8fcd] {\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -80101,7 +80101,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "featured-services"
+  name: "featured-services",
+  data: function data() {
+    return {
+      scrolled: false
+    };
+  },
+
+  methods: {
+    handleScroll: function handleScroll() {
+      console.log(document.documentElement.scrollTop);
+
+      if (document.documentElement.scrollTop >= 300 || window.innerWidth < 768) {
+        this.scrolled = true;
+      }
+    }
+  },
+
+  created: function created() {
+    if (window.innerWidth < 768) {
+      this.scrolled = true;
+    }
+
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed: function destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 });
 
 /***/ }),
@@ -80112,117 +80138,148 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0, false, false)
+  return _c("div", { staticClass: "featured-services" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          {
+            class: [
+              "col-md-12 text-center",
+              _vm.scrolled ? "animated fadeIn" : "hide"
+            ]
+          },
+          [_c("h1", [_vm._v("Featured Services")])]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          {
+            class: [
+              "col-md-4 siding",
+              _vm.scrolled ? "animated fadeInLeft delay-1s" : "hide"
+            ]
+          },
+          [_vm._m(0, false, false)]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            class: [
+              "col-md-4 roofing",
+              _vm.scrolled ? "animated fadeIn delay-2s" : "hide"
+            ]
+          },
+          [_vm._m(1, false, false)]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            class: [
+              "col-md-4 windows",
+              _vm.scrolled ? "animated fadeInRight delay-1s" : "hide"
+            ]
+          },
+          [_vm._m(2, false, false)]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "featured-services" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-12 text-center" }, [
-            _c("h1", [_vm._v("Featured Services")])
-          ])
+    return _c("div", { staticClass: "panel panel-default siding-panel" }, [
+      _c("div", { staticClass: "panel-body" }, [
+        _c("div", { staticClass: "text-center" }, [
+          _c("img", {
+            staticClass: "img-responsive",
+            attrs: { src: "images/icon_siding_red.png", alt: "siding ico" }
+          }),
+          _vm._v(" "),
+          _c("h3", [_vm._v("Siding")]),
+          _vm._v(" "),
+          _c("hr")
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-4 siding" }, [
-            _c("div", { staticClass: "panel panel-default siding-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "images/icon_siding_red.png",
-                      alt: "siding ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Siding")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the\n                            right siding can make all the difference in the look and feel of your Dayton or\n                            Cincinnati,\n                            OH, property. With a wide variety of styles and options for you to choose from, we're\n                            confident our knowledgeable team can make the dreams you have for your home's appearance\n                            a\n                            reality.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
-                ])
-              ])
-            ])
-          ]),
+        _c("p", [
+          _vm._v(
+            "\n                            Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the\n                            right siding can make all the difference in the look and feel of your Dayton or\n                            Cincinnati,\n                            OH, property. With a wide variety of styles and options for you to choose from, we're\n                            confident our knowledgeable team can make the dreams you have for your home's appearance\n                            a\n                            reality.\n                        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "panel-actions" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 roofing" }, [
-            _c("div", { staticClass: "panel panel-default roofing-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "images/icon_roofing_circle.png",
-                      alt: "roofing ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Roofing")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
-                ])
-              ])
-            ])
-          ]),
+          _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "panel panel-default roofing-panel" }, [
+      _c("div", { staticClass: "panel-body" }, [
+        _c("div", { staticClass: "text-center" }, [
+          _c("img", {
+            staticClass: "img-responsive",
+            attrs: { src: "images/icon_roofing_circle.png", alt: "roofing ico" }
+          }),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 windows" }, [
-            _c("div", { staticClass: "panel panel-default windows-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "images/icon_windows_red.png",
-                      alt: "windows ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Windows")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Every building is unique, and off-the-shelf windows aren’t always the best solution. For\n                            your one-of-a-kind property, your deserve top-quality, one-of-a-kind custom windows; and\n                            D &\n                            G Roofing & Restoration is a reliable, trusted source for custom windows in Dayton, OH.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
-                ])
-              ])
-            ])
-          ])
+          _c("h3", [_vm._v("Roofing")]),
+          _vm._v(" "),
+          _c("hr")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "panel-actions" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "panel panel-default windows-panel" }, [
+      _c("div", { staticClass: "panel-body" }, [
+        _c("div", { staticClass: "text-center" }, [
+          _c("img", {
+            staticClass: "img-responsive",
+            attrs: { src: "images/icon_windows_red.png", alt: "windows ico" }
+          }),
+          _vm._v(" "),
+          _c("h3", [_vm._v("Windows")]),
+          _vm._v(" "),
+          _c("hr")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                            Every building is unique, and off-the-shelf windows aren’t always the best solution. For\n                            your one-of-a-kind property, your deserve top-quality, one-of-a-kind custom windows; and\n                            D &\n                            G Roofing & Restoration is a reliable, trusted source for custom windows in Dayton, OH.\n                        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "panel-actions" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
         ])
       ])
     ])
@@ -80369,7 +80426,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "divider-section",
-    { attrs: { "bg-img": "/images/1.jpg", center: true } },
+    { attrs: { "bg-img": "/images/call-anytime-bg.jpg", center: true } },
     [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-12" }, [

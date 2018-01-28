@@ -1,5 +1,5 @@
 <template>
-    <divider-section bg-img="/images/1.jpg" :center="true">
+    <divider-section bg-img="/images/call-anytime-bg.jpg" :center="true">
         <div class="row">
             <div class="col-md-12">
                 <h1>We are here to answer all your questions</h1>
