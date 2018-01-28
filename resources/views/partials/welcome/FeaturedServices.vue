@@ -4,13 +4,13 @@
 
             <div class="row">
 
-                <div :class="['col-md-12 text-center', scrolled ? 'animated fadeIn' : 'hide']">
+                <div class="col-md-12 text-center">
                     <h1>Featured Services</h1>
                 </div>
             </div>
 
             <div class="row">
-                <div :class="['col-md-4 siding', scrolled ? 'animated fadeInLeft delay-1s' : 'hide']">
+                <div class="col-md-4 siding">
                     <div class="panel panel-default siding-panel">
                         <div class="panel-body">
 
@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div :class="['col-md-4 roofing', scrolled ? 'animated fadeIn delay-2s' : 'hide']">
+                <div class="col-md-4 roofing">
                     <div class="panel panel-default roofing-panel">
                         <div class="panel-body">
 
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div :class="['col-md-4 windows', scrolled ? 'animated fadeInRight delay-1s' : 'hide']">
+                <div class="col-md-4 windows">
                     <div class="panel panel-default windows-panel">
                         <div class="panel-body">
 
@@ -100,32 +100,6 @@
 <script>
     export default {
       name: "featured-services",
-      data() {
-        return {
-          scrolled: false
-        }
-      },
-      methods: {
-        handleScroll() {
-          //console.log(document.documentElement.scrollTop);
-
-          if (document.documentElement.scrollTop >= 280 || window.innerWidth < 768) {
-            this.scrolled = true;
-          }
-        }
-      },
-
-      created() {
-        if (window.innerWidth < 768) {
-          this.scrolled = true;
-        }
-
-        window.addEventListener('scroll', this.handleScroll);
-      },
-
-      destroyed() {
-        window.removeEventListener('scroll', this.handleScroll);
-      }
     }
 </script>
 
