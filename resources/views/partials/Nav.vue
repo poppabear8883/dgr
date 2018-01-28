@@ -1,47 +1,49 @@
 <template>
-    <nav :class="['navbar', 'navbar-inverse', fixedTop ? 'navbar-fixed-top' : null]" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/">
-                    D&G <span class="color-red">Roofing</span>
-                    <span class="color-light hidden-xs" style="font-size: 14px">and Restoration</span>
-                </a>
-            </div>
+    <div :class="fixedTop ? 'fixed-top' : null">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/">
+                        D&G <span class="color-red">Roofing</span>
+                        <span class="color-light hidden-xs" style="font-size: 14px">and Restoration</span>
+                    </a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/services">Services</a>
-                    </li>
-                    <li>
-                        <a href="/galleries">Galleries</a>
-                    </li>
-                    <li>
-                        <a href="/giveaways">Giveaways</a>
-                    </li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                    <slot></slot>
-                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/services">Services</a>
+                        </li>
+                        <li>
+                            <a href="/galleries">Galleries</a>
+                        </li>
+                        <li>
+                            <a href="/giveaways">Giveaways</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <slot></slot>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+            <!-- /.container -->
+        </nav>
+    </div>
 </template>
 <script>
     export default {
@@ -52,7 +54,7 @@
       },
       methods: {
         handleScroll() {
-          if (document.documentElement.scrollTop >= 137 || window.innerWidth < 768) {
+          if (document.documentElement.scrollTop >= 200 || window.innerWidth < 768) {
             this.fixedTop = true;
           } else {
             this.fixedTop = false;
@@ -66,6 +68,8 @@
         }
 
         window.addEventListener('scroll', this.handleScroll);
+
+
       },
 
       destroyed() {
@@ -77,6 +81,15 @@
     @import "~Sass/_variables.scss";
 
     /* Navbar */
+    .fixed-top {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        z-index: 99;
+        transition: top 500ms;
+    }
+
     .navbar-brand {
         font-size: 38px;
         color: $white;
@@ -108,7 +121,6 @@
 
     .navbar-fixed-top {
         @media (min-width: 768px) {
-            transition: .5s ease;
             //top: 130px !important;
         }
     }

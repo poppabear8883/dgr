@@ -78335,7 +78335,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Navbar */\n.navbar-brand[data-v-49a0a682] {\n  font-size: 38px;\n  color: #FFFFFF;\n}\n.navbar[data-v-49a0a682] {\n  border-radius: 0;\n  margin-bottom: 0;\n}\n.navbar-nav[data-v-49a0a682] {\n  font-size: 18px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #585859 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n@media (min-width: 768px) {\n.navbar-fixed-top[data-v-49a0a682] {\n    -webkit-transition: .5s ease;\n    transition: .5s ease;\n}\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #353536 !important;\n  border-bottom: 1px #EE001B solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n  border-color: #FFFFFF;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
+exports.push([module.i, "/* Navbar */\n.fixed-top[data-v-49a0a682] {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100% !important;\n  z-index: 99;\n  -webkit-transition: top 500ms;\n  transition: top 500ms;\n}\n.navbar-brand[data-v-49a0a682] {\n  font-size: 38px;\n  color: #FFFFFF;\n}\n.navbar[data-v-49a0a682] {\n  border-radius: 0;\n  margin-bottom: 0;\n}\n.navbar-nav[data-v-49a0a682] {\n  font-size: 18px;\n  padding-top: 5px;\n}\n.navbar-nav li[data-v-49a0a682] {\n    text-align: center;\n    border-right: 1px #585859 solid;\n}\n.navbar-nav li a[data-v-49a0a682] {\n      padding-right: 25px;\n      padding-left: 25px;\n}\n.navbar-nav li[data-v-49a0a682]:last-child {\n      border-right: none;\n}\n.navbar-inverse[data-v-49a0a682] {\n  background-color: #353536 !important;\n  border-bottom: 1px #EE001B solid;\n}\n.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n  background-color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n  border-color: #FFFFFF;\n}\n.navbar-header[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682] {\n  color: #FFFFFF !important;\n}\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:hover,\n.navbar-inverse .navbar-nav > li > a[data-v-49a0a682]:focus {\n  color: #EE001B !important;\n  cursor: pointer;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n    display: inline-block;\n    float: none;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -78391,6 +78391,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -78401,7 +78403,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   methods: {
     handleScroll: function handleScroll() {
-      if (document.documentElement.scrollTop >= 137 || window.innerWidth < 768) {
+      if (document.documentElement.scrollTop >= 200 || window.innerWidth < 768) {
         this.fixedTop = true;
       } else {
         this.fixedTop = false;
@@ -78429,52 +78431,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      class: [
-        "navbar",
-        "navbar-inverse",
-        _vm.fixedTop ? "navbar-fixed-top" : null
-      ],
-      attrs: { role: "navigation" }
-    },
-    [
-      _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0, false, false),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "collapse navbar-collapse",
-            attrs: { id: "bs-example-navbar-collapse-1" }
-          },
-          [
-            _c(
-              "ul",
-              { staticClass: "nav navbar-nav" },
-              [
-                _vm._m(1, false, false),
-                _vm._v(" "),
-                _vm._m(2, false, false),
-                _vm._v(" "),
-                _vm._m(3, false, false),
-                _vm._v(" "),
-                _vm._m(4, false, false),
-                _vm._v(" "),
-                _vm._m(5, false, false),
-                _vm._v(" "),
-                _vm._m(6, false, false),
-                _vm._v(" "),
-                _vm._t("default")
-              ],
-              2
-            )
-          ]
-        )
-      ])
-    ]
-  )
+  return _c("div", { class: _vm.fixedTop ? "fixed-top" : null }, [
+    _c(
+      "nav",
+      { staticClass: "navbar navbar-inverse", attrs: { role: "navigation" } },
+      [
+        _c("div", { staticClass: "container-fluid" }, [
+          _vm._m(0, false, false),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "collapse navbar-collapse",
+              attrs: { id: "bs-example-navbar-collapse-1" }
+            },
+            [
+              _c(
+                "ul",
+                { staticClass: "nav navbar-nav" },
+                [
+                  _vm._m(1, false, false),
+                  _vm._v(" "),
+                  _vm._m(2, false, false),
+                  _vm._v(" "),
+                  _vm._m(3, false, false),
+                  _vm._v(" "),
+                  _vm._m(4, false, false),
+                  _vm._v(" "),
+                  _vm._m(5, false, false),
+                  _vm._v(" "),
+                  _vm._m(6, false, false),
+                  _vm._v(" "),
+                  _vm._t("default")
+                ],
+                2
+              )
+            ]
+          )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -78511,7 +78508,7 @@ var staticRenderFns = [
           attrs: { href: "/" }
         },
         [
-          _vm._v("\n                D&G "),
+          _vm._v("\n                    D&G "),
           _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
           _vm._v(" "),
           _c(
