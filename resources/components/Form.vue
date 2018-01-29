@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-form">
+    <div class="dg-form">
         <div class="container">
             <div class="row">
                 <h1>{{ title }}</h1>
@@ -28,7 +28,7 @@
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
 
-    .contact-form {
+    .dg-form {
         background-color: #353636;
         margin-top: -25px;
         padding-top: 25px;
