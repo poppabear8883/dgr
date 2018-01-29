@@ -68084,17 +68084,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      fixedTop: false
+      fixedTop: false,
+      collapse: true
     };
   },
 
   methods: {
     handleScroll: function handleScroll() {
-      if (document.documentElement.scrollTop >= 198 || window.innerWidth < 768) {
-        this.fixedTop = true;
-      } else {
-        this.fixedTop = false;
-      }
+      this.fixedTop = document.documentElement.scrollTop >= 198 || window.innerWidth < 768;
     }
   },
 
@@ -68126,12 +68123,43 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0),
+        _c("div", { staticClass: "navbar-header" }, [
+          _c(
+            "button",
+            {
+              staticClass: "navbar-toggle collapsed",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#bs-example-navbar-collapse-1",
+                "aria-expanded": "false"
+              },
+              on: {
+                click: function($event) {
+                  _vm.collapse = !_vm.collapse
+                }
+              }
+            },
+            [
+              _c("span", { staticClass: "sr-only" }, [
+                _vm._v("Toggle navigation")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" })
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0)
+        ]),
         _vm._v(" "),
         _c(
           "div",
           {
-            staticClass: "collapse navbar-collapse",
+            class: [_vm.collapse ? "collapse" : null, "navbar-collapse"],
             attrs: { id: "bs-example-navbar-collapse-1" }
           },
           [
@@ -68166,50 +68194,26 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggle collapsed",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#bs-example-navbar-collapse-1",
-            "aria-expanded": "false"
-          }
-        },
-        [
-          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" })
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "navbar-brand hidden-sm hidden-md hidden-lg",
-          attrs: { href: "/" }
-        },
-        [
-          _vm._v("\n                D&G "),
-          _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
-          _vm._v(" "),
-          _c(
-            "span",
-            {
-              staticClass: "color-light hidden-xs",
-              staticStyle: { "font-size": "14px" }
-            },
-            [_vm._v("and Restoration")]
-          )
-        ]
-      )
-    ])
+    return _c(
+      "a",
+      {
+        staticClass: "navbar-brand hidden-sm hidden-md hidden-lg",
+        attrs: { href: "/" }
+      },
+      [
+        _vm._v("\n                D&G "),
+        _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
+        _vm._v(" "),
+        _c(
+          "span",
+          {
+            staticClass: "color-light hidden-xs",
+            staticStyle: { "font-size": "14px" }
+          },
+          [_vm._v("and Restoration")]
+        )
+      ]
+    )
   },
   function() {
     var _vm = this
