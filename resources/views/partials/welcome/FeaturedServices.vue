@@ -107,13 +107,11 @@
     @import "~Sass/_variables.scss";
 
     .featured-services {
-        min-height: 800px;
         background-color: transparent;
         padding-top: 30px;
 
         @media (min-width: 768px) {
             padding-top: 0;
-            background-color: $white;
             padding-bottom: 50px;
         }
 
