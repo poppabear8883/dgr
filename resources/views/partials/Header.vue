@@ -154,7 +154,7 @@
     }
 
     .main-header-bottom {
-        padding-top: 15px;
+        padding-top: 25px;
         background-color: $red;
         color: $white;
         min-height: 100px;
