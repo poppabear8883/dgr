@@ -29,7 +29,7 @@
     @import '~Sass/_variables.scss';
 
     .dg-form {
-        background-color: #353636;
+        background-color: $grey;
         margin-top: -25px;
         padding-top: 25px;
 
@@ -37,7 +37,7 @@
             font-family: 'Poppins', sans-serif, 'arial';
             font-weight: 600;
             font-size: 72px;
-            color: white;
+            color: $white;
             text-align: center;
         }
 
@@ -45,13 +45,13 @@
             font-family: 'Roboto', sans-serif, 'arial';
             font-weight: 400;
             font-size: 20px;
-            color: #9b9b9b;
+            color: $dark;
             line-height: 1.5;
         }
 
         input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-            font-size: 0.75em;
-            color: #999;
+            font-size: .8em;
+            color: #9b9b9b;
             top: -5px;
             transition: all 0.225s ease;
         }
@@ -64,7 +64,7 @@
             border-radius: 4px;
 
             label {
-                color: #999;
+                color: $white;
                 padding: 1.3rem 30px 1rem 30px;
                 position: absolute;
                 top: 10px;
@@ -82,13 +82,15 @@
 
         input,
         textarea {
-            padding: 30px;
             border: 0;
             width: 100%;
-            font-size: 1rem;
-            background-color: #2d2d2d;
-            color: white;
+            font-size: 1.5rem;
+            background-color: $dark;
+            color: $white;
             border-radius: 4px;
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-bottom: 5px;
         }
 
         input:focus,
