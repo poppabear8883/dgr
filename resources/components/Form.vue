@@ -1,11 +1,11 @@
 <template>
     <div class="dg-form">
-        <div class="container">
+        <div :class="container">
             <div class="row">
                 <h1>{{ title }}</h1>
             </div>
             <div class="row">
-                <h4 style="text-align:center">{{ subTitle }}</h4>
+                <h4 class="text-center">{{ subTitle }}</h4>
             </div>
             <div class="row input-container">
                 <slot></slot>
@@ -19,8 +19,8 @@
       name: "contact-form",
       props: {
         title: {type: String},
-        subTitle: {type: String}
-
+        subTitle: {type: String},
+        container: {type: String, default: 'container'}
       }
     }
 </script>
@@ -53,7 +53,6 @@
             font-size: 0.75em;
             color: #999;
             top: -5px;
-            -webkit-transition: all 0.225s ease;
             transition: all 0.225s ease;
         }
 
@@ -64,23 +63,18 @@
             position: relative;
             border-radius: 4px;
 
-            @media only screen and (max-width: 768px){
-                width:100%;
-            }
-
             label {
                 color: #999;
                 padding: 1.3rem 30px 1rem 30px;
                 position: absolute;
                 top: 10px;
                 left: 0;
-                -webkit-transition: all 0.25s ease;
                 transition: all 0.25s ease;
                 pointer-events: none;
             }
 
             &.wide {
-                width: 650px;
+                //width: 650px;
                 max-width: 100%;
             }
 
@@ -105,7 +99,6 @@
         input:focus ~ span,
         textarea:focus ~ span {
             width: 100%;
-            -webkit-transition: all 0.075s ease;
             transition: all 0.075s ease;
         }
 
@@ -115,7 +108,7 @@
         }
 
         .input-container {
-            width: 650px;
+            //width: 650px;
             max-width: 100%;
             margin: 20px auto 25px auto;
         }
@@ -131,7 +124,6 @@
             cursor: pointer;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
             0 2px 10px 0 rgba(0,0,0,0.07);
-            -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
 
             &:hover {

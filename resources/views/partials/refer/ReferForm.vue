@@ -44,13 +44,13 @@
         <!-- EMAIL (OPTIONAL)-->
         <div v-if="page === 1" class="col-xs-12">
             <div class="styled-input">
-                <input type="text" />
+                <input type="text" placeholder="optional" />
                 <label>Your Email</label>
             </div>
         </div>
         <div v-if="page === 2" class="col-xs-12">
             <div class="styled-input">
-                <input type="text" />
+                <input type="text" placeholder="optional" />
                 <label>Friends Email</label>
             </div>
         </div>
@@ -58,26 +58,26 @@
         <!-- ADDRESS (OPTIONAL)-->
         <div v-if="page === 1" class="col-xs-12">
             <div class="styled-input">
-                <input type="text" />
+                <input type="text" placeholder="optional" />
                 <label>Your Address</label>
             </div>
         </div>
         <div v-if="page === 2" class="col-xs-12">
             <div class="styled-input">
-                <input type="text" />
+                <input type="text" placeholder="optional" />
                 <label>Friends Address</label>
             </div>
         </div>
 
         <div v-if="page === 1" class="col-xs-12">
-            <div class="styled-input wide">
-                <textarea></textarea>
+            <div class="styled-input">
+                <textarea placeholder="optional"></textarea>
                 <label>How do you know about us ?</label>
             </div>
         </div>
         <div v-if="page === 2" class="col-xs-12">
-            <div class="styled-input wide">
-                <textarea></textarea>
+            <div class="styled-input">
+                <textarea placeholder="optional"></textarea>
                 <label>What does your friend need from us ?</label>
             </div>
         </div>

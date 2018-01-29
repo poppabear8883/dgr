@@ -71551,7 +71551,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dg-form[data-v-24fded35] {\n  background-color: #353636;\n  margin-top: -25px;\n  padding-top: 25px;\n}\n.dg-form h1[data-v-24fded35] {\n    font-family: 'Poppins', sans-serif, 'arial';\n    font-weight: 600;\n    font-size: 72px;\n    color: white;\n    text-align: center;\n}\n.dg-form h4[data-v-24fded35] {\n    font-family: 'Roboto', sans-serif, 'arial';\n    font-weight: 400;\n    font-size: 20px;\n    color: #9b9b9b;\n    line-height: 1.5;\n}\n.dg-form input:focus ~ label[data-v-24fded35], .dg-form textarea:focus ~ label[data-v-24fded35], .dg-form input:valid ~ label[data-v-24fded35], .dg-form textarea:valid ~ label[data-v-24fded35] {\n    font-size: 0.75em;\n    color: #999;\n    top: -5px;\n    -webkit-transition: all 0.225s ease;\n    transition: all 0.225s ease;\n}\n.dg-form .styled-input[data-v-24fded35] {\n    float: left;\n    width: 100%;\n    margin: 1rem 0;\n    position: relative;\n    border-radius: 4px;\n}\n@media only screen and (max-width: 768px) {\n.dg-form .styled-input[data-v-24fded35] {\n        width: 100%;\n}\n}\n.dg-form .styled-input label[data-v-24fded35] {\n      color: #999;\n      padding: 1.3rem 30px 1rem 30px;\n      position: absolute;\n      top: 10px;\n      left: 0;\n      -webkit-transition: all 0.25s ease;\n      transition: all 0.25s ease;\n      pointer-events: none;\n}\n.dg-form .styled-input.wide[data-v-24fded35] {\n      width: 650px;\n      max-width: 100%;\n}\n.dg-form input[data-v-24fded35],\n  .dg-form textarea[data-v-24fded35] {\n    padding: 30px;\n    border: 0;\n    width: 100%;\n    font-size: 1rem;\n    background-color: #2d2d2d;\n    color: white;\n    border-radius: 4px;\n}\n.dg-form input[data-v-24fded35]:focus,\n  .dg-form textarea[data-v-24fded35]:focus {\n    outline: 0;\n}\n.dg-form input:focus ~ span[data-v-24fded35],\n  .dg-form textarea:focus ~ span[data-v-24fded35] {\n    width: 100%;\n    -webkit-transition: all 0.075s ease;\n    transition: all 0.075s ease;\n}\n.dg-form textarea[data-v-24fded35] {\n    width: 100%;\n    min-height: 15em;\n}\n.dg-form .input-container[data-v-24fded35] {\n    width: 650px;\n    max-width: 100%;\n    margin: 20px auto 25px auto;\n}\n.dg-form .form-btn[data-v-24fded35] {\n    float: right;\n    padding: 7px 35px;\n    border-radius: 60px;\n    display: inline-block;\n    background-color: #EE001B;\n    color: white;\n    font-size: 18px;\n    cursor: pointer;\n    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n    -webkit-transition: all 300ms ease;\n    transition: all 300ms ease;\n}\n.dg-form .form-btn[data-v-24fded35]:hover {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px);\n      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.dg-form .form-btn[data-v-24fded35] {\n        width: 100%;\n        float: none;\n        text-align: center;\n}\n}\n.dg-form input[type=checkbox] + label[data-v-24fded35] {\n    color: #ccc;\n    font-style: italic;\n}\n.dg-form input[type=checkbox]:checked + label[data-v-24fded35] {\n    color: #f00;\n    font-style: normal;\n}\n", ""]);
+exports.push([module.i, "\n.dg-form[data-v-24fded35] {\n  background-color: #353636;\n  margin-top: -25px;\n  padding-top: 25px;\n}\n.dg-form h1[data-v-24fded35] {\n    font-family: 'Poppins', sans-serif, 'arial';\n    font-weight: 600;\n    font-size: 72px;\n    color: white;\n    text-align: center;\n}\n.dg-form h4[data-v-24fded35] {\n    font-family: 'Roboto', sans-serif, 'arial';\n    font-weight: 400;\n    font-size: 20px;\n    color: #9b9b9b;\n    line-height: 1.5;\n}\n.dg-form input:focus ~ label[data-v-24fded35], .dg-form textarea:focus ~ label[data-v-24fded35], .dg-form input:valid ~ label[data-v-24fded35], .dg-form textarea:valid ~ label[data-v-24fded35] {\n    font-size: 0.75em;\n    color: #999;\n    top: -5px;\n    -webkit-transition: all 0.225s ease;\n    transition: all 0.225s ease;\n}\n.dg-form .styled-input[data-v-24fded35] {\n    float: left;\n    width: 100%;\n    margin: 1rem 0;\n    position: relative;\n    border-radius: 4px;\n}\n.dg-form .styled-input label[data-v-24fded35] {\n      color: #999;\n      padding: 1.3rem 30px 1rem 30px;\n      position: absolute;\n      top: 10px;\n      left: 0;\n      -webkit-transition: all 0.25s ease;\n      transition: all 0.25s ease;\n      pointer-events: none;\n}\n.dg-form .styled-input.wide[data-v-24fded35] {\n      max-width: 100%;\n}\n.dg-form input[data-v-24fded35],\n  .dg-form textarea[data-v-24fded35] {\n    padding: 30px;\n    border: 0;\n    width: 100%;\n    font-size: 1rem;\n    background-color: #2d2d2d;\n    color: white;\n    border-radius: 4px;\n}\n.dg-form input[data-v-24fded35]:focus,\n  .dg-form textarea[data-v-24fded35]:focus {\n    outline: 0;\n}\n.dg-form input:focus ~ span[data-v-24fded35],\n  .dg-form textarea:focus ~ span[data-v-24fded35] {\n    width: 100%;\n    -webkit-transition: all 0.075s ease;\n    transition: all 0.075s ease;\n}\n.dg-form textarea[data-v-24fded35] {\n    width: 100%;\n    min-height: 15em;\n}\n.dg-form .input-container[data-v-24fded35] {\n    max-width: 100%;\n    margin: 20px auto 25px auto;\n}\n.dg-form .form-btn[data-v-24fded35] {\n    float: right;\n    padding: 7px 35px;\n    border-radius: 60px;\n    display: inline-block;\n    background-color: #EE001B;\n    color: white;\n    font-size: 18px;\n    cursor: pointer;\n    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n    -webkit-transition: all 300ms ease;\n    transition: all 300ms ease;\n}\n.dg-form .form-btn[data-v-24fded35]:hover {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px);\n      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.dg-form .form-btn[data-v-24fded35] {\n        width: 100%;\n        float: none;\n        text-align: center;\n}\n}\n.dg-form input[type=checkbox] + label[data-v-24fded35] {\n    color: #ccc;\n    font-style: italic;\n}\n.dg-form input[type=checkbox]:checked + label[data-v-24fded35] {\n    color: #f00;\n    font-style: normal;\n}\n", ""]);
 
 // exports
 
@@ -71583,8 +71583,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "contact-form",
   props: {
     title: { type: String },
-    subTitle: { type: String }
-
+    subTitle: { type: String },
+    container: { type: String, default: 'container' }
   }
 });
 
@@ -71597,15 +71597,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "dg-form" }, [
-    _c("div", { staticClass: "container" }, [
+    _c("div", { class: _vm.container }, [
       _c("div", { staticClass: "row" }, [
         _c("h1", [_vm._v(_vm._s(_vm.title))])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _c("h4", { staticStyle: { "text-align": "center" } }, [
-          _vm._v(_vm._s(_vm.subTitle))
-        ])
+        _c("h4", { staticClass: "text-center" }, [_vm._v(_vm._s(_vm.subTitle))])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row input-container" }, [_vm._t("default")], 2)
@@ -71640,7 +71638,7 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input wide" }, [
+        _c("div", { staticClass: "styled-input" }, [
           _c("input", { attrs: { type: "text", required: "" } }),
           _vm._v(" "),
           _c("label", [_vm._v("Name")])
@@ -71660,7 +71658,7 @@ var render = function() {
           "div",
           { staticClass: "styled-input", staticStyle: { float: "right" } },
           [
-            _c("input", { attrs: { type: "text" } }),
+            _c("input", { attrs: { type: "text", placeholder: "optional" } }),
             _vm._v(" "),
             _c("label", [_vm._v("Phone Number")])
           ]
@@ -71668,7 +71666,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input wide" }, [
+        _c("div", { staticClass: "styled-input" }, [
           _c("textarea", { attrs: { required: "" } }),
           _vm._v(" "),
           _c("label", [_vm._v("Message")])
@@ -71986,7 +71984,7 @@ var render = function() {
       _vm.page === 1
         ? _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text" } }),
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("Your Email")])
             ])
@@ -71996,7 +71994,7 @@ var render = function() {
       _vm.page === 2
         ? _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text" } }),
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("Friends Email")])
             ])
@@ -72006,7 +72004,7 @@ var render = function() {
       _vm.page === 1
         ? _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text" } }),
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("Your Address")])
             ])
@@ -72016,7 +72014,7 @@ var render = function() {
       _vm.page === 2
         ? _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text" } }),
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("Friends Address")])
             ])
@@ -72025,8 +72023,8 @@ var render = function() {
       _vm._v(" "),
       _vm.page === 1
         ? _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input wide" }, [
-              _c("textarea"),
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("How do you know about us ?")])
             ])
@@ -72035,8 +72033,8 @@ var render = function() {
       _vm._v(" "),
       _vm.page === 2
         ? _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input wide" }, [
-              _c("textarea"),
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { placeholder: "optional" } }),
               _vm._v(" "),
               _c("label", [_vm._v("What does your friend need from us ?")])
             ])
@@ -72287,6 +72285,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -72310,63 +72332,96 @@ var render = function() {
     {
       attrs: {
         title: "Apply Today!",
-        "sub-title": "We can't wait to meet you!"
+        "sub-title": "We can't wait to meet you!",
+        container: "container-fluid"
       }
     },
     [
-      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("First Name")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("First Name")])
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Last Name")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Street Address")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Additional Address")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("City")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("State")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Zip")])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Why did YOU choose US ?")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Last Name")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input wide" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Why should WE choose YOU ?")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Street Address")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("City")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("State")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Zip")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input wide" }, [
-          _c("textarea"),
-          _vm._v(" "),
-          _c("label", [_vm._v("Message")])
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "file" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Upload Resume")])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
