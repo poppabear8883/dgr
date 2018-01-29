@@ -18729,6 +18729,7 @@ Vue.component('dg-call-anytime', __webpack_require__(293));
 Vue.component('dg-why-choose-us', __webpack_require__(298));
 Vue.component('dg-tabbed-services', __webpack_require__(303));
 Vue.component('dg-contact-form', __webpack_require__(308));
+Vue.component('dg-refer-form', __webpack_require__(334));
 
 var app = new Vue({
   el: '#app'
@@ -66301,7 +66302,9 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
         _c("div", { staticClass: "pull-right animated flipInX delay-2s" }, [
-          _c("a", { attrs: { href: "#" } }, [_vm._v("Refer A Friend")])
+          _c("a", { attrs: { href: "/refer-a-friend" } }, [
+            _vm._v("Refer A Friend")
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -69512,6 +69515,363 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(335)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(337)
+/* template */
+var __vue_template__ = __webpack_require__(338)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-0eb2099e"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/refer/ReferForm.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0eb2099e", Component.options)
+  } else {
+    hotAPI.reload("data-v-0eb2099e", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 335 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(336);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("28548c56", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0eb2099e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0eb2099e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 336 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.contact-form[data-v-0eb2099e] {\n  background-color: #353636;\n  margin-top: -25px;\n  padding-top: 25px;\n}\n.contact-form h1[data-v-0eb2099e] {\n    font-family: 'Poppins', sans-serif, 'arial';\n    font-weight: 600;\n    font-size: 72px;\n    color: white;\n    text-align: center;\n}\n.contact-form h4[data-v-0eb2099e] {\n    font-family: 'Roboto', sans-serif, 'arial';\n    font-weight: 400;\n    font-size: 20px;\n    color: #9b9b9b;\n    line-height: 1.5;\n}\n.contact-form input:focus ~ label[data-v-0eb2099e], .contact-form textarea:focus ~ label[data-v-0eb2099e], .contact-form input:valid ~ label[data-v-0eb2099e], .contact-form textarea:valid ~ label[data-v-0eb2099e] {\n    font-size: 0.75em;\n    color: #999;\n    top: -5px;\n    -webkit-transition: all 0.225s ease;\n    transition: all 0.225s ease;\n}\n.contact-form .styled-input[data-v-0eb2099e] {\n    float: left;\n    width: 293px;\n    margin: 1rem 0;\n    position: relative;\n    border-radius: 4px;\n}\n@media only screen and (max-width: 768px) {\n.contact-form .styled-input[data-v-0eb2099e] {\n        width: 100%;\n}\n}\n.contact-form .styled-input label[data-v-0eb2099e] {\n      color: #999;\n      padding: 1.3rem 30px 1rem 30px;\n      position: absolute;\n      top: 10px;\n      left: 0;\n      -webkit-transition: all 0.25s ease;\n      transition: all 0.25s ease;\n      pointer-events: none;\n}\n.contact-form .styled-input.wide[data-v-0eb2099e] {\n      width: 650px;\n      max-width: 100%;\n}\n.contact-form input[data-v-0eb2099e],\n  .contact-form textarea[data-v-0eb2099e] {\n    padding: 30px;\n    border: 0;\n    width: 100%;\n    font-size: 1rem;\n    background-color: #2d2d2d;\n    color: white;\n    border-radius: 4px;\n}\n.contact-form input[data-v-0eb2099e]:focus,\n  .contact-form textarea[data-v-0eb2099e]:focus {\n    outline: 0;\n}\n.contact-form input:focus ~ span[data-v-0eb2099e],\n  .contact-form textarea:focus ~ span[data-v-0eb2099e] {\n    width: 100%;\n    -webkit-transition: all 0.075s ease;\n    transition: all 0.075s ease;\n}\n.contact-form textarea[data-v-0eb2099e] {\n    width: 100%;\n    min-height: 15em;\n}\n.contact-form .input-container[data-v-0eb2099e] {\n    width: 650px;\n    max-width: 100%;\n    margin: 20px auto 25px auto;\n}\n.contact-form .submit-btn[data-v-0eb2099e] {\n    float: right;\n    padding: 7px 35px;\n    border-radius: 60px;\n    display: inline-block;\n    background-color: #EE001B;\n    color: white;\n    font-size: 18px;\n    cursor: pointer;\n    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n    -webkit-transition: all 300ms ease;\n    transition: all 300ms ease;\n}\n.contact-form .submit-btn[data-v-0eb2099e]:hover {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px);\n      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.contact-form .submit-btn[data-v-0eb2099e] {\n        width: 100%;\n        float: none;\n        text-align: center;\n}\n}\n.contact-form input[type=checkbox] + label[data-v-0eb2099e] {\n    color: #ccc;\n    font-style: italic;\n}\n.contact-form input[type=checkbox]:checked + label[data-v-0eb2099e] {\n    color: #f00;\n    font-style: normal;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 337 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "contact-form",
+  components: {
+    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  },
+  data: function data() {
+    return {
+      imputs: {
+        'name': { type: 'text', required: true },
+        'phone': { type: 'text', required: true },
+        'email': { type: 'text', required: false },
+        'address': { type: 'text', required: false }
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 338 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "dg-form",
+    {
+      attrs: {
+        title: "Refer Your Friend",
+        "sub-title":
+          "Don't stop with just one, with every referral you increase your chances to win!"
+      }
+    },
+    [
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 text-center" }, [
+            _c("h4", { staticClass: "page-header" }, [
+              _vm._v("Your Information")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 text-center" }, [
+            _c("h4", { staticClass: "page-header" }, [
+              _vm._v("Friends Information")
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text", required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Name")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input", staticStyle: { float: "right" } },
+          [
+            _c("input", { attrs: { type: "text", required: "" } }),
+            _vm._v(" "),
+            _c("label", [_vm._v("Name")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text", required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Phone")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input", staticStyle: { float: "right" } },
+          [
+            _c("input", { attrs: { type: "text", required: "" } }),
+            _vm._v(" "),
+            _c("label", [_vm._v("Phone")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Email")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input", staticStyle: { float: "right" } },
+          [
+            _c("input", { attrs: { type: "text" } }),
+            _vm._v(" "),
+            _c("label", [_vm._v("Email")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Street Address")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input", staticStyle: { float: "right" } },
+          [
+            _c("input", { attrs: { type: "text" } }),
+            _vm._v(" "),
+            _c("label", [_vm._v("Street Address")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "styled-input wide" }, [
+          _c("textarea", { attrs: { required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("What does your friend need from us?")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "btn-lrg submit-btn" }, [_vm._v("Submit")])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0eb2099e", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

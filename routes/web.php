@@ -29,6 +29,10 @@ Route::get('/contact', function() {
 });
 
 
+Route::get('/refer-a-friend', function() {
+    return view('refer');
+});
+
 Auth::routes();
 
 Route::middleware('auth')->group(function() {

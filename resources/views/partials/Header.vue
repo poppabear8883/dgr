@@ -26,7 +26,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="pull-right animated flipInX delay-2s">
-                                <a href="#">Refer A Friend</a>
+                                <a href="/refer-a-friend">Refer A Friend</a>
                             </div>
                         </div>
 
