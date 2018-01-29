@@ -59,7 +59,7 @@
 
         .styled-input {
             float: left;
-            width: 293px;
+            width: 100%;
             margin: 1rem 0;
             position: relative;
             border-radius: 4px;
@@ -120,7 +120,7 @@
             margin: 20px auto 25px auto;
         }
 
-        .submit-btn {
+        .form-btn {
             float: right;
             padding: 7px 35px;
             border-radius: 60px;

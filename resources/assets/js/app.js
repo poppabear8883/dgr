@@ -39,6 +39,7 @@ Vue.component('dg-why-choose-us', require('Views/partials/WhyChooseUs.vue'));
 Vue.component('dg-tabbed-services', require('Views/partials/services/TabbedServices.vue'));
 Vue.component('dg-contact-form', require('Views/partials/contact/ContactForm.vue'));
 Vue.component('dg-refer-form', require('Views/partials/refer/ReferForm.vue'));
+Vue.component('dg-join-form', require('Views/partials/join/JoinForm.vue'));
 
 const app = new Vue({
     el: '#app',

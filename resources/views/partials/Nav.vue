@@ -2,7 +2,10 @@
     <nav :class="['navbar', 'navbar-inverse', fixedTop ? 'fixed-top' : null]" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button @click="collapse = !collapse" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button @click="collapse = !collapse" type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar-collapse"
+                        aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -15,7 +18,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div :class="[collapse ? 'collapse' : null, 'navbar-collapse']" id="bs-example-navbar-collapse-1">
+            <div :class="[collapse ? 'collapse' : null, 'navbar-collapse']" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/">Home</a>

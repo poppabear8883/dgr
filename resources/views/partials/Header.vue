@@ -32,7 +32,7 @@
 
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="pull-left animated flipInX delay-2s">
-                                <a href="#">Join Our Team</a>
+                                <a href="/join-our-team">Join Our Team</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6 hidden-xs">
                             <div class="pull-right">
-                                <a class="animated tada delay-3s" href="#">Get A Free Inspection</a>
+                                <a class="animated tada delay-2-5s" href="#">Get A Free Inspection</a>
                             </div>
                         </div>
                     </div>

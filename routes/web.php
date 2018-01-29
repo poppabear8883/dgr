@@ -28,9 +28,12 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
-
 Route::get('/refer-a-friend', function() {
     return view('refer');
+});
+
+Route::get('/join-our-team', function() {
+    return view('join');
 });
 
 Auth::routes();

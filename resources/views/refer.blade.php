@@ -7,7 +7,7 @@
 @stop
 
 @section('header')
-    <dg-header bg-img="images/headers/refer-a-friend-header.jpg" bg-pos="top 0 left 0">
+    <dg-header bg-img="images/headers/refer-a-friend-header.jpg" bg-pos="center">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">

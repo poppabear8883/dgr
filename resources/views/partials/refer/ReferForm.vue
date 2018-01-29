@@ -85,11 +85,11 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div v-if="page > 1" @click="page--" class="btn-lrg submit-btn pull-left">back</div>
+                    <div v-if="page > 1" @click="page--" class="btn-lrg form-btn back-btn">Back</div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <div v-if="page < 2" @click="page++" class="btn-lrg submit-btn">Next</div>
-                    <div v-if="page === 2" class="btn-lrg submit-btn">Submit</div>
+                    <div v-if="page < 2" @click="page++" class="btn-lrg form-btn">Next</div>
+                    <div v-if="page === 2" class="btn-lrg form-btn">Submit</div>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
     import DgForm from 'Components/Form';
 
     export default {
-      name: "contact-form",
+      name: "refer-form",
       components: {
           DgForm
       },
@@ -116,7 +116,18 @@
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
 
-    .dg-form .styled-input {
-        width: 100% !important;
+    .dg-form {
+
+        .form-btn {
+
+            &.back-btn {
+                margin-bottom: 5px;
+
+                @media (min-width: 768px) {
+                    float: left !important;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 </style>
