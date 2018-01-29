@@ -154,7 +154,7 @@
     }
 
     .main-header-bottom {
-        padding-top: 25px;
+        padding-top: 15px;
         background-color: $red;
         color: $white;
         min-height: 100px;
@@ -162,6 +162,7 @@
         font-size: 20px;
 
         @media (min-width: 768px) {
+            padding-top: 25px;
             text-align: left;
         }
     }
