@@ -72286,6 +72286,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -72323,7 +72324,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-md-6 col-sm-12" }, [
         _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text" } }),
+          _c("input", { attrs: { type: "text", required: "" } }),
           _vm._v(" "),
           _c("label", [_vm._v("Last Name")])
         ])
@@ -72347,7 +72348,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-md-4 col-sm-6" }, [
         _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text" } }),
+          _c("input", { attrs: { type: "text", required: "" } }),
           _vm._v(" "),
           _c("label", [_vm._v("State")])
         ])
@@ -72355,7 +72356,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-md-4 col-sm-6" }, [
         _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text" } }),
+          _c("input", { attrs: { type: "text", required: "" } }),
           _vm._v(" "),
           _c("label", [_vm._v("Zip")])
         ])
@@ -72363,7 +72364,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-xs-12" }, [
         _c("div", { staticClass: "styled-input wide" }, [
-          _c("textarea", { attrs: { required: "" } }),
+          _c("textarea"),
           _vm._v(" "),
           _c("label", [_vm._v("Message")])
         ])
