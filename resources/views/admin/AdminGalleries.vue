@@ -61,10 +61,10 @@
             }
 
             h2, a.info {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                    transform: translatey(0);
-                    transition-delay:.2s;
+                opacity: 1;
+                filter: alpha(opacity=100);
+                transform: translatey(0);
+                transition-delay: .2s;
             }
 
             img {
