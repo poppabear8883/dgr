@@ -72398,7 +72398,7 @@ var render = function() {
             _c("div", { staticClass: "styled-input" }, [
               _c("input", { attrs: { type: "file" } }),
               _vm._v(" "),
-              _c("label", [_vm._v("Upload Resume")])
+              _c("label", [_vm._v("Attach Your Resume")])
             ])
           ])
         ])

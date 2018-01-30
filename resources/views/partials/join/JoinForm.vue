@@ -72,7 +72,7 @@
                 <div class="col-xs-12">
                     <div class="styled-input">
                         <input type="file" />
-                        <label>Upload Resume</label>
+                        <label>Attach Your Resume</label>
                     </div>
                 </div>
             </div>
