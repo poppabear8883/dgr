@@ -6,6 +6,7 @@
             </div>
             <div class="row">
                 <h4 class="text-center">{{ subTitle }}</h4>
+                <hr>
             </div>
             <div class="row input-container">
                 <slot></slot>
@@ -29,7 +30,7 @@
     @import '~Sass/_variables.scss';
 
     .dg-form {
-        background-color: $grey;
+        background-color: $white;
         margin-top: -25px;
         padding-top: 25px;
 
@@ -37,7 +38,7 @@
             font-family: 'Poppins', sans-serif, 'arial';
             font-weight: 600;
             font-size: 72px;
-            color: $white;
+            color: $red;
             text-align: center;
         }
 
@@ -88,9 +89,7 @@
             background-color: $dark;
             color: $white;
             border-radius: 4px;
-            padding-top: 25px;
-            padding-left: 25px;
-            padding-bottom: 5px;
+            padding: 25px;
         }
 
         input:focus,
