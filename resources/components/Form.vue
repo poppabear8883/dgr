@@ -53,9 +53,8 @@
         input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
             font-size: .8em;
             color: #9b9b9b;
-            top: -5px;
+            top: -10px;
             left: -5px;
-            margin-top: -5px;
             transition: all 0.225s ease;
         }
 
