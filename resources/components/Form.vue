@@ -89,7 +89,7 @@
             background-color: $dark;
             color: $white;
             border-radius: 4px;
-            padding: 25px;
+            padding: 25px 25px 20px;
         }
 
         input:focus,
