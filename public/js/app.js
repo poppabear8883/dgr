@@ -50934,7 +50934,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             };
         },
         cardColor: function cardColor() {
-            return $('.card-' + this.color).css('background-color');
+            var card = document.querySelector('.card-' + this.color);
+            var style = window.getComputedStyle(card);
+
+            return style.backgroundColor;
         },
         cOptions: function cOptions() {
             return {
@@ -67628,7 +67631,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.gallery-name {\n  font-size: 24px;\n}\n.gallery-img {\n  background: #101010;\n  margin-top: 10px;\n}\n.gallery-img img {\n    opacity: .7;\n}\n", ""]);
+exports.push([module.i, "\n.gallery-name {\n  font-size: 24px;\n}\n.gallery-img {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n}\n.gallery-img:hover .overlay {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.gallery-img:hover h2, .gallery-img:hover a.info {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.gallery-img:hover img {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.gallery-img .overlay {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.gallery-img img {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.gallery-img h2 {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.gallery-img a.info {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 50px 0 0;\n    padding: 7px 14px;\n}\n.gallery-img a.info:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
 
 // exports
 
@@ -67639,6 +67642,11 @@ exports.push([module.i, "\n.gallery-name {\n  font-size: 24px;\n}\n.gallery-img 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -67704,9 +67712,20 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "gallery-img" }, [
                 _c("img", {
-                  staticClass: "img-responsive img-portfolio",
-                  attrs: { src: "/images/1.jpg", alt: gallery.name }
-                })
+                  staticClass: "img-responsive",
+                  attrs: {
+                    src: "../images/Miamisburg-45342-Roofing.jpg",
+                    alt: gallery.name
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "overlay" }, [
+                  _c("h2", [_vm._v(_vm._s(gallery.name))]),
+                  _vm._v(" "),
+                  _c("a", { staticClass: "info", attrs: { href: "#" } }, [
+                    _vm._v("View Photos")
+                  ])
+                ])
               ])
             ])
           })

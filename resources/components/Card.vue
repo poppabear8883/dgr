@@ -95,7 +95,10 @@
                 }
             },
             cardColor() {
-                return $(`.card-${this.color}`).css('background-color');
+              let card = document.querySelector(`.card-${this.color}`);
+              let style = window.getComputedStyle(card);
+
+              return style.backgroundColor;
             },
             cOptions() {
                 return {
