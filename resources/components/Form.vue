@@ -54,6 +54,7 @@
             font-size: .8em;
             color: #9b9b9b;
             top: -5px;
+            left: -5px;
             transition: all 0.225s ease;
         }
 
