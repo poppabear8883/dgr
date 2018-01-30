@@ -31,7 +31,7 @@
                             </p>
 
                             <div class="panel-actions">
-                                <a href="#">Read More</a>
+                                <a href="/services#siding">Read More</a>
                                 <a href="#">View Gallery</a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                             </p>
 
                             <div class="panel-actions">
-                                <a href="#">Read More</a>
+                                <a href="/services#roofing">Read More</a>
                                 <a href="#">View Gallery</a>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                             </p>
 
                             <div class="panel-actions">
-                                <a href="#">Read More</a>
+                                <a href="/services#windows">Read More</a>
                                 <a href="#">View Gallery</a>
                             </div>
                         </div>

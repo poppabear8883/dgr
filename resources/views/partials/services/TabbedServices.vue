@@ -48,7 +48,7 @@
         </div>
 
         <!-- ROOFING -->
-        <div v-if="active === 0" class="row">
+        <div id="roofing" v-if="active === 0" class="row">
             <media-section
                     class="pull-right"
                     title="Roofing"
@@ -120,7 +120,7 @@
         </div>
 
         <!-- SIDING -->
-        <div v-if="active === 1" class="row">
+        <div id="siding" v-if="active === 1" class="row">
             <media-section
                     title="Siding"
                     img="images/dayton-cincinnati-ohio-259601.jpg"
@@ -163,7 +163,7 @@
         </div>
 
         <!-- WINDOWS -->
-        <div v-if="active === 2" class="row">
+        <div id="windows" v-if="active === 2" class="row">
             <media-section
                     title="Replacement Windows"
                     subtitle="Schedule your free estimate today"
@@ -221,7 +221,7 @@
         </div>
 
         <!-- GUTTERS -->
-        <div v-if="active === 3" class="row">
+        <div id="gutters" v-if="active === 3" class="row">
             <media-section
                     title="Gutters"
                     subtitle="Gutters subtext">
@@ -248,7 +248,7 @@
         </div>
 
         <!-- DOORS -->
-        <div v-if="active === 4" class="row">
+        <div id="doors" v-if="active === 4" class="row">
             <media-section
                     title="Door Replacement"
                     subtitle="Professional door installation at an affordable price!"
@@ -281,7 +281,7 @@
         </div>
 
         <!-- COMMERCIAL -->
-        <div v-if="active === 5" class="row">
+        <div id="commercial" v-if="active === 5" class="row">
             <media-section
                     title="Commercial"
                     subtitle="We have you covered"
@@ -349,7 +349,21 @@
     name: 'tabbed-services',
     data() {
       return {
+        hash_ids: {
+          '#roofing': 0,
+          '#siding': 1,
+          '#windows': 2,
+          '#gutters': 3,
+          '#doors': 4,
+          '#commercial': 5
+        },
+
         active: 0,
+      }
+    },
+    created() {
+      if (window.location.hash !== "") {
+        this.active = _.get(this.hash_ids, window.location.hash);
       }
     }
   }

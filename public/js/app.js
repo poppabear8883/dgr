@@ -69853,7 +69853,9 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+                  _c("a", { attrs: { href: "/services#siding" } }, [
+                    _vm._v("Read More")
+                  ]),
                   _vm._v(" "),
                   _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
                 ])
@@ -69885,7 +69887,9 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+                  _c("a", { attrs: { href: "/services#roofing" } }, [
+                    _vm._v("Read More")
+                  ]),
                   _vm._v(" "),
                   _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
                 ])
@@ -69917,7 +69921,9 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Read More")]),
+                  _c("a", { attrs: { href: "/services#windows" } }, [
+                    _vm._v("Read More")
+                  ]),
                   _vm._v(" "),
                   _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
                 ])
@@ -70754,8 +70760,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: 'tabbed-services',
   data: function data() {
     return {
+      hash_ids: {
+        '#roofing': 0,
+        '#siding': 1,
+        '#windows': 2,
+        '#gutters': 3,
+        '#doors': 4,
+        '#commercial': 5
+      },
+
       active: 0
     };
+  },
+  created: function created() {
+    if (window.location.hash !== "") {
+      this.active = _.get(this.hash_ids, window.location.hash);
+    }
   }
 });
 
@@ -70889,7 +70909,7 @@ var render = function() {
     _vm.active === 0
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "roofing" } },
           [
             _c(
               "media-section",
@@ -71005,7 +71025,7 @@ var render = function() {
     _vm.active === 1
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "siding" } },
           [
             _c(
               "media-section",
@@ -71077,7 +71097,7 @@ var render = function() {
     _vm.active === 2
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "windows" } },
           [
             _c(
               "media-section",
@@ -71182,7 +71202,7 @@ var render = function() {
     _vm.active === 3
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "gutters" } },
           [
             _c(
               "media-section",
@@ -71213,7 +71233,7 @@ var render = function() {
     _vm.active === 4
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "doors" } },
           [
             _c(
               "media-section",
@@ -71271,7 +71291,7 @@ var render = function() {
     _vm.active === 5
       ? _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row", attrs: { id: "commercial" } },
           [
             _c(
               "media-section",
