@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">D & G Roofing Admin Portal</a>
+                <a class="navbar-brand" href="#">D&G Admin</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -85,12 +85,10 @@
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/contacts">Contacts</a></li>
-                    <li><a href="">Email</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="">Users</a></li>
                     <li><a href="">Roles</a></li>
-                    <li><a href="">Permissions</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/galleries">Galleries</a></li>

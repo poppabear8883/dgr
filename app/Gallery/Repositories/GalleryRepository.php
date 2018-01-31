@@ -4,17 +4,27 @@ namespace App\Gallery\Repositories;
 
 use App\Gallery;
 use App\Gallery\Contracts\GalleryInterface;
+use Illuminate\Filesystem\Filesystem;
 
 class GalleryRepository implements GalleryInterface
 {
+
+    protected $path = 'public/images/galleries';
+
     /**
      * @var Gallery
      */
     private $gallery;
 
-    public function __construct(Gallery $gallery)
+    /**
+     * @var Filesystem
+     */
+    private $file;
+
+    public function __construct(Gallery $gallery, Filesystem $file)
     {
         $this->gallery = $gallery;
+        $this->file = $file;
     }
 
 
@@ -30,6 +40,12 @@ class GalleryRepository implements GalleryInterface
 
     public function create(array $data)
     {
+        if ($this->exists($data['name'])) {
+            return $this->findByName($data['name']);
+        }
+
+        $this->file->makeDirectory($data['name']);
+
         return $this->gallery->create($data);
     }
 
@@ -45,6 +61,25 @@ class GalleryRepository implements GalleryInterface
 
     public function findById($id)
     {
-        return $this->gallery->find($id);
+        return $this->gallery->findOrFail($id);
+    }
+
+    public function findByName($name)
+    {
+        return $this->gallery->whereName($name)->get();
+    }
+
+    public function exists($name)
+    {
+        if (!$this->findByName($name)) {
+            return false;
+        }
+
+        return $this->file->exists($this->getPath());
+    }
+
+    public function getPath($path = '')
+    {
+        return base_path($this->path) . "/$path";
     }
 }

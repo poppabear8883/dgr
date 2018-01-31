@@ -75,11 +75,6 @@
                 pointer-events: none;
             }
 
-            &.wide {
-                //width: 650px;
-                max-width: 100%;
-            }
-
         }
 
         input,
