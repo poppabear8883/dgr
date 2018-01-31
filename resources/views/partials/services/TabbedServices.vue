@@ -128,28 +128,34 @@
                     img-alt="dayton cincinnati ohio roofing contractors">
 
                 <p>
-                    Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the right
-                    siding can make all the difference in the look and feel of your property. With a wide variety of
-                    styles and options for you to choose from, we're confident our knowledgeable team can make the
-                    dreams you have for your home's appearance a reality. Our range of choices allows us to work with
-                    your goals to make sure the job is done right. We'll be here when you’re ready to take the next
-                    step.
+                    At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look
+                    and feel of your property. With a wide variety of styles and options for you to choose from, we're
+                    confident our knowledgeable team can make the dreams you have for your home's appearance a reality.
+                    Our range of choices allows us to work with your goals to make sure the job is done right. We'll be
+                    here when you’re ready to take the next step.
+                </p>
+
+                <h4 class="page-header color-red">Vinyl</h4>
+                <p>
+                    Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and
+                    textures to popular colors and accessories. With Mastic you can create custom curb appeal that will
+                    be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.
+                </p>
+
+                <h4 class="page-header color-red">James Hardie</h4>
+                <p>
+                    With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements
+                    and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time
+                    and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.
                 </p>
 
                 <p>
-                    If you're in the market for a home siding service, we're here for you.
-                    At D & G Roofing & Restoration, we're committed to ensuring your satisfaction and peace of mind.
-                    Call today to set up an appointment.
+                    If you're in the market for a home siding service, we're here for you. At D & G Roofing &
+                    Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up
+                    an appointment.
                 </p>
 
                 <div slot="bimg" style="margin-top: 10px">
-                    <p>
-                        We use Mastic Home Exterior by Ply Gem. Mastic by Ply Gem provides you with a wide range of home
-                        exterior design options - from styles and textures to popular colors and accessories. With Mastic
-                        you can create custom curb appeal that will be the envy of the neighborhood. Mastic Siding is made
-                        in the U.S.A. and Green Certified.
-                    </p>
-
                     <div class="row">
                         <div class="col-md-6">
                             <img class="img-responsive" src="images/mastic-logo.png" alt="Mastic Home Exteriors">
@@ -190,6 +196,24 @@
                     needs.
                 </p>
 
+                <h4 class="page-header color-red">Save money and help our planet</h4>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            We are always looking for ways to help our environment.
+                            Our energy efficient windows can do more than just save you money;
+                            they can also help you conserve resources, which mean our planet benefits as well.
+                        </p>
+
+                        <p>
+                            <strong>Start saving money and the environment today!</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/recycle-planet.png" alt="D & G Roofing cares about our planet">
+                    </div>
+                </div>
+
                 <div slot="bimg" style="margin-top: 10px">
                     <div class="row">
                         <div class="col-md-6">
@@ -197,23 +221,6 @@
                         </div>
                         <div class="col-md-6">
                             <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Windows">
-                        </div>
-                    </div>
-                    <h4 class="page-header color-red">Save money and help our planet</h4>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <p>
-                                We are always looking for ways to help our environment.
-                                Our energy efficient windows can do more than just save you money;
-                                they can also help you conserve resources, which mean our planet benefits as well.
-                            </p>
-
-                            <p>
-                                <strong>Start saving money and the environment today!</strong>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-responsive" src="images/recycle-planet.png" alt="D & G Roofing cares about our planet">
                         </div>
                     </div>
                 </div>

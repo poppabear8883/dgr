@@ -13,11 +13,34 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        $this->createStaging();
+
         $this->createGerri();
         $this->createMike();
 
         // Lets generate some dummy data for testing
         factory(Profile::class, 20)->create();
+    }
+
+    private function createStaging()
+    {
+        $user = User::create([
+            'username' => 'staging',
+            'password' => bcrypt('secret'),
+            'email' => 'staging@email.com'
+        ]);
+
+        $user->profile()->create([
+            'name' => 'Staging Account',
+            'address' => '123 street ln',
+            'city' => 'Moraine',
+            'state' => 'Ohio',
+            'zip' => '45439',
+            'county' => 'Montgomery',
+            'primary_phone' => '(937) 555-1234'
+        ]);
+
+        $user->assignRole('owner');
     }
 
     private function createGerri(): void
