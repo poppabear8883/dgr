@@ -9,7 +9,7 @@ use Illuminate\Filesystem\Filesystem;
 class GalleryRepository implements GalleryInterface
 {
 
-    protected $path = 'public/images/galleries';
+    protected $path = 'galleries';
 
     /**
      * @var Gallery
@@ -38,15 +38,24 @@ class GalleryRepository implements GalleryInterface
         return $this->gallery->all();
     }
 
+    /**
+     * @param array $data
+     * @return mixed
+     * @throws \Exception
+     */
     public function create(array $data)
     {
+        $path = $this->path.DIRECTORY_SEPARATOR.$data['name'];
+
         if ($this->exists($data['name'])) {
             return $this->findByName($data['name']);
         }
 
-        $this->file->makeDirectory($data['name']);
+        if ($this->file->makeDirectory($path, 755, true)) {
+            return $this->gallery->create($data);
+        }
 
-        return $this->gallery->create($data);
+        throw new \Exception('Unable to create User resource');
     }
 
     public function update($id, array $data)
@@ -75,11 +84,6 @@ class GalleryRepository implements GalleryInterface
             return false;
         }
 
-        return $this->file->exists($this->getPath());
-    }
-
-    public function getPath($path = '')
-    {
-        return base_path($this->path) . "/$path";
+        return $this->file->exists($this->path.DIRECTORY_SEPARATOR.$name);
     }
 }

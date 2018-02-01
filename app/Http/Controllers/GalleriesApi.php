@@ -29,7 +29,11 @@ class GalleriesApi extends Controller
      */
     public function create(Request $request)
     {
-        return response($this->repo->create($request->all()));
+        try {
+            return response($this->repo->create($request->all()));
+        } catch (\Exception $e) {
+            return response([$e->getMessage()]);
+        }
     }
 
 

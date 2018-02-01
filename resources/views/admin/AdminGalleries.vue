@@ -1,5 +1,21 @@
 <template>
     <div class="galleries">
+        <div v-if="success !== ''" class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-success">
+                    {{success}}
+                </div>
+            </div>
+        </div>
+        <div v-if="errors.length > 0" class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-danger">
+                    <ul>
+                        <li v-for="error in errors">{{error}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="row add-form">
             <div class="col-xs-12 col-md-3">
                 <div class="styled-input">
@@ -20,7 +36,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-3">
-                <div class="btn-lrg form-btn">Save</div>
+                <div @click="add()" class="btn-lrg form-btn">Save</div>
             </div>
         </div>
 
@@ -30,9 +46,9 @@
             </div>
         </div> <!-- row -->
 
-        <div v-else class="row" v-for="i in Math.ceil(galleries.length / 4)">
+        <div v-else class="row" v-for="i in Math.ceil(store.length / 4)">
 
-            <div class="col-md-3 col-sm-6 col-xs-12" v-for="gallery in galleries.slice((i - 1) * 4, i * 4)">
+            <div class="col-md-3 col-sm-6 col-xs-12" v-for="gallery in store.slice((i - 1) * 4, i * 4)">
                 <div class="gallery-img">
                     <img class="img-responsive"
                          :src="image(gallery.img)"
@@ -49,17 +65,15 @@
     </div>
 </template>
 <script>
-    import DgForm from 'Components/Form';
-
     export default {
       props: {
         galleries: {required: true}
       },
-      components: {
-        DgForm
-      },
       data() {
         return {
+          store: this.galleries,
+          success: '',
+          errors: [],
           addData: {
             name: '',
             description: '',
@@ -72,13 +86,29 @@
       },
       methods: {
         add() {
-          //const required = (value) => _.find(['name', 'description'], (o) => { return o.value < 40; });
+          this.errors = [];
+          const required_fields = ['name', 'description'];
 
-          _.each(this.addData, function(value, key) {
+          _.each(this.addData, (value, key) => {
             if (value === '') {
-
+              const required = _.findIndex(required_fields, (o) => { return o === key; })
+              if (required !== -1) {
+                this.errors.push(`The ${key} is required!`);
+              }
             }
           });
+
+          if (this.errors.length === 0) {
+            axios.post(`/api/galleries/create`, this.addData)
+              .then((response) => {
+                this.clearData();
+                this.store.push(response.data);
+                this.success = `Successfully Added ${response.data.name}`;
+              }).catch((error) => {
+                this.errors.push(error.response.data.message);
+            });
+          }
+
         },
         processFile(event) {
           console.log(event.target.files[0].name);
@@ -90,6 +120,13 @@
           }
 
           return '../images/Miamisburg-45342-Roofing.jpg';
+        },
+        clearData() {
+          this.addData = {
+            name: '',
+            description: '',
+            img: ''
+          }
         }
       }
 

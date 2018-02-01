@@ -7,7 +7,6 @@ interface GalleryInterface
     public function all();
     public function findById($id);
     public function findByName($name);
-    public function getPath();
     public function create(array $data);
     public function update($id, array $data);
     public function delete($id);
