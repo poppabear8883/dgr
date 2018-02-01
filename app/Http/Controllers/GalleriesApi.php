@@ -30,9 +30,9 @@ class GalleriesApi extends Controller
     public function create(Request $request)
     {
         try {
-            return response($this->repo->create($request->all()));
+            return response($this->repo->create($request->all()), 201);
         } catch (\Exception $e) {
-            return response([$e->getMessage()]);
+            return response(['message' => $e->getMessage()], 422);
         }
     }
 
@@ -46,7 +46,11 @@ class GalleriesApi extends Controller
      */
     public function update(Request $request, $id)
     {
-        return response($this->repo->update($id, $request->all()));
+        try {
+            return response($this->repo->update($id, $request->all()), 200);
+        } catch (\Exception $e) {
+            return response(['message' => $e->getMessage()], 422);
+        }
     }
 
     /**

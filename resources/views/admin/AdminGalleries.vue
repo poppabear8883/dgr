@@ -1,5 +1,6 @@
 <template>
     <div class="galleries">
+
         <div v-if="success !== ''" class="row">
             <div class="col-xs-12">
                 <div class="alert alert-success">
@@ -7,6 +8,7 @@
                 </div>
             </div>
         </div>
+
         <div v-if="errors.length > 0" class="row">
             <div class="col-xs-12">
                 <div class="alert alert-danger">
@@ -16,7 +18,16 @@
                 </div>
             </div>
         </div>
-        <div class="row add-form">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <button @click="adding = !adding" type="button" class="btn btn-default btn-lg">
+                    <i :class="['fa', adding ? 'fa-minus' : 'fa-plus']"></i>
+                </button>
+            </div>
+        </div>
+
+        <div v-if="adding" class="row add-form">
             <div class="col-xs-12 col-md-3">
                 <div class="styled-input">
                     <input v-model="addData.name" type="text" required />
@@ -56,7 +67,33 @@
 
                     <div class="overlay">
                         <h2>{{gallery.name}}</h2>
-                        <a class="info" href="#">Edit</a>
+                        <a @click.prevent="edit(gallery)" class="info" href="">
+                            {{ editing_id === gallery.id ? 'Cancel Edit' : 'Edit'}}
+                        </a>
+                    </div>
+                </div>
+
+                <div v-if="editing_id === gallery.id" class="row edit-form">
+                    <div class="col-md-12">
+                        <div class="styled-input">
+                            <input v-model="editData.name" type="text" required />
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="styled-input">
+                            <input v-model="editData.description" type="text" required />
+                            <label>Description</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="styled-input">
+                            <input type="file" @change="processFile($event)" />
+                            <label>Cover Image {{gallery.img ? `(${gallery.img})` : ''}}</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div @click="update(gallery.id)" class="btn-lrg form-btn">Save</div>
                     </div>
                 </div>
             </div>
@@ -71,6 +108,8 @@
       },
       data() {
         return {
+          adding: false,
+          editing_id: 0,
           store: this.galleries,
           success: '',
           errors: [],
@@ -80,7 +119,9 @@
             img: ''
           },
           editData: {
-
+            name: '',
+            description: '',
+            img: ''
           }
         }
       },
@@ -110,6 +151,35 @@
           }
 
         },
+        edit(gallery) {
+          if (gallery.name !== this.editData.name) {
+            this.editData = {
+              name: gallery.name,
+              description: gallery.description,
+              img: gallery.img
+            }
+            this.editing_id = gallery.id;
+          } else {
+            this.clearData();
+          }
+        },
+        update(id) {
+          axios.put(`/api/galleries/update/${id}`, this.editData)
+            .then((response) => {
+              this.clearData();
+
+            for (let i in this.store) {
+              if (this.store[i].id === id) {
+                this.store.splice(i, 1, response.data);
+                break
+              }
+            }
+
+              this.success = `Successfully Updated ${response.data.name}`;
+            }).catch((error) => {
+            this.errors.push(error.response.data.message);
+          });
+        },
         processFile(event) {
           console.log(event.target.files[0].name);
           this.addData.img = event.target.files[0].name;
@@ -122,7 +192,16 @@
           return '../images/Miamisburg-45342-Roofing.jpg';
         },
         clearData() {
+          this.adding = false;
+          this.editing_id = 0;
+
           this.addData = {
+            name: '',
+            description: '',
+            img: ''
+          }
+
+          this.editData = {
             name: '',
             description: '',
             img: ''
@@ -140,7 +219,8 @@
             margin-bottom: 2rem;
         }
 
-        .add-form {
+        .add-form,
+        .edit-form {
             input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
                 font-size: .8em;
                 color: #9b9b9b;

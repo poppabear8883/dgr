@@ -4,27 +4,20 @@ namespace App\Gallery\Repositories;
 
 use App\Gallery;
 use App\Gallery\Contracts\GalleryInterface;
-use Illuminate\Filesystem\Filesystem;
 
 class GalleryRepository implements GalleryInterface
 {
 
-    protected $path = 'galleries';
+    protected $path = 'images/gallery';
 
     /**
      * @var Gallery
      */
     private $gallery;
 
-    /**
-     * @var Filesystem
-     */
-    private $file;
-
-    public function __construct(Gallery $gallery, Filesystem $file)
+    public function __construct(Gallery $gallery)
     {
         $this->gallery = $gallery;
-        $this->file = $file;
     }
 
 
@@ -45,22 +38,29 @@ class GalleryRepository implements GalleryInterface
      */
     public function create(array $data)
     {
-        $path = $this->path.DIRECTORY_SEPARATOR.$data['name'];
 
         if ($this->exists($data['name'])) {
             return $this->findByName($data['name']);
         }
 
-        if ($this->file->makeDirectory($path, 755, true)) {
-            return $this->gallery->create($data);
-        }
-
-        throw new \Exception('Unable to create User resource');
+        throw new \Exception('Unable to create resource');
     }
 
+    /**
+     * @param $id
+     * @param array $data
+     * @return mixed
+     * @throws \Exception
+     */
     public function update($id, array $data)
     {
-        return $this->findById($id)->update($data);
+        $resource = $this->findById($id);
+
+        if ($resource->update($data)) {
+            return $resource;
+        }
+
+        throw new \Exception('Unable to update resource');
     }
 
     public function delete($id)
@@ -80,10 +80,10 @@ class GalleryRepository implements GalleryInterface
 
     public function exists($name)
     {
-        if (!$this->findByName($name)) {
-            return false;
+        if ($this->findByName($name)) {
+            return true;
         }
 
-        return $this->file->exists($this->path.DIRECTORY_SEPARATOR.$name);
+        return false;
     }
 }
