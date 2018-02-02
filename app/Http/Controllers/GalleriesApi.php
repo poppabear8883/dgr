@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Gallery\Contracts\GalleryInterface;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Filesystem\Factory as Filesystem;
 
 class GalleriesApi extends Controller
 {

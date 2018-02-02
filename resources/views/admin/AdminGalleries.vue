@@ -180,16 +180,31 @@
             this.errors.push(error.response.data.message);
           });
         },
-        processFile(event) {
-          console.log(event.target.files[0].name);
-          this.addData.img = event.target.files[0].name;
+        processFile(e) {
+          let files = e.target.files || e.dataTransfer.files;
+
+          if (!files.length)
+            return;
+
+          this.createImage(files[0]);
+        },
+        createImage(file) {
+          let reader = new FileReader();
+
+          let vm = this;
+
+          reader.onload = (e) => {
+            vm.addData.img = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
         },
         image(img) {
           if (img) {
             return img;
           }
 
-          return '../images/Miamisburg-45342-Roofing.jpg';
+          return '/img/gallery/default-cover.jpg';
         },
         clearData() {
           this.adding = false;

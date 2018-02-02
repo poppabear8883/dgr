@@ -1,5 +1,7 @@
 <?php
 
+Route::get('img/{path}', 'ImageController@show')->where('path', '.*');
+
 Route::get('/', function () {
     return view('welcome');
 });

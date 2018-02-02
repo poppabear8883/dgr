@@ -67828,16 +67828,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this2.errors.push(error.response.data.message);
       });
     },
-    processFile: function processFile(event) {
-      console.log(event.target.files[0].name);
-      this.addData.img = event.target.files[0].name;
+    processFile: function processFile(e) {
+      var files = e.target.files || e.dataTransfer.files;
+
+      if (!files.length) return;
+
+      this.createImage(files[0]);
+    },
+    createImage: function createImage(file) {
+      var reader = new FileReader();
+
+      var vm = this;
+
+      reader.onload = function (e) {
+        vm.addData.img = e.target.result;
+      };
+
+      reader.readAsDataURL(file);
     },
     image: function image(img) {
       if (img) {
         return img;
       }
 
-      return '../images/Miamisburg-45342-Roofing.jpg';
+      return '/img/gallery/default-cover.jpg';
     },
     clearData: function clearData() {
       this.adding = false;
