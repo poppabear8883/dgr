@@ -30,19 +30,19 @@
         <div v-if="adding" class="row add-form">
             <div class="col-xs-12 col-md-3">
                 <div class="styled-input">
-                    <input v-model="addData.name" type="text" required />
+                    <input v-model="addData.name" type="text" required/>
                     <label>Name</label>
                 </div>
             </div>
             <div class="col-xs-12 col-md-3">
                 <div class="styled-input">
-                    <input v-model="addData.description" type="text" required />
+                    <input v-model="addData.description" type="text" placeholder="optional"/>
                     <label>Description</label>
                 </div>
             </div>
             <div class="col-xs-12 col-md-3">
                 <div class="styled-input">
-                    <input type="file" @change="processFile($event)" />
+                    <input type="file" @change="processFile($event)"/>
                     <label>Cover Image</label>
                 </div>
             </div>
@@ -57,12 +57,12 @@
             </div>
         </div> <!-- row -->
 
-        <div v-else class="row" v-for="i in Math.ceil(store.length / 4)">
+        <div v-else class="row" v-for="i in Math.ceil(store.length / 3)">
 
-            <div class="col-md-3 col-sm-6 col-xs-12" v-for="gallery in store.slice((i - 1) * 4, i * 4)">
-                <div class="gallery-img">
+            <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in store.slice((i - 1) * 3, i * 3)">
+                <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
-                         :src="image(gallery.img)"
+                         :src="gallery.img ? `${gallery.img}?w=700&h=450&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=450&fit=crop'"
                          :alt="gallery.name">
 
                     <div class="overlay">
@@ -76,20 +76,20 @@
                 <div v-if="editing_id === gallery.id" class="row edit-form">
                     <div class="col-md-12">
                         <div class="styled-input">
-                            <input v-model="editData.name" type="text" required />
+                            <input v-model="editData.name" type="text" required/>
                             <label>Name</label>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="styled-input">
-                            <input v-model="editData.description" type="text" required />
+                            <input v-model="editData.description" type="text" placeholder="optional"/>
                             <label>Description</label>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="styled-input">
-                            <input type="file" @change="processFile($event)" />
-                            <label>Cover Image {{gallery.img ? `(${gallery.img})` : ''}}</label>
+                            <input type="file" @change="processFile($event)"/>
+                            <label>Cover Image</label>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-3">
@@ -102,129 +102,124 @@
     </div>
 </template>
 <script>
-    export default {
-      props: {
-        galleries: {required: true}
+  export default {
+    props: {
+      galleries: {required: true}
+    },
+    data () {
+      return {
+        adding: false,
+        editing_id: 0,
+        store: this.galleries,
+        success: '',
+        errors: [],
+        addData: {
+          name: '',
+          description: '',
+          img: ''
+        },
+        editData: {
+          name: '',
+          description: '',
+          img: ''
+        }
+      }
+    },
+    methods: {
+      add () {
+        this.errors = []
+
+        if (this.addData.name === '') {
+          this.errors.push(`The ${key} is required!`)
+          return false
+        }
+
+        if (this.errors.length === 0) {
+          axios.post(`/api/galleries/create`, this.addData)
+            .then((response) => {
+              this.clearData()
+              this.store.push(response.data)
+              this.success = `Successfully Added ${response.data.name}`
+            }).catch((error) => {
+            this.errors.push(error.response.data.message)
+            return false
+          })
+        }
+
+        return true
+
       },
-      data() {
-        return {
-          adding: false,
-          editing_id: 0,
-          store: this.galleries,
-          success: '',
-          errors: [],
-          addData: {
-            name: '',
-            description: '',
-            img: ''
-          },
-          editData: {
-            name: '',
-            description: '',
-            img: ''
+      edit (gallery) {
+        if (gallery.name !== this.editData.name) {
+          this.editData = {
+            name: gallery.name,
+            description: gallery.description,
+            img: gallery.img
           }
+          this.editing_id = gallery.id
+        } else {
+          this.clearData()
         }
       },
-      methods: {
-        add() {
-          this.errors = [];
-          const required_fields = ['name', 'description'];
+      update (id) {
+        this.errors = []
 
-          _.each(this.addData, (value, key) => {
-            if (value === '') {
-              const required = _.findIndex(required_fields, (o) => { return o === key; })
-              if (required !== -1) {
-                this.errors.push(`The ${key} is required!`);
-              }
-            }
-          });
-
-          if (this.errors.length === 0) {
-            axios.post(`/api/galleries/create`, this.addData)
-              .then((response) => {
-                this.clearData();
-                this.store.push(response.data);
-                this.success = `Successfully Added ${response.data.name}`;
-              }).catch((error) => {
-                this.errors.push(error.response.data.message);
-            });
-          }
-
-        },
-        edit(gallery) {
-          if (gallery.name !== this.editData.name) {
-            this.editData = {
-              name: gallery.name,
-              description: gallery.description,
-              img: gallery.img
-            }
-            this.editing_id = gallery.id;
-          } else {
-            this.clearData();
-          }
-        },
-        update(id) {
-          axios.put(`/api/galleries/update/${id}`, this.editData)
-            .then((response) => {
-              this.clearData();
+        axios.put(`/api/galleries/update/${id}`, this.editData)
+          .then((response) => {
+            this.clearData()
 
             for (let i in this.store) {
               if (this.store[i].id === id) {
-                this.store.splice(i, 1, response.data);
+                this.store.splice(i, 1, response.data)
                 break
               }
             }
 
-              this.success = `Successfully Updated ${response.data.name}`;
-            }).catch((error) => {
-            this.errors.push(error.response.data.message);
-          });
-        },
-        processFile(e) {
-          let files = e.target.files || e.dataTransfer.files;
+            this.success = `Successfully Updated ${response.data.name}`
 
-          if (!files.length)
-            return;
+          }).catch((error) => {
+          this.errors.push(error.response.data.message)
+        })
+      },
+      processFile (e) {
+        let files = e.target.files || e.dataTransfer.files
+        console.log(files)
 
-          this.createImage(files[0]);
-        },
-        createImage(file) {
-          let reader = new FileReader();
+        if (!files.length)
+          return
 
-          let vm = this;
+        this.createImage(files[0])
+      },
+      createImage (file) {
+        let reader = new FileReader()
 
-          reader.onload = (e) => {
-            vm.addData.img = e.target.result;
-          };
+        let vm = this
 
-          reader.readAsDataURL(file);
-        },
-        image(img) {
-          if (img) {
-            return img;
-          }
+        reader.onload = (e) => {
+          this.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result
+        }
 
-          return '/img/gallery/default-cover.jpg';
-        },
-        clearData() {
-          this.adding = false;
-          this.editing_id = 0;
+        reader.readAsDataURL(file)
+      },
+      clearData () {
+        this.adding = false
+        this.editing_id = 0
 
-          this.addData = {
-            name: '',
-            description: '',
-            img: ''
-          }
+        this.addData = {
+          name: '',
+          description: '',
+          img: ''
+        }
 
-          this.editData = {
-            name: '',
-            description: '',
-            img: ''
-          }
+        this.editData = {
+          name: '',
+          description: '',
+          img: ''
         }
       }
-
     }
+
+  }
 </script>
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
@@ -299,20 +294,20 @@
                 color: white;
                 font-size: 18px;
                 cursor: pointer;
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-                0 2px 10px 0 rgba(0,0,0,0.07);
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+                0 2px 10px 0 rgba(0, 0, 0, 0.07);
                 transition: all 300ms ease;
 
                 &:hover {
                     transform: translateY(1px);
-                    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-                    0 1px 1px 0 rgba(0,0,0,0.09);
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+                    0 1px 1px 0 rgba(0, 0, 0, 0.09);
                 }
 
                 @media (max-width: 768px) {
-                    width:100%;
+                    width: 100%;
                     //float: none;
-                    text-align:center;
+                    text-align: center;
                 }
             }
 
@@ -365,7 +360,7 @@
                 top: 0;
                 left: 0;
                 opacity: 0;
-                background-color: rgba(0,0,0,0.5);
+                background-color: rgba(0, 0, 0, 0.5);
                 transition: all .4s ease-in-out
             }
 
@@ -381,7 +376,7 @@
                 text-align: center;
                 position: relative;
                 font-size: 17px;
-                background: rgba(0,0,0,0.6);
+                background: rgba(0, 0, 0, 0.6);
                 transform: translatey(-100px);
                 transition: all .2s ease-in-out;
                 padding: 10px;
@@ -398,7 +393,7 @@
                     opacity: 0;
                     filter: alpha(opacity=0);
                     transition: all .2s ease-in-out;
-                    margin: 10px 0 0;
+                    margin: 70px 0 0;
                     padding: 7px 14px;
 
                     &:hover {
