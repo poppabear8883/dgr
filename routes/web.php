@@ -1,4 +1,11 @@
 <?php
+Route::get('break', function () {
+    echo $break;
+});
+
+Route::get('info', function () {
+    phpinfo();
+});
 
 Route::get('img/{path}', 'ImageController@show')->where('path', '.*');
 

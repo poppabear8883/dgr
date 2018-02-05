@@ -62,10 +62,10 @@
             <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in store.slice((i - 1) * 3, i * 3)">
                 <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
-                         :src="gallery.img ? `${gallery.img}?w=700&h=450&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=450&fit=crop'"
+                         :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
                          :alt="gallery.name">
 
-                    <div class="overlay">
+                    <div class="overlay">sudo
                         <h2>{{gallery.name}}</h2>
                         <a @click.prevent="edit(gallery)" class="info" href="">
                             {{ editing_id === gallery.id ? 'Cancel Edit' : 'Edit'}}

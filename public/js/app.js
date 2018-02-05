@@ -65862,13 +65862,14 @@ var render = function() {
                           staticClass: "img-responsive",
                           attrs: {
                             src: gallery.img
-                              ? gallery.img + "?w=700&h=450&fit=crop"
-                              : "/img/gallery/default-cover.jpg?w=700&h=450&fit=crop",
+                              ? gallery.img + "?w=700&h=400&fit=crop"
+                              : "/img/gallery/default-cover.jpg?w=700&h=400&fit=crop",
                             alt: gallery.name
                           }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "overlay" }, [
+                          _vm._v("sudo\n                    "),
                           _c("h2", [_vm._v(_vm._s(gallery.name))]),
                           _vm._v(" "),
                           _c(
