@@ -73035,6 +73035,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'galleries',
@@ -73071,48 +73072,46 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "galleries" }, [
-    _c(
-      "div",
-      { staticClass: "container" },
-      _vm._l(Math.ceil(_vm.galleries.length / 3), function(i) {
-        return _c(
-          "div",
-          { staticClass: "row" },
-          _vm._l(_vm.galleries.slice((i - 1) * 3, i * 3), function(gallery) {
-            return _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-12" }, [
-              _c("div", { staticClass: "gallery-img" }, [
-                _c("img", {
-                  staticClass: "img-responsive",
-                  attrs: {
-                    src: gallery.img
-                      ? gallery.img + "?w=700&h=400&fit=crop"
-                      : "/img/gallery/default-cover.jpg?w=700&h=400&fit=crop",
-                    alt: gallery.name
-                  }
-                }),
+    _c("div", { staticClass: "container" }, [
+      _c("h1", { staticClass: "page-header color-red" }, [_vm._v("Galleries")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.galleries, function(gallery) {
+          return _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-12" }, [
+            _c("div", { staticClass: "gallery-img" }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: {
+                  src: gallery.img
+                    ? gallery.img + "?w=700&h=400&fit=crop"
+                    : "/img/gallery/default-cover.jpg?w=700&h=400&fit=crop",
+                  alt: gallery.name
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "overlay" }, [
+                _c("h2", [_vm._v(_vm._s(gallery.name))]),
                 _vm._v(" "),
-                _c("div", { staticClass: "overlay" }, [
-                  _c("h2", [_vm._v(_vm._s(gallery.name))]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "info",
-                      attrs: { href: "/galleries/" + gallery.id + "/photos" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            View Photos\n                        "
-                      )
-                    ]
-                  )
-                ])
+                _c(
+                  "a",
+                  {
+                    staticClass: "info",
+                    attrs: { href: "/galleries/" + gallery.id + "/photos" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                            View Photos\n                        "
+                    )
+                  ]
+                )
               ])
             ])
-          })
-        )
-      })
-    )
+          ])
+        })
+      )
+    ])
   ])
 }
 var staticRenderFns = []

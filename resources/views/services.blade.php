@@ -39,44 +39,6 @@
 
     <dg-call-anytime></dg-call-anytime>
 
-    <div class="portfolio-home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Galleries</h2>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <dg-galleries></dg-galleries>
 
 @stop

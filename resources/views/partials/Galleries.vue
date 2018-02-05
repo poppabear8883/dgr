@@ -1,8 +1,9 @@
 <template>
     <div class="galleries">
         <div class="container">
-            <div class="row" v-for="i in Math.ceil(galleries.length / 3)">
-                <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in galleries.slice((i - 1) * 3, i * 3)">
+            <h1 class="page-header color-red">Galleries</h1>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in galleries">
                     <div class="gallery-img">
                         <img class="img-responsive"
                              :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
