@@ -1,11 +1,4 @@
 <?php
-Route::get('break', function () {
-    echo $break;
-});
-
-Route::get('info', function () {
-    phpinfo();
-});
 
 Route::get('img/{path}', 'ImageController@show')->where('path', '.*');
 
@@ -44,6 +37,8 @@ Route::get('/refer-a-friend', function() {
 Route::get('/join-our-team', function() {
     return view('join');
 });
+
+//Route::get('/galleries/{id}/photos', 'GalleriesController@photos');
 
 Auth::routes();
 

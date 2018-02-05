@@ -65,7 +65,7 @@
                          :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
                          :alt="gallery.name">
 
-                    <div class="overlay">sudo
+                    <div class="overlay">
                         <h2>{{gallery.name}}</h2>
                         <a @click.prevent="edit(gallery)" class="info" href="">
                             {{ editing_id === gallery.id ? 'Cancel Edit' : 'Edit'}}

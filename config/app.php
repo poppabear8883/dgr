@@ -179,6 +179,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Gallery\Providers\GalleryServiceProvider::class,
+        App\Photo\Providers\PhotoServiceProvider::class,
         App\Contact\Providers\ContactServiceProvider::class,
 
     ],

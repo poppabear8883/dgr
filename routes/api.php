@@ -13,14 +13,17 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->group(function () {
+Route::middleware('api')->group(function () {
 
     /* Galleries API Routes */
     Route::prefix('galleries')->group(function () {
         Route::get('/', 'GalleriesApi@all');
-        Route::post('/create', 'GalleriesApi@create');
-        Route::put('/update/{id}', 'GalleriesApi@update');
-        Route::delete('/delete/{id}', 'GalleriesApi@destroy');
+
+        Route::middleware('auth')->group(function () {
+            Route::post('/create', 'GalleriesApi@create');
+            Route::put('/update/{id}', 'GalleriesApi@update');
+            Route::delete('/delete/{id}', 'GalleriesApi@destroy');
+        });
     });
 
     /* Photos API Routes */

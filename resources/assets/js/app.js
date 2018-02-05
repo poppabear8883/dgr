@@ -40,6 +40,7 @@ Vue.component('dg-tabbed-services', require('Views/partials/services/TabbedServi
 Vue.component('dg-contact-form', require('Views/partials/contact/ContactForm.vue'));
 Vue.component('dg-refer-form', require('Views/partials/refer/ReferForm.vue'));
 Vue.component('dg-join-form', require('Views/partials/join/JoinForm.vue'));
+Vue.component('dg-galleries', require('Views/partials/Galleries.vue'));
 
 const app = new Vue({
     el: '#app',
