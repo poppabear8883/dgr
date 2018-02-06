@@ -1,5 +1,5 @@
 <template>
-    <div class="galleries">
+    <div class="photos">
 
         <div v-if="success !== ''" class="row">
             <div class="col-xs-12">
@@ -28,72 +28,54 @@
         </div>
 
         <div v-if="adding" class="row add-form">
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-4">
                 <div class="styled-input">
-                    <input v-model="addData.name" type="text" required/>
-                    <label>Name</label>
+                    <input type="file" @change="processFile($event)" />
+                    <label>Photo</label>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-4">
                 <div class="styled-input">
                     <input v-model="addData.description" type="text" placeholder="optional"/>
                     <label>Description</label>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3">
-                <div class="styled-input">
-                    <input type="file" @change="processFile($event)"/>
-                    <label>Cover Image</label>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-4">
                 <div @click="add()" class="btn-lrg form-btn">Save</div>
             </div>
         </div>
 
         <div v-if="store.length <= 0" class="row">
             <div class="col-md-12 text-center">
-                <h1>No Galleries</h1>
+                <h1>No Photos</h1>
             </div>
         </div> <!-- row -->
 
         <div v-else class="row">
 
-            <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in store">
-                <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
+            <div class="col-md-4 col-sm-6 col-xs-12" v-for="photo in store">
+                <div :class="['photo-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
-                         :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
-                         :alt="gallery.name">
+                         :src="`${photo.img}?w=700&h=400&fit=crop`"
+                         :alt="photo.name">
 
                     <div class="overlay">
-                        <h2>{{gallery.name}}</h2>
-                        <a @click.prevent="edit(gallery)" class="info" href="">
-                            {{ editing_id === gallery.id ? 'Cancel Edit' : 'Edit'}}
+                        <h2>{{photo.name}}</h2>
+                        <a @click.prevent="edit(photo)" class="info" href="">
+                            {{ editing_id === photo.id ? 'Cancel Edit' : 'Edit'}}
                         </a>
                     </div>
                 </div>
 
-                <div v-if="editing_id === gallery.id" class="row edit-form">
-                    <div class="col-md-12">
-                        <div class="styled-input">
-                            <input v-model="editData.name" type="text" required/>
-                            <label>Name</label>
-                        </div>
-                    </div>
+                <div v-if="editing_id === photo.id" class="row edit-form">
                     <div class="col-md-12">
                         <div class="styled-input">
                             <input v-model="editData.description" type="text" placeholder="optional"/>
                             <label>Description</label>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="styled-input">
-                            <input type="file" @change="processFile($event)"/>
-                            <label>Cover Image</label>
-                        </div>
-                    </div>
                     <div class="col-xs-12 col-md-3">
-                        <div @click="update(gallery.id)" class="btn-lrg form-btn">Save</div>
+                        <div @click="update(photo.id)" class="btn-lrg form-btn">Save</div>
                     </div>
                 </div>
             </div>
@@ -104,13 +86,13 @@
 <script>
   export default {
     props: {
-      galleries: {required: true}
+      photos: {required: true}
     },
     data () {
       return {
         adding: false,
         editing_id: 0,
-        store: this.galleries,
+        store: this.photos,
         success: '',
         errors: [],
         addData: {
@@ -121,7 +103,6 @@
         editData: {
           name: '',
           description: '',
-          img: ''
         }
       }
     },
@@ -129,13 +110,13 @@
       add () {
         this.errors = []
 
-        if (this.addData.name === '') {
-          this.errors.push(`The Name is required!`)
+        if (this.addData.name === '' || this.addData.img === '') {
+          this.errors.push(`The Name and Photo are both required!`)
           return false
         }
 
         if (this.errors.length === 0) {
-          axios.post(`/api/galleries/create`, this.addData)
+          axios.post(`/api/photos/create`, this.addData)
             .then((response) => {
               this.clearData()
               this.store.push(response.data)
@@ -149,14 +130,13 @@
         return true
 
       },
-      edit (gallery) {
-        if (gallery.name !== this.editData.name) {
+      edit (photo) {
+        if (photo.name !== this.editData.name) {
           this.editData = {
-            name: gallery.name,
-            description: gallery.description,
-            img: gallery.img
+            name: photo.name,
+            description: photo.description
           }
-          this.editing_id = gallery.id
+          this.editing_id = photo.id
         } else {
           this.clearData()
         }
@@ -164,7 +144,7 @@
       update (id) {
         this.errors = []
 
-        axios.put(`/api/galleries/update/${id}`, this.editData)
+        axios.put(`/api/photos/update/${id}`, this.editData)
           .then((response) => {
             this.clearData()
 
@@ -183,7 +163,6 @@
       },
       processFile (e) {
         let files = e.target.files || e.dataTransfer.files
-        console.log(files)
 
         if (!files.length)
           return
@@ -206,15 +185,12 @@
         this.editing_id = 0
 
         this.addData = {
-          name: '',
           description: '',
           img: ''
         }
 
         this.editData = {
-          name: '',
-          description: '',
-          img: ''
+          description: ''
         }
       }
     }
@@ -224,7 +200,7 @@
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
 
-    .galleries {
+    .photos {
         .row {
             margin-bottom: 2rem;
         }
@@ -324,7 +300,7 @@
             }
         }
 
-        .gallery-img {
+        .photo-img {
             width: 100%;
             height: 100%;
             float: left;

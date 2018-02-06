@@ -26,32 +26,7 @@
     <dg-top-bar></dg-top-bar>
 
     <!-- Navigation -->
-    <dg-nav>
-        @if(!Auth::guest())
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                    {{ Auth::user()->profile->name }} <span class="caret"></span>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="/dashboard">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-                    </li>
-                </ul>
-            </li>
-        @endguest
-    </dg-nav>
+    <dg-nav></dg-nav>
 
     <!-- Header -->
     @yield('header')

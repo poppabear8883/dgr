@@ -21,17 +21,17 @@ class PhotoRepository implements PhotoInterface
 
     public function all()
     {
-        // TODO: Implement all() method.
+        return $this->photo->all();
     }
 
     public function findById($id)
     {
-        // TODO: Implement findById() method.
+        return $this->photo->findOrFail($id);
     }
 
     public function findByName($name)
     {
-        // TODO: Implement findByName() method.
+       return $this->photo->where('name', $name)->first();
     }
 
     public function create(array $data)
@@ -46,16 +46,20 @@ class PhotoRepository implements PhotoInterface
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        return $this->findById($id)->delete();
     }
 
     public function exists($name)
     {
-        // TODO: Implement exists() method.
+        if ($this->findByName($name)) {
+            return true;
+        }
+
+        return false;
     }
 
     public function galleries()
     {
-        // TODO: Implement galleries() method.
+        return $this->photo->galleries();
     }
 }

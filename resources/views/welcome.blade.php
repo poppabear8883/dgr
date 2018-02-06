@@ -59,4 +59,5 @@
         <dg-why-choose-us></dg-why-choose-us>
 
         <dg-galleries></dg-galleries>
+    </div>
 @stop

@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,24 +11,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('api')->group(function () {
+/* Galleries API Routes */
+Route::prefix('galleries')->group(function () {
+    Route::get('/', 'GalleriesApi@all');
 
-    /* Galleries API Routes */
-    Route::prefix('galleries')->group(function () {
-        Route::get('/', 'GalleriesApi@all');
-
-        Route::middleware('auth')->group(function () {
-            Route::post('/create', 'GalleriesApi@create');
-            Route::put('/update/{id}', 'GalleriesApi@update');
-            Route::delete('/delete/{id}', 'GalleriesApi@destroy');
-        });
+    Route::middleware('auth:api')->group(function () {
+        Route::post('/create', 'GalleriesApi@create');
+        Route::put('/update/{id}', 'GalleriesApi@update');
+        Route::delete('/delete/{id}', 'GalleriesApi@destroy');
     });
-
-    /* Photos API Routes */
-//    Route::prefix('photos')->group(function () {
-//        Route::get('/', 'PhotosApi@all');
-//        Route::post('/create', 'PhotosApi@create');
-//        Route::update('/update/{id}', 'PhotosApi@update');
-//        Route::delete('/delete/{id}', 'PhotosApi@destroy');
-//    });
 });

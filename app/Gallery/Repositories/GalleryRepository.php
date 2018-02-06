@@ -152,7 +152,6 @@ class GalleryRepository implements GalleryInterface
     {
         return $this->gallery
             ->where('name', $name)
-            ->get()
             ->first();
     }
 
@@ -172,4 +171,8 @@ class GalleryRepository implements GalleryInterface
     }
 
 
+    public function photos()
+    {
+        return $this->gallery->photos();
+    }
 }

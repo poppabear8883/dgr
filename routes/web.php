@@ -49,5 +49,6 @@ Route::middleware('auth')->group(function() {
         Route::resource('contacts', 'ContactsController');
         Route::get('contacts/import/csv', 'ContactsController@importCsv');
         Route::resource('galleries', 'GalleriesController');
+        Route::resource('photos', 'PhotosController');
     });
 });

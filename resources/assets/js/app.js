@@ -24,6 +24,7 @@ Vue.component('tabs', require('Components/Tabs.vue'));
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));
 Vue.component('admin-contacts', require('Views/admin/AdminContacts.vue'));
 Vue.component('admin-galleries', require('Views/admin/AdminGalleries.vue'));
+Vue.component('admin-photos', require('Views/admin/AdminPhotos.vue'));
 
 // Global Layout Partials
 Vue.component('dg-top-bar', require('Views/partials/TopBar.vue'));

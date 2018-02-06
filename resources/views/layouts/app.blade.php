@@ -80,19 +80,20 @@
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/galleries">Galleries</a></li>
-                    <li><a href="">Photos</a></li>
+                    <li><a href="/admin/photos">Photos</a></li>
                 </ul>
             </div>
             @endif
 
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">@yield('page')</h1>
+            <div class="{{ Auth::guest() ? 'col-md-6 col-md-offset-3' : 'col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2' }} main">
+                <h1 class="page-header {{Auth::guest() ? 'text-center' : null}}">@yield('page')</h1>
 
                 @yield('content')
             </div>
         </div>
     </div>
 </div>
+
 <script src="{{asset('js/app.js')}}"></script>
 @yield('scripts')
 
