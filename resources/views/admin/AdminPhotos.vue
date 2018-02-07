@@ -36,7 +36,7 @@
             </div>
             <div class="col-xs-12 col-md-4">
                 <div class="styled-input">
-                    <input v-model="addData.description" type="text" placeholder="optional"/>
+                    <input v-model="addData.description" type="text" required />
                     <label>Description</label>
                 </div>
             </div>
@@ -56,8 +56,8 @@
             <div class="col-md-4 col-sm-6 col-xs-12" v-for="photo in store">
                 <div :class="['photo-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
-                         :src="`${photo.img}?w=700&h=400&fit=crop`"
-                         :alt="photo.name">
+                         :src="imageSrc(photo)"
+                         :alt="photo.description">
 
                     <div class="overlay">
                         <h2>{{photo.name}}</h2>
@@ -70,7 +70,7 @@
                 <div v-if="editing_id === photo.id" class="row edit-form">
                     <div class="col-md-12">
                         <div class="styled-input">
-                            <input v-model="editData.description" type="text" placeholder="optional"/>
+                            <input v-model="editData.description" type="text" required />
                             <label>Description</label>
                         </div>
                     </div>
@@ -96,9 +96,9 @@
         success: '',
         errors: [],
         addData: {
-          name: '',
+          img: '',
           description: '',
-          img: ''
+          name: ''
         },
         editData: {
           name: '',
@@ -110,8 +110,8 @@
       add () {
         this.errors = []
 
-        if (this.addData.name === '' || this.addData.img === '') {
-          this.errors.push(`The Name and Photo are both required!`)
+        if (this.addData.description === '' || this.addData.img === '') {
+          this.errors.push(`The Photo and Description are both required!`)
           return false
         }
 
@@ -175,16 +175,21 @@
         let vm = this
 
         reader.onload = (e) => {
+          this.adding ? vm.addData.name = file.name : vm.editData.img = file.name
           this.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result
         }
 
         reader.readAsDataURL(file)
+      },
+      imageSrc(photo) {
+        return `${photo.route}${photo.name}?w=700&h=400&fit=crop`
       },
       clearData () {
         this.adding = false
         this.editing_id = 0
 
         this.addData = {
+          name: '',
           description: '',
           img: ''
         }

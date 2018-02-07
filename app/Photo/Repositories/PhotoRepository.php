@@ -34,9 +34,41 @@ class PhotoRepository implements PhotoInterface
        return $this->photo->where('name', $name)->first();
     }
 
+    /**
+     * @param array $data
+     * @return mixed
+     * @throws \Exception
+     */
     public function create(array $data)
     {
-        // TODO: Implement create() method.
+        $image = null;
+
+        if ($this->exists($data['name'])) {
+            throw new \Exception('Photo '.$data['name'].' already exists');
+        }
+
+        $photo = $this->photo->create([
+            'name' => $data['name'],
+            'description' => $data['description']
+        ]);
+
+        if ($data['img']) {
+            $image = $this->cover->makeImage($photo->id, $data['img']);
+
+            $updated = $photo->update([
+                'img' => "/img/$image->basename"
+            ]);
+
+            if (!$updated) {
+                throw new \Exception('Unable to add Photo');
+            }
+        }
+
+        if (!$this->exists($data['name'])) {
+            throw new \Exception('Unable to create resource');
+        }
+
+        return $photo;
     }
 
     public function update($id, array $data)

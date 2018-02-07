@@ -68383,9 +68383,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       success: '',
       errors: [],
       addData: {
-        name: '',
+        img: '',
         description: '',
-        img: ''
+        name: ''
       },
       editData: {
         name: '',
@@ -68400,8 +68400,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       this.errors = [];
 
-      if (this.addData.name === '' || this.addData.img === '') {
-        this.errors.push('The Name and Photo are both required!');
+      if (this.addData.description === '' || this.addData.img === '') {
+        this.errors.push('The Photo and Description are both required!');
         return false;
       }
 
@@ -68464,16 +68464,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var vm = this;
 
       reader.onload = function (e) {
+        _this3.adding ? vm.addData.name = file.name : vm.editData.img = file.name;
         _this3.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
       };
 
       reader.readAsDataURL(file);
+    },
+    imageSrc: function imageSrc(photo) {
+      return '' + photo.route + photo.name + '?w=700&h=400&fit=crop';
     },
     clearData: function clearData() {
       this.adding = false;
       this.editing_id = 0;
 
       this.addData = {
+        name: '',
         description: '',
         img: ''
       };
@@ -68568,7 +68573,7 @@ var render = function() {
                     expression: "addData.description"
                   }
                 ],
-                attrs: { type: "text", placeholder: "optional" },
+                attrs: { type: "text", required: "" },
                 domProps: { value: _vm.addData.description },
                 on: {
                   input: function($event) {
@@ -68616,10 +68621,7 @@ var render = function() {
                 [
                   _c("img", {
                     staticClass: "img-responsive",
-                    attrs: {
-                      src: photo.img + "?w=700&h=400&fit=crop",
-                      alt: photo.name
-                    }
+                    attrs: { src: _vm.imageSrc(photo), alt: photo.description }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "overlay" }, [
@@ -68666,7 +68668,7 @@ var render = function() {
                               expression: "editData.description"
                             }
                           ],
-                          attrs: { type: "text", placeholder: "optional" },
+                          attrs: { type: "text", required: "" },
                           domProps: { value: _vm.editData.description },
                           on: {
                             input: function($event) {
