@@ -48,6 +48,7 @@
         <div v-if="store.length <= 0" class="row">
             <div class="col-md-12 text-center">
                 <h1>No Photos</h1>
+
             </div>
         </div> <!-- row -->
 
