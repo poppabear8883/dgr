@@ -21,7 +21,7 @@
 @section('content')
     <media-section
             title="Congratulations to our previous winner"
-            img="images/Giveaway-Wallace-2.jpg"
+            img="images/Giveaway-Wallace.jpg"
             img-alt="Previous Giveway Winner">
 
         <p>

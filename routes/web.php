@@ -38,6 +38,11 @@ Route::get('/join-our-team', function() {
     return view('join');
 });
 
+Route::get('/nrlb', function() {
+    return view('nrlb');
+});
+
+
 //Route::get('/galleries/{id}/photos', 'GalleriesController@photos');
 
 Auth::routes();
