@@ -6,9 +6,17 @@
             <div class="container">
                 <slot>
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 class="hidden-xs animated bounceInLeft">
+                        <div class="col-md-12 text-center hidden-xs">
+                            <h1 class="animated bounceInLeft" :style="home ? 'padding-bottom: 0;' : null">
                                 "Dependability You Can Rely On!"
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 text-center hidden-xs">
+                            <h1 class="animated bounceIn delay-1s" :style="home ? 'padding: 0;' : null">
+                                "Honesty You Deserve!"
                             </h1>
                         </div>
                     </div>
@@ -22,44 +30,32 @@
                             <h1><a href="tel:1-937-439-0554">937-439-0554</a></h1>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="pull-right animated flipInX delay-2s">
-                                <a href="/refer-a-friend">Refer A Friend</a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <div class="pull-left animated flipInX delay-2s">
-                                <a href="/join-our-team">Join Our Team</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 text-center hidden-xs">
-                            <h1 class="animated bounceIn delay-1s">
-                                "Honesty You Deserve!"
-                            </h1>
-                        </div>
-                    </div>
                 </slot>
             </div>
         </div>
 
         <div class="main-header-bottom">
-            <div class="container">
+            <div class="container-fluid">
                 <slot name="bottom">
                     <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                             <h4>Need a painless inspection? We are here to help you!</h4>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
-                            <div class="pull-right">
-                                <a class="animated tada delay-2-5s" href="#">Get A Free Inspection</a>
-                            </div>
+                        <div class="col-md-6 col-sm-6 hidden-xs">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a class="text-center" href="/refer-a-friend">Refer A Friend</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="text-center" href="/join-our-team">Join Our Team</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="text-center animated tada delay-2-5s" href="#">Free Inspection</a>
+                                    </div>
+                                </div>
                         </div>
+
                     </div>
                 </slot>
             </div>
@@ -69,6 +65,7 @@
 <script>
     export default {
         props: {
+            home: {type: Boolean, default: false},
             bgImg: {type: String, default: 'images/headers/header.jpg'},
             bgPos: {type: String, default: 'center'},
             bgColor: {type: String, default: '#FFFFFF'},
@@ -76,15 +73,23 @@
         },
         computed: {
             styles() {
+                let styles;
+
+                if(this.home) {
+                  styles = `min-height: 500px;` + styles;
+                }
+
                 if(this.bgImg) {
-                    return `
-                    background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/${this.bgImg});
+                    styles = `
+                    background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/${this.bgImg});
                     background-position: ${this.bgPos};
                     background-size: cover;
-                    `;
+                    ` + styles;
                 } else {
-                    return `background-color: ${this.bgColor};color: ${this.color}`;
+                    styles = `background-color: ${this.bgColor};color: ${this.color};` + styles;
                 }
+
+                return styles;
             }
         }
     }
@@ -142,14 +147,14 @@
         }
 
         .main-header-inner {
-            padding-bottom: 25px;
+            padding-top: 25px;
+            padding-bottom: 50px;
             width: 100%;
             height: 100%;
             color: $white;
 
             @media (min-width: 768px) {
                 min-height: 300px;
-                padding-bottom: 0;
             }
         }
     }

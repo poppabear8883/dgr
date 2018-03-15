@@ -2,15 +2,14 @@
     <div class="top-bar hidden-xs">
         <div class="container-fluid">
             <div class="row">
-
-                <div class="hidden-sm col-md-4 col-lg-4">
-                    <div class="nrlb">
-                        <img class="img-responsive" src="images/no-roof-left-behind.png">
-                    </div>
-                </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 site-logo">
                     <a href="/">
                         <img class="img-responsive" src="images/site-logo.jpg">
+                    </a>
+                </div>
+                <div class="hidden-sm col-md-4 col-lg-4 text-center nrlb-logo">
+                    <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
+                        <img class="img-responsive" src="images/no-roof-left-behind2.png">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
@@ -53,17 +52,11 @@
             img {
                 width: 175px;
             }
-
-            @media (min-width: 991px) {
-                text-align: center;
-            }
         }
 
-        .nrlb {
-            margin-top: 20px;
-
+        .nrlb-logo {
             img {
-                width: 250px;
+                width: 140px;
             }
         }
 

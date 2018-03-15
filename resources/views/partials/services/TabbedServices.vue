@@ -52,7 +52,6 @@
             <media-section
                     class="pull-right"
                     title="Roofing"
-                    subtitle="#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY"
                     img="images/certainteed-home.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio roofing contractors">
@@ -121,11 +120,7 @@
 
         <!-- SIDING -->
         <div id="siding" v-if="active === 1" class="row">
-            <media-section
-                    title="Siding"
-                    img="images/dayton-cincinnati-ohio-259601.jpg"
-                    img-width="550px"
-                    img-alt="dayton cincinnati ohio roofing contractors">
+            <media-section title="Siding">
 
                 <p>
                     At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look
@@ -134,6 +129,28 @@
                     Our range of choices allows us to work with your goals to make sure the job is done right. We'll be
                     here when you’re ready to take the next step.
                 </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="color-red">Before</h5>
+                        <img class="img-responsive" src="/img/Hershberger-Before.jpg?w=700&h=400&fit=crop" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="color-red">After</h5>
+                        <img class="img-responsive" src="/img/Hershberger-After.jpg?w=700&h=400&fit=crop" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="color-red">Before</h5>
+                        <img class="img-responsive" src="/img/Hershberger-Before-Back.jpg?w=700&h=400&fit=crop" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="color-red">After</h5>
+                        <img class="img-responsive" src="/img/Hershberger-After-Back.jpg?w=700&h=400&fit=crop" alt="">
+                    </div>
+                </div>
 
                 <h4 class="page-header color-red">Vinyl</h4>
                 <p>
@@ -155,14 +172,12 @@
                     an appointment.
                 </p>
 
-                <div slot="bimg" style="margin-top: 10px">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="images/mastic-logo.png" alt="Mastic Home Exteriors">
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="images/James-Hardie-logo-small.png" alt="James hardie Siding">
-                        </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="images/mastic-logo.png" alt="Mastic Home Exteriors">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="images/James-Hardie-logo-small.png" alt="James hardie Siding">
                     </div>
                 </div>
             </media-section>
@@ -172,7 +187,6 @@
         <div id="windows" v-if="active === 2" class="row">
             <media-section
                     title="Replacement Windows"
-                    subtitle="Schedule your free estimate today"
                     img="images/atrium-window.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio window installers">
@@ -229,9 +243,7 @@
 
         <!-- GUTTERS -->
         <div id="gutters" v-if="active === 3" class="row">
-            <media-section
-                    title="Gutters"
-                    subtitle="Gutters subtext">
+            <media-section title="Gutters">
 
                 <p>
                     Gutters serve the very important function of diverting rain from your roof to avoid structural damage,
@@ -258,7 +270,6 @@
         <div id="doors" v-if="active === 4" class="row">
             <media-section
                     title="Door Replacement"
-                    subtitle="Professional door installation at an affordable price!"
                     img="images/door.png"
                     img-width="350px"
                     img-alt="dayton cincinnati ohio doors">
@@ -291,8 +302,7 @@
         <div id="commercial" v-if="active === 5" class="row">
             <media-section
                     title="Commercial"
-                    subtitle="We have you covered"
-                    img="images/commercial-roofing-2.jpg"
+                    img="images/commercial-roofing.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio commercial contractors">
 
@@ -307,10 +317,12 @@
                     <strong>Asphalt Shingles:</strong> D&G Roofing and Restoration are CertainTeed Master Elite Certified
                     Installers. We are not just here to put a roof on, we are here to help solve problems. We use
                     top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.
-
+                </p>
+                <p>
                     <strong>EPDM Rubber Roofing:</strong> This application is used for flat surfaces. It’s proven hail resistant and
                     has superior resistance to extreme heat and fire.
-
+                </p>
+                <p>
                     <strong>TPO Membrane Roofing:</strong> This application is used for flat surfaces. TPO has become the fastest
                     growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is
                     Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO

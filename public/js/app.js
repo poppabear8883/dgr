@@ -68816,7 +68816,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n@media (min-width: 991px) {\n.top-bar .site-logo[data-v-550cb112] {\n      text-align: center;\n}\n}\n.top-bar .nrlb[data-v-550cb112] {\n    margin-top: 20px;\n}\n.top-bar .nrlb img[data-v-550cb112] {\n      width: 250px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n.top-bar .nrlb-logo img[data-v-550cb112] {\n    width: 140px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
 
 // exports
 
@@ -68827,7 +68827,6 @@ exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -68876,15 +68875,6 @@ var staticRenderFns = [
     return _c("div", { staticClass: "top-bar hidden-xs" }, [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "hidden-sm col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "nrlb" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "images/no-roof-left-behind.png" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
           _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
             _c("a", { attrs: { href: "/" } }, [
               _c("img", {
@@ -68893,6 +68883,30 @@ var staticRenderFns = [
               })
             ])
           ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "hidden-sm col-md-4 col-lg-4 text-center nrlb-logo"
+            },
+            [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "https://noroofleftbehind.com/program/oh/1353",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: { src: "images/no-roof-left-behind2.png" }
+                  })
+                ]
+              )
+            ]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
             _c("div", { staticClass: "info" }, [
@@ -69344,7 +69358,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-bottom: 25px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n        padding-bottom: 0;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-top: 25px;\n    padding-bottom: 50px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -69419,13 +69433,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
+        home: { type: Boolean, default: false },
         bgImg: { type: String, default: 'images/headers/header.jpg' },
         bgPos: { type: String, default: 'center' },
         bgColor: { type: String, default: '#FFFFFF' },
@@ -69433,11 +69444,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     computed: {
         styles: function styles() {
-            if (this.bgImg) {
-                return '\n                background: linear-gradient( rgba(42, 42, 42, 0.4), rgba(42, 42, 42, 0.4) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ';
-            } else {
-                return 'background-color: ' + this.bgColor + ';color: ' + this.color;
+            var styles = void 0;
+
+            if (this.home) {
+                styles = 'min-height: 500px;' + styles;
             }
+
+            if (this.bgImg) {
+                styles = '\n                background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ' + styles;
+            } else {
+                styles = 'background-color: ' + this.bgColor + ';color: ' + this.color + ';' + styles;
+            }
+
+            return styles;
         }
     }
 });
@@ -69457,13 +69476,45 @@ var render = function() {
         { staticClass: "container" },
         [
           _vm._t("default", [
-            _vm._m(0),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "animated bounceInLeft",
+                    style: _vm.home ? "padding-bottom: 0;" : null
+                  },
+                  [
+                    _vm._v(
+                      '\n                            "Dependability You Can Rely On!"\n                        '
+                    )
+                  ]
+                )
+              ])
+            ]),
             _vm._v(" "),
-            _vm._m(1),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-sm-12 col-md-12 text-center hidden-xs" },
+                [
+                  _c(
+                    "h1",
+                    {
+                      staticClass: "animated bounceIn delay-1s",
+                      style: _vm.home ? "padding: 0;" : null
+                    },
+                    [
+                      _vm._v(
+                        '\n                            "Honesty You Deserve!"\n                        '
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]),
             _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _vm._m(3)
+            _vm._m(0)
           ])
         ],
         2
@@ -69473,28 +69524,14 @@ var render = function() {
     _c("div", { staticClass: "main-header-bottom" }, [
       _c(
         "div",
-        { staticClass: "container" },
-        [_vm._t("bottom", [_vm._m(4)])],
+        { staticClass: "container-fluid" },
+        [_vm._t("bottom", [_vm._m(1)])],
         2
       )
     ])
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12 text-center" }, [
-        _c("h1", { staticClass: "hidden-xs animated bounceInLeft" }, [
-          _vm._v(
-            '\n                            "Dependability You Can Rely On!"\n                        '
-          )
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -69518,55 +69555,43 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-xs-6" }, [
-        _c("div", { staticClass: "pull-right animated flipInX delay-2s" }, [
-          _c("a", { attrs: { href: "/refer-a-friend" } }, [
-            _vm._v("Refer A Friend")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-6" }, [
-        _c("div", { staticClass: "pull-left animated flipInX delay-2s" }, [
-          _c("a", { attrs: { href: "/join-our-team" } }, [
-            _vm._v("Join Our Team")
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12 col-md-12 text-center hidden-xs" }, [
-        _c("h1", { staticClass: "animated bounceIn delay-1s" }, [
-          _vm._v(
-            '\n                            "Honesty You Deserve!"\n                        '
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-8 col-sm-6 col-xs-12" }, [
+      _c("div", { staticClass: "col-md-6 col-sm-6 col-xs-12 text-center" }, [
         _c("h4", [
           _vm._v("Need a painless inspection? We are here to help you!")
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-4 col-sm-6 hidden-xs" }, [
-        _c("div", { staticClass: "pull-right" }, [
-          _c(
-            "a",
-            { staticClass: "animated tada delay-2-5s", attrs: { href: "#" } },
-            [_vm._v("Get A Free Inspection")]
-          )
+      _c("div", { staticClass: "col-md-6 col-sm-6 hidden-xs" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-center",
+                attrs: { href: "/refer-a-friend" }
+              },
+              [_vm._v("Refer A Friend")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              { staticClass: "text-center", attrs: { href: "/join-our-team" } },
+              [_vm._v("Join Our Team")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-center animated tada delay-2-5s",
+                attrs: { href: "#" }
+              },
+              [_vm._v("Free Inspection")]
+            )
+          ])
         ])
       ])
     ])
@@ -71746,6 +71771,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -71908,7 +71945,6 @@ var render = function() {
                 staticClass: "pull-right",
                 attrs: {
                   title: "Roofing",
-                  subtitle: "#1 RATED ROOFING COMPANY IN THE MIAMI VALLEY",
                   img: "images/certainteed-home.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio roofing contractors"
@@ -72018,82 +72054,115 @@ var render = function() {
           "div",
           { staticClass: "row", attrs: { id: "siding" } },
           [
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Siding",
-                  img: "images/dayton-cincinnati-ohio-259601.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look\n                and feel of your property. With a wide variety of styles and options for you to choose from, we're\n                confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n                Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n                here when you’re ready to take the next step.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("Vinyl")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n                textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n                be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("James Hardie")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n                and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n                and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n                Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n                an appointment.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticStyle: { "margin-top": "10px" },
-                    attrs: { slot: "bimg" },
-                    slot: "bimg"
-                  },
-                  [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-6" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/mastic-logo.png",
-                            alt: "Mastic Home Exteriors"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-6" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/James-Hardie-logo-small.png",
-                            alt: "James hardie Siding"
-                          }
-                        })
-                      ])
-                    ])
-                  ]
+            _c("media-section", { attrs: { title: "Siding" } }, [
+              _c("p", [
+                _vm._v(
+                  "\n                At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look\n                and feel of your property. With a wide variety of styles and options for you to choose from, we're\n                confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n                Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n                here when you’re ready to take the next step.\n            "
                 )
-              ]
-            )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/img/Hershberger-Before.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/img/Hershberger-After.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src:
+                        "/img/Hershberger-Before-Back.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src:
+                        "/img/Hershberger-After-Back.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("Vinyl")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n                textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n                be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("James Hardie")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n                and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n                and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n                Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n                an appointment.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "images/mastic-logo.png",
+                      alt: "Mastic Home Exteriors"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "images/James-Hardie-logo-small.png",
+                      alt: "James hardie Siding"
+                    }
+                  })
+                ])
+              ])
+            ])
           ],
           1
         )
@@ -72109,7 +72178,6 @@ var render = function() {
               {
                 attrs: {
                   title: "Replacement Windows",
-                  subtitle: "Schedule your free estimate today",
                   img: "images/atrium-window.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio window installers"
@@ -72207,27 +72275,23 @@ var render = function() {
           "div",
           { staticClass: "row", attrs: { id: "gutters" } },
           [
-            _c(
-              "media-section",
-              { attrs: { title: "Gutters", subtitle: "Gutters subtext" } },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a\n                company with the right experience and selection of products. That's where D & G Roofing & Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("BENEFIT FROM OUR EXPERTISE")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule your\n                estimate and learn more about the products we offer.\n            "
-                  )
-                ])
-              ]
-            )
+            _c("media-section", { attrs: { title: "Gutters" } }, [
+              _c("p", [
+                _vm._v(
+                  "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a\n                company with the right experience and selection of products. That's where D & G Roofing & Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("BENEFIT FROM OUR EXPERTISE")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule your\n                estimate and learn more about the products we offer.\n            "
+                )
+              ])
+            ])
           ],
           1
         )
@@ -72243,8 +72307,6 @@ var render = function() {
               {
                 attrs: {
                   title: "Door Replacement",
-                  subtitle:
-                    "Professional door installation at an affordable price!",
                   img: "images/door.png",
                   "img-width": "350px",
                   "img-alt": "dayton cincinnati ohio doors"
@@ -72301,8 +72363,7 @@ var render = function() {
               {
                 attrs: {
                   title: "Commercial",
-                  subtitle: "We have you covered",
-                  img: "images/commercial-roofing-2.jpg",
+                  img: "images/commercial-roofing.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio commercial contractors"
                 }
@@ -72321,12 +72382,18 @@ var render = function() {
                 _c("p", [
                   _c("strong", [_vm._v("Asphalt Shingles:")]),
                   _vm._v(
-                    " D&G Roofing and Restoration are CertainTeed Master Elite Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n\n                "
-                  ),
+                    " D&G Roofing and Restoration are CertainTeed Master Elite Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
                   _c("strong", [_vm._v("EPDM Rubber Roofing:")]),
                   _vm._v(
-                    " This application is used for flat surfaces. It’s proven hail resistant and\n                has superior resistance to extreme heat and fire.\n\n                "
-                  ),
+                    " This application is used for flat surfaces. It’s proven hail resistant and\n                has superior resistance to extreme heat and fire.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
                   _c("strong", [_vm._v("TPO Membrane Roofing:")]),
                   _vm._v(
                     " This application is used for flat surfaces. TPO has become the fastest\n                growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n                Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n                can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n            "

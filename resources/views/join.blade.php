@@ -7,7 +7,7 @@
 @stop
 
 @section('header')
-    <dg-header bg-img="images/headers/join-our-team-header.jpg" bg-pos="center">
+    <dg-header bg-img="images/headers/join-our-team-header.jpg">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">
@@ -23,17 +23,19 @@
 
         <h4 class="page-header color-red">Outside Sales Rep</h4>
         <p>
-            We are an established Certainteed Shingle Master residential roofing and restoration company with an
-            A+ rating with the BBB. We also have over 30 5 star google reviews.
+            We are an established Certainteed Shingle Master residential roofing and restoration company with an A+ rating
+            with the BBB.  We also have over 33 5 star google reviews.
         </p>
+
         <p>
-            We specialize in Roofing, Siding, Gutters, Windows and Doors. We offer unlimited income potential
-            with an upbeat atmosphere, ongoing training and performance bonuses throughout the year as well as
-            many other exciting benefits.
+            We specialize in Roofing, Siding, Gutters, Windows and Doors.  We offer unlimited income potential with an
+            upbeat atmosphere, ongoing training and performance bonuses throughout the year as well as many other exciting
+            benefits.
         </p>
+
         <p>
-            We offer a 4-6 week paid training program for the right candidate. After training, the position is 100%
-            commission with no cap. Top performers can make 6 figures!
+            We offer a 4-6 week paid training program for the right candidate.  After training, the position is
+            <strong>100% commission</strong> with no cap. Top performers can make over 6 figures!
         </p>
 
         <h4 class="page-header color-red">The candidate we are looking for will include:</h4>
@@ -45,6 +47,9 @@
             <li>Computer skills</li>
             <li>Ability to work long hours and weekends if necessary</li>
             <li>Excellent follow up and follow through</li>
+            <li>Strong communication skills</li>
+            <li>Ability to handle competing demands</li>
+
         </ul>
 
         <h4 class="page-header color-red">Responsibilities will include:</h4>

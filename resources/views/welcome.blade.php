@@ -10,7 +10,7 @@
 @stop
 
 @section('header')
-    <dg-header></dg-header>
+    <dg-header :home="true"></dg-header>
 @stop
 
 @section('content')
