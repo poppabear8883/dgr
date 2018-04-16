@@ -39,10 +39,18 @@ Vue.component('dg-call-anytime', require('Views/partials/CallAnytime.vue'));
 Vue.component('dg-why-choose-us', require('Views/partials/WhyChooseUs.vue'));
 Vue.component('dg-tabbed-services', require('Views/partials/services/TabbedServices.vue'));
 Vue.component('dg-contact-form', require('Views/partials/contact/ContactForm.vue'));
-Vue.component('dg-refer-form', require('Views/partials/refer/ReferForm.vue'));
+Vue.component('dg-refer-form', require('Views/partials/giveaways/ReferForm.vue'));
 Vue.component('dg-join-form', require('Views/partials/join/JoinForm.vue'));
 Vue.component('dg-galleries', require('Views/partials/Galleries.vue'));
 
+// 3rd party
+import Countdown from 'vuejs-countdown';
+
 const app = new Vue({
-    el: '#app',
+  el: '#app',
+
+  components: {
+      Countdown
+  },
+
 });

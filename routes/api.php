@@ -11,6 +11,11 @@
 |
 */
 
+/* Giveaway API Routes */
+Route::prefix('giveaway')->group(function () {
+    Route::post('/referral', 'GiveawayController@referral');
+});
+
 /* Galleries API Routes */
 Route::prefix('galleries')->group(function () {
     Route::get('/', 'GalleriesApi@all');

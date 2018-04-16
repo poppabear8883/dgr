@@ -45,7 +45,7 @@
 
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <a class="text-center" href="/refer-a-friend">Refer A Friend</a>
+                                        <a class="text-center" href="/giveaways">Refer A Friend</a>
                                     </div>
                                     <div class="col-md-4">
                                         <a class="text-center" href="/join-our-team">Join Our Team</a>

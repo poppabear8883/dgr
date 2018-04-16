@@ -22,16 +22,10 @@ Route::get('/testimonies', function() {
     return view('testimonies');
 });
 
-Route::get('/giveaways', function () {
-    return view('giveaways');
-});
+Route::get('/giveaways', 'GiveawayController@show');
 
 Route::get('/contact', function() {
     return view('contact');
-});
-
-Route::get('/refer-a-friend', function() {
-    return view('refer');
 });
 
 Route::get('/join-our-team', function() {

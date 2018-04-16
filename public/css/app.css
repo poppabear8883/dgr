@@ -14902,6 +14902,22 @@ body {
   margin-bottom: 30px;
 }
 
+/* Countdown */
+
+.countdown {
+  color: #FFFFFF;
+  background-color: #EE001B;
+}
+
+.countdown-description {
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+.timer {
+  float: right !important;
+}
+
 @media (min-width: 992px) {
   .customer-img,
   .img-related {
