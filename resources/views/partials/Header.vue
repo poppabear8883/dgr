@@ -81,7 +81,7 @@
 
                 if(this.bgImg) {
                     styles = `
-                    background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/${this.bgImg});
+                    background: linear-gradient( rgba(42, 42, 42, 0.1), rgba(42, 42, 42, 0.1) ), url(/${this.bgImg});
                     background-position: ${this.bgPos};
                     background-size: cover;
                     ` + styles;
@@ -112,6 +112,12 @@
         h1 {
             a {
                 font-size: 35px;
+            }
+
+            &.sub-page {
+                font-size: 64px;
+                margin-top: 150px;
+                margin-bottom: -50px;
             }
 
             @media (min-width: 768px) {

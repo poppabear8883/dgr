@@ -10,6 +10,10 @@ Route::get('/about', function() {
     return view('about');
 });
 
+Route::get('/community', function() {
+    return view('community');
+});
+
 Route::get('/services', function () {
     return view('services');
 });
@@ -31,11 +35,6 @@ Route::get('/contact', function() {
 Route::get('/join-our-team', function() {
     return view('join');
 });
-
-Route::get('/nrlb', function() {
-    return view('nrlb');
-});
-
 
 //Route::get('/galleries/{id}/photos', 'GalleriesController@photos');
 

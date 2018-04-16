@@ -9,7 +9,7 @@
 @section('header')
     <dg-header>
         <div class="col-md-12 text-center">
-            <h1 class="animated slideInDown" style="font-size: 64px">
+            <h1 class="animated slideInDown sub-page">
                 About Us
             </h1>
         </div>

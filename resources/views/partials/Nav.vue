@@ -33,6 +33,9 @@
                         <a href="/giveaways">Giveaways</a>
                     </li>
                     <li>
+                        <a href="/community">Community</a>
+                    </li>
+                    <li>
                         <a href="/about">About</a>
                     </li>
                     <li>

@@ -10,7 +10,7 @@
     <dg-header bg-img="images/headers/services-header.jpg" bg-pos="center">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="animated slideInDown" style="font-size: 64px; margin-top: 85px">
+                <h1 class="animated slideInDown sub-page">
                     Services
                 </h1>
             </div>

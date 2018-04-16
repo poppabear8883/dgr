@@ -69094,6 +69094,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -69193,6 +69196,8 @@ var render = function() {
                 _vm._v(" "),
                 _vm._m(6),
                 _vm._v(" "),
+                _vm._m(7),
+                _vm._v(" "),
                 _vm._t("default")
               ],
               2
@@ -69257,6 +69262,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", [
       _c("a", { attrs: { href: "/giveaways" } }, [_vm._v("Giveaways")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/community" } }, [_vm._v("Community")])
     ])
   },
   function() {
@@ -69370,7 +69383,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-top: 25px;\n    padding-bottom: 50px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\nheader.main-header h1.sub-page[data-v-0e24ada1] {\n    font-size: 64px;\n    margin-top: 150px;\n    margin-bottom: -50px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-top: 25px;\n    padding-bottom: 50px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
 
 // exports
 
@@ -69463,7 +69476,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
 
             if (this.bgImg) {
-                styles = '\n                background: linear-gradient( rgba(42, 42, 42, 0.2), rgba(42, 42, 42, 0.2) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ' + styles;
+                styles = '\n                background: linear-gradient( rgba(42, 42, 42, 0.1), rgba(42, 42, 42, 0.1) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ' + styles;
             } else {
                 styles = 'background-color: ' + this.bgColor + ';color: ' + this.color + ';' + styles;
             }
