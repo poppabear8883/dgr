@@ -74373,6 +74373,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'photos',
+  props: {
+    galleryId: { type: Number, default: 0 }
+  },
   data: function data() {
     return {
       photos: []
@@ -74385,11 +74388,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       this.errors = [];
 
-      axios.get('/api/galleries/' + window.location.href.substr(window.location.href.lastIndexOf('/') + 1)).then(function (response) {
+      axios.get('/api/galleries/' + this.pathId).then(function (response) {
         _this.photos = response.data;
       }).catch(function (error) {
         alert(error.response.data.message);
       });
+    }
+  },
+  computed: {
+    pathId: function pathId() {
+      return this.galleryId !== 0 ? this.galleryId : window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
     }
   },
   created: function created() {

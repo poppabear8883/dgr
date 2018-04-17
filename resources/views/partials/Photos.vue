@@ -28,6 +28,9 @@
 <script>
   export default {
     name: 'photos',
+    props: {
+      galleryId: {type: Number, default: 0}
+    },
     data () {
       return {
         photos: []
@@ -37,13 +40,18 @@
       getPhotos () {
         this.errors = []
 
-        axios.get(`/api/galleries/${window.location.href.substr(window.location.href.lastIndexOf('/') + 1)}`)
+        axios.get(`/api/galleries/${this.pathId}`)
           .then((response) => {
             this.photos = response.data;
           }).catch((error) => {
             alert(error.response.data.message)
         })
       },
+    },
+    computed: {
+      pathId() {
+        return this.galleryId !== 0 ? this.galleryId : window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+      }
     },
     created () {
       this.getPhotos();
