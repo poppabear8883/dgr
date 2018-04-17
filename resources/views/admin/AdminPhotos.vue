@@ -30,25 +30,37 @@
         <div v-if="adding" class="row add-form">
             <div class="col-xs-12 col-md-4">
                 <div class="styled-input">
-                    <input type="file" @change="processFile($event)" />
+                    <input type="file" @change="processFile($event)"/>
                     <label>Photo</label>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
                 <div class="styled-input">
-                    <input v-model="addData.description" type="text" required />
+                    <input v-model="addData.description" type="text" required/>
                     <label>Description</label>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
                 <div @click="add()" class="btn-lrg form-btn">Save</div>
             </div>
+            <div class="col-xs-12 col-md-6">
+                <h3 class="color-red">Galleries</h3>
+                <table class="table table-condensed">
+                    <tbody>
+                    <tr v-for="gallery in galleries">
+                        <td>
+                            <input type="checkbox" :id="gallery.id" :value="gallery.id" v-model="addData.galleries">
+                        </td>
+                        <td>{{gallery.name}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div v-if="store.length <= 0" class="row">
             <div class="col-md-12 text-center">
                 <h1>No Photos</h1>
-
             </div>
         </div> <!-- row -->
 
@@ -58,10 +70,10 @@
                 <div :class="['photo-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
                          :src="imageSrc(photo)"
-                         :alt="photo.description">
+                         :alt="photo.name">
 
                     <div class="overlay">
-                        <h2>{{photo.name}}</h2>
+                        <h2>{{photo.description}}</h2>
                         <a @click.prevent="edit(photo)" class="info" href="">
                             {{ editing_id === photo.id ? 'Cancel Edit' : 'Edit'}}
                         </a>
@@ -71,9 +83,22 @@
                 <div v-if="editing_id === photo.id" class="row edit-form">
                     <div class="col-md-12">
                         <div class="styled-input">
-                            <input v-model="editData.description" type="text" required />
+                            <input v-model="editData.description" type="text" required/>
                             <label>Description</label>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="color-red">Galleries</h3>
+                        <table class="table table-condensed">
+                            <tbody>
+                            <tr v-for="gallery in galleries">
+                                <td>
+                                    <input type="checkbox" :id="gallery.id" :value="gallery.id" v-model="editData.galleries">
+                                </td>
+                                <td>{{gallery.name}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <div @click="update(photo.id)" class="btn-lrg form-btn">Save</div>
@@ -87,7 +112,8 @@
 <script>
   export default {
     props: {
-      photos: {required: true}
+      photos: {required: true},
+      galleries: {required: true}
     },
     data () {
       return {
@@ -99,11 +125,13 @@
         addData: {
           img: '',
           description: '',
-          name: ''
+          name: '',
+          galleries: []
         },
         editData: {
           name: '',
           description: '',
+          galleries: []
         }
       }
     },
@@ -114,6 +142,10 @@
         if (this.addData.description === '' || this.addData.img === '') {
           this.errors.push(`The Photo and Description are both required!`)
           return false
+        }
+
+        if (this.addData.galleries.length <= 0) {
+          this.errors.push(`You must choose at least 1 Gallery for this photo!`);
         }
 
         if (this.errors.length === 0) {
@@ -135,7 +167,8 @@
         if (photo.name !== this.editData.name) {
           this.editData = {
             name: photo.name,
-            description: photo.description
+            description: photo.description,
+            galleries: photo.gallery_ids
           }
           this.editing_id = photo.id
         } else {
@@ -182,21 +215,24 @@
 
         reader.readAsDataURL(file)
       },
-      imageSrc(photo) {
-        return `${photo.route}${photo.name}?w=700&h=400&fit=crop`
+      imageSrc (photo) {
+        return `${photo.path}?w=700&h=400&fit=crop`
       },
       clearData () {
         this.adding = false
         this.editing_id = 0
 
         this.addData = {
-          name: '',
+          img: '',
           description: '',
-          img: ''
+          name: '',
+          galleries: []
         }
 
         this.editData = {
-          description: ''
+          name: '',
+          description: '',
+          galleries: []
         }
       }
     }

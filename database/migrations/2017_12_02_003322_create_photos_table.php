@@ -18,7 +18,7 @@ class CreatePhotosTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('path')->default(storage_path('app/images/'));
-            $table->string('route')->default('/img/');
+            $table->string('route')->default('/img/photos');
             $table->timestamps();
         });
     }
@@ -30,6 +30,7 @@ class CreatePhotosTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('gallery_photo');
         Schema::dropIfExists('photos');
     }
 }

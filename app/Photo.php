@@ -8,8 +8,17 @@ class Photo extends Model
 {
     protected $guarded = [];
 
+    protected $hidden = ['pivot'];
+
+    protected $appends = ['gallery_ids'];
+
     public function galleries()
     {
-        return $this->hasMany(Gallery::class);
+        return $this->belongsToMany(Gallery::class);
+    }
+
+    public function getGalleryIdsAttribute()
+    {
+        return $this->belongsToMany(Gallery::class)->pluck('id')->toArray();
     }
 }

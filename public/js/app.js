@@ -68383,10 +68383,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    photos: { required: true }
+    photos: { required: true },
+    galleries: { required: true }
   },
   data: function data() {
     return {
@@ -68398,11 +68424,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       addData: {
         img: '',
         description: '',
-        name: ''
+        name: '',
+        galleries: []
       },
       editData: {
         name: '',
-        description: ''
+        description: '',
+        galleries: []
       }
     };
   },
@@ -68416,6 +68444,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       if (this.addData.description === '' || this.addData.img === '') {
         this.errors.push('The Photo and Description are both required!');
         return false;
+      }
+
+      if (this.addData.galleries.length <= 0) {
+        this.errors.push('You must choose at least 1 Gallery for this photo!');
       }
 
       if (this.errors.length === 0) {
@@ -68435,7 +68467,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       if (photo.name !== this.editData.name) {
         this.editData = {
           name: photo.name,
-          description: photo.description
+          description: photo.description,
+          galleries: photo.gallery_ids
         };
         this.editing_id = photo.id;
       } else {
@@ -68484,20 +68517,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       reader.readAsDataURL(file);
     },
     imageSrc: function imageSrc(photo) {
-      return '' + photo.route + photo.name + '?w=700&h=400&fit=crop';
+      return photo.path + '?w=700&h=400&fit=crop';
     },
     clearData: function clearData() {
       this.adding = false;
       this.editing_id = 0;
 
       this.addData = {
-        name: '',
+        img: '',
         description: '',
-        img: ''
+        name: '',
+        galleries: []
       };
 
       this.editData = {
-        description: ''
+        name: '',
+        description: '',
+        galleries: []
       };
     }
   }
@@ -68615,6 +68651,63 @@ var render = function() {
               },
               [_vm._v("Save")]
             )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+            _c("h3", { staticClass: "color-red" }, [_vm._v("Galleries")]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table table-condensed" }, [
+              _c(
+                "tbody",
+                _vm._l(_vm.galleries, function(gallery) {
+                  return _c("tr", [
+                    _c("td", [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.addData.galleries,
+                            expression: "addData.galleries"
+                          }
+                        ],
+                        attrs: { type: "checkbox", id: gallery.id },
+                        domProps: {
+                          value: gallery.id,
+                          checked: Array.isArray(_vm.addData.galleries)
+                            ? _vm._i(_vm.addData.galleries, gallery.id) > -1
+                            : _vm.addData.galleries
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$a = _vm.addData.galleries,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = gallery.id,
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 &&
+                                  (_vm.addData.galleries = $$a.concat([$$v]))
+                              } else {
+                                $$i > -1 &&
+                                  (_vm.addData.galleries = $$a
+                                    .slice(0, $$i)
+                                    .concat($$a.slice($$i + 1)))
+                              }
+                            } else {
+                              _vm.$set(_vm.addData, "galleries", $$c)
+                            }
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(gallery.name))])
+                  ])
+                })
+              )
+            ])
           ])
         ])
       : _vm._e(),
@@ -68634,11 +68727,11 @@ var render = function() {
                 [
                   _c("img", {
                     staticClass: "img-responsive",
-                    attrs: { src: _vm.imageSrc(photo), alt: photo.description }
+                    attrs: { src: _vm.imageSrc(photo), alt: photo.name }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "overlay" }, [
-                    _c("h2", [_vm._v(_vm._s(photo.name))]),
+                    _c("h2", [_vm._v(_vm._s(photo.description))]),
                     _vm._v(" "),
                     _c(
                       "a",
@@ -68698,6 +68791,72 @@ var render = function() {
                         }),
                         _vm._v(" "),
                         _c("label", [_vm._v("Description")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-12" }, [
+                      _c("h3", { staticClass: "color-red" }, [
+                        _vm._v("Galleries")
+                      ]),
+                      _vm._v(" "),
+                      _c("table", { staticClass: "table table-condensed" }, [
+                        _c(
+                          "tbody",
+                          _vm._l(_vm.galleries, function(gallery) {
+                            return _c("tr", [
+                              _c("td", [
+                                _c("input", {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.editData.galleries,
+                                      expression: "editData.galleries"
+                                    }
+                                  ],
+                                  attrs: { type: "checkbox", id: gallery.id },
+                                  domProps: {
+                                    value: gallery.id,
+                                    checked: Array.isArray(
+                                      _vm.editData.galleries
+                                    )
+                                      ? _vm._i(
+                                          _vm.editData.galleries,
+                                          gallery.id
+                                        ) > -1
+                                      : _vm.editData.galleries
+                                  },
+                                  on: {
+                                    change: function($event) {
+                                      var $$a = _vm.editData.galleries,
+                                        $$el = $event.target,
+                                        $$c = $$el.checked ? true : false
+                                      if (Array.isArray($$a)) {
+                                        var $$v = gallery.id,
+                                          $$i = _vm._i($$a, $$v)
+                                        if ($$el.checked) {
+                                          $$i < 0 &&
+                                            (_vm.editData.galleries = $$a.concat(
+                                              [$$v]
+                                            ))
+                                        } else {
+                                          $$i > -1 &&
+                                            (_vm.editData.galleries = $$a
+                                              .slice(0, $$i)
+                                              .concat($$a.slice($$i + 1)))
+                                        }
+                                      } else {
+                                        _vm.$set(_vm.editData, "galleries", $$c)
+                                      }
+                                    }
+                                  }
+                                })
+                              ]),
+                              _vm._v(" "),
+                              _c("td", [_vm._v(_vm._s(gallery.name))])
+                            ])
+                          })
+                        )
                       ])
                     ]),
                     _vm._v(" "),

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Gallery\Contracts\GalleryInterface;
 use App\Photo\Contracts\PhotoInterface;
 use Illuminate\Http\Request;
 
@@ -10,11 +11,17 @@ class PhotosController extends Controller
     /**
      * @var PhotoInterface
      */
-    private $repo;
+    private $photo;
 
-    public function __construct(PhotoInterface $repo)
+    /**
+     * @var GalleryInterface
+     */
+    private $gallery;
+
+    public function __construct(PhotoInterface $photo, GalleryInterface $gallery)
     {
-        $this->repo = $repo;
+        $this->photo = $photo;
+        $this->gallery = $gallery;
     }
 
     /**
@@ -24,7 +31,9 @@ class PhotosController extends Controller
      */
     public function index()
     {
-        $photos = $this->repo->all();
-        return view('admin.photos', compact('photos'));
+        $photos = $this->photo->all();
+        $galleries = $this->gallery->all();
+
+        return view('admin.photos', compact('photos', 'galleries'));
     }
 }

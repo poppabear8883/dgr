@@ -26,3 +26,14 @@ Route::prefix('galleries')->group(function () {
         Route::delete('/delete/{id}', 'GalleriesApi@destroy');
     });
 });
+
+/* Photos API Routes */
+Route::prefix('photos')->group(function () {
+    Route::get('/', 'PhotosApi@all');
+
+    Route::middleware('auth:api')->group(function () {
+        Route::post('/create', 'PhotosApi@create');
+        Route::put('/update/{id}', 'PhotosApi@update');
+        Route::delete('/delete/{id}', 'PhotosApi@destroy');
+    });
+});

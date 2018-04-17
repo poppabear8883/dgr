@@ -3,5 +3,5 @@
 @section('page', 'Photos')
 
 @section('content')
-    <admin-photos :photos="{{$photos}}"></admin-photos>
+    <admin-photos :photos="{{$photos}}" :galleries="{{$galleries}}"></admin-photos>
 @stop

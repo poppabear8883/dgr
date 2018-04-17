@@ -3,6 +3,7 @@
 namespace App\Photo\Repositories;
 
 use App\Photo;
+use App\Photo\Contracts\PhotoImageInterface;
 use App\Photo\Contracts\PhotoInterface;
 
 class PhotoRepository implements PhotoInterface
@@ -13,9 +14,15 @@ class PhotoRepository implements PhotoInterface
      */
     private $photo;
 
-    public function __construct(Photo $photo)
+    /**
+     * @var PhotoImageInterface
+     */
+    private $image;
+
+    public function __construct(Photo $photo, PhotoImageInterface $image)
     {
         $this->photo = $photo;
+        $this->image = $image;
     }
 
 
@@ -52,16 +59,16 @@ class PhotoRepository implements PhotoInterface
             'description' => $data['description']
         ]);
 
-        if ($data['img']) {
-            $image = $this->cover->makeImage($photo->id, $data['img']);
+        $photo->galleries()->attach($data['galleries']);
 
-            $updated = $photo->update([
-                'img' => "/img/$image->basename"
-            ]);
+        $image = $this->image->makeImage($photo->id, $data['img']);
 
-            if (!$updated) {
-                throw new \Exception('Unable to add Photo');
-            }
+        $updated = $photo->update([
+            'path' => "/img/photos/$image->basename"
+        ]);
+
+        if (!$updated) {
+            throw new \Exception('Unable to add Photo');
         }
 
         if (!$this->exists($data['name'])) {
@@ -73,7 +80,12 @@ class PhotoRepository implements PhotoInterface
 
     public function update($id, array $data)
     {
-        // TODO: Implement update() method.
+        $photo = $this->findById($id);
+        $photo->update(['description' => $data['description']]);
+        $photo->galleries()->detach();
+        $photo->galleries()->attach($data['galleries']);
+
+        return $photo;
     }
 
     public function delete($id)
