@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="col-xs-12 text-center">
-                <img class="img-responsive" src="images/dgr-giveaway-grill.png" style="display: inline-block">
+                <img class="img-responsive" src="/images/dgr-giveaway-grill.png" style="display: inline-block">
             </div>
         </div>
     </div>
@@ -106,13 +106,13 @@
         <div slot="bimg">
             <div class="row" style="margin-top: 10px">
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="images/Giveaway Grill 2.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 2.jpg" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="images/Giveaway Grill 3.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 3.jpg" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="images/Giveaway Grill 4.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 4.jpg" alt="">
                 </div>
             </div>
         </div>

@@ -18802,6 +18802,7 @@ Vue.component('dg-contact-form', __webpack_require__(316));
 Vue.component('dg-refer-form', __webpack_require__(325));
 Vue.component('dg-join-form', __webpack_require__(330));
 Vue.component('dg-galleries', __webpack_require__(335));
+Vue.component('dg-photos', __webpack_require__(357));
 
 // 3rd party
 
@@ -69050,7 +69051,7 @@ var staticRenderFns = [
             _c("a", { attrs: { href: "/" } }, [
               _c("img", {
                 staticClass: "img-responsive",
-                attrs: { src: "images/site-logo.jpg" }
+                attrs: { src: "/images/site-logo.jpg" }
               })
             ])
           ]),
@@ -69072,7 +69073,7 @@ var staticRenderFns = [
                 [
                   _c("img", {
                     staticClass: "img-responsive",
-                    attrs: { src: "images/no-roof-left-behind2.png" }
+                    attrs: { src: "/images/no-roof-left-behind2.png" }
                   })
                 ]
               )
@@ -70043,7 +70044,7 @@ var staticRenderFns = [
                 _c("img", {
                   staticClass: "img-responsive",
                   attrs: {
-                    src: "images/certainteed-certified-dealer.png",
+                    src: "/images/certainteed-certified-dealer.png",
                     width: "130px"
                   }
                 })
@@ -70057,7 +70058,7 @@ var staticRenderFns = [
                 _c("img", {
                   staticClass: "img-responsive",
                   attrs: {
-                    src: "images/no-roof-left-behind2.png",
+                    src: "/images/no-roof-left-behind2.png",
                     width: "150px"
                   }
                 })
@@ -70070,7 +70071,10 @@ var staticRenderFns = [
               [
                 _c("img", {
                   staticClass: "img-responsive",
-                  attrs: { src: "images/homeadvisor_logo4.png", width: "150px" }
+                  attrs: {
+                    src: "/images/homeadvisor_logo4.png",
+                    width: "150px"
+                  }
                 })
               ]
             ),
@@ -70081,7 +70085,7 @@ var staticRenderFns = [
               [
                 _c("img", {
                   staticClass: "img-responsive",
-                  attrs: { src: "images/bbb2.png", width: "100px" }
+                  attrs: { src: "/images/bbb2.png", width: "100px" }
                 })
               ]
             )
@@ -70134,7 +70138,7 @@ var staticRenderFns = [
               _c("ul", [
                 _c("li", [_vm._v("A+ Rating with BBB")]),
                 _vm._v(" "),
-                _c("li", [_vm._v("25 years of Experience")]),
+                _c("li", [_vm._v("30+ years of Experience")]),
                 _vm._v(" "),
                 _c("li", [_vm._v("Financing Available")]),
                 _vm._v(" "),
@@ -70249,7 +70253,7 @@ var staticRenderFns = [
                         _c("i", { staticClass: "fa fa-angieslist" }, [
                           _c("img", {
                             staticClass: "img-responsive",
-                            attrs: { src: "images/fa-angieslist.png" }
+                            attrs: { src: "/images/fa-angieslist.png" }
                           })
                         ])
                       ]
@@ -70551,7 +70555,7 @@ var render = function() {
               "img-circle",
               _vm.active === 0 ? "active" : null
             ],
-            attrs: { src: "images/duane.jpg", alt: "" },
+            attrs: { src: "/images/duane.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 0
@@ -70579,7 +70583,7 @@ var render = function() {
               "img-circle",
               _vm.active === 1 ? "active" : null
             ],
-            attrs: { src: "images/gerri.jpg", alt: "" },
+            attrs: { src: "/images/gerri.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 1
@@ -70607,7 +70611,7 @@ var render = function() {
               "img-circle",
               _vm.active === 2 ? "active" : null
             ],
-            attrs: { src: "images/mike.jpg", alt: "" },
+            attrs: { src: "/images/mike.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 2
@@ -70635,7 +70639,7 @@ var render = function() {
               "img-circle",
               _vm.active === 3 ? "active" : null
             ],
-            attrs: { src: "images/amanda.jpg", alt: "" },
+            attrs: { src: "/images/amanda.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 3
@@ -71026,7 +71030,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "img-responsive",
                     attrs: {
-                      src: "images/icon_siding_red.png",
+                      src: "/images/icon_siding_red.png",
                       alt: "siding ico"
                     }
                   }),
@@ -71060,7 +71064,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "img-responsive",
                     attrs: {
-                      src: "images/icon_roofing_circle.png",
+                      src: "/images/icon_roofing_circle.png",
                       alt: "roofing ico"
                     }
                   }),
@@ -71094,7 +71098,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "img-responsive",
                     attrs: {
-                      src: "images/icon_windows_red.png",
+                      src: "/images/icon_windows_red.png",
                       alt: "windows ico"
                     }
                   }),
@@ -72006,7 +72010,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 0 ? "active" : null
             ],
-            attrs: { src: "images/icon_roofing_circle.png" },
+            attrs: { src: "/images/icon_roofing_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 0
@@ -72025,7 +72029,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 1 ? "active" : null
             ],
-            attrs: { src: "images/icon_siding_circle.png" },
+            attrs: { src: "/images/icon_siding_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 1
@@ -72044,7 +72048,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 2 ? "active" : null
             ],
-            attrs: { src: "images/icon_windows_circle.png" },
+            attrs: { src: "/images/icon_windows_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 2
@@ -72063,7 +72067,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 3 ? "active" : null
             ],
-            attrs: { src: "images/icon_gutters_circle.png" },
+            attrs: { src: "/images/icon_gutters_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 3
@@ -72082,7 +72086,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 4 ? "active" : null
             ],
-            attrs: { src: "images/icon_doors_circle.png" },
+            attrs: { src: "/images/icon_doors_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 4
@@ -72101,7 +72105,7 @@ var render = function() {
               "img-responsive",
               _vm.active === 5 ? "active" : null
             ],
-            attrs: { src: "images/icon_commercial_circle.png" },
+            attrs: { src: "/images/icon_commercial_circle.png" },
             on: {
               click: function($event) {
                 _vm.active = 5
@@ -72126,7 +72130,7 @@ var render = function() {
                 staticClass: "pull-right",
                 attrs: {
                   title: "Roofing",
-                  img: "images/certainteed-home.jpg",
+                  img: "/images/certainteed-home.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio roofing contractors"
                 }
@@ -72327,7 +72331,7 @@ var render = function() {
                   _c("img", {
                     staticClass: "img-responsive",
                     attrs: {
-                      src: "images/mastic-logo.png",
+                      src: "/images/mastic-logo.png",
                       alt: "Mastic Home Exteriors"
                     }
                   })
@@ -72337,7 +72341,7 @@ var render = function() {
                   _c("img", {
                     staticClass: "img-responsive",
                     attrs: {
-                      src: "images/James-Hardie-logo-small.png",
+                      src: "/images/James-Hardie-logo-small.png",
                       alt: "James hardie Siding"
                     }
                   })
@@ -72359,7 +72363,7 @@ var render = function() {
               {
                 attrs: {
                   title: "Replacement Windows",
-                  img: "images/atrium-window.jpg",
+                  img: "/images/atrium-window.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio window installers"
                 }
@@ -72406,7 +72410,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-responsive",
                       attrs: {
-                        src: "images/recycle-planet.png",
+                        src: "/images/recycle-planet.png",
                         alt: "D & G Roofing cares about our planet"
                       }
                     })
@@ -72426,7 +72430,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-responsive",
                           attrs: {
-                            src: "images/atrium-logo.png",
+                            src: "/images/atrium-logo.png",
                             alt: "Atrium Windows"
                           }
                         })
@@ -72436,7 +72440,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-responsive",
                           attrs: {
-                            src: "images/marvin-doors-windows.png",
+                            src: "/images/marvin-doors-windows.png",
                             alt: "Marvin Windows"
                           }
                         })
@@ -72488,7 +72492,7 @@ var render = function() {
               {
                 attrs: {
                   title: "Door Replacement",
-                  img: "images/door.png",
+                  img: "/images/door.png",
                   "img-width": "350px",
                   "img-alt": "dayton cincinnati ohio doors"
                 }
@@ -72511,7 +72515,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-responsive",
                       attrs: {
-                        src: "images/provia-doors.jpg",
+                        src: "/images/provia-doors.jpg",
                         alt: "ProVia Doors"
                       }
                     })
@@ -72521,7 +72525,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-responsive",
                       attrs: {
-                        src: "images/marvin-doors-windows.png",
+                        src: "/images/marvin-doors-windows.png",
                         alt: "Marvin Doors & Windows"
                       }
                     })
@@ -72544,7 +72548,7 @@ var render = function() {
               {
                 attrs: {
                   title: "Commercial",
-                  img: "images/commercial-roofing.jpg",
+                  img: "/images/commercial-roofing.jpg",
                   "img-width": "550px",
                   "img-alt": "dayton cincinnati ohio commercial contractors"
                 }
@@ -74175,20 +74179,22 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "overlay" }, [
-                _c("h2", [_vm._v("10 Photos")]),
+                _c("h2", [_vm._v(_vm._s(gallery.photo_count) + " Photos")]),
                 _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "info",
-                    attrs: { href: "/galleries/" + gallery.id + "/photos" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                            View Photos\n                        "
+                gallery.photo_count > 0
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "info",
+                        attrs: { href: "/galleries/" + gallery.id }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            View Photos\n                        "
+                        )
+                      ]
                     )
-                  ]
-                )
+                  : _vm._e()
               ])
             ])
           ])
@@ -74224,6 +74230,218 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(358)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(360)
+/* template */
+var __vue_template__ = __webpack_require__(361)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-7b103995"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Photos.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7b103995", Component.options)
+  } else {
+    hotAPI.reload("data-v-7b103995", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(359);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("5cfbd75b", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 359 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.photos .row[data-v-7b103995] {\n  margin-bottom: 2rem;\n}\n.photos .photo-img[data-v-7b103995] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.photos .photo-img[data-v-7b103995]:hover {\n    /*.title h2 {\n                opacity: 0;\n                transition: all .4s ease-in-out;\n            }*/\n}\n.photos .photo-img:hover .overlay[data-v-7b103995] {\n      opacity: 1;\n      filter: alpha(opacity=100);\n}\n.photos .photo-img:hover .overlay h2[data-v-7b103995], .photos .photo-img:hover .overlay a.info[data-v-7b103995] {\n        opacity: 1;\n        filter: alpha(opacity=100);\n        -webkit-transform: translatey(0);\n                transform: translatey(0);\n        -webkit-transition-delay: .2s;\n                transition-delay: .2s;\n}\n.photos .photo-img:hover .overlay img[data-v-7b103995] {\n        -webkit-transform: scale(1.2);\n                transform: scale(1.2);\n}\n.photos .photo-img .title[data-v-7b103995] {\n    width: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n@media (min-width: 768px) {\n.photos .photo-img .title[data-v-7b103995] {\n        top: 70%;\n}\n}\n.photos .photo-img .title h2[data-v-7b103995] {\n      filter: alpha(opacity=100);\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay[data-v-7b103995] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.photos .photo-img .overlay img[data-v-7b103995] {\n      display: block;\n      position: relative;\n      -webkit-transition: all .4s linear;\n      transition: all .4s linear;\n}\n.photos .photo-img .overlay h2[data-v-7b103995] {\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transform: translatey(-100px);\n              transform: translatey(-100px);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995] {\n      text-decoration: none;\n      display: inline-block;\n      text-transform: uppercase;\n      color: #fff;\n      border: 1px solid #fff;\n      background-color: transparent;\n      opacity: 0;\n      filter: alpha(opacity=0);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      margin: 70px 0 0;\n      padding: 7px 14px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995]:hover {\n        -webkit-box-shadow: 0 0 5px #fff;\n                box-shadow: 0 0 5px #fff;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 360 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'photos',
+  data: function data() {
+    return {
+      photos: []
+    };
+  },
+
+  methods: {
+    getPhotos: function getPhotos() {
+      var _this = this;
+
+      this.errors = [];
+
+      axios.get('/api/galleries/' + window.location.href.substr(window.location.href.lastIndexOf('/') + 1)).then(function (response) {
+        _this.photos = response.data;
+      }).catch(function (error) {
+        alert(error.response.data.message);
+      });
+    }
+  },
+  created: function created() {
+    this.getPhotos();
+  }
+});
+
+/***/ }),
+/* 361 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "photos" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("h1", { staticClass: "page-header color-red" }, [_vm._v("Photos")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.photos, function(photo) {
+          return _c("div", { staticClass: "col-md-6 col-xs-12" }, [
+            _c("div", { staticClass: "photo-img" }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: {
+                  src: photo.path + "?w=700&h=400&fit=crop",
+                  alt: photo.name
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "title" }, [
+                _c("h2", [_vm._v(_vm._s(photo.description))])
+              ])
+            ])
+          ])
+        })
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7b103995", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

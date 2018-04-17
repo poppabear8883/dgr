@@ -15,7 +15,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <img src="images/icon_siding_red.png" alt="siding ico" class="img-responsive">
+                                <img src="/images/icon_siding_red.png" alt="siding ico" class="img-responsive">
                                 <h3>Siding</h3>
                                 <hr>
                             </div>
@@ -43,7 +43,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <img src="images/icon_roofing_circle.png" alt="roofing ico" class="img-responsive">
+                                <img src="/images/icon_roofing_circle.png" alt="roofing ico" class="img-responsive">
                                 <h3>Roofing</h3>
                                 <hr>
                             </div>
@@ -72,7 +72,7 @@
                         <div class="panel-body">
 
                             <div class="text-center">
-                                <img src="images/icon_windows_red.png" alt="windows ico" class="img-responsive">
+                                <img src="/images/icon_windows_red.png" alt="windows ico" class="img-responsive">
                                 <h3>Windows</h3>
                                 <hr>
                             </div>

@@ -5,42 +5,42 @@
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 0 ? 'active' : null]"
                          @click="active = 0"
-                         src="images/icon_roofing_circle.png">
+                         src="/images/icon_roofing_circle.png">
                     <br />
                     Residential Roofing
                 </div>
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 1 ? 'active' : null]"
                          @click="active = 1"
-                         src="images/icon_siding_circle.png" />
+                         src="/images/icon_siding_circle.png" />
                     <br />
                     Siding
                 </div>
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 2 ? 'active' : null]"
                          @click="active = 2"
-                         src="images/icon_windows_circle.png" />
+                         src="/images/icon_windows_circle.png" />
                     <br />
                     Windows
                 </div>
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 3 ? 'active' : null]"
                          @click="active = 3"
-                         src="images/icon_gutters_circle.png" />
+                         src="/images/icon_gutters_circle.png" />
                     <br />
                     Gutters
                 </div>
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 4 ? 'active' : null]"
                          @click="active = 4"
-                         src="images/icon_doors_circle.png" />
+                         src="/images/icon_doors_circle.png" />
                     <br />
                     Doors
                 </div>
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', active === 5 ? 'active' : null]"
                          @click="active = 5"
-                         src="images/icon_commercial_circle.png" />
+                         src="/images/icon_commercial_circle.png" />
                     <br />
                     Commercial
                 </div>
@@ -52,7 +52,7 @@
             <media-section
                     class="pull-right"
                     title="Roofing"
-                    img="images/certainteed-home.jpg"
+                    img="/images/certainteed-home.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio roofing contractors">
 
@@ -174,10 +174,10 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-responsive" src="images/mastic-logo.png" alt="Mastic Home Exteriors">
+                        <img class="img-responsive" src="/images/mastic-logo.png" alt="Mastic Home Exteriors">
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="images/James-Hardie-logo-small.png" alt="James hardie Siding">
+                        <img class="img-responsive" src="/images/James-Hardie-logo-small.png" alt="James hardie Siding">
                     </div>
                 </div>
             </media-section>
@@ -187,7 +187,7 @@
         <div id="windows" v-if="active === 2" class="row">
             <media-section
                     title="Replacement Windows"
-                    img="images/atrium-window.jpg"
+                    img="/images/atrium-window.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio window installers">
 
@@ -224,17 +224,17 @@
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/recycle-planet.png" alt="D & G Roofing cares about our planet">
+                        <img class="img-responsive" src="/images/recycle-planet.png" alt="D & G Roofing cares about our planet">
                     </div>
                 </div>
 
                 <div slot="bimg" style="margin-top: 10px">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="img-responsive" src="images/atrium-logo.png" alt="Atrium Windows">
+                            <img class="img-responsive" src="/images/atrium-logo.png" alt="Atrium Windows">
                         </div>
                         <div class="col-md-6">
-                            <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Windows">
+                            <img class="img-responsive" src="/images/marvin-doors-windows.png" alt="Marvin Windows">
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
         <div id="doors" v-if="active === 4" class="row">
             <media-section
                     title="Door Replacement"
-                    img="images/door.png"
+                    img="/images/door.png"
                     img-width="350px"
                     img-alt="dayton cincinnati ohio doors">
 
@@ -289,10 +289,10 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-responsive" src="images/provia-doors.jpg" alt="ProVia Doors">
+                        <img class="img-responsive" src="/images/provia-doors.jpg" alt="ProVia Doors">
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="images/marvin-doors-windows.png" alt="Marvin Doors & Windows">
+                        <img class="img-responsive" src="/images/marvin-doors-windows.png" alt="Marvin Doors & Windows">
                     </div>
                 </div>
             </media-section>
@@ -302,7 +302,7 @@
         <div id="commercial" v-if="active === 5" class="row">
             <media-section
                     title="Commercial"
-                    img="images/commercial-roofing.jpg"
+                    img="/images/commercial-roofing.jpg"
                     img-width="550px"
                     img-alt="dayton cincinnati ohio commercial contractors">
 

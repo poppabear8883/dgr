@@ -171,8 +171,8 @@ class GalleryRepository implements GalleryInterface
     }
 
 
-    public function photos()
+    public function photos($id)
     {
-        return $this->gallery->photos();
+        return $this->findById($id)->photos;
     }
 }

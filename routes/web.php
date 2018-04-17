@@ -22,6 +22,10 @@ Route::get('/galleries', function () {
     return view('galleries');
 });
 
+Route::get('/galleries/{id}', function () {
+    return view('photos');
+});
+
 Route::get('/testimonies', function() {
     return view('testimonies');
 });

@@ -11,7 +11,7 @@
                 <div class="col-md-3 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 0 ? 'active' : null]"
                          @click="active = 0"
-                         src="images/duane.jpg"
+                         src="/images/duane.jpg"
                          alt="">
                     <h5>
                         DUANE HOWARD<br>
@@ -24,7 +24,7 @@
                 <div class="col-md-3 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 1 ? 'active' : null]"
                          @click="active = 1"
-                         src="images/gerri.jpg"
+                         src="/images/gerri.jpg"
                          alt="">
                     <h5>
                         GERRI HOWARD<br>
@@ -37,7 +37,7 @@
                 <div class="col-md-3 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 2 ? 'active' : null]"
                          @click="active = 2"
-                         src="images/mike.jpg"
+                         src="/images/mike.jpg"
                          alt="">
                     <h5>
                         MIKE WALKER<br>
@@ -50,7 +50,7 @@
                 <div class="col-md-3 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 3 ? 'active' : null]"
                          @click="active = 3"
-                         src="images/amanda.jpg"
+                         src="/images/amanda.jpg"
                          alt="">
                     <h5>
                         AMANDA WILLMAN<br>

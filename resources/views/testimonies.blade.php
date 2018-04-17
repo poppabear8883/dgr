@@ -54,7 +54,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="images/duaneandgerritrucklogo.jpg" alt="">
+                    <img class="img-responsive" src="/images/duaneandgerritrucklogo.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-md-6 text-center">
                 <div class="thumbnail">
-                    <img width="250px" class="img-responsive img-circle" src="images/duane.jpg" alt="">
+                    <img width="250px" class="img-responsive img-circle" src="/images/duane.jpg" alt="">
                     <div class="caption">
                         <h3>MR. DUANE HOWARD<br>
                             <small>President</small>
@@ -114,7 +114,7 @@
 
             <div class="col-md-6 text-center">
                 <div class="thumbnail">
-                    <img width="250px" class="img-responsive img-circle" src="images/gerri.jpg" alt="">
+                    <img width="250px" class="img-responsive img-circle" src="/images/gerri.jpg" alt="">
                     <div class="caption">
                         <h3>MRS. GERRI HOWARD<br>
                             <small>Vice President</small>
@@ -155,7 +155,7 @@
 
             <div class="col-md-6 text-center">
                 <div class="thumbnail">
-                    <img width="250px" class="img-responsive img-circle" src="images/mike.jpg" alt="">
+                    <img width="250px" class="img-responsive img-circle" src="/images/mike.jpg" alt="">
                     <div class="caption">
                         <h3>MR. MIKE WALKER<br>
                             <small>Residential Operations Manager</small>
@@ -191,7 +191,7 @@
 
             <div class="col-md-6 text-center">
                 <div class="thumbnail">
-                    <img width="250px" class="img-responsive img-circle" src="images/amanda.jpg" alt="">
+                    <img width="250px" class="img-responsive img-circle" src="/images/amanda.jpg" alt="">
                     <div class="caption">
                         <h3>AMANDA WILLMAN<br>
                             <small>Administrative Assistant</small>
@@ -289,10 +289,10 @@
                 </div>
 
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="images/bbb-logo.png" alt="">
+                    <img class="img-responsive customer-img" src="/images/bbb-logo.png" alt="">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="images/25-yrs-exp.png" alt="">
+                    <img class="img-responsive customer-img" src="/images/25-yrs-exp.png" alt="">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                     <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">

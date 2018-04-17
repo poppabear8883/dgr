@@ -19,6 +19,7 @@ Route::prefix('giveaway')->group(function () {
 /* Galleries API Routes */
 Route::prefix('galleries')->group(function () {
     Route::get('/', 'GalleriesApi@all');
+    Route::get('/{id}', 'GalleriesApi@photos');
 
     Route::middleware('auth:api')->group(function () {
         Route::post('/create', 'GalleriesApi@create');

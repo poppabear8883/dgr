@@ -119,11 +119,11 @@ class PhotoImage implements PhotoImageInterface
     {
         $wide = null;
 
-        if ($wide = $image->width() < 1200 || $image->height() < 1200) {
+        if ($wide = $image->width() < 800 || $image->height() < 800) {
             $dimension = $wide ? 'wide' : 'high';
 
             throw new \Exception(
-                "Image resolution is too small. Should be at least 1200 $dimension"
+                "Image resolution is too small. Should be at least 800 $dimension"
             );
         }
 

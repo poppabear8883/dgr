@@ -10,8 +10,15 @@ class Gallery extends Model
 
     protected $hidden = ['pivot'];
 
+    protected $appends = ['photo_count'];
+
     public function photos()
     {
-        return $this->hasMany(Photo::class);
+        return $this->belongsToMany(Photo::class);
+    }
+
+    public function getPhotoCountAttribute()
+    {
+        return $this->belongsToMany(Photo::class)->count('id');
     }
 }

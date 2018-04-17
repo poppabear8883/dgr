@@ -11,5 +11,5 @@ interface GalleryInterface
     public function update($id, array $data);
     public function delete($id);
     public function exists($name);
-    public function photos();
+    public function photos($id);
 }

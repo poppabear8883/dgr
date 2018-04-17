@@ -20,7 +20,12 @@ class GalleriesApi extends Controller
 
     public function all()
     {
-        return $this->repo->all();
+        return response($this->repo->all(), 200);
+    }
+
+    public function photos($id)
+    {
+        return response($this->repo->photos($id), 200);
     }
 
     /**

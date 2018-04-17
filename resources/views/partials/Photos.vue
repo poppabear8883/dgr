@@ -1,24 +1,23 @@
 <template>
-    <div class="galleries">
+    <div class="photos">
         <div class="container">
-            <h1 class="page-header color-red">Galleries</h1>
+            <h1 class="page-header color-red">Photos</h1>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in galleries">
-                    <div class="gallery-img">
+                <div class="col-md-6 col-xs-12" v-for="photo in photos">
+                    <div class="photo-img">
                         <img class="img-responsive"
-                             :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
-                             :alt="gallery.name">
+                             :src="`${photo.path}?w=700&h=400&fit=crop`"
+                             :alt="photo.name">
 
                         <div class="title">
-                            <h2>{{gallery.name}}</h2>
+                            <h2>{{photo.description}}</h2>
                         </div>
 
-                        <div class="overlay">
-                            <h2>{{gallery.photo_count}} Photos</h2>
-                            <a v-if="gallery.photo_count > 0" class="info" :href="`/galleries/${gallery.id}`">
+                        <!--<div class="overlay">
+                            <a class="info" :href="`/galleries/${gallery.id}/photos`">
                                 View Photos
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div> <!-- row -->
@@ -28,26 +27,26 @@
 
 <script>
   export default {
-    name: 'galleries',
+    name: 'photos',
     data () {
       return {
-        galleries: []
+        photos: []
       }
     },
     methods: {
-      getGalleries () {
+      getPhotos () {
         this.errors = []
 
-        axios.get('/api/galleries')
+        axios.get(`/api/galleries/${window.location.href.substr(window.location.href.lastIndexOf('/') + 1)}`)
           .then((response) => {
-            this.galleries = response.data;
+            this.photos = response.data;
           }).catch((error) => {
             alert(error.response.data.message)
         })
       },
     },
     created () {
-      this.getGalleries();
+      this.getPhotos();
     }
   }
 </script>
@@ -55,12 +54,12 @@
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
 
-    .galleries {
+    .photos {
         .row {
             margin-bottom: 2rem;
         }
 
-        .gallery-img {
+        .photo-img {
             width: 100%;
             height: 100%;
             float: left;
@@ -71,13 +70,11 @@
             margin-bottom: 1rem;
 
             &:hover {
-                .title h2 {
+                /*.title h2 {
                     opacity: 0;
                     transition: all .4s ease-in-out;
-                }
-            }
+                }*/
 
-            &:hover {
                 .overlay {
                     opacity: 1;
                     filter: alpha(opacity=100);

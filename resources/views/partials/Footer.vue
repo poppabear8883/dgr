@@ -5,22 +5,22 @@
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3 text-center">
                         <img class="img-responsive"
-                             src="images/certainteed-certified-dealer.png" width="130px">
+                             src="/images/certainteed-certified-dealer.png" width="130px">
                     </div>
 
                     <div class="hidden-xs hidden-sm col-md-3 text-center">
                         <img class="img-responsive"
-                             src="images/no-roof-left-behind2.png" width="150px">
+                             src="/images/no-roof-left-behind2.png" width="150px">
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 text-center">
                         <img class="img-responsive"
-                             src="images/homeadvisor_logo4.png" width="150px">
+                             src="/images/homeadvisor_logo4.png" width="150px">
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 text-center">
                         <img class="img-responsive"
-                             src="images/bbb2.png" width="100px">
+                             src="/images/bbb2.png" width="100px">
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                         <h3 class="color-red">Qualifications</h3>
                         <ul>
                             <li>A+ Rating with BBB</li>
-                            <li>25 years of Experience</li>
+                            <li>30+ years of Experience</li>
                             <li>Financing Available</li>
                             <li>No Job Too Big Or Too Small</li>
                             <li>Workmanship and Labor Warranty</li>
@@ -115,7 +115,7 @@
                                     <a href="https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm"
                                        target="_blank">
                                         <i class="fa fa-angieslist">
-                                            <img src="images/fa-angieslist.png" class="img-responsive">
+                                            <img src="/images/fa-angieslist.png" class="img-responsive">
                                         </i>
                                     </a>
                                 </li>

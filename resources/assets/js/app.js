@@ -42,6 +42,7 @@ Vue.component('dg-contact-form', require('Views/partials/contact/ContactForm.vue
 Vue.component('dg-refer-form', require('Views/partials/giveaways/ReferForm.vue'));
 Vue.component('dg-join-form', require('Views/partials/join/JoinForm.vue'));
 Vue.component('dg-galleries', require('Views/partials/Galleries.vue'));
+Vue.component('dg-photos', require('Views/partials/Photos.vue'));
 
 // 3rd party
 import Countdown from 'vuejs-countdown';
