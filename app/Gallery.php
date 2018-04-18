@@ -19,6 +19,6 @@ class Gallery extends Model
 
     public function getPhotoCountAttribute()
     {
-        return $this->belongsToMany(Photo::class)->count('id');
+        return $this->photos()->count('id');
     }
 }

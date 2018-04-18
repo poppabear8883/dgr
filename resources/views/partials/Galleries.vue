@@ -22,6 +22,28 @@
                     </div>
                 </div>
             </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <nav>
+                        <ul class="pagination">
+                            <li :class="prev_page_url ? null : 'disabled'">
+                                <a href="#" @click.prevent="getGalleries(current_page - 1)" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li v-for="index in last_page" :class="current_page === index ? 'active' : null">
+                                <a href="#" @click.prevent="getGalleries(index)">{{index}}</a>
+                            </li>
+                            <li :class="next_page_url ? null : 'disabled'">
+                                <a href="#" @click.prevent="getGalleries(current_page + 1)" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -31,23 +53,51 @@
     name: 'galleries',
     data () {
       return {
-        galleries: []
+        perpage: 9,
+        current_page: -1,
+        galleries: [],
+        from: 0,
+        last_page: 0,
+        next_page_url: null,
+        prev_page_url: null,
+        total: 0
       }
     },
     methods: {
-      getGalleries () {
+      getGalleries (page) {
         this.errors = []
 
-        axios.get('/api/galleries')
+        if (this.current_page === page) {
+          return false;
+        }
+
+        if (page === this.current_page + 1 && this.next_page_url === null) {
+          return false;
+        }
+
+        if (page === this.current_page - 1 && this.prev_page_url === null) {
+          return false;
+        }
+
+        axios.get(`/api/galleries/paginate/${this.perpage}?page=${page}`)
           .then((response) => {
-            this.galleries = response.data;
+            let r = response.data;
+
+            this.current_page = r.current_page;
+            this.galleries = r.data;
+            this.from = r.from;
+            this.last_page = r.last_page;
+            this.next_page_url = r.next_page_url;
+            this.prev_page_url = r.prev_page_url;
+            this.total = r.total;
+
           }).catch((error) => {
             alert(error.response.data.message)
-        })
+        });
       },
     },
     created () {
-      this.getGalleries();
+      this.getGalleries(1)
     }
   }
 </script>

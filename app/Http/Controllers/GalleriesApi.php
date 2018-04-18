@@ -23,6 +23,11 @@ class GalleriesApi extends Controller
         return response($this->repo->all(), 200);
     }
 
+    public function paginate($perpage)
+    {
+        return response($this->repo->paginate($perpage), 200);
+    }
+
     public function photos($id)
     {
         return response($this->repo->photos($id), 200);

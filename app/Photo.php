@@ -19,6 +19,6 @@ class Photo extends Model
 
     public function getGalleryIdsAttribute()
     {
-        return $this->belongsToMany(Gallery::class)->pluck('id')->toArray();
+        return $this->galleries()->pluck('id')->toArray();
     }
 }

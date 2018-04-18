@@ -59,19 +59,26 @@ class PhotoRepository implements PhotoInterface
             'description' => $data['description']
         ]);
 
-        $photo->galleries()->attach($data['galleries']);
+        try {
+            $image = $this->image->makeImage($photo->id, $data['img']);
+        } catch (\Exception $e) {
+            $photo->delete();
+            throw $e;
+        }
 
-        $image = $this->image->makeImage($photo->id, $data['img']);
+        $photo->galleries()->attach($data['galleries']);
 
         $updated = $photo->update([
             'path' => "/img/photos/$image->basename"
         ]);
 
         if (!$updated) {
+            $photo->delete();
             throw new \Exception('Unable to add Photo');
         }
 
         if (!$this->exists($data['name'])) {
+            $photo->delete();
             throw new \Exception('Unable to create resource');
         }
 

@@ -36,6 +36,16 @@ class GalleryRepository implements GalleryInterface
     }
 
     /**
+     * Gets all Gallery resources
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function paginate(int $per_page)
+    {
+        return $this->gallery->paginate($per_page);
+    }
+
+    /**
      * Creates a Gallery resource
      *
      * @param array $data
@@ -47,7 +57,7 @@ class GalleryRepository implements GalleryInterface
         $image = null;
 
         if ($this->exists($data['name'])) {
-            throw new \Exception('Gallery '.$data['name'].' already exists');
+            throw new \Exception('Gallery ' . $data['name'] . ' already exists');
         }
 
         $gallery = $this->gallery->create([
@@ -56,18 +66,25 @@ class GalleryRepository implements GalleryInterface
         ]);
 
         if ($data['img'] !== '') {
-            $image = $this->cover->makeImage($gallery->id, $data['img']);
+            try {
+                $image = $this->cover->makeImage($gallery->id, $data['img']);
+            } catch (\Exception $e) {
+                $gallery->delete();
+                throw $e;
+            }
 
             $updated = $gallery->update([
                 'img' => "/img/gallery/$image->basename"
             ]);
 
             if (!$updated) {
+                $gallery->delete();
                 throw new \Exception('Unable to add image to the Gallery');
             }
         }
 
         if (!$this->exists($data['name'])) {
+            $gallery->delete();
             throw new \Exception('Unable to create resource');
         }
 
@@ -101,12 +118,16 @@ class GalleryRepository implements GalleryInterface
 
         if ($data['img'] !== $resource->img) {
 
+            try {
+                $image = $this->cover->makeImage($resource->id, $data['img']);
+            } catch (\Exception $e) {
+                throw $e;
+            }
+
             if ($resource->img !== null) {
                 $this->cover->deleteCache($resource->img);
                 $this->cover->deleteImage(basename($resource->img));
             }
-
-            $image = $this->cover->makeImage($resource->id, $data['img']);
 
             $updated = $resource->update([
                 'img' => "/img/gallery/$image->basename"

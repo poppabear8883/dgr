@@ -4,6 +4,7 @@ namespace App\Gallery;
 
 use App\Gallery\Contracts\GalleryCoverInterface;
 use Illuminate\Filesystem\Filesystem;
+use Intervention\Image\Exception\NotWritableException;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 use League\Glide\Server;
@@ -49,7 +50,11 @@ class GalleryCover implements GalleryCoverInterface
 
         $this->validateImage($image);
 
-        return $image->save($this->getPath($filename));
+        try {
+            return $image->save($this->getPath($filename));
+        } catch(NotWritableException $e) {
+            throw new \Exception($e->getMessage());
+        }
     }
 
     /**

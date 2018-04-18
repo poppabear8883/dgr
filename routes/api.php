@@ -20,6 +20,7 @@ Route::prefix('giveaway')->group(function () {
 Route::prefix('galleries')->group(function () {
     Route::get('/', 'GalleriesApi@all');
     Route::get('/{id}', 'GalleriesApi@photos');
+    Route::get('/paginate/{perpage}', 'GalleriesApi@paginate');
 
     Route::middleware('auth:api')->group(function () {
         Route::post('/create', 'GalleriesApi@create');
