@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         App\Gallery::create(['name' => 'Gutters', 'description' => 'A gallery of gutters related photos']);
         App\Gallery::create(['name' => 'Doors', 'description' => 'A gallery of doors related photos']);
         App\Gallery::create(['name' => 'Commercial', 'description' => 'A gallery of commercial related photos']);
+        App\Gallery::create(['name' => 'Community Involvement', 'description' => 'A gallery of community related photos']);
     }
 }
