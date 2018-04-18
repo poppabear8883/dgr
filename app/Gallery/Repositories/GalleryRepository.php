@@ -74,7 +74,7 @@ class GalleryRepository implements GalleryInterface
             }
 
             $updated = $gallery->update([
-                'img' => "/img/gallery/$image->basename"
+                'img' => "/img/$image->basename"
             ]);
 
             if (!$updated) {
@@ -130,7 +130,7 @@ class GalleryRepository implements GalleryInterface
             }
 
             $updated = $resource->update([
-                'img' => "/img/gallery/$image->basename"
+                'img' => "/img/$image->basename"
             ]);
 
             if (!$updated) {

@@ -69,7 +69,7 @@ class PhotoRepository implements PhotoInterface
         $photo->galleries()->attach($data['galleries']);
 
         $updated = $photo->update([
-            'path' => "/img/photos/$image->basename"
+            'path' => "/img/$image->basename"
         ]);
 
         if (!$updated) {

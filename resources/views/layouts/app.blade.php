@@ -61,11 +61,10 @@
 
             @if(!Auth::guest())
             <div class="col-sm-3 col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    <li class="active">
+                {{--<ul class="nav nav-sidebar">
+                    <li>
                         <a href="/dashboard">
                             Dashboard
-                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li><a href="">Company</a></li>
@@ -77,7 +76,7 @@
                 <ul class="nav nav-sidebar">
                     <li><a href="">Users</a></li>
                     <li><a href="">Roles</a></li>
-                </ul>
+                </ul>--}}
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/galleries">Galleries</a></li>
                     <li><a href="/admin/photos">Photos</a></li>

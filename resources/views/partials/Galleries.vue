@@ -6,7 +6,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in galleries">
                     <div class="gallery-img">
                         <img class="img-responsive"
-                             :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/gallery/default-cover.jpg?w=700&h=400&fit=crop'"
+                             :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/default-cover.jpg?w=700&h=400&fit=crop'"
                              :alt="gallery.name">
 
                         <div class="title">
