@@ -181,6 +181,7 @@ return [
         App\Gallery\Providers\GalleryServiceProvider::class,
         App\Photo\Providers\PhotoServiceProvider::class,
         App\Contact\Providers\ContactServiceProvider::class,
+        App\Image\Providers\ImageServiceProvider::class
 
     ],
 

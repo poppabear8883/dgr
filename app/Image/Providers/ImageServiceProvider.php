@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Gallery\Providers;
+namespace App\Image\Providers;
 
-use App\Gallery\Contracts\GalleryInterface;
-use App\Gallery\Repositories\GalleryRepository;
+use App\Image\Contracts\ImageInterface;
+use App\Image\Image;
 use Illuminate\Support\ServiceProvider;
 
-class GalleryServiceProvider extends ServiceProvider
+class ImageServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -25,6 +25,6 @@ class GalleryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(GalleryInterface::class, GalleryRepository::class);
+        $this->app->bind(ImageInterface::class, Image::class);
     }
 }

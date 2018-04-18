@@ -3,7 +3,7 @@
 namespace App\Photo\Repositories;
 
 use App\Photo;
-use App\Photo\Contracts\PhotoImageInterface;
+use App\Image\Contracts\ImageInterface;
 use App\Photo\Contracts\PhotoInterface;
 
 class PhotoRepository implements PhotoInterface
@@ -15,11 +15,11 @@ class PhotoRepository implements PhotoInterface
     private $photo;
 
     /**
-     * @var PhotoImageInterface
+     * @var ImageInterface
      */
     private $image;
 
-    public function __construct(Photo $photo, PhotoImageInterface $image)
+    public function __construct(Photo $photo, ImageInterface $image)
     {
         $this->photo = $photo;
         $this->image = $image;

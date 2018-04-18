@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Photo;
+namespace App\Image;
 
-use App\Photo\Contracts\PhotoImageInterface;
+use App\Image\Contracts\ImageInterface;
 use Illuminate\Filesystem\Filesystem;
-use Intervention\Image\Image;
+use Intervention\Image\Image as Intervention;
 use Intervention\Image\ImageManager;
 use League\Glide\Server;
 
-class PhotoImage implements PhotoImageInterface
+class Image implements ImageInterface
 {
 
     /**
@@ -24,12 +24,12 @@ class PhotoImage implements PhotoImageInterface
     /**
      * @var ImageManager
      */
-    private $image;
+    private $manager;
 
-    public function __construct(Filesystem $fs, Server $server, ImageManager $image)
+    public function __construct(Filesystem $fs, Server $server, ImageManager $manager)
     {
         $this->server = $server;
-        $this->image = $image;
+        $this->manager = $manager;
         $this->fs = $fs;
     }
 
@@ -45,7 +45,7 @@ class PhotoImage implements PhotoImageInterface
     public function makeImage($id, $source, $ext = 'jpg')
     {
         $filename = $this->formatName($id, $ext);
-        $image = $this->image->make($source);
+        $image = $this->manager->make($source);
 
         $this->validateImage($image);
 
@@ -60,7 +60,7 @@ class PhotoImage implements PhotoImageInterface
      */
     public function getPath($filename)
     {
-        return storage_path('app/images/photos/'.$filename);
+        return storage_path('app/images/'.$filename);
     }
 
     /**
@@ -71,7 +71,7 @@ class PhotoImage implements PhotoImageInterface
      */
     public function getCachePath($filename)
     {
-        return storage_path('app/images/.cache/photos/'.$filename);
+        return storage_path('app/images/.cache/'.$filename);
     }
 
     /**
@@ -83,7 +83,7 @@ class PhotoImage implements PhotoImageInterface
      */
     public function formatName($id, $ext)
     {
-        return "photo-$id-".str_random().".$ext";
+        return "img-$id-".str_random().".$ext";
     }
 
     /**
@@ -105,13 +105,13 @@ class PhotoImage implements PhotoImageInterface
      */
     public function deleteImage($filename)
     {
-        return $this->fs->delete(storage_path('app/images/photos/' . $filename));
+        return $this->fs->delete(storage_path('app/images/' . $filename));
     }
 
     /**
      * Validates the Cover Image
      *
-     * @param Image $image
+     * @param Intervention $image
      * @return bool
      * @throws \Exception
      */

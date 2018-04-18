@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Photo\Contracts\PhotoInterface;
 use Illuminate\Http\Request;
-use Illuminate\Contracts\Filesystem\Factory as Filesystem;
 
 class PhotosApi extends Controller
 {

@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Http\Request;
-use League\Glide\Responses\LaravelResponseFactory;
 use League\Glide\Server;
-use League\Glide\ServerFactory;
 
 class ImageController extends Controller
 {

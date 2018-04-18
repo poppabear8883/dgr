@@ -3,7 +3,7 @@
 namespace App\Gallery\Repositories;
 
 use App\Gallery;
-use App\Gallery\Contracts\GalleryCoverInterface;
+use App\Image\Contracts\ImageInterface;
 use App\Gallery\Contracts\GalleryInterface;
 
 class GalleryRepository implements GalleryInterface
@@ -15,14 +15,14 @@ class GalleryRepository implements GalleryInterface
     private $gallery;
 
     /**
-     * @var GalleryCoverInterface
+     * @var ImageInterface
      */
-    private $cover;
+    private $image;
 
-    public function __construct(Gallery $gallery, GalleryCoverInterface $cover)
+    public function __construct(Gallery $gallery, ImageInterface $image)
     {
         $this->gallery = $gallery;
-        $this->cover = $cover;
+        $this->image = $image;
     }
 
     /**
@@ -67,7 +67,7 @@ class GalleryRepository implements GalleryInterface
 
         if ($data['img'] !== '') {
             try {
-                $image = $this->cover->makeImage($gallery->id, $data['img']);
+                $image = $this->image->makeImage($gallery->id, $data['img']);
             } catch (\Exception $e) {
                 $gallery->delete();
                 throw $e;
@@ -119,14 +119,14 @@ class GalleryRepository implements GalleryInterface
         if ($data['img'] !== $resource->img) {
 
             try {
-                $image = $this->cover->makeImage($resource->id, $data['img']);
+                $image = $this->image->makeImage($resource->id, $data['img']);
             } catch (\Exception $e) {
                 throw $e;
             }
 
             if ($resource->img !== null) {
-                $this->cover->deleteCache($resource->img);
-                $this->cover->deleteImage(basename($resource->img));
+                $this->image->deleteCache($resource->img);
+                $this->image->deleteImage(basename($resource->img));
             }
 
             $updated = $resource->update([

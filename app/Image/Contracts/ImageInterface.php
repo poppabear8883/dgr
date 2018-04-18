@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Photo\Contracts;
+namespace App\Image\Contracts;
 
-interface PhotoImageInterface
+interface ImageInterface
 {
     public function makeImage($id, $source, $ext = 'jpg');
     public function getPath($filename);
