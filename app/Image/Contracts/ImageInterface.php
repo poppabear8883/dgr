@@ -11,4 +11,8 @@ interface ImageInterface
     public function validateImage($image);
     public function deleteCache($path);
     public function deleteImage($filename);
+    public function prefix($prefix = null);
+    public function basePath($path = null);
+    public function minWidth($px = null);
+    public function minHeight($px = null);
 }

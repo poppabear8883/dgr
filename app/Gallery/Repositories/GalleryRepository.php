@@ -23,6 +23,7 @@ class GalleryRepository implements GalleryInterface
     {
         $this->gallery = $gallery;
         $this->image = $image;
+        $this->image->prefix('gallery');
     }
 
     /**

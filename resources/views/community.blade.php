@@ -58,5 +58,7 @@
         </a>
     </media-section>
 
+
     <dg-photos :gallery-id="7"></dg-photos>
+
 @stop

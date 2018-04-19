@@ -11,6 +11,15 @@ use League\Glide\Server;
 class Image implements ImageInterface
 {
 
+    protected $minWidth = 800;
+
+    protected $minHeight = 800;
+
+    protected $prefix = 'img';
+
+    protected $basePath = 'app/images';
+
+
     /**
      * @var Filesystem
      */
@@ -60,7 +69,7 @@ class Image implements ImageInterface
      */
     public function getPath($filename)
     {
-        return storage_path('app/images/'.$filename);
+        return storage_path($this->basePath().'/'.$filename);
     }
 
     /**
@@ -71,7 +80,7 @@ class Image implements ImageInterface
      */
     public function getCachePath($filename)
     {
-        return storage_path('app/images/.cache/'.$filename);
+        return storage_path($this->basePath().'/.cache/'.$filename);
     }
 
     /**
@@ -83,7 +92,7 @@ class Image implements ImageInterface
      */
     public function formatName($id, $ext)
     {
-        return "img-$id-".str_random().".$ext";
+        return $this->prefix."-$id.$ext";
     }
 
     /**
@@ -105,7 +114,7 @@ class Image implements ImageInterface
      */
     public function deleteImage($filename)
     {
-        return $this->fs->delete(storage_path('app/images/' . $filename));
+        return $this->fs->delete(storage_path($this->basePath() . $filename));
     }
 
     /**
@@ -128,5 +137,41 @@ class Image implements ImageInterface
         }
 
         return true;
+    }
+
+    public function prefix($prefix = null)
+    {
+        if ($prefix === null) {
+            return $this->prefix;
+        }
+
+        return $this->prefix = $prefix;
+    }
+
+    public function basePath($path = null)
+    {
+        if ($path === null) {
+            return $this->basePath;
+        }
+
+        return $this->basePath = $path;
+    }
+
+    public function minWidth($px = null)
+    {
+        if ($px === null) {
+            return $this->minWidth;
+        }
+
+        return $this->minWidth = $px;
+    }
+
+    public function minHeight($px = null)
+    {
+        if ($px === null) {
+            return $this->minHeight;
+        }
+
+        return $this->minHeight = $px;
     }
 }

@@ -1,7 +1,7 @@
 <template>
-    <div class="photos">
+    <div class="photos" v-if="photos.length > 0">
         <div class="container">
-            <h1 class="page-header color-red">Photos</h1>
+            <h1 class="page-header color-red">{{photos.length}} Photos</h1>
             <div class="row">
                 <div class="col-md-6 col-xs-12" v-for="photo in photos">
                     <div class="photo-img">

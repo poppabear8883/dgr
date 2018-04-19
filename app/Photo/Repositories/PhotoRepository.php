@@ -23,6 +23,7 @@ class PhotoRepository implements PhotoInterface
     {
         $this->photo = $photo;
         $this->image = $image;
+        $this->image->prefix('photo');
     }
 
 
