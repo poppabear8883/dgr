@@ -21,6 +21,7 @@ class PhotosApi extends Controller
     {
         return $this->repo->all();
     }
+
     /**
      * Create a new resource.
      *

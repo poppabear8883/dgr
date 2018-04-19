@@ -74462,6 +74462,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'photos',
@@ -74470,18 +74492,45 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   data: function data() {
     return {
-      photos: []
+      photos: [],
+      current_page: -1,
+      from: 0,
+      last_page: 0,
+      next_page_url: null,
+      prev_page_url: null,
+      total: 0
     };
   },
 
   methods: {
-    getPhotos: function getPhotos() {
+    getPhotos: function getPhotos(page) {
       var _this = this;
 
       this.errors = [];
 
-      axios.get('/api/galleries/' + this.pathId).then(function (response) {
-        _this.photos = response.data;
+      if (this.current_page === page) {
+        return false;
+      }
+
+      if (page === this.current_page + 1 && this.next_page_url === null) {
+        return false;
+      }
+
+      if (page === this.current_page - 1 && this.prev_page_url === null) {
+        return false;
+      }
+
+      axios.get('/api/galleries/' + this.pathId + '?page=' + page).then(function (response) {
+
+        var r = response.data;
+
+        _this.current_page = r.current_page;
+        _this.photos = r.data;
+        _this.from = r.from;
+        _this.last_page = r.last_page;
+        _this.next_page_url = r.next_page_url;
+        _this.prev_page_url = r.prev_page_url;
+        _this.total = r.total;
       }).catch(function (error) {
         alert(error.response.data.message);
       });
@@ -74493,7 +74542,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
   created: function created() {
-    this.getPhotos();
+    this.getPhotos(1);
   }
 });
 
@@ -74532,7 +74581,82 @@ var render = function() {
                 ])
               ])
             })
-          )
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12 text-center" }, [
+              _c("nav", [
+                _c(
+                  "ul",
+                  { staticClass: "pagination" },
+                  [
+                    _c("li", { class: _vm.prev_page_url ? null : "disabled" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: { href: "#", "aria-label": "Previous" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.getPhotos(_vm.current_page - 1)
+                            }
+                          }
+                        },
+                        [
+                          _c("span", { attrs: { "aria-hidden": "true" } }, [
+                            _vm._v("«")
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.last_page, function(index) {
+                      return _c(
+                        "li",
+                        { class: _vm.current_page === index ? "active" : null },
+                        [
+                          _c(
+                            "a",
+                            {
+                              attrs: { href: "#" },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  _vm.getPhotos(index)
+                                }
+                              }
+                            },
+                            [_vm._v(_vm._s(index))]
+                          )
+                        ]
+                      )
+                    }),
+                    _vm._v(" "),
+                    _c("li", { class: _vm.next_page_url ? null : "disabled" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: { href: "#", "aria-label": "Next" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.getPhotos(_vm.current_page + 1)
+                            }
+                          }
+                        },
+                        [
+                          _c("span", { attrs: { "aria-hidden": "true" } }, [
+                            _vm._v("»")
+                          ])
+                        ]
+                      )
+                    ])
+                  ],
+                  2
+                )
+              ])
+            ])
+          ])
         ])
       ])
     : _vm._e()

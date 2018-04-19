@@ -21,6 +21,28 @@
                     </div>
                 </div>
             </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <nav>
+                        <ul class="pagination">
+                            <li :class="prev_page_url ? null : 'disabled'">
+                                <a href="#" @click.prevent="getPhotos(current_page - 1)" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li v-for="index in last_page" :class="current_page === index ? 'active' : null">
+                                <a href="#" @click.prevent="getPhotos(index)">{{index}}</a>
+                            </li>
+                            <li :class="next_page_url ? null : 'disabled'">
+                                <a href="#" @click.prevent="getPhotos(current_page + 1)" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -33,16 +55,44 @@
     },
     data () {
       return {
-        photos: []
+        photos: [],
+        current_page: -1,
+        from: 0,
+        last_page: 0,
+        next_page_url: null,
+        prev_page_url: null,
+        total: 0
       }
     },
     methods: {
-      getPhotos () {
+      getPhotos (page) {
         this.errors = []
 
-        axios.get(`/api/galleries/${this.pathId}`)
+        if (this.current_page === page) {
+          return false;
+        }
+
+        if (page === this.current_page + 1 && this.next_page_url === null) {
+          return false;
+        }
+
+        if (page === this.current_page - 1 && this.prev_page_url === null) {
+          return false;
+        }
+
+        axios.get(`/api/galleries/${this.pathId}?page=${page}`)
           .then((response) => {
-            this.photos = response.data;
+
+            let r = response.data;
+
+            this.current_page = r.current_page;
+            this.photos = r.data;
+            this.from = r.from;
+            this.last_page = r.last_page;
+            this.next_page_url = r.next_page_url;
+            this.prev_page_url = r.prev_page_url;
+            this.total = r.total;
+
           }).catch((error) => {
             alert(error.response.data.message)
         })
@@ -54,7 +104,7 @@
       }
     },
     created () {
-      this.getPhotos();
+      this.getPhotos(1);
     }
   }
 </script>
