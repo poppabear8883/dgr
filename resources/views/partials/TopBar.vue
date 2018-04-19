@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-lg-4 site-logo">
                     <a href="/">
-                        <img class="img-responsive" src="/images/site-logo.jpg">
+                        <img class="img-responsive" src="/images/site-logo.png">
                     </a>
                 </div>
                 <div class="hidden-sm col-md-4 col-lg-4 text-center nrlb-logo">
