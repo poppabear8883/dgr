@@ -2,27 +2,68 @@
     <div class="footer">
         <div class="logos">
             <div class="container">
-                <div class="row">
+                <h2 class="page-header color-red text-center">AFFILIATES</h2>
+                <carousel :autoplay="true"
+                          :loop="true"
+                          :autoplay-timeout="5000"
+                          :per-page="4"
+                          :scroll-per-page="true"
+                          paginationActiveColor="#EE001B"
+                          paginationColor="#353536"
+                          :autoplay-hover-pause="true">
+                    <slide>
+                        <img class="img-responsive"
+                             src="/images/certainteed-certified-dealer.png" width="130px">
+                    </slide>
+                    <slide>
+                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/no-roof-left-behind2.png" width="150px">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.homeadvisor.com/rated.DandGRoofing.39451675.html" target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/home advisor.png" width="130px">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints"
+                           target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/bbb2.png" width="100px">
+                        </a>
+                    </slide>
+                </carousel>
+
+                <!--<div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3 text-center">
                         <img class="img-responsive"
                              src="/images/certainteed-certified-dealer.png" width="130px">
                     </div>
 
                     <div class="hidden-xs hidden-sm col-md-3 text-center">
-                        <img class="img-responsive"
-                             src="/images/no-roof-left-behind2.png" width="150px">
+                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/no-roof-left-behind2.png" width="150px">
+                        </a>
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                        <img class="img-responsive"
-                             src="/images/homeadvisor_logo4.png" width="150px">
+                        <a href="https://www.homeadvisor.com/rated.DandGRoofing.39451675.html" target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/homeadvisor_logo4.png" width="150px">
+                        </a>
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                        <img class="img-responsive"
-                             src="/images/bbb2.png" width="100px">
+                        <a href="https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints"
+                           target="_blank">
+                            <img class="img-responsive"
+                                 src="/images/bbb2.png" width="100px">
+                        </a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -128,9 +169,15 @@
     </div>
 </template>
 <script>
-    export default {
+  import { Carousel, Slide } from 'vue-carousel'
 
+  export default {
+    components: {
+      Carousel,
+      Slide
     }
+
+  }
 </script>
 <style lang="scss" scoped>
     @import "~Sass/_variables.scss";
@@ -144,6 +191,12 @@
 
             img {
                 display: inline-block !important;
+            }
+
+            h2 {
+                &.page-header {
+                    margin-top: -25px;
+                }
             }
         }
 
