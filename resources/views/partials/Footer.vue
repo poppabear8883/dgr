@@ -1,69 +1,78 @@
 <template>
     <div class="footer">
-        <div class="logos">
-            <div class="container">
-                <h2 class="page-header color-red text-center">AFFILIATES</h2>
+        <div class="logos hidden-xs">
+            <div class="container text-center">
+                <h2 class="page-header color-red">AFFILIATES</h2>
                 <carousel :autoplay="true"
                           :loop="true"
                           :autoplay-timeout="5000"
-                          :per-page="4"
+                          :per-page="3"
                           :scroll-per-page="true"
-                          paginationActiveColor="#EE001B"
-                          paginationColor="#353536"
+                          :navigation-enabled="true"
+                          pagination-active-color="#EE001B"
+                          pagination-color="#353536"
                           :autoplay-hover-pause="true">
                     <slide>
                         <img class="img-responsive"
-                             src="/images/certainteed-certified-dealer.png" width="130px">
-                    </slide>
-                    <slide>
-                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
-                            <img class="img-responsive"
-                                 src="/images/no-roof-left-behind2.png" width="150px">
-                        </a>
+                             src="/img/certainteed-certified-dealer.png?w=150&h=150">
                     </slide>
                     <slide>
                         <a href="https://www.homeadvisor.com/rated.DandGRoofing.39451675.html" target="_blank">
                             <img class="img-responsive"
-                                 src="/images/home advisor.png" width="130px">
+                                 src="/img/home_advisor.png?w=150&h=150">
                         </a>
                     </slide>
                     <slide>
                         <a href="https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints"
                            target="_blank">
                             <img class="img-responsive"
-                                 src="/images/bbb2.png" width="100px">
+                                 src="/img/bbb2.png?w=150&h=150">
+                        </a>
+                    </slide>
+                    <slide>
+                        <img class="img-responsive"
+                             src="/img/provia-logo.png?w=250&h=85"
+                             style="margin-top: 25px;">
+                    </slide>
+                    <slide>
+                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/no-roof-left-behind.png?w=180&h=85"
+                                 style="margin-top: 25px;">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.google.com/maps/place/D+%26+G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889!9m1!1b1"
+                           target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/google-reviews.png?w=180&h=85"
+                                 style="margin-top: 25px; margin-left: -25px;">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.facebook.com/DgRoofingRestoration" target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/facebook-logo.png?w=250&h=85"
+                                 style="margin-top: 25px;">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm"
+                           target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/angies-list-logo.png?w=250&h=85"
+                                 style="margin-top: 25px;">
+                        </a>
+                    </slide>
+                    <slide>
+                        <a href="https://www.jameshardie.com/why-hardie/superior-siding"
+                           target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/jameshardie-logo.png?w=250&h=85"
+                                 style="margin-top: 25px;">
                         </a>
                     </slide>
                 </carousel>
-
-                <!--<div class="row">
-                    <div class="hidden-xs col-sm-4 col-md-3 text-center">
-                        <img class="img-responsive"
-                             src="/images/certainteed-certified-dealer.png" width="130px">
-                    </div>
-
-                    <div class="hidden-xs hidden-sm col-md-3 text-center">
-                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
-                            <img class="img-responsive"
-                                 src="/images/no-roof-left-behind2.png" width="150px">
-                        </a>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                        <a href="https://www.homeadvisor.com/rated.DandGRoofing.39451675.html" target="_blank">
-                            <img class="img-responsive"
-                                 src="/images/homeadvisor_logo4.png" width="150px">
-                        </a>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                        <a href="https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints"
-                           target="_blank">
-                            <img class="img-responsive"
-                                 src="/images/bbb2.png" width="100px">
-                        </a>
-                    </div>
-                </div>-->
             </div>
         </div>
 

@@ -38,11 +38,10 @@
             <div class="container-fluid">
                 <slot name="bottom">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                        <div class="col-md-6 hidden-sm hidden-xs text-center">
                             <h4>Need a painless inspection? We are here to help you!</h4>
                         </div>
-                        <div class="col-md-6 col-sm-6 hidden-xs">
-
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <a class="text-center" href="/giveaways">Refer A Friend</a>
@@ -115,9 +114,9 @@
             }
 
             &.sub-page {
-                font-size: 64px;
+                font-size: 50px;
                 margin-top: 150px;
-                margin-bottom: -50px;
+                margin-bottom: -30px;
             }
 
             @media (min-width: 768px) {
@@ -129,6 +128,11 @@
                 padding-top: 50px;
                 padding-bottom: 50px;
                 text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+                &.sub-page {
+                    font-size: 60px;
+                    margin-bottom: -50px;
+                }
             }
         }
 
@@ -172,6 +176,21 @@
         min-height: 100px;
         text-align: center;
         font-size: 20px;
+
+        a {
+            margin-bottom: 5px;
+        }
+
+        @media (min-width: 1200px) {
+            margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            a {
+                margin: 0;
+                margin-bottom: 25px;
+            }
+        }
 
         @media (min-width: 768px) {
             padding-top: 25px;
