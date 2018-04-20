@@ -32,7 +32,7 @@
 
                             <div class="panel-actions">
                                 <a href="/services#siding">Read More</a>
-                                <a href="#">View Gallery</a>
+                                <a href="/galleries/3">View Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
 
                             <div class="panel-actions">
                                 <a href="/services#roofing">Read More</a>
-                                <a href="#">View Gallery</a>
+                                <a href="/galleries/1">View Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
 
                             <div class="panel-actions">
                                 <a href="/services#windows">Read More</a>
-                                <a href="#">View Gallery</a>
+                                <a href="/galleries/2">View Gallery</a>
                             </div>
                         </div>
 

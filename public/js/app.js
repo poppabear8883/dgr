@@ -71275,7 +71275,9 @@ var staticRenderFns = [
                     _vm._v("Read More")
                   ]),
                   _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+                  _c("a", { attrs: { href: "/galleries/3" } }, [
+                    _vm._v("View Gallery")
+                  ])
                 ])
               ])
             ])
@@ -71309,7 +71311,9 @@ var staticRenderFns = [
                     _vm._v("Read More")
                   ]),
                   _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+                  _c("a", { attrs: { href: "/galleries/1" } }, [
+                    _vm._v("View Gallery")
+                  ])
                 ])
               ])
             ])
@@ -71343,7 +71347,9 @@ var staticRenderFns = [
                     _vm._v("Read More")
                   ]),
                   _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("View Gallery")])
+                  _c("a", { attrs: { href: "/galleries/2" } }, [
+                    _vm._v("View Gallery")
+                  ])
                 ])
               ])
             ])
