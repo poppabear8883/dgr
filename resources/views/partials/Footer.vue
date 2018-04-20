@@ -13,8 +13,10 @@
                           pagination-color="#353536"
                           :autoplay-hover-pause="true">
                     <slide>
-                        <img class="img-responsive"
-                             src="/img/certainteed-certified-dealer.png?w=150&h=150">
+                        <a href="https://www.certainteed.com/qualifications/" target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/certainteed-certified-dealer.png?w=150&h=150">
+                        </a>
                     </slide>
                     <slide>
                         <a href="https://www.homeadvisor.com/rated.DandGRoofing.39451675.html" target="_blank">
@@ -30,9 +32,11 @@
                         </a>
                     </slide>
                     <slide>
-                        <img class="img-responsive"
-                             src="/img/provia-logo.png?w=250&h=85"
-                             style="margin-top: 25px;">
+                        <a href="https://www.provia.com/" target="_blank">
+                            <img class="img-responsive"
+                                 src="/img/provia-logo.png?w=250&h=85"
+                                 style="margin-top: 25px;">
+                        </a>
                     </slide>
                     <slide>
                         <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">

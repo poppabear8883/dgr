@@ -70082,6 +70082,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -70128,12 +70132,23 @@ var render = function() {
             },
             [
               _c("slide", [
-                _c("img", {
-                  staticClass: "img-responsive",
-                  attrs: {
-                    src: "/img/certainteed-certified-dealer.png?w=150&h=150"
-                  }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.certainteed.com/qualifications/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "/img/certainteed-certified-dealer.png?w=150&h=150"
+                      }
+                    })
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("slide", [
@@ -70175,11 +70190,19 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("slide", [
-                _c("img", {
-                  staticClass: "img-responsive",
-                  staticStyle: { "margin-top": "25px" },
-                  attrs: { src: "/img/provia-logo.png?w=250&h=85" }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: { href: "https://www.provia.com/", target: "_blank" }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/provia-logo.png?w=250&h=85" }
+                    })
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("slide", [
