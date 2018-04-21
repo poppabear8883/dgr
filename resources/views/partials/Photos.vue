@@ -12,12 +12,6 @@
                         <div class="title">
                             <h2>{{photo.description}}</h2>
                         </div>
-
-                        <!--<div class="overlay">
-                            <a class="info" :href="`/galleries/${gallery.id}/photos`">
-                                View Photos
-                            </a>
-                        </div>-->
                     </div>
                 </div>
             </div> <!-- row -->
