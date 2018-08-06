@@ -71684,42 +71684,42 @@ var render = function() {
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "images/bbb-logo.png", alt: "" }
+          attrs: { src: "images/comp.png", alt: "" }
         })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "images/25-yrs-exp.png", alt: "" }
+          attrs: { src: "images/help.png", alt: "" }
         })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "http://placehold.it/500x300", alt: "" }
+          attrs: { src: "images/qual.png", alt: "" }
         })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "http://placehold.it/500x300", alt: "" }
+          attrs: { src: "images/rep.png", alt: "" }
         })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "http://placehold.it/500x300", alt: "" }
+          attrs: { src: "images/sale.png", alt: "" }
         })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
         _c("img", {
           staticClass: "img-responsive customer-img",
-          attrs: { src: "http://placehold.it/500x300", alt: "" }
+          attrs: { src: "images/warr.png", alt: "" }
         })
       ])
     ])
@@ -74665,12 +74665,6 @@ exports.push([module.i, "\n.photos .row[data-v-7b103995] {\n  margin-bottom: 2re
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
 //
 //
 //

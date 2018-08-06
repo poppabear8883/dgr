@@ -7,22 +7,22 @@
             </div>
 
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="images/bbb-logo.png" alt="">
+                <img class="img-responsive customer-img" src="images/comp.png" alt="">
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="images/25-yrs-exp.png" alt="">
+                <img class="img-responsive customer-img" src="images/help.png" alt="">
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <img class="img-responsive customer-img" src="images/qual.png" alt="">
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <img class="img-responsive customer-img" src="images/rep.png" alt="">
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <img class="img-responsive customer-img" src="images/sale.png" alt="">
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <img class="img-responsive customer-img" src="images/warr.png" alt="">
             </div>
         </div>
     </divider-section>
