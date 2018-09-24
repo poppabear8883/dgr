@@ -40,17 +40,16 @@ Route::get('/join-our-team', function() {
     return view('join');
 });
 
-//Route::get('/galleries/{id}/photos', 'GalleriesController@photos');
-
 Auth::routes();
 
 Route::middleware('auth')->group(function() {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
     Route::prefix('admin')->group(function() {
-        Route::resource('contacts', 'ContactsController');
-        Route::get('contacts/import/csv', 'ContactsController@importCsv');
         Route::resource('galleries', 'GalleriesController');
         Route::resource('photos', 'PhotosController');
+
+        Route::get('giveaway', 'GiveawayController@admin');
+        Route::put('giveaway/{id}', 'GiveawayController@update');
     });
 });

@@ -24,6 +24,7 @@
     "font-awesome": "^4.7.0",
     "vue-carousel": "^0.7.1",
     "vue2-dropzone": "^3.0.3",
-    "vuejs-countdown": "^0.2.1"
+    "vuejs-countdown": "^0.2.1",
+    "vuejs-datepicker": "^1.5.3"
   }
 }

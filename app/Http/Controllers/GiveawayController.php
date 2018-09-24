@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Giveaway;
+use App\PreviousGiveaway;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -10,16 +12,19 @@ class GiveawayController extends Controller
 {
     public function show()
     {
-        $date = 'June 15, 2018';
+        $giveaway = Giveaway::latest()->first();
         $ended = false;
 
-        if(Carbon::parse($date, 'America/New_York') <= Carbon::now('America/New_York')) {
+        if(Carbon::parse($giveaway->ends_at, 'America/New_York') <= Carbon::now('America/New_York')) {
             $ended = true;
         }
 
         return view('giveaways', [
-            'date' => $date,
-            'ended' => $ended
+            'ended' => $ended,
+            'ends_at' => Carbon::parse($giveaway->ends_at)->toFormattedDateString(),
+            'giveaway' => $giveaway,
+            'features' => explode('\n', $giveaway->features),
+            'previous' => PreviousGiveaway::latest()->first()
         ]);
     }
 
@@ -59,5 +64,11 @@ class GiveawayController extends Controller
         });
 
         return response()->json(['message' => 'Request completed'], 200);
+    }
+
+    public function admin()
+    {
+        $giveaway = Giveaway::latest()->first();
+        return view('admin.giveaways', compact('giveaway'));
     }
 }

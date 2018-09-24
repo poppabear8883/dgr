@@ -21,7 +21,7 @@
 @section('content')
     <media-section
             title="Refer A Friend"
-            img="images/Giveaway-Wallace.jpg"
+            img="{{$previous->image}}"
             img-alt="Previous Giveway Winner">
 
         <p>
@@ -36,17 +36,16 @@
             phone number. If we are unable to validate the referral, the entry will become invalid.
         </p>
         <p>
-            2. We will draw the winner <strong>Friday June 15th at 1 PM</strong> and will announce on our facebook
+            2. We will draw the winner <strong>{{$ends_at}} at 1 PM</strong> and will announce on our facebook
             page as well as the website. We will also contact the winner by telephone and email. If we have not had a
-            response from the winner by <strong>Monday, June 18th at 5 PM</strong>, the winner forfeits,
+            response from the winner with-in <strong>3 Days after at 5 PM</strong>, the winner forfeits,
             and we will draw again with the same 3 day time span.
         </p>
 
         <div slot="aimg">
-            <h4 class="color-red">Congratulations to our previous winner</h4>
+            <h4 class="color-red">{{$previous->title}}</h4>
             <p>
-                We are very proud to present the Wallace Family with their
-                <strong>Brand New 49" Ultra HD 4K Toshiba TV</strong>!
+                {{$previous->content}}
             </p>
         </div>
 
@@ -61,58 +60,52 @@
                             @if($ended)
                                 This Contest Has Ended!
                             @else
-                                Next Drawing is {{$date}}
+                                Next Drawing is {{$ends_at}}
                             @endif
                         </div>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <div class="timer">
                             @if(!$ended)
-                                <countdown end="{{$date}}"></countdown>
+                                <countdown end="{{$ends_at}}"></countdown>
                             @endif
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 text-center">
-                <img class="img-responsive" src="/images/dgr-giveaway-grill.png" style="display: inline-block">
+                <img class="img-responsive" src="{{$giveaway->image}}" style="display: inline-block">
             </div>
         </div>
     </div>
 
     <media-section
-            title="Weber Spirit Model # E-210"
-            img="images/meat.jpg"
+            title="{{$giveaway->title}}"
+            img="{{$giveaway->product_image}}"
             img-alt="Giveway Details">
 
         <p>
-            Open your door to the world of grilling with this awesome Weber Spirit E-210 gas grill. This two burner grill is
-            built to fit small spaces, and packed with features such as the powerful GS4 grilling system, iGrill capability,
-            and convenient side tables for placing serving trays.
+            {{$giveaway->description}}
         </p>
 
         <ul>
-            <li>Liquid propane gas grill with easy-to-clean porcelain-enameled shroud</li>
-            <li>450-sq in total cooking area: 360-sq in primary and 90-sq in warming rack</li>
-            <li>Porcelain-coated cast-iron cooking grates retain heat for even grilling and superior searing</li>
-            <li>Two stainless steel main burners are durable</li>
-            <li>Electronic ignition for fast and reliable startups</li>
-            <li>Folding side shelves with integrated tool hooks keep utensils and condiments close by</li>
-            <li>Front-mounted control knobs give you precise heat control</li>
-            <li>Fuel gauge monitors fuel level, taking the guesswork out of grilling</li>
-            <li>10-year limited grill warranty on lid, cookbox and burner</li>
+            @foreach($features as $feature)
+                @if($feature !== '')
+                    <li>{{$feature}}</li>
+                @endif
+            @endforeach
         </ul>
 
         <div slot="bimg">
             <div class="row" style="margin-top: 10px">
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 2.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_2}}" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 3.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_3}}" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="/images/Giveaway Grill 4.jpg" alt="">
+                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_4}}" alt="">
                 </div>
             </div>
         </div>

@@ -61,25 +61,12 @@
 
             @if(!Auth::guest())
             <div class="col-sm-3 col-md-2 sidebar">
-                {{--<ul class="nav nav-sidebar">
-                    <li>
-                        <a href="/dashboard">
-                            Dashboard
-                        </a>
-                    </li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Settings</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="/admin/contacts">Contacts</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Users</a></li>
-                    <li><a href="">Roles</a></li>
-                </ul>--}}
                 <ul class="nav nav-sidebar">
                     <li><a href="/admin/galleries">Galleries</a></li>
                     <li><a href="/admin/photos">Photos</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="/admin/giveaway">Giveaway</a></li>
                 </ul>
             </div>
             @endif
