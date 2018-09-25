@@ -22,7 +22,7 @@
     <div class="row edit-form">
       <div class="col-xs-12 col-md-6">
         <div class="styled-input">
-          <datepicker v-model="editData.ends_at"></datepicker>
+          <datepicker :use-utc="false" format="dd MMM yyyy" v-model="editData.ends_at"></datepicker>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
@@ -124,7 +124,7 @@
 
         axios.put(`/api/giveaway/${this.giveaway.id}`, this.editData)
           .then((response) => {
-            this.success = `Successfully Updated ${response.data.name}`;
+            this.success = `Successfully Updated Giveaway!`;
           }).catch((error) => {
           this.errors.push(error.response.data.message);
         });

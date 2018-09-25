@@ -64934,7 +64934,7 @@ module.exports = {
 /* 252 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[["vue-chartjs@3.1.0","/home/poppabear/projects/www/dgr"]],"_development":true,"_from":"vue-chartjs@3.1.0","_id":"vue-chartjs@3.1.0","_inBundle":false,"_integrity":"sha512-cp70zluNJdN57J907hSzjp4jayF6O0ayBJ/alZprHx+BvbVe+nL+QF3TOPSSao3UoenCopYJybmDi/RWYb7afw==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"vue-chartjs@3.1.0","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"3.1.0","saveSpec":null,"fetchSpec":"3.1.0"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.1.0.tgz","_spec":"3.1.0","_where":"/home/poppabear/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^5.1.1","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.1.0"}
+module.exports = {"_args":[["vue-chartjs@3.1.0","/home/tech/projects/www/dgr"]],"_development":true,"_from":"vue-chartjs@3.1.0","_id":"vue-chartjs@3.1.0","_inBundle":false,"_integrity":"sha512-cp70zluNJdN57J907hSzjp4jayF6O0ayBJ/alZprHx+BvbVe+nL+QF3TOPSSao3UoenCopYJybmDi/RWYb7afw==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"vue-chartjs@3.1.0","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"3.1.0","saveSpec":null,"fetchSpec":"3.1.0"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.1.0.tgz","_spec":"3.1.0","_where":"/home/tech/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^5.1.1","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.1.0"}
 
 /***/ }),
 /* 253 */
@@ -66751,13 +66751,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(367)
+  __webpack_require__(271)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(273)
 /* template */
-var __vue_template__ = __webpack_require__(369)
+var __vue_template__ = __webpack_require__(275)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -66797,8 +66797,46 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 271 */,
-/* 272 */,
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(272);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("428e7c9f", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.giveaway .row {\n  margin-bottom: 2rem;\n}\n.giveaway .add-form input:focus ~ label, .giveaway .add-form textarea:focus ~ label, .giveaway .add-form input:valid ~ label, .giveaway .add-form textarea:valid ~ label,\n.giveaway .edit-form input:focus ~ label,\n.giveaway .edit-form textarea:focus ~ label,\n.giveaway .edit-form input:valid ~ label,\n.giveaway .edit-form textarea:valid ~ label {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.giveaway .add-form .styled-input,\n.giveaway .edit-form .styled-input {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.giveaway .add-form .styled-input label,\n  .giveaway .edit-form .styled-input label {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.giveaway .add-form input,\n.giveaway .add-form textarea,\n.giveaway .edit-form input,\n.giveaway .edit-form textarea {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.giveaway .add-form input:focus,\n.giveaway .add-form textarea:focus,\n.giveaway .edit-form input:focus,\n.giveaway .edit-form textarea:focus {\n  outline: 0;\n}\n.giveaway .add-form input:focus ~ span,\n.giveaway .add-form textarea:focus ~ span,\n.giveaway .edit-form input:focus ~ span,\n.giveaway .edit-form textarea:focus ~ span {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.giveaway .add-form textarea,\n.giveaway .edit-form textarea {\n  width: 100%;\n  min-height: 5em;\n}\n.giveaway .add-form .form-btn,\n.giveaway .edit-form .form-btn {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.giveaway .add-form .form-btn:hover,\n  .giveaway .edit-form .form-btn:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.giveaway .add-form .form-btn,\n    .giveaway .edit-form .form-btn {\n      width: 100%;\n      text-align: center;\n}\n}\n.giveaway .add-form input[type=checkbox] + label,\n.giveaway .edit-form input[type=checkbox] + label {\n  color: #ccc;\n  font-style: italic;\n}\n.giveaway .add-form input[type=checkbox]:checked + label,\n.giveaway .edit-form input[type=checkbox]:checked + label {\n  color: #f00;\n  font-style: normal;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66933,7 +66971,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.errors = [];
 
       axios.put('/api/giveaway/' + this.giveaway.id, this.editData).then(function (response) {
-        _this.success = 'Successfully Updated ' + response.data.name;
+        _this.success = 'Successfully Updated Giveaway!';
       }).catch(function (error) {
         _this.errors.push(error.response.data.message);
       });
@@ -68464,7 +68502,250 @@ var Datepicker = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
 
 
 /***/ }),
-/* 275 */,
+/* 275 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "giveaway" }, [
+    _vm.success !== ""
+      ? _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "alert alert-success" }, [
+              _vm._v("\n        " + _vm._s(_vm.success) + "\n      ")
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.errors.length > 0
+      ? _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "alert alert-danger" }, [
+              _c(
+                "ul",
+                _vm._l(_vm.errors, function(error) {
+                  return _c("li", [_vm._v(_vm._s(error))])
+                })
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input" },
+          [
+            _c("datepicker", {
+              attrs: { "use-utc": false, format: "dd MMM yyyy" },
+              model: {
+                value: _vm.editData.ends_at,
+                callback: function($$v) {
+                  _vm.$set(_vm.editData, "ends_at", $$v)
+                },
+                expression: "editData.ends_at"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.title,
+                expression: "editData.title"
+              }
+            ],
+            attrs: { type: "text", required: "" },
+            domProps: { value: _vm.editData.title },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "title", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Title")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.description,
+                expression: "editData.description"
+              }
+            ],
+            attrs: { rows: "5", required: "" },
+            domProps: { value: _vm.editData.description },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "description", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Description")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.features,
+                expression: "editData.features"
+              }
+            ],
+            attrs: { rows: "10", required: "" },
+            domProps: { value: _vm.editData.features },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "features", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Features (One per line)")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "main")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Main Image")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_2")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 2")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_3")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 3")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_4")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 4")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-3" }, [
+        _c(
+          "div",
+          {
+            staticClass: "btn-lrg form-btn",
+            on: {
+              click: function($event) {
+                _vm.update()
+              }
+            }
+          },
+          [_vm._v("Save")]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f55dda44", module.exports)
+  }
+}
+
+/***/ }),
 /* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -74459,303 +74740,6 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(368);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("428e7c9f", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 368 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.giveaway .row {\n  margin-bottom: 2rem;\n}\n.giveaway .add-form input:focus ~ label, .giveaway .add-form textarea:focus ~ label, .giveaway .add-form input:valid ~ label, .giveaway .add-form textarea:valid ~ label,\n.giveaway .edit-form input:focus ~ label,\n.giveaway .edit-form textarea:focus ~ label,\n.giveaway .edit-form input:valid ~ label,\n.giveaway .edit-form textarea:valid ~ label {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.giveaway .add-form .styled-input,\n.giveaway .edit-form .styled-input {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.giveaway .add-form .styled-input label,\n  .giveaway .edit-form .styled-input label {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.giveaway .add-form input,\n.giveaway .add-form textarea,\n.giveaway .edit-form input,\n.giveaway .edit-form textarea {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.giveaway .add-form input:focus,\n.giveaway .add-form textarea:focus,\n.giveaway .edit-form input:focus,\n.giveaway .edit-form textarea:focus {\n  outline: 0;\n}\n.giveaway .add-form input:focus ~ span,\n.giveaway .add-form textarea:focus ~ span,\n.giveaway .edit-form input:focus ~ span,\n.giveaway .edit-form textarea:focus ~ span {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.giveaway .add-form textarea,\n.giveaway .edit-form textarea {\n  width: 100%;\n  min-height: 5em;\n}\n.giveaway .add-form .form-btn,\n.giveaway .edit-form .form-btn {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.giveaway .add-form .form-btn:hover,\n  .giveaway .edit-form .form-btn:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.giveaway .add-form .form-btn,\n    .giveaway .edit-form .form-btn {\n      width: 100%;\n      text-align: center;\n}\n}\n.giveaway .add-form input[type=checkbox] + label,\n.giveaway .edit-form input[type=checkbox] + label {\n  color: #ccc;\n  font-style: italic;\n}\n.giveaway .add-form input[type=checkbox]:checked + label,\n.giveaway .edit-form input[type=checkbox]:checked + label {\n  color: #f00;\n  font-style: normal;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 369 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "giveaway" }, [
-    _vm.success !== ""
-      ? _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "alert alert-success" }, [
-              _vm._v("\n        " + _vm._s(_vm.success) + "\n      ")
-            ])
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.errors.length > 0
-      ? _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "alert alert-danger" }, [
-              _c(
-                "ul",
-                _vm._l(_vm.errors, function(error) {
-                  return _c("li", [_vm._v(_vm._s(error))])
-                })
-              )
-            ])
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c(
-          "div",
-          { staticClass: "styled-input" },
-          [
-            _c("datepicker", {
-              model: {
-                value: _vm.editData.ends_at,
-                callback: function($$v) {
-                  _vm.$set(_vm.editData, "ends_at", $$v)
-                },
-                expression: "editData.ends_at"
-              }
-            })
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.editData.title,
-                expression: "editData.title"
-              }
-            ],
-            attrs: { type: "text", required: "" },
-            domProps: { value: _vm.editData.title },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.editData, "title", $event.target.value)
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Title")])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("textarea", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.editData.description,
-                expression: "editData.description"
-              }
-            ],
-            attrs: { rows: "5", required: "" },
-            domProps: { value: _vm.editData.description },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.editData, "description", $event.target.value)
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Description")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("textarea", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.editData.features,
-                expression: "editData.features"
-              }
-            ],
-            attrs: { rows: "10", required: "" },
-            domProps: { value: _vm.editData.features },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.editData, "features", $event.target.value)
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Features (One per line)")])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "main")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Main Image")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Product Image")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_2")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Product Image 2")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_3")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Product Image 3")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_4")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Product Image 4")])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-3" }, [
-        _c(
-          "div",
-          {
-            staticClass: "btn-lrg form-btn",
-            on: {
-              click: function($event) {
-                _vm.update()
-              }
-            }
-          },
-          [_vm._v("Save")]
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-f55dda44", module.exports)
-  }
-}
 
 /***/ })
 /******/ ]);
