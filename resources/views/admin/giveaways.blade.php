@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page', 'Giveaways')
+@section('page', 'Giveaway')
 
 @section('content')
     <admin-giveaway :giveaway="{{$giveaway}}"></admin-giveaway>

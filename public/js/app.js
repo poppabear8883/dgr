@@ -66935,6 +66935,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -66955,11 +66988,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         title: this.giveaway.title,
         description: this.giveaway.description,
         features: this.giveaway.features,
-        image: this.giveaway.image,
-        product_image: this.giveaway.product_image,
-        product_image_2: this.giveaway.product_image_2,
-        product_image_3: this.giveaway.product_image_3,
-        product_image_4: this.giveaway.product_image_4
+        image: null,
+        product_image: null,
+        product_image_2: null,
+        product_image_3: null,
+        product_image_4: null
       }
     };
   },
@@ -66972,13 +67005,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       axios.put('/api/giveaway/' + this.giveaway.id, this.editData).then(function (response) {
         _this.success = 'Successfully Updated Giveaway!';
+        window.scrollTo(0, 0);
       }).catch(function (error) {
         _this.errors.push(error.response.data.message);
       });
     },
     processFile: function processFile(e, where) {
       var files = e.target.files || e.dataTransfer.files;
-      console.log(files);
 
       if (!files.length) return;
 
@@ -68581,10 +68614,8 @@ var render = function() {
           _vm._v(" "),
           _c("label", [_vm._v("Title")])
         ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
+      ]),
+      _vm._v(" "),
       _c("div", { staticClass: "col-xs-12 col-md-12" }, [
         _c("div", { staticClass: "styled-input" }, [
           _c("textarea", {
@@ -68637,88 +68668,139 @@ var render = function() {
           _vm._v(" "),
           _c("label", [_vm._v("Features (One per line)")])
         ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "main")
-              }
-            }
-          }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                attrs: { type: "file" },
+                on: {
+                  change: function($event) {
+                    _vm.processFile($event, "image")
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Main Image")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Main Image")])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: { src: _vm.giveaway.image + "?h=100&fit=crop" }
+            })
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image")
-              }
-            }
-          }),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                attrs: { type: "file" },
+                on: {
+                  change: function($event) {
+                    _vm.processFile($event, "product_image")
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Product Image")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Product Image")])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: { src: _vm.giveaway.product_image + "?h=100&fit=crop" }
+            })
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_2")
-              }
-            }
-          }),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                attrs: { type: "file" },
+                on: {
+                  change: function($event) {
+                    _vm.processFile($event, "product_image_2")
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Product Image 2")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Product Image 2")])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: { src: _vm.giveaway.product_image_2 + "?h=100&fit=crop" }
+            })
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_3")
-              }
-            }
-          }),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                attrs: { type: "file" },
+                on: {
+                  change: function($event) {
+                    _vm.processFile($event, "product_image_3")
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Product Image 3")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Product Image 3")])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: { src: _vm.giveaway.product_image_3 + "?h=100&fit=crop" }
+            })
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", {
-            attrs: { type: "file" },
-            on: {
-              change: function($event) {
-                _vm.processFile($event, "product_image_4")
-              }
-            }
-          }),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                attrs: { type: "file" },
+                on: {
+                  change: function($event) {
+                    _vm.processFile($event, "product_image_4")
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Product Image 4")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("label", [_vm._v("Product Image 4")])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: { src: _vm.giveaway.product_image_4 + "?h=100&fit=crop" }
+            })
+          ])
         ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-3" }, [
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
         _c(
           "div",
           {

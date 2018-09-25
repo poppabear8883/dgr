@@ -48,15 +48,18 @@ class Image implements ImageInterface
      * @param $id
      * @param $source
      * @param string $ext
+     * @param bool $validate
      * @return \Intervention\Image\Image
      * @throws \Exception
      */
-    public function makeImage($id, $source, $ext = 'jpg')
+    public function makeImage($id, $source, $ext = 'jpg', $validate = true)
     {
         $filename = $this->formatName($id, $ext);
         $image = $this->manager->make($source);
 
-        $this->validateImage($image);
+        if ($validate) {
+           $this->validateImage($image);
+        }
 
         return $image->save($this->getPath($filename));
     }

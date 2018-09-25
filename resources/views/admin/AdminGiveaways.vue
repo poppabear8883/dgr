@@ -31,9 +31,7 @@
           <label>Title</label>
         </div>
       </div>
-    </div>
 
-    <div class="row edit-form">
       <div class="col-xs-12 col-md-12">
         <div class="styled-input">
           <textarea rows="5" v-model="editData.description" required></textarea>
@@ -46,43 +44,78 @@
           <label>Features (One per line)</label>
         </div>
       </div>
-    </div>
 
-    <div class="row edit-form">
-      <div class="col-xs-12 col-md-6">
-        <div class="styled-input">
-          <input type="file" @change="processFile($event, 'main')"/>
-          <label>Main Image</label>
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="styled-input">
+              <input type="file" @change="processFile($event, 'image')"/>
+              <label>Main Image</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" :src="`${giveaway.image}?h=100&fit=crop`" />
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="styled-input">
-          <input type="file" @change="processFile($event, 'product_image')"/>
-          <label>Product Image</label>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="styled-input">
-          <input type="file" @change="processFile($event, 'product_image_2')"/>
-          <label>Product Image 2</label>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="styled-input">
-          <input type="file" @change="processFile($event, 'product_image_3')"/>
-          <label>Product Image 3</label>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="styled-input">
-          <input type="file" @change="processFile($event, 'product_image_4')"/>
-          <label>Product Image 4</label>
-        </div>
-      </div>
-    </div>
 
-    <div class="row edit-form">
-      <div class="col-xs-12 col-md-3">
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="styled-input">
+              <input type="file" @change="processFile($event, 'product_image')"/>
+              <label>Product Image</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" :src="`${giveaway.product_image}?h=100&fit=crop`" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="styled-input">
+              <input type="file" @change="processFile($event, 'product_image_2')"/>
+              <label>Product Image 2</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" :src="`${giveaway.product_image_2}?h=100&fit=crop`" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="styled-input">
+              <input type="file" @change="processFile($event, 'product_image_3')"/>
+              <label>Product Image 3</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" :src="`${giveaway.product_image_3}?h=100&fit=crop`" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="styled-input">
+              <input type="file" @change="processFile($event, 'product_image_4')"/>
+              <label>Product Image 4</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" :src="`${giveaway.product_image_4}?h=100&fit=crop`" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
         <div @click="update()" class="btn-lrg form-btn">Save</div>
       </div>
     </div>
@@ -110,11 +143,11 @@
           title: this.giveaway.title,
           description: this.giveaway.description,
           features: this.giveaway.features,
-          image: this.giveaway.image,
-          product_image: this.giveaway.product_image,
-          product_image_2: this.giveaway.product_image_2,
-          product_image_3: this.giveaway.product_image_3,
-          product_image_4: this.giveaway.product_image_4
+          image: null,
+          product_image: null,
+          product_image_2: null,
+          product_image_3: null,
+          product_image_4: null
         },
       };
     },
@@ -125,13 +158,13 @@
         axios.put(`/api/giveaway/${this.giveaway.id}`, this.editData)
           .then((response) => {
             this.success = `Successfully Updated Giveaway!`;
+            window.scrollTo(0, 0);
           }).catch((error) => {
           this.errors.push(error.response.data.message);
         });
       },
       processFile(e, where) {
         let files = e.target.files || e.dataTransfer.files;
-        console.log(files);
 
         if (!files.length)
           return;

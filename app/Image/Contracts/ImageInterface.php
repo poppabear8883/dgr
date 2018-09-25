@@ -4,7 +4,7 @@ namespace App\Image\Contracts;
 
 interface ImageInterface
 {
-    public function makeImage($id, $source, $ext = 'jpg');
+    public function makeImage($id, $source, $ext = 'jpg', $validate = true);
     public function getPath($filename);
     public function getCachePath($filename);
     public function formatName($id, $ext);

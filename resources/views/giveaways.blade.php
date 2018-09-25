@@ -74,14 +74,18 @@
                 </div>
             </div>
             <div class="col-xs-12 text-center">
-                <img class="img-responsive" src="{{$giveaway->image}}" style="display: inline-block">
+                <img class="img-responsive"
+                     src="{{$giveaway->image}}"
+                     style="display: inline-block"
+                     alt=""
+                >
             </div>
         </div>
     </div>
 
     <media-section
             title="{{$giveaway->title}}"
-            img="{{$giveaway->product_image}}"
+            img="{{$giveaway->product_image}}?w=555&h=416&fit=crop"
             img-alt="Giveway Details">
 
         <p>
@@ -99,13 +103,22 @@
         <div slot="bimg">
             <div class="row" style="margin-top: 10px">
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_2}}" alt="">
+                    <img class="img-responsive img-rounded"
+                         src="{{$giveaway->product_image_2}}?w=300&h=170&fit=crop"
+                         alt=""
+                    >
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_3}}" alt="">
+                    <img class="img-responsive img-rounded"
+                         src="{{$giveaway->product_image_3}}?w=300&h=170&fit=crop"
+                         alt=""
+                    >
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive img-rounded" width="300px" height="170px" src="{{$giveaway->product_image_4}}" alt="">
+                    <img class="img-responsive img-rounded"
+                         src="{{$giveaway->product_image_4}}?w=300&h=170&fit=crop"
+                         alt=""
+                    >
                 </div>
             </div>
         </div>
