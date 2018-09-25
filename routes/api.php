@@ -39,3 +39,10 @@ Route::prefix('photos')->group(function () {
         Route::delete('/delete/{id}', 'PhotosApi@destroy');
     });
 });
+
+/* Giveaway API Routes */
+Route::prefix('giveaway')->group(function () {
+    Route::middleware('auth:api')->group(function () {
+        Route::put('/{id}', 'GiveawayApi@update');
+    });
+});

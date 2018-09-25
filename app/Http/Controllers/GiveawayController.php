@@ -23,7 +23,7 @@ class GiveawayController extends Controller
             'ended' => $ended,
             'ends_at' => Carbon::parse($giveaway->ends_at)->toFormattedDateString(),
             'giveaway' => $giveaway,
-            'features' => explode('\n', $giveaway->features),
+            'features' => explode("\n", $giveaway->features),
             'previous' => PreviousGiveaway::latest()->first()
         ]);
     }

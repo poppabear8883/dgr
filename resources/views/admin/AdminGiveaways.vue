@@ -20,8 +20,64 @@
     </div>
 
     <div class="row edit-form">
-      <div class="col-xs-12 col-md-3">
-        <datepicker v-model="editData.ends_at"></datepicker>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <datepicker v-model="editData.ends_at"></datepicker>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="text" v-model="editData.title" required/>
+          <label>Title</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row edit-form">
+      <div class="col-xs-12 col-md-12">
+        <div class="styled-input">
+          <textarea rows="5" v-model="editData.description" required></textarea>
+          <label>Description</label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-12">
+        <div class="styled-input">
+          <textarea rows="10" v-model="editData.features" required></textarea>
+          <label>Features (One per line)</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row edit-form">
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="file" @change="processFile($event, 'main')"/>
+          <label>Main Image</label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="file" @change="processFile($event, 'product_image')"/>
+          <label>Product Image</label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="file" @change="processFile($event, 'product_image_2')"/>
+          <label>Product Image 2</label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="file" @change="processFile($event, 'product_image_3')"/>
+          <label>Product Image 3</label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="styled-input">
+          <input type="file" @change="processFile($event, 'product_image_4')"/>
+          <label>Product Image 4</label>
+        </div>
       </div>
     </div>
 
@@ -50,7 +106,15 @@
         success: '',
         errors: [],
         editData: {
-          ends_at: this.giveaway.ends_at
+          ends_at: this.giveaway.ends_at,
+          title: this.giveaway.title,
+          description: this.giveaway.description,
+          features: this.giveaway.features,
+          image: this.giveaway.image,
+          product_image: this.giveaway.product_image,
+          product_image_2: this.giveaway.product_image_2,
+          product_image_3: this.giveaway.product_image_3,
+          product_image_4: this.giveaway.product_image_4
         },
       };
     },
@@ -65,22 +129,40 @@
           this.errors.push(error.response.data.message);
         });
       },
-      processFile(e) {
+      processFile(e, where) {
         let files = e.target.files || e.dataTransfer.files;
         console.log(files);
 
         if (!files.length)
           return;
 
-        this.createImage(files[0]);
+        this.createImage(files[0], where);
       },
-      createImage(file) {
+      createImage(file, where) {
         let reader = new FileReader();
 
         let vm = this;
 
         reader.onload = (e) => {
-          this.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
+          switch (where) {
+            case 'image':
+              vm.editData.image = e.target.result;
+              break;
+            case 'product_image':
+              vm.editData.product_image = e.target.result;
+              break;
+            case 'product_image_2':
+              vm.editData.product_image_2 = e.target.result;
+              break;
+            case 'product_image_3':
+              vm.editData.product_image_3 = e.target.result;
+              break;
+            case 'product_image_4':
+              vm.editData.product_image_4 = e.target.result;
+              break;
+            default:
+              console.error(`Invalid where '${where}' ...`);
+          }
         };
 
         reader.readAsDataURL(file);
@@ -89,12 +171,8 @@
 
   };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
   @import '~Sass/_variables.scss';
-
-  .vdp-datepicker > div > input {
-    background-color: $dark !important;
-  }
 
   .giveaway {
     .row {
@@ -154,7 +232,7 @@
 
       textarea {
         width: 100%;
-        min-height: 15em;
+        min-height: 5em;
       }
 
       .form-btn {
@@ -195,84 +273,6 @@
         }
       }
     }
-
-    .gallery-img {
-      width: 100%;
-      height: 100%;
-      float: left;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: default;
-      margin-bottom: 1rem;
-
-      &:hover {
-        .overlay {
-          opacity: 1;
-          filter: alpha(opacity=100);
-        }
-
-        h2, a.info {
-          opacity: 1;
-          filter: alpha(opacity=100);
-          transform: translatey(0);
-          transition-delay: .2s;
-        }
-
-        img {
-          transform: scale(1.2);
-        }
-      }
-
-      .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: all .4s ease-in-out
-      }
-
-      img {
-        display: block;
-        position: relative;
-        transition: all .4s linear;
-      }
-
-      h2 {
-        text-transform: uppercase;
-        color: #fff;
-        text-align: center;
-        position: relative;
-        font-size: 17px;
-        background: rgba(0, 0, 0, 0.6);
-        transform: translatey(-100px);
-        transition: all .2s ease-in-out;
-        padding: 10px;
-      }
-
-      a {
-        &.info {
-          text-decoration: none;
-          display: inline-block;
-          text-transform: uppercase;
-          color: #fff;
-          border: 1px solid #fff;
-          background-color: transparent;
-          opacity: 0;
-          filter: alpha(opacity=0);
-          transition: all .2s ease-in-out;
-          margin: 70px 0 0;
-          padding: 7px 14px;
-
-          &:hover {
-            box-shadow: 0 0 5px #fff;
-          }
-        }
-      }
-    }
   }
+
 </style>

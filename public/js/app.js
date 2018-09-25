@@ -6156,13 +6156,13 @@ module.exports = defaults;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(324)
+  __webpack_require__(325)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(326)
+var __vue_script__ = __webpack_require__(327)
 /* template */
-var __vue_template__ = __webpack_require__(327)
+var __vue_template__ = __webpack_require__(328)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -18744,8 +18744,8 @@ return zhTw;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(143);
-__webpack_require__(350);
-module.exports = __webpack_require__(351);
+__webpack_require__(351);
+module.exports = __webpack_require__(352);
 
 
 /***/ }),
@@ -18756,7 +18756,7 @@ module.exports = __webpack_require__(351);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuejs_countdown__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuejs_countdown__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuejs_countdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vuejs_countdown__);
 
 /**
@@ -18791,22 +18791,22 @@ Vue.component('admin-photos', __webpack_require__(265));
 Vue.component('admin-giveaway', __webpack_require__(270));
 
 // Global Layout Partials
-Vue.component('dg-top-bar', __webpack_require__(275));
-Vue.component('dg-nav', __webpack_require__(280));
-Vue.component('dg-header', __webpack_require__(285));
-Vue.component('dg-footer', __webpack_require__(290));
+Vue.component('dg-top-bar', __webpack_require__(276));
+Vue.component('dg-nav', __webpack_require__(281));
+Vue.component('dg-header', __webpack_require__(286));
+Vue.component('dg-footer', __webpack_require__(291));
 
 // Page Partials
-Vue.component('dg-our-team', __webpack_require__(295));
-Vue.component('dg-featured-services', __webpack_require__(300));
-Vue.component('dg-call-anytime', __webpack_require__(305));
-Vue.component('dg-why-choose-us', __webpack_require__(310));
-Vue.component('dg-tabbed-services', __webpack_require__(315));
-Vue.component('dg-contact-form', __webpack_require__(320));
-Vue.component('dg-refer-form', __webpack_require__(329));
-Vue.component('dg-join-form', __webpack_require__(334));
-Vue.component('dg-galleries', __webpack_require__(339));
-Vue.component('dg-photos', __webpack_require__(344));
+Vue.component('dg-our-team', __webpack_require__(296));
+Vue.component('dg-featured-services', __webpack_require__(301));
+Vue.component('dg-call-anytime', __webpack_require__(306));
+Vue.component('dg-why-choose-us', __webpack_require__(311));
+Vue.component('dg-tabbed-services', __webpack_require__(316));
+Vue.component('dg-contact-form', __webpack_require__(321));
+Vue.component('dg-refer-form', __webpack_require__(330));
+Vue.component('dg-join-form', __webpack_require__(335));
+Vue.component('dg-galleries', __webpack_require__(340));
+Vue.component('dg-photos', __webpack_require__(345));
 
 // 3rd party
 
@@ -64934,7 +64934,7 @@ module.exports = {
 /* 252 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[["vue-chartjs@3.1.0","/home/tech/projects/www/dgr"]],"_development":true,"_from":"vue-chartjs@3.1.0","_id":"vue-chartjs@3.1.0","_inBundle":false,"_integrity":"sha512-cp70zluNJdN57J907hSzjp4jayF6O0ayBJ/alZprHx+BvbVe+nL+QF3TOPSSao3UoenCopYJybmDi/RWYb7afw==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"vue-chartjs@3.1.0","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"3.1.0","saveSpec":null,"fetchSpec":"3.1.0"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.1.0.tgz","_spec":"3.1.0","_where":"/home/tech/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^5.1.1","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.1.0"}
+module.exports = {"_args":[["vue-chartjs@3.1.0","/home/poppabear/projects/www/dgr"]],"_development":true,"_from":"vue-chartjs@3.1.0","_id":"vue-chartjs@3.1.0","_inBundle":false,"_integrity":"sha512-cp70zluNJdN57J907hSzjp4jayF6O0ayBJ/alZprHx+BvbVe+nL+QF3TOPSSao3UoenCopYJybmDi/RWYb7afw==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"vue-chartjs@3.1.0","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"3.1.0","saveSpec":null,"fetchSpec":"3.1.0"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.1.0.tgz","_spec":"3.1.0","_where":"/home/poppabear/projects/www/dgr","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^5.1.1","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.1.0"}
 
 /***/ }),
 /* 253 */
@@ -66751,19 +66751,19 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(271)
+  __webpack_require__(367)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(273)
 /* template */
-var __vue_template__ = __webpack_require__(274)
+var __vue_template__ = __webpack_require__(369)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-f55dda44"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -66797,52 +66797,70 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 271 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(272);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("3d52ff08", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 272 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.vdp-datepicker > div > input[data-v-f55dda44] {\n  background-color: #353536 !important;\n}\n.giveaway .row[data-v-f55dda44] {\n  margin-bottom: 2rem;\n}\n.giveaway .add-form input:focus ~ label[data-v-f55dda44], .giveaway .add-form textarea:focus ~ label[data-v-f55dda44], .giveaway .add-form input:valid ~ label[data-v-f55dda44], .giveaway .add-form textarea:valid ~ label[data-v-f55dda44],\n.giveaway .edit-form input:focus ~ label[data-v-f55dda44],\n.giveaway .edit-form textarea:focus ~ label[data-v-f55dda44],\n.giveaway .edit-form input:valid ~ label[data-v-f55dda44],\n.giveaway .edit-form textarea:valid ~ label[data-v-f55dda44] {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.giveaway .add-form .styled-input[data-v-f55dda44],\n.giveaway .edit-form .styled-input[data-v-f55dda44] {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.giveaway .add-form .styled-input label[data-v-f55dda44],\n  .giveaway .edit-form .styled-input label[data-v-f55dda44] {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.giveaway .add-form input[data-v-f55dda44],\n.giveaway .add-form textarea[data-v-f55dda44],\n.giveaway .edit-form input[data-v-f55dda44],\n.giveaway .edit-form textarea[data-v-f55dda44] {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.giveaway .add-form input[data-v-f55dda44]:focus,\n.giveaway .add-form textarea[data-v-f55dda44]:focus,\n.giveaway .edit-form input[data-v-f55dda44]:focus,\n.giveaway .edit-form textarea[data-v-f55dda44]:focus {\n  outline: 0;\n}\n.giveaway .add-form input:focus ~ span[data-v-f55dda44],\n.giveaway .add-form textarea:focus ~ span[data-v-f55dda44],\n.giveaway .edit-form input:focus ~ span[data-v-f55dda44],\n.giveaway .edit-form textarea:focus ~ span[data-v-f55dda44] {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.giveaway .add-form textarea[data-v-f55dda44],\n.giveaway .edit-form textarea[data-v-f55dda44] {\n  width: 100%;\n  min-height: 15em;\n}\n.giveaway .add-form .form-btn[data-v-f55dda44],\n.giveaway .edit-form .form-btn[data-v-f55dda44] {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.giveaway .add-form .form-btn[data-v-f55dda44]:hover,\n  .giveaway .edit-form .form-btn[data-v-f55dda44]:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.giveaway .add-form .form-btn[data-v-f55dda44],\n    .giveaway .edit-form .form-btn[data-v-f55dda44] {\n      width: 100%;\n      text-align: center;\n}\n}\n.giveaway .add-form input[type=checkbox] + label[data-v-f55dda44],\n.giveaway .edit-form input[type=checkbox] + label[data-v-f55dda44] {\n  color: #ccc;\n  font-style: italic;\n}\n.giveaway .add-form input[type=checkbox]:checked + label[data-v-f55dda44],\n.giveaway .edit-form input[type=checkbox]:checked + label[data-v-f55dda44] {\n  color: #f00;\n  font-style: normal;\n}\n.giveaway .gallery-img[data-v-f55dda44] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.giveaway .gallery-img:hover .overlay[data-v-f55dda44] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.giveaway .gallery-img:hover h2[data-v-f55dda44], .giveaway .gallery-img:hover a.info[data-v-f55dda44] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.giveaway .gallery-img:hover img[data-v-f55dda44] {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.giveaway .gallery-img .overlay[data-v-f55dda44] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.giveaway .gallery-img img[data-v-f55dda44] {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.giveaway .gallery-img h2[data-v-f55dda44] {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.giveaway .gallery-img a.info[data-v-f55dda44] {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 70px 0 0;\n    padding: 7px 14px;\n}\n.giveaway .gallery-img a.info[data-v-f55dda44]:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 271 */,
+/* 272 */,
 /* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(274);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -66895,7 +66913,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       success: '',
       errors: [],
       editData: {
-        ends_at: this.giveaway.ends_at
+        ends_at: this.giveaway.ends_at,
+        title: this.giveaway.title,
+        description: this.giveaway.description,
+        features: this.giveaway.features,
+        image: this.giveaway.image,
+        product_image: this.giveaway.product_image,
+        product_image_2: this.giveaway.product_image_2,
+        product_image_3: this.giveaway.product_image_3,
+        product_image_4: this.giveaway.product_image_4
       }
     };
   },
@@ -66912,23 +66938,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this.errors.push(error.response.data.message);
       });
     },
-    processFile: function processFile(e) {
+    processFile: function processFile(e, where) {
       var files = e.target.files || e.dataTransfer.files;
       console.log(files);
 
       if (!files.length) return;
 
-      this.createImage(files[0]);
+      this.createImage(files[0], where);
     },
-    createImage: function createImage(file) {
-      var _this2 = this;
-
+    createImage: function createImage(file, where) {
       var reader = new FileReader();
 
       var vm = this;
 
       reader.onload = function (e) {
-        _this2.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
+        switch (where) {
+          case 'image':
+            vm.editData.image = e.target.result;
+            break;
+          case 'product_image':
+            vm.editData.product_image = e.target.result;
+            break;
+          case 'product_image_2':
+            vm.editData.product_image_2 = e.target.result;
+            break;
+          case 'product_image_3':
+            vm.editData.product_image_3 = e.target.result;
+            break;
+          case 'product_image_4':
+            vm.editData.product_image_4 = e.target.result;
+            break;
+          default:
+            console.error('Invalid where \'' + where + '\' ...');
+        }
       };
 
       reader.readAsDataURL(file);
@@ -66939,6097 +66981,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 274 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "giveaway" }, [
-    _vm.success !== ""
-      ? _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "alert alert-success" }, [
-              _vm._v("\n        " + _vm._s(_vm.success) + "\n      ")
-            ])
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.errors.length > 0
-      ? _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "alert alert-danger" }, [
-              _c(
-                "ul",
-                _vm._l(_vm.errors, function(error) {
-                  return _c("li", [_vm._v(_vm._s(error))])
-                })
-              )
-            ])
-          ])
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c(
-        "div",
-        { staticClass: "col-xs-12 col-md-3" },
-        [
-          _c("datepicker", {
-            model: {
-              value: _vm.editData.ends_at,
-              callback: function($$v) {
-                _vm.$set(_vm.editData, "ends_at", $$v)
-              },
-              expression: "editData.ends_at"
-            }
-          })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row edit-form" }, [
-      _c("div", { staticClass: "col-xs-12 col-md-3" }, [
-        _c(
-          "div",
-          {
-            staticClass: "btn-lrg form-btn",
-            on: {
-              click: function($event) {
-                _vm.update()
-              }
-            }
-          },
-          [_vm._v("Save")]
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-f55dda44", module.exports)
-  }
-}
-
-/***/ }),
-/* 275 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(276)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(278)
-/* template */
-var __vue_template__ = __webpack_require__(279)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-550cb112"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/TopBar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-550cb112", Component.options)
-  } else {
-    hotAPI.reload("data-v-550cb112", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 276 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(277);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("71654b07", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 277 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n.top-bar .nrlb-logo img[data-v-550cb112] {\n    width: 140px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 278 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-/* 279 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0, false, false)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top-bar hidden-xs" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
-            _c("a", { attrs: { href: "/" } }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: { src: "/images/site-logo.png" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "hidden-sm col-md-4 col-lg-4 text-center nrlb-logo"
-            },
-            [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://noroofleftbehind.com/program/oh/1353",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: { src: "/images/no-roof-left-behind2.png" }
-                  })
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "info" }, [
-              _c("p", [
-                _vm._v("\n                        Free Inspections - "),
-                _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
-              ]),
-              _vm._v(" "),
-              _c("h1", [
-                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
-                  _vm._v("937-439-0554")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-550cb112", module.exports)
-  }
-}
-
-/***/ }),
-/* 280 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(281)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(283)
-/* template */
-var __vue_template__ = __webpack_require__(284)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-49a0a682"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/Nav.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-49a0a682", Component.options)
-  } else {
-    hotAPI.reload("data-v-49a0a682", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 281 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(282);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("4467d40c", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 282 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* Navbar */\n.navbar[data-v-49a0a682] {\n  position: static;\n  border-radius: 0;\n  margin-bottom: 0;\n  -webkit-transition: top 500ms;\n  transition: top 500ms;\n  top: -64px;\n}\n.navbar.fixed-top[data-v-49a0a682] {\n    position: fixed;\n    left: 0;\n    top: 0;\n    width: 100% !important;\n    z-index: 99;\n    -webkit-transition: top 500ms;\n    transition: top 500ms;\n}\n.navbar.navbar-inverse[data-v-49a0a682] {\n    background-color: #353536 !important;\n    border-bottom: 1px #EE001B solid;\n}\n.navbar.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n      border-color: #FFFFFF;\n}\n.navbar.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n        background-color: #FFFFFF !important;\n}\n.navbar.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover, .navbar.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n        background-color: #333;\n}\n.navbar .navbar-brand[data-v-49a0a682] {\n    font-size: 38px;\n    color: #FFFFFF;\n}\n.navbar .navbar-nav[data-v-49a0a682] {\n    font-size: 18px;\n    padding-top: 5px;\n}\n.navbar .navbar-nav li[data-v-49a0a682] {\n      text-align: center;\n      border-right: 1px #585859 solid;\n}\n.navbar .navbar-nav li a[data-v-49a0a682] {\n        color: #FFFFFF !important;\n        padding-right: 25px;\n        padding-left: 25px;\n}\n.navbar .navbar-nav li a[data-v-49a0a682]:hover, .navbar .navbar-nav li a[data-v-49a0a682]:focus {\n          color: #EE001B !important;\n          cursor: pointer;\n}\n.navbar .navbar-nav li[data-v-49a0a682]:last-child {\n        border-right: none;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n        display: inline-block;\n        float: none;\n}\n}\n.navbar .navbar-header[data-v-49a0a682] {\n    color: #FFFFFF !important;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: left;\n}\n@media (min-width: 768px) {\n.navbar .navbar-collapse[data-v-49a0a682] {\n        text-align: center;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 283 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      fixedTop: false,
-      collapse: true
-    };
-  },
-
-  methods: {
-    handleScroll: function handleScroll() {
-      this.fixedTop = document.documentElement.scrollTop >= 198 || window.innerWidth < 768;
-    }
-  },
-
-  created: function created() {
-    if (window.innerWidth < 768) {
-      this.fixedTop = true;
-    }
-
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed: function destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-});
-
-/***/ }),
-/* 284 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      class: ["navbar", "navbar-inverse", _vm.fixedTop ? "fixed-top" : null],
-      attrs: { role: "navigation" }
-    },
-    [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "navbar-header" }, [
-          _c(
-            "button",
-            {
-              staticClass: "navbar-toggle collapsed",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#navbar-collapse",
-                "aria-expanded": "false"
-              },
-              on: {
-                click: function($event) {
-                  _vm.collapse = !_vm.collapse
-                }
-              }
-            },
-            [
-              _c("span", { staticClass: "sr-only" }, [
-                _vm._v("Toggle navigation")
-              ]),
-              _vm._v(" "),
-              _c("span", { staticClass: "icon-bar" }),
-              _vm._v(" "),
-              _c("span", { staticClass: "icon-bar" }),
-              _vm._v(" "),
-              _c("span", { staticClass: "icon-bar" })
-            ]
-          ),
-          _vm._v(" "),
-          _vm._m(0, false, false)
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            class: [_vm.collapse ? "collapse" : null, "navbar-collapse"],
-            attrs: { id: "navbar-collapse" }
-          },
-          [
-            _c(
-              "ul",
-              { staticClass: "nav navbar-nav" },
-              [
-                _vm._m(1, false, false),
-                _vm._v(" "),
-                _vm._m(2, false, false),
-                _vm._v(" "),
-                _vm._m(3, false, false),
-                _vm._v(" "),
-                _vm._m(4, false, false),
-                _vm._v(" "),
-                _vm._m(5, false, false),
-                _vm._v(" "),
-                _vm._m(6, false, false),
-                _vm._v(" "),
-                _vm._m(7, false, false),
-                _vm._v(" "),
-                _vm._t("default")
-              ],
-              2
-            )
-          ]
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "navbar-brand hidden-sm hidden-md hidden-lg",
-        attrs: { href: "/" }
-      },
-      [
-        _vm._v("\n                D&G "),
-        _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "color-light hidden-xs",
-            staticStyle: { "font-size": "14px" }
-          },
-          [_vm._v("and Restoration")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/services" } }, [_vm._v("Services")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/galleries" } }, [_vm._v("Galleries")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/giveaways" } }, [_vm._v("Giveaways")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/community" } }, [_vm._v("Community")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [_c("a", { attrs: { href: "/about" } }, [_vm._v("About")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-49a0a682", module.exports)
-  }
-}
-
-/***/ }),
-/* 285 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(286)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(288)
-/* template */
-var __vue_template__ = __webpack_require__(289)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-0e24ada1"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/Header.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0e24ada1", Component.options)
-  } else {
-    hotAPI.reload("data-v-0e24ada1", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 286 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(287);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("9589261e", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0e24ada1\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Header.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0e24ada1\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Header.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 287 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\nheader.main-header h1.sub-page[data-v-0e24ada1] {\n    font-size: 50px;\n    margin-top: 150px;\n    margin-bottom: -30px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header h1.sub-page[data-v-0e24ada1] {\n        font-size: 60px;\n        margin-bottom: -50px;\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-top: 25px;\n    padding-bottom: 50px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n.main-header-bottom a[data-v-0e24ada1] {\n    margin-bottom: 5px;\n}\n@media (min-width: 1200px) {\n.main-header-bottom[data-v-0e24ada1] {\n      margin: 0;\n}\n}\n@media (min-width: 992px) {\n.main-header-bottom a[data-v-0e24ada1] {\n      margin: 0;\n      margin-bottom: 25px;\n}\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 288 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        home: { type: Boolean, default: false },
-        bgImg: { type: String, default: 'images/headers/header.jpg' },
-        bgPos: { type: String, default: 'center' },
-        bgColor: { type: String, default: '#FFFFFF' },
-        color: { type: String, default: '#000000' }
-    },
-    computed: {
-        styles: function styles() {
-            var styles = void 0;
-
-            if (this.home) {
-                styles = 'min-height: 500px;' + styles;
-            }
-
-            if (this.bgImg) {
-                styles = '\n                background: linear-gradient( rgba(42, 42, 42, 0.1), rgba(42, 42, 42, 0.1) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ' + styles;
-            } else {
-                styles = 'background-color: ' + this.bgColor + ';color: ' + this.color + ';' + styles;
-            }
-
-            return styles;
-        }
-    }
-});
-
-/***/ }),
-/* 289 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("header", { staticClass: "main-header" }, [
-    _c("div", { staticClass: "main-header-inner", style: _vm.styles }, [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _vm._t("default", [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
-                _c(
-                  "h1",
-                  {
-                    staticClass: "animated bounceInLeft",
-                    style: _vm.home ? "padding-bottom: 0;" : null
-                  },
-                  [
-                    _vm._v(
-                      '\n                            "Dependability You Can Rely On!"\n                        '
-                    )
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-sm-12 col-md-12 text-center hidden-xs" },
-                [
-                  _c(
-                    "h1",
-                    {
-                      staticClass: "animated bounceIn delay-1s",
-                      style: _vm.home ? "padding: 0;" : null
-                    },
-                    [
-                      _vm._v(
-                        '\n                            "Honesty You Deserve!"\n                        '
-                      )
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(0, false, false)
-          ])
-        ],
-        2
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "main-header-bottom" }, [
-      _c(
-        "div",
-        { staticClass: "container-fluid" },
-        [_vm._t("bottom", [_vm._m(1, false, false)])],
-        2
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row hidden-sm hidden-md hidden-lg" }, [
-      _c("div", { staticClass: "col-md-12 text-center" }, [
-        _c("h1", [_vm._v("Free Inspections")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6 col-md-offset-3 text-center" }, [
-        _c("h1", [
-          _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
-            _vm._v("937-439-0554")
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-6 hidden-sm hidden-xs text-center" }, [
-        _c("h4", [
-          _vm._v("Need a painless inspection? We are here to help you!")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6 col-sm-12 col-xs-12" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-4" }, [
-            _c(
-              "a",
-              { staticClass: "text-center", attrs: { href: "/giveaways" } },
-              [_vm._v("Refer A Friend")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c(
-              "a",
-              { staticClass: "text-center", attrs: { href: "/join-our-team" } },
-              [_vm._v("Join Our Team")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c(
-              "a",
-              {
-                staticClass: "text-center animated tada delay-2-5s",
-                attrs: { href: "#" }
-              },
-              [_vm._v("Free Inspection")]
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0e24ada1", module.exports)
-  }
-}
-
-/***/ }),
-/* 290 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(291)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(293)
-/* template */
-var __vue_template__ = __webpack_require__(294)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-261b6ca2"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/Footer.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-261b6ca2", Component.options)
-  } else {
-    hotAPI.reload("data-v-261b6ca2", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 291 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(292);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("4ec1fd1a", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-261b6ca2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Footer.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-261b6ca2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Footer.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 292 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.footer .logos[data-v-261b6ca2] {\n  background-color: #f7f7f7;\n  padding-top: 50px;\n  padding-bottom: 50px;\n  border-bottom: 5px #353536 solid;\n}\n.footer .logos img[data-v-261b6ca2] {\n    display: inline-block !important;\n}\n.footer .logos h2.page-header[data-v-261b6ca2] {\n    margin-top: -25px;\n}\n.footer footer[data-v-261b6ca2] {\n  background-color: #323233;\n  border-top: 5px #EE001B solid;\n  color: #b3b3b3;\n  padding: 25px;\n}\n.footer footer .input-group-addon[data-v-261b6ca2] {\n    border: none;\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2] {\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2]:focus {\n      border-color: transparent;\n      outline: 0;\n      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n}\n.footer footer .btn-default[data-v-261b6ca2] {\n    color: #EE001B;\n    background-color: #353536;\n    border-color: #585859;\n}\n.footer footer .btn-default[data-v-261b6ca2]:hover {\n      color: #b1b1b2;\n      background-color: #323233;\n      border-color: #585859;\n}\n.footer footer .social ul[data-v-261b6ca2] {\n    overflow: auto;\n    padding: 0;\n}\n.footer footer .social ul li[data-v-261b6ca2] {\n      list-style-type: none;\n      float: left;\n}\n.footer footer .social ul li a i[data-v-261b6ca2] {\n        background: #EE001B;\n        color: #fff;\n        width: 40px;\n        height: 40px;\n        border-radius: 20px;\n        font-size: 25px;\n        text-align: center;\n        margin-right: 10px;\n        padding-top: 15%;\n        -webkit-transition: all 0.2s ease-in-out;\n        transition: all 0.2s ease-in-out;\n}\n.footer footer .social ul li a i[data-v-261b6ca2]:hover {\n          opacity: .7;\n          cursor: pointer;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 293 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_carousel__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    Carousel: __WEBPACK_IMPORTED_MODULE_0_vue_carousel__["Carousel"],
-    Slide: __WEBPACK_IMPORTED_MODULE_0_vue_carousel__["Slide"]
-  }
-
-});
-
-/***/ }),
-/* 294 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "footer" }, [
-    _c("div", { staticClass: "logos hidden-xs" }, [
-      _c(
-        "div",
-        { staticClass: "container text-center" },
-        [
-          _c("h2", { staticClass: "page-header color-red" }, [
-            _vm._v("AFFILIATES")
-          ]),
-          _vm._v(" "),
-          _c(
-            "carousel",
-            {
-              attrs: {
-                autoplay: true,
-                loop: true,
-                "autoplay-timeout": 5000,
-                "per-page": 3,
-                "scroll-per-page": true,
-                "navigation-enabled": true,
-                "pagination-active-color": "#EE001B",
-                "pagination-color": "#353536",
-                "autoplay-hover-pause": true
-              }
-            },
-            [
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://www.certainteed.com/qualifications/",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "/img/certainteed-certified-dealer.png?w=150&h=150"
-                      }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://www.homeadvisor.com/rated.DandGRoofing.39451675.html",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: { src: "/img/home_advisor.png?w=150&h=150" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: { src: "/img/bbb2.png?w=150&h=150" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: { href: "https://www.provia.com/", target: "_blank" }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/provia-logo.png?w=250&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://noroofleftbehind.com/program/oh/1353",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/no-roof-left-behind.png?w=180&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://www.google.com/maps/place/D+%26+G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889!9m1!1b1",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: {
-                        "margin-top": "25px",
-                        "margin-left": "-25px"
-                      },
-                      attrs: { src: "/img/google-reviews.png?w=180&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://www.facebook.com/DgRoofingRestoration",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/facebook-logo.png?w=250&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/angies-list-logo.png?w=250&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "https://www.jameshardie.com/why-hardie/superior-siding",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/jameshardie-logo.png?w=250&h=85" }
-                    })
-                  ]
-                )
-              ])
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _vm._m(0, false, false)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("footer", [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
-            _c("h3", { staticClass: "color-red" }, [_vm._v("Stay Updated")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "\n                        You want to get updates about promotions and/or contests?\n                        Fill in your email address and click Submit!\n                    "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("div", { staticClass: "input-group" }, [
-                _c("div", { staticClass: "input-group-addon" }, [
-                  _c("i", { staticClass: "fa fa-envelope" })
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "email" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group-btn" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-default",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Submit")]
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
-            _c("h3", { staticClass: "color-red" }, [_vm._v("Qualifications")]),
-            _vm._v(" "),
-            _c("ul", [
-              _c("li", [_vm._v("A+ Rating with BBB")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("30+ years of Experience")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Financing Available")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("No Job Too Big Or Too Small")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Workmanship and Labor Warranty")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Quality Workmanship")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Complete Cleanup")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Insurance Repair Specialists")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("We Work With All Insurance Companies")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Insured & Workman Comp")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Free Inspections")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
-            _c("h3", { staticClass: "color-red" }, [_vm._v("Insurances")]),
-            _vm._v(" "),
-            _c("ul", [
-              _c("li", [_vm._v("Progressive")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Cincinnati Insurance")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("State Farm")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("AAA")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Allstate")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Liberty Mutual Group")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Travelers Insurance")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("MetLife")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("USAA")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Amica Mutual Insurance")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Nationwide")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("And Many More ...")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
-            _c("h3", { staticClass: "color-red" }, [_vm._v("Contact")]),
-            _vm._v(" "),
-            _c("address", [
-              _c("strong", [_vm._v("D&G Roofing & Restoration LLC")]),
-              _c("br"),
-              _vm._v(
-                "\n                        2275 Miamisburg Centerville Rd"
-              ),
-              _c("br"),
-              _vm._v("\n                        Dayton, OH 45459"),
-              _c("br"),
-              _vm._v(" "),
-              _c("abbr", { attrs: { title: "Phone" } }, [_vm._v("P:")]),
-              _vm._v(" (937) 439-0554\n                    ")
-            ]),
-            _vm._v(" "),
-            _c("p", [_c("strong", [_vm._v("Copyright © 2011")])]),
-            _vm._v(" "),
-            _c("div", { staticClass: "social" }, [
-              _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "https://www.facebook.com/DgRoofingRestoration/",
-                        target: "_blank"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-facebook" })]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en",
-                        target: "_blank"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-google-plus" })]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm",
-                        target: "_blank"
-                      }
-                    },
-                    [
-                      _c("i", { staticClass: "fa fa-angieslist" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: { src: "/images/fa-angieslist.png" }
-                        })
-                      ])
-                    ]
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-261b6ca2", module.exports)
-  }
-}
-
-/***/ }),
-/* 295 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(296)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(298)
-/* template */
-var __vue_template__ = __webpack_require__(299)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-41f8c7e3"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/about/OurTeam.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-41f8c7e3", Component.options)
-  } else {
-    hotAPI.reload("data-v-41f8c7e3", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 296 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(297);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("3024c930", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-41f8c7e3\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./OurTeam.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-41f8c7e3\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./OurTeam.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 297 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.our-team img.tab[data-v-41f8c7e3] {\n  display: inline-block !important;\n  margin: 10px;\n  width: 200px;\n  -webkit-transition: .30s ease;\n  transition: .30s ease;\n}\n.our-team img.tab[data-v-41f8c7e3]:hover, .our-team img.tab.active[data-v-41f8c7e3] {\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n    cursor: pointer;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 298 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "ourteam",
-    data: function data() {
-        return {
-            active: 0
-        };
-    },
-
-    computed: {}
-});
-
-/***/ }),
-/* 299 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "our-team" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0, false, false),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              "img-circle",
-              _vm.active === 0 ? "active" : null
-            ],
-            attrs: { src: "/images/duane.jpg", alt: "" },
-            on: {
-              click: function($event) {
-                _vm.active = 0
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("h5", [
-            _vm._v("\n                    DUANE HOWARD"),
-            _c("br"),
-            _vm._v(" "),
-            _c("small", { class: _vm.active === 0 ? "color-red" : null }, [
-              _vm._v(
-                "\n                        President\n                    "
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              "img-circle",
-              _vm.active === 1 ? "active" : null
-            ],
-            attrs: { src: "/images/gerri.jpg", alt: "" },
-            on: {
-              click: function($event) {
-                _vm.active = 1
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("h5", [
-            _vm._v("\n                    GERRI HOWARD"),
-            _c("br"),
-            _vm._v(" "),
-            _c("small", { class: _vm.active === 1 ? "color-red" : null }, [
-              _vm._v(
-                "\n                        Vice President\n                    "
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              "img-circle",
-              _vm.active === 2 ? "active" : null
-            ],
-            attrs: { src: "/images/mike.jpg", alt: "" },
-            on: {
-              click: function($event) {
-                _vm.active = 2
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("h5", [
-            _vm._v("\n                    MIKE WALKER"),
-            _c("br"),
-            _vm._v(" "),
-            _c("small", { class: _vm.active === 2 ? "color-red" : null }, [
-              _vm._v(
-                "\n                        Residential Operations Manager\n                    "
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              "img-circle",
-              _vm.active === 3 ? "active" : null
-            ],
-            attrs: { src: "/images/amanda.jpg", alt: "" },
-            on: {
-              click: function($event) {
-                _vm.active = 3
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("h5", [
-            _vm._v("\n                    AMANDA WILLMAN"),
-            _c("br"),
-            _vm._v(" "),
-            _c("small", { class: _vm.active === 3 ? "color-red" : null }, [
-              _vm._v(
-                "\n                        Administrative Assistant\n                    "
-              )
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _vm.active === 0
-        ? _c(
-            "div",
-            { staticClass: "row" },
-            [
-              _c(
-                "media-section",
-                {
-                  attrs: {
-                    title: "About Duane Howard",
-                    subtitle: "President",
-                    img: "images/duane.jpg",
-                    "img-width": "250px",
-                    "img-alt": "duane howard"
-                  }
-                },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Duane Howard is the president of D & G Roofing & Restoration. Duane brings years of expertise in\n                    the construction business to the D & G team. Duane oversees all of D & G’s projects, ensuring\n                    every customer is receiving the best quality workmanship. One of Duane's best qualities is his\n                    attention to detail. Prior to becoming D & G’s president, Duane was the building department\n                    manager for a large construction company. Duane has also been a Customer Consultant and\n                    knows the importance of customer service. Ten years of experience as a property appraiser, has\n                    given Duane plenty of skill with customer service, organization, management, and the necessary\n                    field experience to ensure every D & G customer's needs are met.\n                "
-                    )
-                  ])
-                ]
-              )
-            ],
-            1
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.active === 1
-        ? _c(
-            "div",
-            { staticClass: "row" },
-            [
-              _c(
-                "media-section",
-                {
-                  attrs: {
-                    title: "About Gerri Howard",
-                    subtitle: "Vice President",
-                    img: "images/gerri.jpg",
-                    "img-width": "250px",
-                    "img-alt": "gerri howard"
-                  }
-                },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Gerri Howard is D & G Roofing & Restoration's Vice President. As VP, Gerri upholds D & G\n                    Roofing's image as an industry leader and expands awareness of D & G Roofing and our\n                    services. Gerri takes great pride in helping people to repair their homes when needed,\n                    and treats every project as if it were her own. Gerri has been in the customer service\n                    industry for over 35 years. Gerri began her construction career as a Customer Consultant\n                    with one of the top contractors in the country. Many have trained extensively with\n                    Gerri, and directly benefited from her hands on knowledge and years of experience. An\n                    expert in training, Gerri passes on her knowledge and high integrity to all new recruits\n                    that come aboard with our D & G team. Quality and customer service is Gerri’s #1 goal.\n                "
-                    )
-                  ])
-                ]
-              )
-            ],
-            1
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.active === 2
-        ? _c(
-            "div",
-            { staticClass: "row" },
-            [
-              _c(
-                "media-section",
-                {
-                  attrs: {
-                    title: "About Mike Walker",
-                    subtitle: "Residential Operations Manager",
-                    img: "images/mike.jpg",
-                    "img-width": "250px",
-                    "img-alt": "mike walker"
-                  }
-                },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Mike comes to us with 22 years in the Home Improvement Industry. Twenty years of which\n                    Mike has management experience in. Mike plays a key role in the training and development\n                    of all new recruits at D & G Roofing and Restoration and has proven to be a quality leader\n                    with the company. Mike’s top priority is customer satisfaction.\n                "
-                    )
-                  ])
-                ]
-              )
-            ],
-            1
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.active === 3
-        ? _c(
-            "div",
-            { staticClass: "row" },
-            [
-              _c(
-                "media-section",
-                {
-                  attrs: {
-                    title: "About Amanda Willman",
-                    subtitle: "Administrative Assistant",
-                    img: "images/amanda.jpg",
-                    "img-width": "250px",
-                    "img-alt": "amanda willman"
-                  }
-                },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Amanda has ten years in customer service experience with five years office experience.\n                    She is currently attending school for business management. She is a great asset to D & G\n                    Roofing and Restoration and customer service is Amanda’s top priority.\n                "
-                    )
-                  ])
-                ]
-              )
-            ],
-            1
-          )
-        : _vm._e()
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12" }, [
-      _c("h2", { staticClass: "page-header color-red" }, [_vm._v("Our Team")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-41f8c7e3", module.exports)
-  }
-}
-
-/***/ }),
-/* 300 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(301)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(303)
-/* template */
-var __vue_template__ = __webpack_require__(304)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-621b8fcd"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/welcome/FeaturedServices.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-621b8fcd", Component.options)
-  } else {
-    hotAPI.reload("data-v-621b8fcd", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 301 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(302);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("b9d59e28", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-621b8fcd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./FeaturedServices.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-621b8fcd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./FeaturedServices.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 302 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.featured-services[data-v-621b8fcd] {\n  background-color: transparent;\n  padding-top: 30px;\n}\n@media (min-width: 768px) {\n.featured-services[data-v-621b8fcd] {\n      padding-top: 0;\n      padding-bottom: 50px;\n}\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .roofing .roofing-panel img[data-v-621b8fcd] {\n        width: 75px;\n}\n@media (min-width: 992px) {\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n          height: 569px;\n}\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n@media (min-width: 992px) {\n.featured-services .panel[data-v-621b8fcd] {\n      min-height: 530px;\n}\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin: 50px;\n    -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n    background-color: #f7f7f7;\n    border: 1px #f2f2f2 solid;\n}\n.featured-services .panel-default img[data-v-621b8fcd] {\n      display: inline-block;\n      width: 55px;\n}\n@media (min-width: 992px) {\n.featured-services .panel-default[data-v-621b8fcd] {\n        margin: 0;\n        margin-top: 100px;\n}\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      padding: 5px;\n      margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n        font-size: 18px;\n        padding: 10px 20px;\n        display: block;\n        color: #FFFFFF;\n        font-weight: 500;\n        background-color: #EE001B;\n        margin: 3px;\n        -webkit-transition: .15s ease;\n        transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n          -webkit-transition: .15s ease;\n          transition: .15s ease;\n}\n.featured-services hr[data-v-621b8fcd] {\n    border-top: 1px #e6e6e6 solid;\n}\n.featured-services h3[data-v-621b8fcd] {\n    text-transform: uppercase;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 303 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "featured-services"
-});
-
-/***/ }),
-/* 304 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0, false, false)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "featured-services" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-12 text-center" }, [
-            _c("h1", [_vm._v("Featured Services")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-4 siding" }, [
-            _c("div", { staticClass: "panel panel-default siding-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/images/icon_siding_red.png",
-                      alt: "siding ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Siding")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the\n                            right siding can make all the difference in the look and feel of your Dayton or\n                            Cincinnati,\n                            OH, property. With a wide variety of styles and options for you to choose from, we're\n                            confident our knowledgeable team can make the dreams you have for your home's appearance\n                            a\n                            reality.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "/services#siding" } }, [
-                    _vm._v("Read More")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/galleries/3" } }, [
-                    _vm._v("View Gallery")
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 roofing" }, [
-            _c("div", { staticClass: "panel panel-default roofing-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/images/icon_roofing_circle.png",
-                      alt: "roofing ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Roofing")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "/services#roofing" } }, [
-                    _vm._v("Read More")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/galleries/1" } }, [
-                    _vm._v("View Gallery")
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 windows" }, [
-            _c("div", { staticClass: "panel panel-default windows-panel" }, [
-              _c("div", { staticClass: "panel-body" }, [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/images/icon_windows_red.png",
-                      alt: "windows ico"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("Windows")]),
-                  _vm._v(" "),
-                  _c("hr")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Every building is unique, and off-the-shelf windows aren’t always the best solution. For\n                            your one-of-a-kind property, your deserve top-quality, one-of-a-kind custom windows; and\n                            D &\n                            G Roofing & Restoration is a reliable, trusted source for custom windows in Dayton, OH.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "panel-actions" }, [
-                  _c("a", { attrs: { href: "/services#windows" } }, [
-                    _vm._v("Read More")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/galleries/2" } }, [
-                    _vm._v("View Gallery")
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-621b8fcd", module.exports)
-  }
-}
-
-/***/ }),
-/* 305 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(306)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(308)
-/* template */
-var __vue_template__ = __webpack_require__(309)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-1d672217"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/CallAnytime.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1d672217", Component.options)
-  } else {
-    hotAPI.reload("data-v-1d672217", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 306 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(307);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("bd99576a", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d672217\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./CallAnytime.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d672217\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./CallAnytime.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 307 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.divider-section h1[data-v-1d672217] {\n  margin-bottom: 20px;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n@media (max-width: 375px) {\n.divider-section h1[data-v-1d672217] {\n      font-size: 20px;\n}\n}\n.divider-section p[data-v-1d672217] {\n  font-size: 20px;\n  font-weight: 700;\n}\n.divider-section p span[data-v-1d672217] {\n    font-size: 25px;\n}\n@media (max-width: 320px) {\n.divider-section p span[data-v-1d672217] {\n        font-size: 16px;\n}\n}\n@media (max-width: 425px) {\n.divider-section p span[data-v-1d672217] {\n        font-size: 20px;\n}\n}\n@media (max-width: 320px) {\n.divider-section p[data-v-1d672217] {\n      font-size: 12px;\n}\n}\n@media (max-width: 425px) {\n.divider-section p[data-v-1d672217] {\n      font-size: 16px;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 308 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "call-anytime"
-});
-
-/***/ }),
-/* 309 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "divider-section",
-    { attrs: { "bg-img": "/images/call-anytime-bg.jpg", center: true } },
-    [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _c("h1", [_vm._v("We are here to answer all your questions")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-12" }, [
-          _c("p", [
-            _vm._v("\n                Call us anytime at\n                "),
-            _c("span", { staticClass: "color-light-red" }, [
-              _vm._v("\n                    937-439-0554\n                ")
-            ]),
-            _vm._v(
-              "\n                and get direct help from our advisors\n            "
-            )
-          ])
-        ])
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1d672217", module.exports)
-  }
-}
-
-/***/ }),
-/* 310 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(311)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(313)
-/* template */
-var __vue_template__ = __webpack_require__(314)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-b4c9fcce"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/WhyChooseUs.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b4c9fcce", Component.options)
-  } else {
-    hotAPI.reload("data-v-b4c9fcce", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 311 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(312);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("8c94b994", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b4c9fcce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./WhyChooseUs.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b4c9fcce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./WhyChooseUs.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 312 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.divider-section[data-v-b4c9fcce] {\n  padding-bottom: 50px;\n}\n.divider-section hr[data-v-b4c9fcce] {\n    border-top: 2px #EE001B solid;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 313 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "why-choose-us"
-});
-
-/***/ }),
-/* 314 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("divider-section", { attrs: { "bg-color": "#353636" } }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-12 text-center" }, [
-        _c("h2", { staticClass: "color-light" }, [_vm._v("Why Choose Us ?")]),
-        _vm._v(" "),
-        _c("hr")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/comp.png", alt: "" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/help.png", alt: "" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/qual.png", alt: "" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/rep.png", alt: "" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/sale.png", alt: "" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
-        _c("img", {
-          staticClass: "img-responsive customer-img",
-          attrs: { src: "images/warr.png", alt: "" }
-        })
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-b4c9fcce", module.exports)
-  }
-}
-
-/***/ }),
-/* 315 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(316)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(318)
-/* template */
-var __vue_template__ = __webpack_require__(319)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-f2d0c612"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/services/TabbedServices.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-f2d0c612", Component.options)
-  } else {
-    hotAPI.reload("data-v-f2d0c612", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 316 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(317);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("10b842be", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f2d0c612\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TabbedServices.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f2d0c612\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TabbedServices.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 317 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.services[data-v-f2d0c612] {\n  color: #353536;\n  padding: 15px;\n  margin-top: 25px;\n}\n.services img.tab[data-v-f2d0c612] {\n    display: inline-block;\n    width: 100px;\n    -webkit-filter: grayscale(100%);\n            filter: grayscale(100%);\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n}\n.services img.tab[data-v-f2d0c612]:hover, .services img.tab.active[data-v-f2d0c612] {\n      -webkit-transition: .30s ease;\n      transition: .30s ease;\n      -webkit-filter: grayscale(0%);\n              filter: grayscale(0%);\n      cursor: pointer;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 318 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'tabbed-services',
-  data: function data() {
-    return {
-      hash_ids: {
-        '#roofing': 0,
-        '#siding': 1,
-        '#windows': 2,
-        '#gutters': 3,
-        '#doors': 4,
-        '#commercial': 5
-      },
-
-      active: 0
-    };
-  },
-  created: function created() {
-    if (window.location.hash !== "") {
-      this.active = _.get(this.hash_ids, window.location.hash);
-    }
-  }
-});
-
-/***/ }),
-/* 319 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "services" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 0 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_roofing_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 0
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Residential Roofing\n            ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 1 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_siding_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 1
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Siding\n            ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 2 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_windows_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 2
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Windows\n            ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 3 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_gutters_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 3
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Gutters\n            ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 4 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_doors_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 4
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Doors\n            ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 text-center" }, [
-          _c("img", {
-            class: [
-              "tab",
-              "img-responsive",
-              _vm.active === 5 ? "active" : null
-            ],
-            attrs: { src: "/images/icon_commercial_circle.png" },
-            on: {
-              click: function($event) {
-                _vm.active = 5
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v("\n                Commercial\n            ")
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _vm.active === 0
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "roofing" } },
-          [
-            _c(
-              "media-section",
-              {
-                staticClass: "pull-right",
-                attrs: {
-                  title: "Roofing",
-                  img: "/images/certainteed-home.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("img", {
-                  staticClass: "img-responsive img-shadow",
-                  attrs: {
-                    src: "images/dayton-cincinnati-ohio-259600.jpg",
-                    alt: "45449 roofing"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticStyle: { "margin-bottom": "10px" },
-                    attrs: { slot: "aimg" },
-                    slot: "aimg"
-                  },
-                  [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/certainteed.png",
-                            alt: "CertainTeed"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/mueller-roofing.png",
-                            alt: "Mueller Roofing Dayton Ohio"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/certainteed-certified-dealer.png",
-                            alt: "CertainTeed Certified Installer"
-                          }
-                        })
-                      ])
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
-                  _c("h4", { staticClass: "page-header color-red" }, [
-                    _vm._v("CertainTeed Certified Installer")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                    installers have been with us since we opened our doors.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                    available and the best warranty. The Landmark Series shingle endure time and weather\n                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                    thickness and dimension it offers.\n                "
-                    )
-                  ])
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.active === 1
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "siding" } },
-          [
-            _c("media-section", { attrs: { title: "Siding" } }, [
-              _c("p", [
-                _vm._v(
-                  "\n                At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look\n                and feel of your property. With a wide variety of styles and options for you to choose from, we're\n                confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n                Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n                here when you’re ready to take the next step.\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/img/Hershberger-Before.jpg?w=700&h=400&fit=crop",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/img/Hershberger-After.jpg?w=700&h=400&fit=crop",
-                      alt: ""
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src:
-                        "/img/Hershberger-Before-Back.jpg?w=700&h=400&fit=crop",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src:
-                        "/img/Hershberger-After-Back.jpg?w=700&h=400&fit=crop",
-                      alt: ""
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("h4", { staticClass: "page-header color-red" }, [
-                _vm._v("Vinyl")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n                textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n                be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h4", { staticClass: "page-header color-red" }, [
-                _vm._v("James Hardie")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n                and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n                and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n                Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n                an appointment.\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/images/mastic-logo.png",
-                      alt: "Mastic Home Exteriors"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-6" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: "/images/James-Hardie-logo-small.png",
-                      alt: "James hardie Siding"
-                    }
-                  })
-                ])
-              ])
-            ])
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.active === 2
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "windows" } },
-          [
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Replacement Windows",
-                  img: "/images/atrium-window.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio window installers"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                Are you in the market for new windows? You have come to the right place.\n                Our replacement windows are a great investment, so why not take the plunge and\n                choose a window that is easy to clean and operate.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G roofing and Restoration, we understand how important it is to select the\n                right windows for your home or business.  No matter your budget, we’ll be glad to work\n                with you to provide the quality products you’re looking for and the excellent service\n                you deserve.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Our windows come in a wide variety of sizes and styles, and we would be happy to walk\n                you through your options and help you select the windows that will best serve your property’s\n                needs.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("Save money and help our planet")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-8" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                        We are always looking for ways to help our environment.\n                        Our energy efficient windows can do more than just save you money;\n                        they can also help you conserve resources, which mean our planet benefits as well.\n                    "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _c("strong", [
-                        _vm._v("Start saving money and the environment today!")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "/images/recycle-planet.png",
-                        alt: "D & G Roofing cares about our planet"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticStyle: { "margin-top": "10px" },
-                    attrs: { slot: "bimg" },
-                    slot: "bimg"
-                  },
-                  [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-6" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "/images/atrium-logo.png",
-                            alt: "Atrium Windows"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-6" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "/images/marvin-doors-windows.png",
-                            alt: "Marvin Windows"
-                          }
-                        })
-                      ])
-                    ])
-                  ]
-                )
-              ]
-            )
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.active === 3
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "gutters" } },
-          [
-            _c("media-section", { attrs: { title: "Gutters" } }, [
-              _c("p", [
-                _vm._v(
-                  "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a\n                company with the right experience and selection of products. That's where D & G Roofing & Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h4", { staticClass: "page-header color-red" }, [
-                _vm._v("BENEFIT FROM OUR EXPERTISE")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule your\n                estimate and learn more about the products we offer.\n            "
-                )
-              ])
-            ])
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.active === 4
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "doors" } },
-          [
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Door Replacement",
-                  img: "/images/door.png",
-                  "img-width": "350px",
-                  "img-alt": "dayton cincinnati ohio doors"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing\n                and Restoration, we offer the quality replacement doors and the outstanding service you’re\n                looking for. We are committed to offering the great service our customers deserve, while\n                providing well crafted, meticulously installed doors in a variety of styles, and welcome the\n                opportunity to walk you through the products we have to offer.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n                OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n                Call us today to learn more and schedule a free consultation.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "/images/provia-doors.jpg",
-                        alt: "ProVia Doors"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src: "/images/marvin-doors-windows.png",
-                        alt: "Marvin Doors & Windows"
-                      }
-                    })
-                  ])
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.active === 5
-      ? _c(
-          "div",
-          { staticClass: "row", attrs: { id: "commercial" } },
-          [
-            _c(
-              "media-section",
-              {
-                attrs: {
-                  title: "Commercial",
-                  img: "/images/commercial-roofing.jpg",
-                  "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio commercial contractors"
-                }
-              },
-              [
-                _c("p", [
-                  _vm._v(
-                    "\n                At D&G Roofing and Restoration, we offer a wide variety of applications for your business or\n                multi-family units. Whether you are in need of a repair or a full replacement, we have you\n                covered.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("Roofing")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("Asphalt Shingles:")]),
-                  _vm._v(
-                    " D&G Roofing and Restoration are CertainTeed Master Elite Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("EPDM Rubber Roofing:")]),
-                  _vm._v(
-                    " This application is used for flat surfaces. It’s proven hail resistant and\n                has superior resistance to extreme heat and fire.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("strong", [_vm._v("TPO Membrane Roofing:")]),
-                  _vm._v(
-                    " This application is used for flat surfaces. TPO has become the fastest\n                growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n                Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n                can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("Siding")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                We offer a wide variety of products for your commercial property, whether you need a\n                repair or a full replacement, we are here to help. Check out our siding section for more\n                details on our siding selections.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header color-red" }, [
-                  _vm._v("Gutters")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural\n                damage, damp walls and mold. When it comes to gutter installation, it's important to use a\n                company with the right experience and quality products. That's where D&G Roofing and\n                Restoration comes in.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
-                  _c("h4", { staticClass: "page-header color-red" }, [
-                    _vm._v("Windows & Doors")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.\n                    Check out our window and door section on this site for more information.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("h4", { staticClass: "page-header color-red" }, [
-                    _vm._v("BENEFIT FROM OUR EXPERTISE")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally\n                    trained installers are dedicated to your complete satisfaction, and we go out of our way to keep\n                    our pricing reasonable and affordable. Call today and join our family of satisfied customers.\n                "
-                    )
-                  ])
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      : _vm._e()
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-f2d0c612", module.exports)
-  }
-}
-
-/***/ }),
-/* 320 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(321)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(323)
-/* template */
-var __vue_template__ = __webpack_require__(328)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-60e7b831"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/contact/ContactForm.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-60e7b831", Component.options)
-  } else {
-    hotAPI.reload("data-v-60e7b831", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 321 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(322);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("122f1088", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-60e7b831\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ContactForm.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-60e7b831\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ContactForm.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 322 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 323 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "contact-form",
-  components: {
-    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
-  }
-});
-
-/***/ }),
-/* 324 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(325);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("0374604f", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-24fded35\",\"scoped\":true,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Form.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-24fded35\",\"scoped\":true,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Form.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 325 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.dg-form[data-v-24fded35] {\n  background-color: #FFFFFF;\n  margin-top: -25px;\n  padding-top: 25px;\n}\n.dg-form h1[data-v-24fded35] {\n    font-family: 'Poppins', sans-serif, 'arial';\n    font-weight: 600;\n    font-size: 72px;\n    color: #EE001B;\n    text-align: center;\n}\n.dg-form h4[data-v-24fded35] {\n    font-family: 'Roboto', sans-serif, 'arial';\n    font-weight: 400;\n    font-size: 20px;\n    color: #353536;\n    line-height: 1.5;\n}\n.dg-form input:focus ~ label[data-v-24fded35], .dg-form textarea:focus ~ label[data-v-24fded35], .dg-form input:valid ~ label[data-v-24fded35], .dg-form textarea:valid ~ label[data-v-24fded35] {\n    font-size: .8em;\n    color: #9b9b9b;\n    top: -10px;\n    left: -5px;\n    -webkit-transition: all 0.225s ease;\n    transition: all 0.225s ease;\n}\n.dg-form .styled-input[data-v-24fded35] {\n    float: left;\n    width: 100%;\n    margin: 1rem 0;\n    position: relative;\n    border-radius: 4px;\n}\n.dg-form .styled-input label[data-v-24fded35] {\n      color: #FFFFFF;\n      padding: 1.3rem 30px 1rem 30px;\n      position: absolute;\n      top: 10px;\n      left: 0;\n      -webkit-transition: all 0.25s ease;\n      transition: all 0.25s ease;\n      pointer-events: none;\n}\n.dg-form input[data-v-24fded35],\n  .dg-form textarea[data-v-24fded35] {\n    border: 0;\n    width: 100%;\n    font-size: 1.5rem;\n    background-color: #353536;\n    color: #FFFFFF;\n    border-radius: 4px;\n    padding: 25px 25px 20px;\n}\n.dg-form input[data-v-24fded35]:focus,\n  .dg-form textarea[data-v-24fded35]:focus {\n    outline: 0;\n}\n.dg-form input:focus ~ span[data-v-24fded35],\n  .dg-form textarea:focus ~ span[data-v-24fded35] {\n    width: 100%;\n    -webkit-transition: all 0.075s ease;\n    transition: all 0.075s ease;\n}\n.dg-form textarea[data-v-24fded35] {\n    width: 100%;\n    min-height: 15em;\n}\n.dg-form .input-container[data-v-24fded35] {\n    max-width: 100%;\n    margin: 20px auto 25px auto;\n}\n.dg-form .form-btn[data-v-24fded35] {\n    float: right;\n    padding: 7px 35px;\n    border-radius: 60px;\n    display: inline-block;\n    background-color: #EE001B;\n    color: white;\n    font-size: 18px;\n    cursor: pointer;\n    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n    -webkit-transition: all 300ms ease;\n    transition: all 300ms ease;\n}\n.dg-form .form-btn[data-v-24fded35]:hover {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px);\n      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.dg-form .form-btn[data-v-24fded35] {\n        width: 100%;\n        float: none;\n        text-align: center;\n}\n}\n.dg-form input[type=checkbox] + label[data-v-24fded35] {\n    color: #ccc;\n    font-style: italic;\n}\n.dg-form input[type=checkbox]:checked + label[data-v-24fded35] {\n    color: #f00;\n    font-style: normal;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 326 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "contact-form",
-  props: {
-    title: { type: String },
-    subTitle: { type: String },
-    container: { type: String, default: 'container' }
-  }
-});
-
-/***/ }),
-/* 327 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "dg-form" }, [
-    _c("div", { class: _vm.container }, [
-      _c("div", { staticClass: "row" }, [
-        _c("h1", [_vm._v(_vm._s(_vm.title))])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("h4", { staticClass: "text-center" }, [
-          _vm._v(_vm._s(_vm.subTitle))
-        ]),
-        _vm._v(" "),
-        _c("hr")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row input-container" }, [_vm._t("default")], 2)
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-24fded35", module.exports)
-  }
-}
-
-/***/ }),
-/* 328 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "dg-form",
-    {
-      attrs: {
-        title: "Contact Us",
-        "sub-title": "We can't wait to hear from you!"
-      }
-    },
-    [
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Name")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Email")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-        _c(
-          "div",
-          { staticClass: "styled-input", staticStyle: { float: "right" } },
-          [
-            _c("input", { attrs: { type: "text", placeholder: "optional" } }),
-            _vm._v(" "),
-            _c("label", [_vm._v("Phone Number")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "styled-input" }, [
-          _c("textarea", { attrs: { required: "" } }),
-          _vm._v(" "),
-          _c("label", [_vm._v("Message")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Send Message")])
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-60e7b831", module.exports)
-  }
-}
-
-/***/ }),
-/* 329 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(330)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(332)
-/* template */
-var __vue_template__ = __webpack_require__(333)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-4841cc85"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/giveaways/ReferForm.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4841cc85", Component.options)
-  } else {
-    hotAPI.reload("data-v-4841cc85", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 330 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(331);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("110006cc", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4841cc85\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4841cc85\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 331 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.dg-form h4.page-header[data-v-4841cc85] {\n  margin: 0;\n}\n.dg-form .form-btn.back-btn[data-v-4841cc85] {\n  margin-bottom: 5px;\n}\n@media (min-width: 768px) {\n.dg-form .form-btn.back-btn[data-v-4841cc85] {\n      float: left !important;\n      margin-bottom: 0;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 332 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'refer-form',
-
-  components: {
-    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
-  },
-
-  data: function data() {
-
-    return {
-      page: 1,
-
-      error: false,
-      completed: false,
-
-      frmdata: {
-        name: '',
-        email: '',
-        phone: '',
-        address: '',
-        additional: '',
-
-        fname: '',
-        femail: '',
-        fphone: '',
-        faddress: '',
-        fadditional: ''
-      }
-    };
-  },
-
-
-  methods: {
-    validateInput: function validateInput() {
-      switch (this.page) {
-        case 1:
-          if (this.frmdata.name === '' || this.frmdata.email === '' || this.frmdata.phone === '' || this.frmdata.address === '') {
-
-            this.error = true;
-            return false;
-          }
-          break;
-        case 2:
-          if (this.frmdata.fname === '' || this.frmdata.fphone === '') {
-
-            this.error = true;
-            return false;
-          } else {
-            this.submit();
-          }
-          break;
-        default:
-          this.page++;
-          this.error = false;
-          return true;
-      }
-
-      this.page++;
-      this.error = false;
-      return true;
-    },
-    submit: function submit() {
-      axios.post('/api/giveaway/referral', this.frmdata).then(function (response) {
-        console.log(response);
-        this.completed = true;
-      }.bind(this)).catch(function (error) {
-        console.log(error);
-      });
-    }
-  }
-});
-
-/***/ }),
-/* 333 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "dg-form",
-    {
-      attrs: {
-        title: "Refer Your Friend",
-        "sub-title":
-          "Don't stop with just one, with every referral you increase your chances to win!"
-      }
-    },
-    [
-      _vm.error
-        ? _c(
-            "div",
-            { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-            [_vm._v("\n        Check your input and try again.\n    ")]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.completed
-        ? _c("div", [
-            _c("h2", { staticClass: "page-header color-red" }, [
-              _vm._v("Thank you for your referral!")
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("A single entry will be added in your favor!")])
-          ])
-        : _c("div", [
-            _c("div", { staticClass: "col-xs-12" }, [
-              _c("div", { staticClass: "row" }, [
-                _vm.page === 1
-                  ? _c("div", { staticClass: "col-xs-12 text-center" }, [
-                      _c("h4", { staticClass: "page-header" }, [
-                        _vm._v("Your Information")
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.page === 2
-                  ? _c("div", { staticClass: "col-xs-12 text-center" }, [
-                      _c("h4", { staticClass: "page-header" }, [
-                        _vm._v("Friends Information")
-                      ])
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _vm.page === 1
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.name,
-                          expression: "frmdata.name"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.name },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "name", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Your Name")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 2
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.fname,
-                          expression: "frmdata.fname"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.fname },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "fname", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Friends Name")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 1
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.phone,
-                          expression: "frmdata.phone"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.phone },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "phone", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Your Phone")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 2
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.fphone,
-                          expression: "frmdata.fphone"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.fphone },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "fphone", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Friends Phone")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 1
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.email,
-                          expression: "frmdata.email"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.email },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "email", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Your Email")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 2
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.femail,
-                          expression: "frmdata.femail"
-                        }
-                      ],
-                      attrs: { type: "text", placeholder: "optional" },
-                      domProps: { value: _vm.frmdata.femail },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "femail", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Friends Email")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 1
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.address,
-                          expression: "frmdata.address"
-                        }
-                      ],
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.frmdata.address },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "address", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Your Address")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 2
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.faddress,
-                          expression: "frmdata.faddress"
-                        }
-                      ],
-                      attrs: { type: "text", placeholder: "optional" },
-                      domProps: { value: _vm.frmdata.faddress },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.frmdata, "faddress", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("Friends Address")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 1
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("textarea", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.additional,
-                          expression: "frmdata.additional"
-                        }
-                      ],
-                      attrs: { placeholder: "optional" },
-                      domProps: { value: _vm.frmdata.additional },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(
-                            _vm.frmdata,
-                            "additional",
-                            $event.target.value
-                          )
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [_vm._v("How do you know about us ?")])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.page === 2
-              ? _c("div", { staticClass: "col-xs-12" }, [
-                  _c("div", { staticClass: "styled-input" }, [
-                    _c("textarea", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.frmdata.fadditional,
-                          expression: "frmdata.fadditional"
-                        }
-                      ],
-                      attrs: { placeholder: "optional" },
-                      domProps: { value: _vm.frmdata.fadditional },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(
-                            _vm.frmdata,
-                            "fadditional",
-                            $event.target.value
-                          )
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [
-                      _vm._v("What does your friend need from us ?")
-                    ])
-                  ])
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xs-12" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-                  _vm.page > 1
-                    ? _c(
-                        "div",
-                        {
-                          staticClass: "btn-lrg form-btn back-btn",
-                          on: {
-                            click: function($event) {
-                              _vm.page--
-                            }
-                          }
-                        },
-                        [_vm._v("Back")]
-                      )
-                    : _vm._e()
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-xs-12 col-md-6" }, [
-                  _vm.page < 2
-                    ? _c(
-                        "div",
-                        {
-                          staticClass: "btn-lrg form-btn",
-                          on: {
-                            click: function($event) {
-                              _vm.validateInput()
-                            }
-                          }
-                        },
-                        [_vm._v("Next")]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.page === 2
-                    ? _c(
-                        "div",
-                        {
-                          staticClass: "btn-lrg form-btn",
-                          on: {
-                            click: function($event) {
-                              _vm.validateInput()
-                            }
-                          }
-                        },
-                        [_vm._v("Submit")]
-                      )
-                    : _vm._e()
-                ])
-              ])
-            ])
-          ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4841cc85", module.exports)
-  }
-}
-
-/***/ }),
-/* 334 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(335)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(337)
-/* template */
-var __vue_template__ = __webpack_require__(338)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-2254172f"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/join/JoinForm.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2254172f", Component.options)
-  } else {
-    hotAPI.reload("data-v-2254172f", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 335 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(336);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("35c6bee6", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2254172f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./JoinForm.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2254172f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./JoinForm.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 336 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 337 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "join-form",
-  components: {
-    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
-  }
-});
-
-/***/ }),
-/* 338 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "dg-form",
-    {
-      attrs: {
-        title: "Apply Today!",
-        "sub-title": "We can't wait to meet you!",
-        container: "container-fluid"
-      }
-    },
-    [
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("First Name")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Last Name")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Street Address")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Additional Address")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("City")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("State")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Zip")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("textarea", { attrs: { required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Why did YOU choose US ?")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("textarea", { attrs: { required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Why should WE choose YOU ?")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "file" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Attach Your Resume")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Apply Now!")])
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2254172f", module.exports)
-  }
-}
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(340)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(342)
-/* template */
-var __vue_template__ = __webpack_require__(343)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-260e44e8"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/Galleries.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-260e44e8", Component.options)
-  } else {
-    hotAPI.reload("data-v-260e44e8", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 340 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(341);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("6e12bba8", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260e44e8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Galleries.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260e44e8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Galleries.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 341 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.galleries .row[data-v-260e44e8] {\n  margin-bottom: 2rem;\n}\n.galleries .gallery-img[data-v-260e44e8] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.galleries .gallery-img:hover .title h2[data-v-260e44e8] {\n    opacity: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img:hover .overlay[data-v-260e44e8] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.galleries .gallery-img:hover .overlay h2[data-v-260e44e8], .galleries .gallery-img:hover .overlay a.info[data-v-260e44e8] {\n      opacity: 1;\n      filter: alpha(opacity=100);\n      -webkit-transform: translatey(0);\n              transform: translatey(0);\n      -webkit-transition-delay: .2s;\n              transition-delay: .2s;\n}\n.galleries .gallery-img:hover .overlay img[data-v-260e44e8] {\n      -webkit-transform: scale(1.2);\n              transform: scale(1.2);\n}\n.galleries .gallery-img .title[data-v-260e44e8] {\n    width: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n@media (min-width: 768px) {\n.galleries .gallery-img .title[data-v-260e44e8] {\n        top: 70%;\n}\n}\n.galleries .gallery-img .title h2[data-v-260e44e8] {\n      filter: alpha(opacity=100);\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.galleries .gallery-img .overlay[data-v-260e44e8] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img .overlay img[data-v-260e44e8] {\n      display: block;\n      position: relative;\n      -webkit-transition: all .4s linear;\n      transition: all .4s linear;\n}\n.galleries .gallery-img .overlay h2[data-v-260e44e8] {\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transform: translatey(-100px);\n              transform: translatey(-100px);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.galleries .gallery-img .overlay a.info[data-v-260e44e8] {\n      text-decoration: none;\n      display: inline-block;\n      text-transform: uppercase;\n      color: #fff;\n      border: 1px solid #fff;\n      background-color: transparent;\n      opacity: 0;\n      filter: alpha(opacity=0);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      margin: 70px 0 0;\n      padding: 7px 14px;\n}\n.galleries .gallery-img .overlay a.info[data-v-260e44e8]:hover {\n        -webkit-box-shadow: 0 0 5px #fff;\n                box-shadow: 0 0 5px #fff;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 342 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'galleries',
-  data: function data() {
-    return {
-      perpage: 9,
-      current_page: -1,
-      galleries: [],
-      from: 0,
-      last_page: 0,
-      next_page_url: null,
-      prev_page_url: null,
-      total: 0
-    };
-  },
-
-  methods: {
-    getGalleries: function getGalleries(page) {
-      var _this = this;
-
-      this.errors = [];
-
-      if (this.current_page === page) {
-        return false;
-      }
-
-      if (page === this.current_page + 1 && this.next_page_url === null) {
-        return false;
-      }
-
-      if (page === this.current_page - 1 && this.prev_page_url === null) {
-        return false;
-      }
-
-      axios.get('/api/galleries/paginate/' + this.perpage + '?page=' + page).then(function (response) {
-        var r = response.data;
-
-        _this.current_page = r.current_page;
-        _this.galleries = r.data;
-        _this.from = r.from;
-        _this.last_page = r.last_page;
-        _this.next_page_url = r.next_page_url;
-        _this.prev_page_url = r.prev_page_url;
-        _this.total = r.total;
-      }).catch(function (error) {
-        alert(error.response.data.message);
-      });
-    }
-  },
-  created: function created() {
-    this.getGalleries(1);
-  }
-});
-
-/***/ }),
-/* 343 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "galleries" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", { staticClass: "page-header color-red" }, [_vm._v("Galleries")]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row" },
-        _vm._l(_vm.galleries, function(gallery) {
-          return _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-12" }, [
-            _c("div", { staticClass: "gallery-img" }, [
-              _c("img", {
-                staticClass: "img-responsive",
-                attrs: {
-                  src: gallery.img
-                    ? gallery.img + "?w=700&h=400&fit=crop"
-                    : "/img/default-cover.jpg?w=700&h=400&fit=crop",
-                  alt: gallery.name
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "title" }, [
-                _c("h2", [_vm._v(_vm._s(gallery.name))])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "overlay" }, [
-                _c("h2", [_vm._v(_vm._s(gallery.photo_count) + " Photos")]),
-                _vm._v(" "),
-                gallery.photo_count > 0
-                  ? _c(
-                      "a",
-                      {
-                        staticClass: "info",
-                        attrs: { href: "/galleries/" + gallery.id }
-                      },
-                      [
-                        _vm._v(
-                          "\n                            View Photos\n                        "
-                        )
-                      ]
-                    )
-                  : _vm._e()
-              ])
-            ])
-          ])
-        })
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12 text-center" }, [
-          _c("nav", [
-            _c(
-              "ul",
-              { staticClass: "pagination" },
-              [
-                _c("li", { class: _vm.prev_page_url ? null : "disabled" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: { href: "#", "aria-label": "Previous" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          _vm.getGalleries(_vm.current_page - 1)
-                        }
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("«")
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._l(_vm.last_page, function(index) {
-                  return _c(
-                    "li",
-                    { class: _vm.current_page === index ? "active" : null },
-                    [
-                      _c(
-                        "a",
-                        {
-                          attrs: { href: "#" },
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              _vm.getGalleries(index)
-                            }
-                          }
-                        },
-                        [_vm._v(_vm._s(index))]
-                      )
-                    ]
-                  )
-                }),
-                _vm._v(" "),
-                _c("li", { class: _vm.next_page_url ? null : "disabled" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: { href: "#", "aria-label": "Next" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          _vm.getGalleries(_vm.current_page + 1)
-                        }
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("»")
-                      ])
-                    ]
-                  )
-                ])
-              ],
-              2
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-260e44e8", module.exports)
-  }
-}
-
-/***/ }),
-/* 344 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(345)
-}
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(347)
-/* template */
-var __vue_template__ = __webpack_require__(348)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-7b103995"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/views/partials/Photos.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7b103995", Component.options)
-  } else {
-    hotAPI.reload("data-v-7b103995", Component.options)
-' + '  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 345 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(346);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(5)("5cfbd75b", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 346 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.photos .row[data-v-7b103995] {\n  margin-bottom: 2rem;\n}\n.photos .photo-img[data-v-7b103995] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.photos .photo-img[data-v-7b103995]:hover {\n    /*.title h2 {\n                opacity: 0;\n                transition: all .4s ease-in-out;\n            }*/\n}\n.photos .photo-img:hover .overlay[data-v-7b103995] {\n      opacity: 1;\n      filter: alpha(opacity=100);\n}\n.photos .photo-img:hover .overlay h2[data-v-7b103995], .photos .photo-img:hover .overlay a.info[data-v-7b103995] {\n        opacity: 1;\n        filter: alpha(opacity=100);\n        -webkit-transform: translatey(0);\n                transform: translatey(0);\n        -webkit-transition-delay: .2s;\n                transition-delay: .2s;\n}\n.photos .photo-img:hover .overlay img[data-v-7b103995] {\n        -webkit-transform: scale(1.2);\n                transform: scale(1.2);\n}\n.photos .photo-img .title[data-v-7b103995] {\n    width: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n@media (min-width: 768px) {\n.photos .photo-img .title[data-v-7b103995] {\n        top: 70%;\n}\n}\n.photos .photo-img .title h2[data-v-7b103995] {\n      filter: alpha(opacity=100);\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay[data-v-7b103995] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.photos .photo-img .overlay img[data-v-7b103995] {\n      display: block;\n      position: relative;\n      -webkit-transition: all .4s linear;\n      transition: all .4s linear;\n}\n.photos .photo-img .overlay h2[data-v-7b103995] {\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transform: translatey(-100px);\n              transform: translatey(-100px);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995] {\n      text-decoration: none;\n      display: inline-block;\n      text-transform: uppercase;\n      color: #fff;\n      border: 1px solid #fff;\n      background-color: transparent;\n      opacity: 0;\n      filter: alpha(opacity=0);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      margin: 70px 0 0;\n      padding: 7px 14px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995]:hover {\n        -webkit-box-shadow: 0 0 5px #fff;\n                box-shadow: 0 0 5px #fff;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 347 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'photos',
-  props: {
-    galleryId: { type: Number, default: 0 }
-  },
-  data: function data() {
-    return {
-      photos: [],
-      current_page: -1,
-      from: 0,
-      last_page: 0,
-      next_page_url: null,
-      prev_page_url: null,
-      total: 0
-    };
-  },
-
-  methods: {
-    getPhotos: function getPhotos(page) {
-      var _this = this;
-
-      this.errors = [];
-
-      if (this.current_page === page) {
-        return false;
-      }
-
-      if (page === this.current_page + 1 && this.next_page_url === null) {
-        return false;
-      }
-
-      if (page === this.current_page - 1 && this.prev_page_url === null) {
-        return false;
-      }
-
-      axios.get('/api/galleries/' + this.pathId + '?page=' + page).then(function (response) {
-
-        var r = response.data;
-
-        _this.current_page = r.current_page;
-        _this.photos = r.data;
-        _this.from = r.from;
-        _this.last_page = r.last_page;
-        _this.next_page_url = r.next_page_url;
-        _this.prev_page_url = r.prev_page_url;
-        _this.total = r.total;
-      }).catch(function (error) {
-        alert(error.response.data.message);
-      });
-    }
-  },
-  computed: {
-    pathId: function pathId() {
-      return this.galleryId !== 0 ? this.galleryId : window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
-    }
-  },
-  created: function created() {
-    this.getPhotos(1);
-  }
-});
-
-/***/ }),
-/* 348 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm.photos.length > 0
-    ? _c("div", { staticClass: "photos" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("h1", { staticClass: "page-header color-red" }, [
-            _vm._v(_vm._s(_vm.photos.length) + " Photos")
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row" },
-            _vm._l(_vm.photos, function(photo) {
-              return _c("div", { staticClass: "col-md-6 col-xs-12" }, [
-                _c("div", { staticClass: "photo-img" }, [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: {
-                      src: photo.path + "?w=700&h=400&fit=crop",
-                      alt: photo.name
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "title" }, [
-                    _c("h2", [_vm._v(_vm._s(photo.description))])
-                  ])
-                ])
-              ])
-            })
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-12 text-center" }, [
-              _c("nav", [
-                _c(
-                  "ul",
-                  { staticClass: "pagination" },
-                  [
-                    _c("li", { class: _vm.prev_page_url ? null : "disabled" }, [
-                      _c(
-                        "a",
-                        {
-                          attrs: { href: "#", "aria-label": "Previous" },
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              _vm.getPhotos(_vm.current_page - 1)
-                            }
-                          }
-                        },
-                        [
-                          _c("span", { attrs: { "aria-hidden": "true" } }, [
-                            _vm._v("«")
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._l(_vm.last_page, function(index) {
-                      return _c(
-                        "li",
-                        { class: _vm.current_page === index ? "active" : null },
-                        [
-                          _c(
-                            "a",
-                            {
-                              attrs: { href: "#" },
-                              on: {
-                                click: function($event) {
-                                  $event.preventDefault()
-                                  _vm.getPhotos(index)
-                                }
-                              }
-                            },
-                            [_vm._v(_vm._s(index))]
-                          )
-                        ]
-                      )
-                    }),
-                    _vm._v(" "),
-                    _c("li", { class: _vm.next_page_url ? null : "disabled" }, [
-                      _c(
-                        "a",
-                        {
-                          attrs: { href: "#", "aria-label": "Next" },
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              _vm.getPhotos(_vm.current_page + 1)
-                            }
-                          }
-                        },
-                        [
-                          _c("span", { attrs: { "aria-hidden": "true" } }, [
-                            _vm._v("»")
-                          ])
-                        ]
-                      )
-                    ])
-                  ],
-                  2
-                )
-              ])
-            ])
-          ])
-        ])
-      ])
-    : _vm._e()
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7b103995", module.exports)
-  }
-}
-
-/***/ }),
-/* 349 */
-/***/ (function(module, exports, __webpack_require__) {
-
-!function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define("vuejs-countdown",[],e):"object"==typeof exports?exports["vuejs-countdown"]=e():t["vuejs-countdown"]=e()}("undefined"!=typeof self?self:this,function(){return function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,e),o.l=!0,o.exports}var n={};return e.m=t,e.c=n,e.d=function(t,n,r){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:r})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=1)}([function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=null;e.default={name:"vuejsCountDown",props:{deadline:{type:String},end:{type:String},stop:{type:Boolean}},data:function(){return{now:Math.trunc((new Date).getTime()/1e3),date:null,diff:0}},created:function(){var t=this;if(!this.deadline&&!this.end)throw new Error("Missing props 'deadline' or 'end'");var e=this.deadline?this.deadline:this.end;if(this.date=Math.trunc(Date.parse(e.replace(/-/g,"/"))/1e3),!this.date)throw new Error("Invalid props value, correct the 'deadline' or 'end'");r=setInterval(function(){t.now=Math.trunc((new Date).getTime()/1e3)},1e3)},computed:{seconds:function(){return Math.trunc(this.diff)%60},minutes:function(){return Math.trunc(this.diff/60)%60},hours:function(){return Math.trunc(this.diff/60/60)%24},days:function(){return Math.trunc(this.diff/60/60/24)}},watch:{now:function(t){this.diff=this.date-this.now,(this.diff<=0||this.stop)&&(this.diff=0,clearInterval(r))}},filters:{twoDigits:function(t){return t.toString().length<=1?"0"+t.toString():t.toString()}},destroyed:function(){clearInterval(r)}}},function(t,e,n){"use strict";function r(t){n(2)}Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),i=n.n(o);for(var s in o)"default"!==s&&function(t){n.d(e,t,function(){return o[t]})}(s);var a=n(8),u=n(7),c=r,d=u(i.a,a.a,!1,c,null,null);e.default=d.exports},function(t,e,n){var r=n(3);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals);n(5)("630d476e",r,!0,{})},function(t,e,n){e=t.exports=n(4)(!1),e.push([t.i,'.vuejs-countdown{padding:0;margin:0}.vuejs-countdown li{display:inline-block;margin:0 8px;text-align:center;position:relative}.vuejs-countdown li p{margin:0}.vuejs-countdown li:after{content:":";position:absolute;top:0;right:-13px;font-size:32px}.vuejs-countdown li:first-of-type{margin-left:0}.vuejs-countdown li:last-of-type{margin-right:0}.vuejs-countdown li:last-of-type:after{content:""}.vuejs-countdown .digit{font-size:32px;font-weight:600;line-height:1.4;margin-bottom:0}.vuejs-countdown .text{text-transform:uppercase;margin-bottom:0;font-size:10px}',""])},function(t,e){function n(t,e){var n=t[1]||"",o=t[3];if(!o)return n;if(e&&"function"==typeof btoa){var i=r(o);return[n].concat(o.sources.map(function(t){return"/*# sourceURL="+o.sourceRoot+t+" */"})).concat([i]).join("\n")}return[n].join("\n")}function r(t){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(t))))+" */"}t.exports=function(t){var e=[];return e.toString=function(){return this.map(function(e){var r=n(e,t);return e[2]?"@media "+e[2]+"{"+r+"}":r}).join("")},e.i=function(t,n){"string"==typeof t&&(t=[[null,t,""]]);for(var r={},o=0;o<this.length;o++){var i=this[o][0];"number"==typeof i&&(r[i]=!0)}for(o=0;o<t.length;o++){var s=t[o];"number"==typeof s[0]&&r[s[0]]||(n&&!s[2]?s[2]=n:n&&(s[2]="("+s[2]+") and ("+n+")"),e.push(s))}},e}},function(t,e,n){function r(t){for(var e=0;e<t.length;e++){var n=t[e],r=d[n.id];if(r){r.refs++;for(var o=0;o<r.parts.length;o++)r.parts[o](n.parts[o]);for(;o<n.parts.length;o++)r.parts.push(i(n.parts[o]));r.parts.length>n.parts.length&&(r.parts.length=n.parts.length)}else{for(var s=[],o=0;o<n.parts.length;o++)s.push(i(n.parts[o]));d[n.id]={id:n.id,refs:1,parts:s}}}}function o(){var t=document.createElement("style");return t.type="text/css",f.appendChild(t),t}function i(t){var e,n,r=document.querySelector("style["+m+'~="'+t.id+'"]');if(r){if(v)return h;r.parentNode.removeChild(r)}if(_){var i=p++;r=l||(l=o()),e=s.bind(null,r,i,!1),n=s.bind(null,r,i,!0)}else r=o(),e=a.bind(null,r),n=function(){r.parentNode.removeChild(r)};return e(t),function(r){if(r){if(r.css===t.css&&r.media===t.media&&r.sourceMap===t.sourceMap)return;e(t=r)}else n()}}function s(t,e,n,r){var o=n?"":r.css;if(t.styleSheet)t.styleSheet.cssText=y(e,o);else{var i=document.createTextNode(o),s=t.childNodes;s[e]&&t.removeChild(s[e]),s.length?t.insertBefore(i,s[e]):t.appendChild(i)}}function a(t,e){var n=e.css,r=e.media,o=e.sourceMap;if(r&&t.setAttribute("media",r),g.ssrId&&t.setAttribute(m,e.id),o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */"),t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}var u="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!u)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var c=n(6),d={},f=u&&(document.head||document.getElementsByTagName("head")[0]),l=null,p=0,v=!1,h=function(){},g=null,m="data-vue-ssr-id",_="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());t.exports=function(t,e,n,o){v=n,g=o||{};var i=c(t,e);return r(i),function(e){for(var n=[],o=0;o<i.length;o++){var s=i[o],a=d[s.id];a.refs--,n.push(a)}e?(i=c(t,e),r(i)):i=[];for(var o=0;o<n.length;o++){var a=n[o];if(0===a.refs){for(var u=0;u<a.parts.length;u++)a.parts[u]();delete d[a.id]}}}};var y=function(){var t=[];return function(e,n){return t[e]=n,t.filter(Boolean).join("\n")}}()},function(t,e){t.exports=function(t,e){for(var n=[],r={},o=0;o<e.length;o++){var i=e[o],s=i[0],a=i[1],u=i[2],c=i[3],d={id:t+":"+o,css:a,media:u,sourceMap:c};r[s]?r[s].parts.push(d):n.push(r[s]={id:s,parts:[d]})}return n}},function(t,e){t.exports=function(t,e,n,r,o,i){var s,a=t=t||{},u=typeof t.default;"object"!==u&&"function"!==u||(s=t,a=t.default);var c="function"==typeof a?a.options:a;e&&(c.render=e.render,c.staticRenderFns=e.staticRenderFns,c._compiled=!0),n&&(c.functional=!0),o&&(c._scopeId=o);var d;if(i?(d=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),r&&r.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(i)},c._ssrRegister=d):r&&(d=r),d){var f=c.functional,l=f?c.render:c.beforeCreate;f?(c._injectStyles=d,c.render=function(t,e){return d.call(e),l(t,e)}):c.beforeCreate=l?[].concat(l,d):[d]}return{esModule:s,exports:a,options:c}}},function(t,e,n){"use strict";var r=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("ul",{staticClass:"vuejs-countdown"},[t.days>0?n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.days)))]),t._v(" "),n("p",{staticClass:"text"},[t._v(t._s(t.days>1?"days":"day"))])]):t._e(),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.hours)))]),t._v(" "),n("p",{staticClass:"text"},[t._v(t._s(t.hours>1?"hours":"hour"))])]),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.minutes)))]),t._v(" "),n("p",{staticClass:"text"},[t._v("min")])]),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.seconds)))]),t._v(" "),n("p",{staticClass:"text"},[t._v("Sec")])])])},o=[],i={render:r,staticRenderFns:o};e.a=i}])});
-
-/***/ }),
-/* 350 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 351 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74511,6 +68462,6300 @@ var Datepicker = {render: function(){var _vm=this;var _h=_vm.$createElement;var 
 
 /* harmony default export */ __webpack_exports__["a"] = (Datepicker);
 
+
+/***/ }),
+/* 275 */,
+/* 276 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(277)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(279)
+/* template */
+var __vue_template__ = __webpack_require__(280)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-550cb112"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/TopBar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-550cb112", Component.options)
+  } else {
+    hotAPI.reload("data-v-550cb112", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(278);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("71654b07", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-550cb112\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TopBar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.top-bar[data-v-550cb112] {\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px 0;\n  top: 0;\n  background-color: #FFFFFF;\n  width: 100%;\n  z-index: 100;\n  color: #686869;\n}\n.top-bar .img-responsive[data-v-550cb112] {\n    display: inline-block;\n}\n.top-bar .site-logo img[data-v-550cb112] {\n    width: 175px;\n}\n.top-bar .nrlb-logo img[data-v-550cb112] {\n    width: 140px;\n}\n.top-bar .info[data-v-550cb112] {\n    float: right;\n    margin-top: 20px;\n}\n.top-bar .info h1[data-v-550cb112] {\n      color: #EE001B;\n      font-weight: 700;\n}\n@media (max-width: 615px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 16px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info h1[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n.top-bar .info p[data-v-550cb112] {\n      font-size: 20px;\n      color: #353536;\n      margin-bottom: -20px;\n}\n@media (max-width: 615px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 12px;\n}\n}\n@media (max-width: 275px) {\n.top-bar .info p[data-v-550cb112] {\n          font-size: 8px;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 279 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0, false, false)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "top-bar hidden-xs" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4 site-logo" }, [
+            _c("a", { attrs: { href: "/" } }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: { src: "/images/site-logo.png" }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "hidden-sm col-md-4 col-lg-4 text-center nrlb-logo"
+            },
+            [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "https://noroofleftbehind.com/program/oh/1353",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: { src: "/images/no-roof-left-behind2.png" }
+                  })
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
+            _c("div", { staticClass: "info" }, [
+              _c("p", [
+                _vm._v("\n                        Free Inspections - "),
+                _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
+              ]),
+              _vm._v(" "),
+              _c("h1", [
+                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+                  _vm._v("937-439-0554")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-550cb112", module.exports)
+  }
+}
+
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(282)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(284)
+/* template */
+var __vue_template__ = __webpack_require__(285)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-49a0a682"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Nav.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-49a0a682", Component.options)
+  } else {
+    hotAPI.reload("data-v-49a0a682", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(283);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("4467d40c", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49a0a682\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Nav.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 283 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* Navbar */\n.navbar[data-v-49a0a682] {\n  position: static;\n  border-radius: 0;\n  margin-bottom: 0;\n  -webkit-transition: top 500ms;\n  transition: top 500ms;\n  top: -64px;\n}\n.navbar.fixed-top[data-v-49a0a682] {\n    position: fixed;\n    left: 0;\n    top: 0;\n    width: 100% !important;\n    z-index: 99;\n    -webkit-transition: top 500ms;\n    transition: top 500ms;\n}\n.navbar.navbar-inverse[data-v-49a0a682] {\n    background-color: #353536 !important;\n    border-bottom: 1px #EE001B solid;\n}\n.navbar.navbar-inverse .navbar-toggle[data-v-49a0a682] {\n      border-color: #FFFFFF;\n}\n.navbar.navbar-inverse .navbar-toggle .icon-bar[data-v-49a0a682] {\n        background-color: #FFFFFF !important;\n}\n.navbar.navbar-inverse .navbar-toggle[data-v-49a0a682]:hover, .navbar.navbar-inverse .navbar-toggle[data-v-49a0a682]:focus {\n        background-color: #333;\n}\n.navbar .navbar-brand[data-v-49a0a682] {\n    font-size: 38px;\n    color: #FFFFFF;\n}\n.navbar .navbar-nav[data-v-49a0a682] {\n    font-size: 18px;\n    padding-top: 5px;\n}\n.navbar .navbar-nav li[data-v-49a0a682] {\n      text-align: center;\n      border-right: 1px #585859 solid;\n}\n.navbar .navbar-nav li a[data-v-49a0a682] {\n        color: #FFFFFF !important;\n        padding-right: 25px;\n        padding-left: 25px;\n}\n.navbar .navbar-nav li a[data-v-49a0a682]:hover, .navbar .navbar-nav li a[data-v-49a0a682]:focus {\n          color: #EE001B !important;\n          cursor: pointer;\n}\n.navbar .navbar-nav li[data-v-49a0a682]:last-child {\n        border-right: none;\n}\n@media (min-width: 768px) {\n.navbar .navbar-nav[data-v-49a0a682] {\n        display: inline-block;\n        float: none;\n}\n}\n.navbar .navbar-header[data-v-49a0a682] {\n    color: #FFFFFF !important;\n}\n.navbar .navbar-collapse[data-v-49a0a682] {\n    text-align: left;\n}\n@media (min-width: 768px) {\n.navbar .navbar-collapse[data-v-49a0a682] {\n        text-align: center;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 284 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      fixedTop: false,
+      collapse: true
+    };
+  },
+
+  methods: {
+    handleScroll: function handleScroll() {
+      this.fixedTop = document.documentElement.scrollTop >= 198 || window.innerWidth < 768;
+    }
+  },
+
+  created: function created() {
+    if (window.innerWidth < 768) {
+      this.fixedTop = true;
+    }
+
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed: function destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+});
+
+/***/ }),
+/* 285 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "nav",
+    {
+      class: ["navbar", "navbar-inverse", _vm.fixedTop ? "fixed-top" : null],
+      attrs: { role: "navigation" }
+    },
+    [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "navbar-header" }, [
+          _c(
+            "button",
+            {
+              staticClass: "navbar-toggle collapsed",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#navbar-collapse",
+                "aria-expanded": "false"
+              },
+              on: {
+                click: function($event) {
+                  _vm.collapse = !_vm.collapse
+                }
+              }
+            },
+            [
+              _c("span", { staticClass: "sr-only" }, [
+                _vm._v("Toggle navigation")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "icon-bar" })
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0, false, false)
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            class: [_vm.collapse ? "collapse" : null, "navbar-collapse"],
+            attrs: { id: "navbar-collapse" }
+          },
+          [
+            _c(
+              "ul",
+              { staticClass: "nav navbar-nav" },
+              [
+                _vm._m(1, false, false),
+                _vm._v(" "),
+                _vm._m(2, false, false),
+                _vm._v(" "),
+                _vm._m(3, false, false),
+                _vm._v(" "),
+                _vm._m(4, false, false),
+                _vm._v(" "),
+                _vm._m(5, false, false),
+                _vm._v(" "),
+                _vm._m(6, false, false),
+                _vm._v(" "),
+                _vm._m(7, false, false),
+                _vm._v(" "),
+                _vm._t("default")
+              ],
+              2
+            )
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "navbar-brand hidden-sm hidden-md hidden-lg",
+        attrs: { href: "/" }
+      },
+      [
+        _vm._v("\n                D&G "),
+        _c("span", { staticClass: "color-red" }, [_vm._v("Roofing")]),
+        _vm._v(" "),
+        _c(
+          "span",
+          {
+            staticClass: "color-light hidden-xs",
+            staticStyle: { "font-size": "14px" }
+          },
+          [_vm._v("and Restoration")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/services" } }, [_vm._v("Services")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/galleries" } }, [_vm._v("Galleries")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/giveaways" } }, [_vm._v("Giveaways")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/community" } }, [_vm._v("Community")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "/about" } }, [_vm._v("About")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-49a0a682", module.exports)
+  }
+}
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(287)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(289)
+/* template */
+var __vue_template__ = __webpack_require__(290)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-0e24ada1"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Header.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0e24ada1", Component.options)
+  } else {
+    hotAPI.reload("data-v-0e24ada1", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(288);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("9589261e", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0e24ada1\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Header.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0e24ada1\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Header.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* Main Header */\nheader.main-header[data-v-0e24ada1] {\n  width: 100%;\n  margin-top: 50px;\n  margin-bottom: -20px;\n}\n@media (min-width: 768px) {\nheader.main-header[data-v-0e24ada1] {\n      margin-top: 0;\n      margin-bottom: 0;\n}\n}\nheader.main-header h1 a[data-v-0e24ada1] {\n    font-size: 35px;\n}\nheader.main-header h1.sub-page[data-v-0e24ada1] {\n    font-size: 50px;\n    margin-top: 150px;\n    margin-bottom: -30px;\n}\n@media (min-width: 768px) {\nheader.main-header h1[data-v-0e24ada1] {\n      margin-bottom: 12.5px;\n      color: #FFFFFF;\n      text-transform: uppercase;\n      font-weight: 700;\n      line-height: 1.2;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\nheader.main-header h1.sub-page[data-v-0e24ada1] {\n        font-size: 60px;\n        margin-bottom: -50px;\n}\n}\nheader.main-header a[data-v-0e24ada1] {\n    padding: 10px 20px;\n    display: block;\n    color: #FFFFFF;\n    border: 2px #FFFFFF solid;\n    font-weight: 500;\n    background-color: #EE001B;\n}\n@media (min-width: 768px) {\nheader.main-header a[data-v-0e24ada1] {\n        font-size: 18px;\n}\nheader.main-header a[data-v-0e24ada1]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n}\n}\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n    padding-top: 25px;\n    padding-bottom: 50px;\n    width: 100%;\n    height: 100%;\n    color: #FFFFFF;\n}\n@media (min-width: 768px) {\nheader.main-header .main-header-inner[data-v-0e24ada1] {\n        min-height: 300px;\n}\n}\n.main-header-bottom[data-v-0e24ada1] {\n  padding-top: 15px;\n  background-color: #EE001B;\n  color: #FFFFFF;\n  min-height: 100px;\n  text-align: center;\n  font-size: 20px;\n}\n.main-header-bottom a[data-v-0e24ada1] {\n    margin-bottom: 5px;\n}\n@media (min-width: 1200px) {\n.main-header-bottom[data-v-0e24ada1] {\n      margin: 0;\n}\n}\n@media (min-width: 992px) {\n.main-header-bottom a[data-v-0e24ada1] {\n      margin: 0;\n      margin-bottom: 25px;\n}\n}\n@media (min-width: 768px) {\n.main-header-bottom[data-v-0e24ada1] {\n      padding-top: 25px;\n      text-align: left;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 289 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        home: { type: Boolean, default: false },
+        bgImg: { type: String, default: 'images/headers/header.jpg' },
+        bgPos: { type: String, default: 'center' },
+        bgColor: { type: String, default: '#FFFFFF' },
+        color: { type: String, default: '#000000' }
+    },
+    computed: {
+        styles: function styles() {
+            var styles = void 0;
+
+            if (this.home) {
+                styles = 'min-height: 500px;' + styles;
+            }
+
+            if (this.bgImg) {
+                styles = '\n                background: linear-gradient( rgba(42, 42, 42, 0.1), rgba(42, 42, 42, 0.1) ), url(/' + this.bgImg + ');\n                background-position: ' + this.bgPos + ';\n                background-size: cover;\n                ' + styles;
+            } else {
+                styles = 'background-color: ' + this.bgColor + ';color: ' + this.color + ';' + styles;
+            }
+
+            return styles;
+        }
+    }
+});
+
+/***/ }),
+/* 290 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("header", { staticClass: "main-header" }, [
+    _c("div", { staticClass: "main-header-inner", style: _vm.styles }, [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _vm._t("default", [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 text-center hidden-xs" }, [
+                _c(
+                  "h1",
+                  {
+                    staticClass: "animated bounceInLeft",
+                    style: _vm.home ? "padding-bottom: 0;" : null
+                  },
+                  [
+                    _vm._v(
+                      '\n                            "Dependability You Can Rely On!"\n                        '
+                    )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-sm-12 col-md-12 text-center hidden-xs" },
+                [
+                  _c(
+                    "h1",
+                    {
+                      staticClass: "animated bounceIn delay-1s",
+                      style: _vm.home ? "padding: 0;" : null
+                    },
+                    [
+                      _vm._v(
+                        '\n                            "Honesty You Deserve!"\n                        '
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(0, false, false)
+          ])
+        ],
+        2
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "main-header-bottom" }, [
+      _c(
+        "div",
+        { staticClass: "container-fluid" },
+        [_vm._t("bottom", [_vm._m(1, false, false)])],
+        2
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row hidden-sm hidden-md hidden-lg" }, [
+      _c("div", { staticClass: "col-md-12 text-center" }, [
+        _c("h1", [_vm._v("Free Inspections")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-md-offset-3 text-center" }, [
+        _c("h1", [
+          _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+            _vm._v("937-439-0554")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-6 hidden-sm hidden-xs text-center" }, [
+        _c("h4", [
+          _vm._v("Need a painless inspection? We are here to help you!")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12 col-xs-12" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              { staticClass: "text-center", attrs: { href: "/giveaways" } },
+              [_vm._v("Refer A Friend")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              { staticClass: "text-center", attrs: { href: "/join-our-team" } },
+              [_vm._v("Join Our Team")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-center animated tada delay-2-5s",
+                attrs: { href: "#" }
+              },
+              [_vm._v("Free Inspection")]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0e24ada1", module.exports)
+  }
+}
+
+/***/ }),
+/* 291 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(292)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(294)
+/* template */
+var __vue_template__ = __webpack_require__(295)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-261b6ca2"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Footer.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-261b6ca2", Component.options)
+  } else {
+    hotAPI.reload("data-v-261b6ca2", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 292 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(293);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("4ec1fd1a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-261b6ca2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Footer.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-261b6ca2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Footer.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 293 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.footer .logos[data-v-261b6ca2] {\n  background-color: #f7f7f7;\n  padding-top: 50px;\n  padding-bottom: 50px;\n  border-bottom: 5px #353536 solid;\n}\n.footer .logos img[data-v-261b6ca2] {\n    display: inline-block !important;\n}\n.footer .logos h2.page-header[data-v-261b6ca2] {\n    margin-top: -25px;\n}\n.footer footer[data-v-261b6ca2] {\n  background-color: #323233;\n  border-top: 5px #EE001B solid;\n  color: #b3b3b3;\n  padding: 25px;\n}\n.footer footer .input-group-addon[data-v-261b6ca2] {\n    border: none;\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2] {\n    border-radius: 0;\n}\n.footer footer .form-control[data-v-261b6ca2]:focus {\n      border-color: transparent;\n      outline: 0;\n      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(163, 22, 33, 0.6);\n}\n.footer footer .btn-default[data-v-261b6ca2] {\n    color: #EE001B;\n    background-color: #353536;\n    border-color: #585859;\n}\n.footer footer .btn-default[data-v-261b6ca2]:hover {\n      color: #b1b1b2;\n      background-color: #323233;\n      border-color: #585859;\n}\n.footer footer .social ul[data-v-261b6ca2] {\n    overflow: auto;\n    padding: 0;\n}\n.footer footer .social ul li[data-v-261b6ca2] {\n      list-style-type: none;\n      float: left;\n}\n.footer footer .social ul li a i[data-v-261b6ca2] {\n        background: #EE001B;\n        color: #fff;\n        width: 40px;\n        height: 40px;\n        border-radius: 20px;\n        font-size: 25px;\n        text-align: center;\n        margin-right: 10px;\n        padding-top: 15%;\n        -webkit-transition: all 0.2s ease-in-out;\n        transition: all 0.2s ease-in-out;\n}\n.footer footer .social ul li a i[data-v-261b6ca2]:hover {\n          opacity: .7;\n          cursor: pointer;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 294 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_carousel__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Carousel: __WEBPACK_IMPORTED_MODULE_0_vue_carousel__["Carousel"],
+    Slide: __WEBPACK_IMPORTED_MODULE_0_vue_carousel__["Slide"]
+  }
+
+});
+
+/***/ }),
+/* 295 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "footer" }, [
+    _c("div", { staticClass: "logos hidden-xs" }, [
+      _c(
+        "div",
+        { staticClass: "container text-center" },
+        [
+          _c("h2", { staticClass: "page-header color-red" }, [
+            _vm._v("AFFILIATES")
+          ]),
+          _vm._v(" "),
+          _c(
+            "carousel",
+            {
+              attrs: {
+                autoplay: true,
+                loop: true,
+                "autoplay-timeout": 5000,
+                "per-page": 3,
+                "scroll-per-page": true,
+                "navigation-enabled": true,
+                "pagination-active-color": "#EE001B",
+                "pagination-color": "#353536",
+                "autoplay-hover-pause": true
+              }
+            },
+            [
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.certainteed.com/qualifications/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "/img/certainteed-certified-dealer.png?w=150&h=150"
+                      }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://www.homeadvisor.com/rated.DandGRoofing.39451675.html",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: { src: "/img/home_advisor.png?w=150&h=150" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://www.bbb.org/dayton/business-reviews/roofing-contractors/d-and-g-roofing-and-restoration-in-dayton-oh-28168/reviews-and-complaints",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: { src: "/img/bbb2.png?w=150&h=150" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: { href: "https://www.provia.com/", target: "_blank" }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/provia-logo.png?w=250&h=85" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://noroofleftbehind.com/program/oh/1353",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/no-roof-left-behind.png?w=180&h=85" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://www.google.com/maps/place/D+%26+G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889!9m1!1b1",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: {
+                        "margin-top": "25px",
+                        "margin-left": "-25px"
+                      },
+                      attrs: { src: "/img/google-reviews.png?w=180&h=85" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.facebook.com/DgRoofingRestoration",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/facebook-logo.png?w=250&h=85" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/angies-list-logo.png?w=250&h=85" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("slide", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://www.jameshardie.com/why-hardie/superior-siding",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      staticStyle: { "margin-top": "25px" },
+                      attrs: { src: "/img/jameshardie-logo.png?w=250&h=85" }
+                    })
+                  ]
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(0, false, false)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+            _c("h3", { staticClass: "color-red" }, [_vm._v("Stay Updated")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                        You want to get updates about promotions and/or contests?\n                        Fill in your email address and click Submit!\n                    "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("div", { staticClass: "input-group" }, [
+                _c("div", { staticClass: "input-group-addon" }, [
+                  _c("i", { staticClass: "fa fa-envelope" })
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "email" }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group-btn" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Submit")]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+            _c("h3", { staticClass: "color-red" }, [_vm._v("Qualifications")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [_vm._v("A+ Rating with BBB")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("30+ years of Experience")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Financing Available")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("No Job Too Big Or Too Small")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Workmanship and Labor Warranty")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Quality Workmanship")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Complete Cleanup")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Insurance Repair Specialists")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("We Work With All Insurance Companies")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Insured & Workman Comp")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Free Inspections")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+            _c("h3", { staticClass: "color-red" }, [_vm._v("Insurances")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [_vm._v("Progressive")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Cincinnati Insurance")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("State Farm")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("AAA")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Allstate")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Liberty Mutual Group")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Travelers Insurance")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("MetLife")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("USAA")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Amica Mutual Insurance")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Nationwide")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("And Many More ...")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+            _c("h3", { staticClass: "color-red" }, [_vm._v("Contact")]),
+            _vm._v(" "),
+            _c("address", [
+              _c("strong", [_vm._v("D&G Roofing & Restoration LLC")]),
+              _c("br"),
+              _vm._v(
+                "\n                        2275 Miamisburg Centerville Rd"
+              ),
+              _c("br"),
+              _vm._v("\n                        Dayton, OH 45459"),
+              _c("br"),
+              _vm._v(" "),
+              _c("abbr", { attrs: { title: "Phone" } }, [_vm._v("P:")]),
+              _vm._v(" (937) 439-0554\n                    ")
+            ]),
+            _vm._v(" "),
+            _c("p", [_c("strong", [_vm._v("Copyright © 2011")])]),
+            _vm._v(" "),
+            _c("div", { staticClass: "social" }, [
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "https://www.facebook.com/DgRoofingRestoration/",
+                        target: "_blank"
+                      }
+                    },
+                    [_c("i", { staticClass: "fa fa-facebook" })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://www.google.com/maps/place/D%26G+Roofing+%26+Restoration/@39.6347963,-84.2139776,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa910907c8878e55b!8m2!3d39.6347963!4d-84.2117889?hl=en",
+                        target: "_blank"
+                      }
+                    },
+                    [_c("i", { staticClass: "fa fa-google-plus" })]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://www.angieslist.com/companylist/us/oh/dayton/dandg-roofing-and-restoration-llc-reviews-7926733.htm",
+                        target: "_blank"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fa fa-angieslist" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: { src: "/images/fa-angieslist.png" }
+                        })
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-261b6ca2", module.exports)
+  }
+}
+
+/***/ }),
+/* 296 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(297)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(299)
+/* template */
+var __vue_template__ = __webpack_require__(300)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-41f8c7e3"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/about/OurTeam.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-41f8c7e3", Component.options)
+  } else {
+    hotAPI.reload("data-v-41f8c7e3", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 297 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(298);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("3024c930", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-41f8c7e3\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./OurTeam.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-41f8c7e3\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./OurTeam.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 298 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.our-team img.tab[data-v-41f8c7e3] {\n  display: inline-block !important;\n  margin: 10px;\n  width: 200px;\n  -webkit-transition: .30s ease;\n  transition: .30s ease;\n}\n.our-team img.tab[data-v-41f8c7e3]:hover, .our-team img.tab.active[data-v-41f8c7e3] {\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n    cursor: pointer;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 299 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "ourteam",
+    data: function data() {
+        return {
+            active: 0
+        };
+    },
+
+    computed: {}
+});
+
+/***/ }),
+/* 300 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "our-team" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0, false, false),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              "img-circle",
+              _vm.active === 0 ? "active" : null
+            ],
+            attrs: { src: "/images/duane.jpg", alt: "" },
+            on: {
+              click: function($event) {
+                _vm.active = 0
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [
+            _vm._v("\n                    DUANE HOWARD"),
+            _c("br"),
+            _vm._v(" "),
+            _c("small", { class: _vm.active === 0 ? "color-red" : null }, [
+              _vm._v(
+                "\n                        President\n                    "
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              "img-circle",
+              _vm.active === 1 ? "active" : null
+            ],
+            attrs: { src: "/images/gerri.jpg", alt: "" },
+            on: {
+              click: function($event) {
+                _vm.active = 1
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [
+            _vm._v("\n                    GERRI HOWARD"),
+            _c("br"),
+            _vm._v(" "),
+            _c("small", { class: _vm.active === 1 ? "color-red" : null }, [
+              _vm._v(
+                "\n                        Vice President\n                    "
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              "img-circle",
+              _vm.active === 2 ? "active" : null
+            ],
+            attrs: { src: "/images/mike.jpg", alt: "" },
+            on: {
+              click: function($event) {
+                _vm.active = 2
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [
+            _vm._v("\n                    MIKE WALKER"),
+            _c("br"),
+            _vm._v(" "),
+            _c("small", { class: _vm.active === 2 ? "color-red" : null }, [
+              _vm._v(
+                "\n                        Residential Operations Manager\n                    "
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              "img-circle",
+              _vm.active === 3 ? "active" : null
+            ],
+            attrs: { src: "/images/amanda.jpg", alt: "" },
+            on: {
+              click: function($event) {
+                _vm.active = 3
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [
+            _vm._v("\n                    AMANDA WILLMAN"),
+            _c("br"),
+            _vm._v(" "),
+            _c("small", { class: _vm.active === 3 ? "color-red" : null }, [
+              _vm._v(
+                "\n                        Administrative Assistant\n                    "
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm.active === 0
+        ? _c(
+            "div",
+            { staticClass: "row" },
+            [
+              _c(
+                "media-section",
+                {
+                  attrs: {
+                    title: "About Duane Howard",
+                    subtitle: "President",
+                    img: "images/duane.jpg",
+                    "img-width": "250px",
+                    "img-alt": "duane howard"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Duane Howard is the president of D & G Roofing & Restoration. Duane brings years of expertise in\n                    the construction business to the D & G team. Duane oversees all of D & G’s projects, ensuring\n                    every customer is receiving the best quality workmanship. One of Duane's best qualities is his\n                    attention to detail. Prior to becoming D & G’s president, Duane was the building department\n                    manager for a large construction company. Duane has also been a Customer Consultant and\n                    knows the importance of customer service. Ten years of experience as a property appraiser, has\n                    given Duane plenty of skill with customer service, organization, management, and the necessary\n                    field experience to ensure every D & G customer's needs are met.\n                "
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.active === 1
+        ? _c(
+            "div",
+            { staticClass: "row" },
+            [
+              _c(
+                "media-section",
+                {
+                  attrs: {
+                    title: "About Gerri Howard",
+                    subtitle: "Vice President",
+                    img: "images/gerri.jpg",
+                    "img-width": "250px",
+                    "img-alt": "gerri howard"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Gerri Howard is D & G Roofing & Restoration's Vice President. As VP, Gerri upholds D & G\n                    Roofing's image as an industry leader and expands awareness of D & G Roofing and our\n                    services. Gerri takes great pride in helping people to repair their homes when needed,\n                    and treats every project as if it were her own. Gerri has been in the customer service\n                    industry for over 35 years. Gerri began her construction career as a Customer Consultant\n                    with one of the top contractors in the country. Many have trained extensively with\n                    Gerri, and directly benefited from her hands on knowledge and years of experience. An\n                    expert in training, Gerri passes on her knowledge and high integrity to all new recruits\n                    that come aboard with our D & G team. Quality and customer service is Gerri’s #1 goal.\n                "
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.active === 2
+        ? _c(
+            "div",
+            { staticClass: "row" },
+            [
+              _c(
+                "media-section",
+                {
+                  attrs: {
+                    title: "About Mike Walker",
+                    subtitle: "Residential Operations Manager",
+                    img: "images/mike.jpg",
+                    "img-width": "250px",
+                    "img-alt": "mike walker"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Mike comes to us with 22 years in the Home Improvement Industry. Twenty years of which\n                    Mike has management experience in. Mike plays a key role in the training and development\n                    of all new recruits at D & G Roofing and Restoration and has proven to be a quality leader\n                    with the company. Mike’s top priority is customer satisfaction.\n                "
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.active === 3
+        ? _c(
+            "div",
+            { staticClass: "row" },
+            [
+              _c(
+                "media-section",
+                {
+                  attrs: {
+                    title: "About Amanda Willman",
+                    subtitle: "Administrative Assistant",
+                    img: "images/amanda.jpg",
+                    "img-width": "250px",
+                    "img-alt": "amanda willman"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Amanda has ten years in customer service experience with five years office experience.\n                    She is currently attending school for business management. She is a great asset to D & G\n                    Roofing and Restoration and customer service is Amanda’s top priority.\n                "
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        : _vm._e()
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("h2", { staticClass: "page-header color-red" }, [_vm._v("Our Team")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-41f8c7e3", module.exports)
+  }
+}
+
+/***/ }),
+/* 301 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(302)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(304)
+/* template */
+var __vue_template__ = __webpack_require__(305)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-621b8fcd"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/welcome/FeaturedServices.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-621b8fcd", Component.options)
+  } else {
+    hotAPI.reload("data-v-621b8fcd", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 302 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(303);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("b9d59e28", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-621b8fcd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./FeaturedServices.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-621b8fcd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./FeaturedServices.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 303 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.featured-services[data-v-621b8fcd] {\n  background-color: transparent;\n  padding-top: 30px;\n}\n@media (min-width: 768px) {\n.featured-services[data-v-621b8fcd] {\n      padding-top: 0;\n      padding-bottom: 50px;\n}\n}\n.featured-services .siding[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n.featured-services .roofing[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n    z-index: 2;\n}\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n      margin-top: 80px;\n      border: none;\n      background-color: #323233;\n      color: #FFFFFF;\n      -webkit-box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 5px 60px 7px rgba(0, 0, 0, 0.5);\n}\n.featured-services .roofing .roofing-panel h3[data-v-621b8fcd] {\n        color: #EE001B;\n}\n.featured-services .roofing .roofing-panel img[data-v-621b8fcd] {\n        width: 75px;\n}\n@media (min-width: 992px) {\n.featured-services .roofing .roofing-panel[data-v-621b8fcd] {\n          height: 569px;\n}\n}\n.featured-services .windows[data-v-621b8fcd] {\n    margin: 0;\n    padding: 0;\n}\n@media (min-width: 992px) {\n.featured-services .panel[data-v-621b8fcd] {\n      min-height: 530px;\n}\n}\n.featured-services .panel-default[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin: 50px;\n    -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n            box-shadow: 0 4px 26px rgba(0, 0, 0, 0.05);\n    background-color: #f7f7f7;\n    border: 1px #f2f2f2 solid;\n}\n.featured-services .panel-default img[data-v-621b8fcd] {\n      display: inline-block;\n      width: 55px;\n}\n@media (min-width: 992px) {\n.featured-services .panel-default[data-v-621b8fcd] {\n        margin: 0;\n        margin-top: 100px;\n}\n}\n.featured-services .panel-body[data-v-621b8fcd] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.featured-services .panel-body .panel-actions[data-v-621b8fcd] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      padding: 5px;\n      margin-top: auto;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd] {\n        font-size: 18px;\n        padding: 10px 20px;\n        display: block;\n        color: #FFFFFF;\n        font-weight: 500;\n        background-color: #EE001B;\n        margin: 3px;\n        -webkit-transition: .15s ease;\n        transition: .15s ease;\n}\n.featured-services .panel-body .panel-actions a[data-v-621b8fcd]:hover {\n          background-color: #353536;\n          color: #FFFFFF;\n          cursor: pointer;\n          text-decoration: none;\n          -webkit-transition: .15s ease;\n          transition: .15s ease;\n}\n.featured-services hr[data-v-621b8fcd] {\n    border-top: 1px #e6e6e6 solid;\n}\n.featured-services h3[data-v-621b8fcd] {\n    text-transform: uppercase;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 304 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "featured-services"
+});
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0, false, false)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "featured-services" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12 text-center" }, [
+            _c("h1", [_vm._v("Featured Services")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4 siding" }, [
+            _c("div", { staticClass: "panel panel-default siding-panel" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _c("div", { staticClass: "text-center" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/images/icon_siding_red.png",
+                      alt: "siding ico"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("h3", [_vm._v("Siding")]),
+                  _vm._v(" "),
+                  _c("hr")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                            Our proven work can rejuvenate your home. At D & G Roofing & Restoration, we know that the\n                            right siding can make all the difference in the look and feel of your Dayton or\n                            Cincinnati,\n                            OH, property. With a wide variety of styles and options for you to choose from, we're\n                            confident our knowledgeable team can make the dreams you have for your home's appearance\n                            a\n                            reality.\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel-actions" }, [
+                  _c("a", { attrs: { href: "/services#siding" } }, [
+                    _vm._v("Read More")
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "/galleries/3" } }, [
+                    _vm._v("View Gallery")
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 roofing" }, [
+            _c("div", { staticClass: "panel panel-default roofing-panel" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _c("div", { staticClass: "text-center" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/images/icon_roofing_circle.png",
+                      alt: "roofing ico"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("h3", [_vm._v("Roofing")]),
+                  _vm._v(" "),
+                  _c("hr")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                            When you're in the market for a Dayton, OH, roofing company, our knowledgeable crew is\n                            here\n                            to provide you with high caliber work. At D & G Roofing & Restoration, we're prepared to\n                            act\n                            as your first and final resource when it comes to all your roofing needs. When you're\n                            ready\n                            to take the next step, we're excited for the opportunity to help you benefit from our\n                            thorough attention to detail.\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel-actions" }, [
+                  _c("a", { attrs: { href: "/services#roofing" } }, [
+                    _vm._v("Read More")
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "/galleries/1" } }, [
+                    _vm._v("View Gallery")
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 windows" }, [
+            _c("div", { staticClass: "panel panel-default windows-panel" }, [
+              _c("div", { staticClass: "panel-body" }, [
+                _c("div", { staticClass: "text-center" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/images/icon_windows_red.png",
+                      alt: "windows ico"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("h3", [_vm._v("Windows")]),
+                  _vm._v(" "),
+                  _c("hr")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                            Every building is unique, and off-the-shelf windows aren’t always the best solution. For\n                            your one-of-a-kind property, your deserve top-quality, one-of-a-kind custom windows; and\n                            D &\n                            G Roofing & Restoration is a reliable, trusted source for custom windows in Dayton, OH.\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel-actions" }, [
+                  _c("a", { attrs: { href: "/services#windows" } }, [
+                    _vm._v("Read More")
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "/galleries/2" } }, [
+                    _vm._v("View Gallery")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-621b8fcd", module.exports)
+  }
+}
+
+/***/ }),
+/* 306 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(307)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(309)
+/* template */
+var __vue_template__ = __webpack_require__(310)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-1d672217"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/CallAnytime.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1d672217", Component.options)
+  } else {
+    hotAPI.reload("data-v-1d672217", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(308);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("bd99576a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d672217\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./CallAnytime.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d672217\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./CallAnytime.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.divider-section h1[data-v-1d672217] {\n  margin-bottom: 20px;\n  font-weight: 700;\n  font-size: 30px;\n  line-height: 1.2;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);\n}\n@media (max-width: 375px) {\n.divider-section h1[data-v-1d672217] {\n      font-size: 20px;\n}\n}\n.divider-section p[data-v-1d672217] {\n  font-size: 20px;\n  font-weight: 700;\n}\n.divider-section p span[data-v-1d672217] {\n    font-size: 25px;\n}\n@media (max-width: 320px) {\n.divider-section p span[data-v-1d672217] {\n        font-size: 16px;\n}\n}\n@media (max-width: 425px) {\n.divider-section p span[data-v-1d672217] {\n        font-size: 20px;\n}\n}\n@media (max-width: 320px) {\n.divider-section p[data-v-1d672217] {\n      font-size: 12px;\n}\n}\n@media (max-width: 425px) {\n.divider-section p[data-v-1d672217] {\n      font-size: 16px;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 309 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "call-anytime"
+});
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "divider-section",
+    { attrs: { "bg-img": "/images/call-anytime-bg.jpg", center: true } },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("h1", [_vm._v("We are here to answer all your questions")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("p", [
+            _vm._v("\n                Call us anytime at\n                "),
+            _c("span", { staticClass: "color-light-red" }, [
+              _vm._v("\n                    937-439-0554\n                ")
+            ]),
+            _vm._v(
+              "\n                and get direct help from our advisors\n            "
+            )
+          ])
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1d672217", module.exports)
+  }
+}
+
+/***/ }),
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(312)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(314)
+/* template */
+var __vue_template__ = __webpack_require__(315)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-b4c9fcce"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/WhyChooseUs.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-b4c9fcce", Component.options)
+  } else {
+    hotAPI.reload("data-v-b4c9fcce", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(313);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("8c94b994", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b4c9fcce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./WhyChooseUs.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b4c9fcce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./WhyChooseUs.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.divider-section[data-v-b4c9fcce] {\n  padding-bottom: 50px;\n}\n.divider-section hr[data-v-b4c9fcce] {\n    border-top: 2px #EE001B solid;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 314 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "why-choose-us"
+});
+
+/***/ }),
+/* 315 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("divider-section", { attrs: { "bg-color": "#353636" } }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-12 text-center" }, [
+        _c("h2", { staticClass: "color-light" }, [_vm._v("Why Choose Us ?")]),
+        _vm._v(" "),
+        _c("hr")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/comp.png", alt: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/help.png", alt: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/qual.png", alt: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/rep.png", alt: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/sale.png", alt: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
+        _c("img", {
+          staticClass: "img-responsive customer-img",
+          attrs: { src: "images/warr.png", alt: "" }
+        })
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-b4c9fcce", module.exports)
+  }
+}
+
+/***/ }),
+/* 316 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(317)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(319)
+/* template */
+var __vue_template__ = __webpack_require__(320)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-f2d0c612"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/services/TabbedServices.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-f2d0c612", Component.options)
+  } else {
+    hotAPI.reload("data-v-f2d0c612", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 317 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(318);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("10b842be", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f2d0c612\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TabbedServices.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f2d0c612\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./TabbedServices.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 318 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.services[data-v-f2d0c612] {\n  color: #353536;\n  padding: 15px;\n  margin-top: 25px;\n}\n.services img.tab[data-v-f2d0c612] {\n    display: inline-block;\n    width: 100px;\n    -webkit-filter: grayscale(100%);\n            filter: grayscale(100%);\n    -webkit-transition: .30s ease;\n    transition: .30s ease;\n}\n.services img.tab[data-v-f2d0c612]:hover, .services img.tab.active[data-v-f2d0c612] {\n      -webkit-transition: .30s ease;\n      transition: .30s ease;\n      -webkit-filter: grayscale(0%);\n              filter: grayscale(0%);\n      cursor: pointer;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 319 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'tabbed-services',
+  data: function data() {
+    return {
+      hash_ids: {
+        '#roofing': 0,
+        '#siding': 1,
+        '#windows': 2,
+        '#gutters': 3,
+        '#doors': 4,
+        '#commercial': 5
+      },
+
+      active: 0
+    };
+  },
+  created: function created() {
+    if (window.location.hash !== "") {
+      this.active = _.get(this.hash_ids, window.location.hash);
+    }
+  }
+});
+
+/***/ }),
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "services" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 0 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_roofing_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 0
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Residential Roofing\n            ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 1 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_siding_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 1
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Siding\n            ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 2 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_windows_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 2
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Windows\n            ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 3 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_gutters_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 3
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Gutters\n            ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 4 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_doors_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 4
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Doors\n            ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              _vm.active === 5 ? "active" : null
+            ],
+            attrs: { src: "/images/icon_commercial_circle.png" },
+            on: {
+              click: function($event) {
+                _vm.active = 5
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v("\n                Commercial\n            ")
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.active === 0
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "roofing" } },
+          [
+            _c(
+              "media-section",
+              {
+                staticClass: "pull-right",
+                attrs: {
+                  title: "Roofing",
+                  img: "/images/certainteed-home.jpg",
+                  "img-width": "550px",
+                  "img-alt": "dayton cincinnati ohio roofing contractors"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "img-responsive img-shadow",
+                  attrs: {
+                    src: "images/dayton-cincinnati-ohio-259600.jpg",
+                    alt: "45449 roofing"
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticStyle: { "margin-bottom": "10px" },
+                    attrs: { slot: "aimg" },
+                    slot: "aimg"
+                  },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/certainteed.png",
+                            alt: "CertainTeed"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/mueller-roofing.png",
+                            alt: "Mueller Roofing Dayton Ohio"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "images/certainteed-certified-dealer.png",
+                            alt: "CertainTeed Certified Installer"
+                          }
+                        })
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("CertainTeed Certified Installer")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                    installers have been with us since we opened our doors.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                    available and the best warranty. The Landmark Series shingle endure time and weather\n                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                    thickness and dimension it offers.\n                "
+                    )
+                  ])
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.active === 1
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "siding" } },
+          [
+            _c("media-section", { attrs: { title: "Siding" } }, [
+              _c("p", [
+                _vm._v(
+                  "\n                At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look\n                and feel of your property. With a wide variety of styles and options for you to choose from, we're\n                confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n                Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n                here when you’re ready to take the next step.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/img/Hershberger-Before.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/img/Hershberger-After.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("Before")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src:
+                        "/img/Hershberger-Before-Back.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("h5", { staticClass: "color-red" }, [_vm._v("After")]),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src:
+                        "/img/Hershberger-After-Back.jpg?w=700&h=400&fit=crop",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("Vinyl")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n                textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n                be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("James Hardie")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n                and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n                and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n                Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n                an appointment.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/images/mastic-logo.png",
+                      alt: "Mastic Home Exteriors"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "/images/James-Hardie-logo-small.png",
+                      alt: "James hardie Siding"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ],
+          1
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.active === 2
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "windows" } },
+          [
+            _c(
+              "media-section",
+              {
+                attrs: {
+                  title: "Replacement Windows",
+                  img: "/images/atrium-window.jpg",
+                  "img-width": "550px",
+                  "img-alt": "dayton cincinnati ohio window installers"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n                Are you in the market for new windows? You have come to the right place.\n                Our replacement windows are a great investment, so why not take the plunge and\n                choose a window that is easy to clean and operate.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                At D&G roofing and Restoration, we understand how important it is to select the\n                right windows for your home or business.  No matter your budget, we’ll be glad to work\n                with you to provide the quality products you’re looking for and the excellent service\n                you deserve.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Our windows come in a wide variety of sizes and styles, and we would be happy to walk\n                you through your options and help you select the windows that will best serve your property’s\n                needs.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Save money and help our planet")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-8" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                        We are always looking for ways to help our environment.\n                        Our energy efficient windows can do more than just save you money;\n                        they can also help you conserve resources, which mean our planet benefits as well.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _c("strong", [
+                        _vm._v("Start saving money and the environment today!")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "/images/recycle-planet.png",
+                        alt: "D & G Roofing cares about our planet"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticStyle: { "margin-top": "10px" },
+                    attrs: { slot: "bimg" },
+                    slot: "bimg"
+                  },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "/images/atrium-logo.png",
+                            alt: "Atrium Windows"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: {
+                            src: "/images/marvin-doors-windows.png",
+                            alt: "Marvin Windows"
+                          }
+                        })
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            )
+          ],
+          1
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.active === 3
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "gutters" } },
+          [
+            _c("media-section", { attrs: { title: "Gutters" } }, [
+              _c("p", [
+                _vm._v(
+                  "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a\n                company with the right experience and selection of products. That's where D & G Roofing & Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "page-header color-red" }, [
+                _vm._v("BENEFIT FROM OUR EXPERTISE")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule your\n                estimate and learn more about the products we offer.\n            "
+                )
+              ])
+            ])
+          ],
+          1
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.active === 4
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "doors" } },
+          [
+            _c(
+              "media-section",
+              {
+                attrs: {
+                  title: "Door Replacement",
+                  img: "/images/door.png",
+                  "img-width": "350px",
+                  "img-alt": "dayton cincinnati ohio doors"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n                Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing\n                and Restoration, we offer the quality replacement doors and the outstanding service you’re\n                looking for. We are committed to offering the great service our customers deserve, while\n                providing well crafted, meticulously installed doors in a variety of styles, and welcome the\n                opportunity to walk you through the products we have to offer.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n                OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n                Call us today to learn more and schedule a free consultation.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "/images/provia-doors.jpg",
+                        alt: "ProVia Doors"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: {
+                        src: "/images/marvin-doors-windows.png",
+                        alt: "Marvin Doors & Windows"
+                      }
+                    })
+                  ])
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.active === 5
+      ? _c(
+          "div",
+          { staticClass: "row", attrs: { id: "commercial" } },
+          [
+            _c(
+              "media-section",
+              {
+                attrs: {
+                  title: "Commercial",
+                  img: "/images/commercial-roofing.jpg",
+                  "img-width": "550px",
+                  "img-alt": "dayton cincinnati ohio commercial contractors"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n                At D&G Roofing and Restoration, we offer a wide variety of applications for your business or\n                multi-family units. Whether you are in need of a repair or a full replacement, we have you\n                covered.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Roofing")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Asphalt Shingles:")]),
+                  _vm._v(
+                    " D&G Roofing and Restoration are CertainTeed Master Elite Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("EPDM Rubber Roofing:")]),
+                  _vm._v(
+                    " This application is used for flat surfaces. It’s proven hail resistant and\n                has superior resistance to extreme heat and fire.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("TPO Membrane Roofing:")]),
+                  _vm._v(
+                    " This application is used for flat surfaces. TPO has become the fastest\n                growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n                Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n                can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Siding")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                We offer a wide variety of products for your commercial property, whether you need a\n                repair or a full replacement, we are here to help. Check out our siding section for more\n                details on our siding selections.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", { staticClass: "page-header color-red" }, [
+                  _vm._v("Gutters")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural\n                damage, damp walls and mold. When it comes to gutter installation, it's important to use a\n                company with the right experience and quality products. That's where D&G Roofing and\n                Restoration comes in.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("Windows & Doors")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.\n                    Check out our window and door section on this site for more information.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "page-header color-red" }, [
+                    _vm._v("BENEFIT FROM OUR EXPERTISE")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                    At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally\n                    trained installers are dedicated to your complete satisfaction, and we go out of our way to keep\n                    our pricing reasonable and affordable. Call today and join our family of satisfied customers.\n                "
+                    )
+                  ])
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f2d0c612", module.exports)
+  }
+}
+
+/***/ }),
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(322)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(324)
+/* template */
+var __vue_template__ = __webpack_require__(329)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-60e7b831"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/contact/ContactForm.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-60e7b831", Component.options)
+  } else {
+    hotAPI.reload("data-v-60e7b831", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 322 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(323);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("122f1088", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-60e7b831\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ContactForm.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-60e7b831\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ContactForm.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 323 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 324 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "contact-form",
+  components: {
+    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  }
+});
+
+/***/ }),
+/* 325 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(326);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("0374604f", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-24fded35\",\"scoped\":true,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Form.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-24fded35\",\"scoped\":true,\"hasInlineConfig\":true}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Form.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 326 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dg-form[data-v-24fded35] {\n  background-color: #FFFFFF;\n  margin-top: -25px;\n  padding-top: 25px;\n}\n.dg-form h1[data-v-24fded35] {\n    font-family: 'Poppins', sans-serif, 'arial';\n    font-weight: 600;\n    font-size: 72px;\n    color: #EE001B;\n    text-align: center;\n}\n.dg-form h4[data-v-24fded35] {\n    font-family: 'Roboto', sans-serif, 'arial';\n    font-weight: 400;\n    font-size: 20px;\n    color: #353536;\n    line-height: 1.5;\n}\n.dg-form input:focus ~ label[data-v-24fded35], .dg-form textarea:focus ~ label[data-v-24fded35], .dg-form input:valid ~ label[data-v-24fded35], .dg-form textarea:valid ~ label[data-v-24fded35] {\n    font-size: .8em;\n    color: #9b9b9b;\n    top: -10px;\n    left: -5px;\n    -webkit-transition: all 0.225s ease;\n    transition: all 0.225s ease;\n}\n.dg-form .styled-input[data-v-24fded35] {\n    float: left;\n    width: 100%;\n    margin: 1rem 0;\n    position: relative;\n    border-radius: 4px;\n}\n.dg-form .styled-input label[data-v-24fded35] {\n      color: #FFFFFF;\n      padding: 1.3rem 30px 1rem 30px;\n      position: absolute;\n      top: 10px;\n      left: 0;\n      -webkit-transition: all 0.25s ease;\n      transition: all 0.25s ease;\n      pointer-events: none;\n}\n.dg-form input[data-v-24fded35],\n  .dg-form textarea[data-v-24fded35] {\n    border: 0;\n    width: 100%;\n    font-size: 1.5rem;\n    background-color: #353536;\n    color: #FFFFFF;\n    border-radius: 4px;\n    padding: 25px 25px 20px;\n}\n.dg-form input[data-v-24fded35]:focus,\n  .dg-form textarea[data-v-24fded35]:focus {\n    outline: 0;\n}\n.dg-form input:focus ~ span[data-v-24fded35],\n  .dg-form textarea:focus ~ span[data-v-24fded35] {\n    width: 100%;\n    -webkit-transition: all 0.075s ease;\n    transition: all 0.075s ease;\n}\n.dg-form textarea[data-v-24fded35] {\n    width: 100%;\n    min-height: 15em;\n}\n.dg-form .input-container[data-v-24fded35] {\n    max-width: 100%;\n    margin: 20px auto 25px auto;\n}\n.dg-form .form-btn[data-v-24fded35] {\n    float: right;\n    padding: 7px 35px;\n    border-radius: 60px;\n    display: inline-block;\n    background-color: #EE001B;\n    color: white;\n    font-size: 18px;\n    cursor: pointer;\n    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n    -webkit-transition: all 300ms ease;\n    transition: all 300ms ease;\n}\n.dg-form .form-btn[data-v-24fded35]:hover {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px);\n      -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.dg-form .form-btn[data-v-24fded35] {\n        width: 100%;\n        float: none;\n        text-align: center;\n}\n}\n.dg-form input[type=checkbox] + label[data-v-24fded35] {\n    color: #ccc;\n    font-style: italic;\n}\n.dg-form input[type=checkbox]:checked + label[data-v-24fded35] {\n    color: #f00;\n    font-style: normal;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 327 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "contact-form",
+  props: {
+    title: { type: String },
+    subTitle: { type: String },
+    container: { type: String, default: 'container' }
+  }
+});
+
+/***/ }),
+/* 328 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "dg-form" }, [
+    _c("div", { class: _vm.container }, [
+      _c("div", { staticClass: "row" }, [
+        _c("h1", [_vm._v(_vm._s(_vm.title))])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("h4", { staticClass: "text-center" }, [
+          _vm._v(_vm._s(_vm.subTitle))
+        ]),
+        _vm._v(" "),
+        _c("hr")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row input-container" }, [_vm._t("default")], 2)
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-24fded35", module.exports)
+  }
+}
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "dg-form",
+    {
+      attrs: {
+        title: "Contact Us",
+        "sub-title": "We can't wait to hear from you!"
+      }
+    },
+    [
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text", required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Name")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", { attrs: { type: "text", required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Email")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input", staticStyle: { float: "right" } },
+          [
+            _c("input", { attrs: { type: "text", placeholder: "optional" } }),
+            _vm._v(" "),
+            _c("label", [_vm._v("Phone Number")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("textarea", { attrs: { required: "" } }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Message")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Send Message")])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-60e7b831", module.exports)
+  }
+}
+
+/***/ }),
+/* 330 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(331)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(333)
+/* template */
+var __vue_template__ = __webpack_require__(334)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-4841cc85"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/giveaways/ReferForm.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4841cc85", Component.options)
+  } else {
+    hotAPI.reload("data-v-4841cc85", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 331 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(332);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("110006cc", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4841cc85\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4841cc85\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ReferForm.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 332 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dg-form h4.page-header[data-v-4841cc85] {\n  margin: 0;\n}\n.dg-form .form-btn.back-btn[data-v-4841cc85] {\n  margin-bottom: 5px;\n}\n@media (min-width: 768px) {\n.dg-form .form-btn.back-btn[data-v-4841cc85] {\n      float: left !important;\n      margin-bottom: 0;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 333 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'refer-form',
+
+  components: {
+    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  },
+
+  data: function data() {
+
+    return {
+      page: 1,
+
+      error: false,
+      completed: false,
+
+      frmdata: {
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        additional: '',
+
+        fname: '',
+        femail: '',
+        fphone: '',
+        faddress: '',
+        fadditional: ''
+      }
+    };
+  },
+
+
+  methods: {
+    validateInput: function validateInput() {
+      switch (this.page) {
+        case 1:
+          if (this.frmdata.name === '' || this.frmdata.email === '' || this.frmdata.phone === '' || this.frmdata.address === '') {
+
+            this.error = true;
+            return false;
+          }
+          break;
+        case 2:
+          if (this.frmdata.fname === '' || this.frmdata.fphone === '') {
+
+            this.error = true;
+            return false;
+          } else {
+            this.submit();
+          }
+          break;
+        default:
+          this.page++;
+          this.error = false;
+          return true;
+      }
+
+      this.page++;
+      this.error = false;
+      return true;
+    },
+    submit: function submit() {
+      axios.post('/api/giveaway/referral', this.frmdata).then(function (response) {
+        console.log(response);
+        this.completed = true;
+      }.bind(this)).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 334 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "dg-form",
+    {
+      attrs: {
+        title: "Refer Your Friend",
+        "sub-title":
+          "Don't stop with just one, with every referral you increase your chances to win!"
+      }
+    },
+    [
+      _vm.error
+        ? _c(
+            "div",
+            { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+            [_vm._v("\n        Check your input and try again.\n    ")]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.completed
+        ? _c("div", [
+            _c("h2", { staticClass: "page-header color-red" }, [
+              _vm._v("Thank you for your referral!")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("A single entry will be added in your favor!")])
+          ])
+        : _c("div", [
+            _c("div", { staticClass: "col-xs-12" }, [
+              _c("div", { staticClass: "row" }, [
+                _vm.page === 1
+                  ? _c("div", { staticClass: "col-xs-12 text-center" }, [
+                      _c("h4", { staticClass: "page-header" }, [
+                        _vm._v("Your Information")
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.page === 2
+                  ? _c("div", { staticClass: "col-xs-12 text-center" }, [
+                      _c("h4", { staticClass: "page-header" }, [
+                        _vm._v("Friends Information")
+                      ])
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _vm.page === 1
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.name,
+                          expression: "frmdata.name"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "name", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Your Name")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 2
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.fname,
+                          expression: "frmdata.fname"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.fname },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "fname", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Friends Name")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 1
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.phone,
+                          expression: "frmdata.phone"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.phone },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "phone", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Your Phone")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 2
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.fphone,
+                          expression: "frmdata.fphone"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.fphone },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "fphone", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Friends Phone")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 1
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.email,
+                          expression: "frmdata.email"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "email", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Your Email")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 2
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.femail,
+                          expression: "frmdata.femail"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "optional" },
+                      domProps: { value: _vm.frmdata.femail },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "femail", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Friends Email")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 1
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.address,
+                          expression: "frmdata.address"
+                        }
+                      ],
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.frmdata.address },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "address", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Your Address")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 2
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.faddress,
+                          expression: "frmdata.faddress"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "optional" },
+                      domProps: { value: _vm.frmdata.faddress },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.frmdata, "faddress", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("Friends Address")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 1
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("textarea", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.additional,
+                          expression: "frmdata.additional"
+                        }
+                      ],
+                      attrs: { placeholder: "optional" },
+                      domProps: { value: _vm.frmdata.additional },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.frmdata,
+                            "additional",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [_vm._v("How do you know about us ?")])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.page === 2
+              ? _c("div", { staticClass: "col-xs-12" }, [
+                  _c("div", { staticClass: "styled-input" }, [
+                    _c("textarea", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.frmdata.fadditional,
+                          expression: "frmdata.fadditional"
+                        }
+                      ],
+                      attrs: { placeholder: "optional" },
+                      domProps: { value: _vm.frmdata.fadditional },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.frmdata,
+                            "fadditional",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", [
+                      _vm._v("What does your friend need from us ?")
+                    ])
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-xs-12" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+                  _vm.page > 1
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "btn-lrg form-btn back-btn",
+                          on: {
+                            click: function($event) {
+                              _vm.page--
+                            }
+                          }
+                        },
+                        [_vm._v("Back")]
+                      )
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+                  _vm.page < 2
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "btn-lrg form-btn",
+                          on: {
+                            click: function($event) {
+                              _vm.validateInput()
+                            }
+                          }
+                        },
+                        [_vm._v("Next")]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.page === 2
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "btn-lrg form-btn",
+                          on: {
+                            click: function($event) {
+                              _vm.validateInput()
+                            }
+                          }
+                        },
+                        [_vm._v("Submit")]
+                      )
+                    : _vm._e()
+                ])
+              ])
+            ])
+          ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4841cc85", module.exports)
+  }
+}
+
+/***/ }),
+/* 335 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(336)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(338)
+/* template */
+var __vue_template__ = __webpack_require__(339)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-2254172f"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/join/JoinForm.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2254172f", Component.options)
+  } else {
+    hotAPI.reload("data-v-2254172f", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 336 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(337);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("35c6bee6", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2254172f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./JoinForm.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2254172f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./JoinForm.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 338 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Components_Form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_Components_Form__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "join-form",
+  components: {
+    DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  }
+});
+
+/***/ }),
+/* 339 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "dg-form",
+    {
+      attrs: {
+        title: "Apply Today!",
+        "sub-title": "We can't wait to meet you!",
+        container: "container-fluid"
+      }
+    },
+    [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("First Name")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Last Name")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Street Address")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Additional Address")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("City")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("State")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "text", required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Zip")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Why did YOU choose US ?")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", { attrs: { required: "" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Why should WE choose YOU ?")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", { attrs: { type: "file" } }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Attach Your Resume")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12" }, [
+        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Apply Now!")])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2254172f", module.exports)
+  }
+}
+
+/***/ }),
+/* 340 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(341)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(343)
+/* template */
+var __vue_template__ = __webpack_require__(344)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-260e44e8"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Galleries.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-260e44e8", Component.options)
+  } else {
+    hotAPI.reload("data-v-260e44e8", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 341 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(342);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("6e12bba8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260e44e8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Galleries.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260e44e8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Galleries.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 342 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.galleries .row[data-v-260e44e8] {\n  margin-bottom: 2rem;\n}\n.galleries .gallery-img[data-v-260e44e8] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.galleries .gallery-img:hover .title h2[data-v-260e44e8] {\n    opacity: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img:hover .overlay[data-v-260e44e8] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.galleries .gallery-img:hover .overlay h2[data-v-260e44e8], .galleries .gallery-img:hover .overlay a.info[data-v-260e44e8] {\n      opacity: 1;\n      filter: alpha(opacity=100);\n      -webkit-transform: translatey(0);\n              transform: translatey(0);\n      -webkit-transition-delay: .2s;\n              transition-delay: .2s;\n}\n.galleries .gallery-img:hover .overlay img[data-v-260e44e8] {\n      -webkit-transform: scale(1.2);\n              transform: scale(1.2);\n}\n.galleries .gallery-img .title[data-v-260e44e8] {\n    width: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n@media (min-width: 768px) {\n.galleries .gallery-img .title[data-v-260e44e8] {\n        top: 70%;\n}\n}\n.galleries .gallery-img .title h2[data-v-260e44e8] {\n      filter: alpha(opacity=100);\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.galleries .gallery-img .overlay[data-v-260e44e8] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img .overlay img[data-v-260e44e8] {\n      display: block;\n      position: relative;\n      -webkit-transition: all .4s linear;\n      transition: all .4s linear;\n}\n.galleries .gallery-img .overlay h2[data-v-260e44e8] {\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transform: translatey(-100px);\n              transform: translatey(-100px);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.galleries .gallery-img .overlay a.info[data-v-260e44e8] {\n      text-decoration: none;\n      display: inline-block;\n      text-transform: uppercase;\n      color: #fff;\n      border: 1px solid #fff;\n      background-color: transparent;\n      opacity: 0;\n      filter: alpha(opacity=0);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      margin: 70px 0 0;\n      padding: 7px 14px;\n}\n.galleries .gallery-img .overlay a.info[data-v-260e44e8]:hover {\n        -webkit-box-shadow: 0 0 5px #fff;\n                box-shadow: 0 0 5px #fff;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 343 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'galleries',
+  data: function data() {
+    return {
+      perpage: 9,
+      current_page: -1,
+      galleries: [],
+      from: 0,
+      last_page: 0,
+      next_page_url: null,
+      prev_page_url: null,
+      total: 0
+    };
+  },
+
+  methods: {
+    getGalleries: function getGalleries(page) {
+      var _this = this;
+
+      this.errors = [];
+
+      if (this.current_page === page) {
+        return false;
+      }
+
+      if (page === this.current_page + 1 && this.next_page_url === null) {
+        return false;
+      }
+
+      if (page === this.current_page - 1 && this.prev_page_url === null) {
+        return false;
+      }
+
+      axios.get('/api/galleries/paginate/' + this.perpage + '?page=' + page).then(function (response) {
+        var r = response.data;
+
+        _this.current_page = r.current_page;
+        _this.galleries = r.data;
+        _this.from = r.from;
+        _this.last_page = r.last_page;
+        _this.next_page_url = r.next_page_url;
+        _this.prev_page_url = r.prev_page_url;
+        _this.total = r.total;
+      }).catch(function (error) {
+        alert(error.response.data.message);
+      });
+    }
+  },
+  created: function created() {
+    this.getGalleries(1);
+  }
+});
+
+/***/ }),
+/* 344 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "galleries" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("h1", { staticClass: "page-header color-red" }, [_vm._v("Galleries")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.galleries, function(gallery) {
+          return _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-12" }, [
+            _c("div", { staticClass: "gallery-img" }, [
+              _c("img", {
+                staticClass: "img-responsive",
+                attrs: {
+                  src: gallery.img
+                    ? gallery.img + "?w=700&h=400&fit=crop"
+                    : "/img/default-cover.jpg?w=700&h=400&fit=crop",
+                  alt: gallery.name
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "title" }, [
+                _c("h2", [_vm._v(_vm._s(gallery.name))])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "overlay" }, [
+                _c("h2", [_vm._v(_vm._s(gallery.photo_count) + " Photos")]),
+                _vm._v(" "),
+                gallery.photo_count > 0
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "info",
+                        attrs: { href: "/galleries/" + gallery.id }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            View Photos\n                        "
+                        )
+                      ]
+                    )
+                  : _vm._e()
+              ])
+            ])
+          ])
+        })
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-12 text-center" }, [
+          _c("nav", [
+            _c(
+              "ul",
+              { staticClass: "pagination" },
+              [
+                _c("li", { class: _vm.prev_page_url ? null : "disabled" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: { href: "#", "aria-label": "Previous" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          _vm.getGalleries(_vm.current_page - 1)
+                        }
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("«")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.last_page, function(index) {
+                  return _c(
+                    "li",
+                    { class: _vm.current_page === index ? "active" : null },
+                    [
+                      _c(
+                        "a",
+                        {
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.getGalleries(index)
+                            }
+                          }
+                        },
+                        [_vm._v(_vm._s(index))]
+                      )
+                    ]
+                  )
+                }),
+                _vm._v(" "),
+                _c("li", { class: _vm.next_page_url ? null : "disabled" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: { href: "#", "aria-label": "Next" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          _vm.getGalleries(_vm.current_page + 1)
+                        }
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("»")
+                      ])
+                    ]
+                  )
+                ])
+              ],
+              2
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-260e44e8", module.exports)
+  }
+}
+
+/***/ }),
+/* 345 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(346)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(348)
+/* template */
+var __vue_template__ = __webpack_require__(349)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-7b103995"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/views/partials/Photos.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7b103995", Component.options)
+  } else {
+    hotAPI.reload("data-v-7b103995", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 346 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(347);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("5cfbd75b", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b103995\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Photos.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 347 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.photos .row[data-v-7b103995] {\n  margin-bottom: 2rem;\n}\n.photos .photo-img[data-v-7b103995] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.photos .photo-img[data-v-7b103995]:hover {\n    /*.title h2 {\n                opacity: 0;\n                transition: all .4s ease-in-out;\n            }*/\n}\n.photos .photo-img:hover .overlay[data-v-7b103995] {\n      opacity: 1;\n      filter: alpha(opacity=100);\n}\n.photos .photo-img:hover .overlay h2[data-v-7b103995], .photos .photo-img:hover .overlay a.info[data-v-7b103995] {\n        opacity: 1;\n        filter: alpha(opacity=100);\n        -webkit-transform: translatey(0);\n                transform: translatey(0);\n        -webkit-transition-delay: .2s;\n                transition-delay: .2s;\n}\n.photos .photo-img:hover .overlay img[data-v-7b103995] {\n        -webkit-transform: scale(1.2);\n                transform: scale(1.2);\n}\n.photos .photo-img .title[data-v-7b103995] {\n    width: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n@media (min-width: 768px) {\n.photos .photo-img .title[data-v-7b103995] {\n        top: 70%;\n}\n}\n.photos .photo-img .title h2[data-v-7b103995] {\n      filter: alpha(opacity=100);\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay[data-v-7b103995] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.photos .photo-img .overlay img[data-v-7b103995] {\n      display: block;\n      position: relative;\n      -webkit-transition: all .4s linear;\n      transition: all .4s linear;\n}\n.photos .photo-img .overlay h2[data-v-7b103995] {\n      text-transform: uppercase;\n      color: #fff;\n      text-align: center;\n      position: relative;\n      font-size: 17px;\n      background: rgba(0, 0, 0, 0.6);\n      -webkit-transform: translatey(-100px);\n              transform: translatey(-100px);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      padding: 10px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995] {\n      text-decoration: none;\n      display: inline-block;\n      text-transform: uppercase;\n      color: #fff;\n      border: 1px solid #fff;\n      background-color: transparent;\n      opacity: 0;\n      filter: alpha(opacity=0);\n      -webkit-transition: all .2s ease-in-out;\n      transition: all .2s ease-in-out;\n      margin: 70px 0 0;\n      padding: 7px 14px;\n}\n.photos .photo-img .overlay a.info[data-v-7b103995]:hover {\n        -webkit-box-shadow: 0 0 5px #fff;\n                box-shadow: 0 0 5px #fff;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 348 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'photos',
+  props: {
+    galleryId: { type: Number, default: 0 }
+  },
+  data: function data() {
+    return {
+      photos: [],
+      current_page: -1,
+      from: 0,
+      last_page: 0,
+      next_page_url: null,
+      prev_page_url: null,
+      total: 0
+    };
+  },
+
+  methods: {
+    getPhotos: function getPhotos(page) {
+      var _this = this;
+
+      this.errors = [];
+
+      if (this.current_page === page) {
+        return false;
+      }
+
+      if (page === this.current_page + 1 && this.next_page_url === null) {
+        return false;
+      }
+
+      if (page === this.current_page - 1 && this.prev_page_url === null) {
+        return false;
+      }
+
+      axios.get('/api/galleries/' + this.pathId + '?page=' + page).then(function (response) {
+
+        var r = response.data;
+
+        _this.current_page = r.current_page;
+        _this.photos = r.data;
+        _this.from = r.from;
+        _this.last_page = r.last_page;
+        _this.next_page_url = r.next_page_url;
+        _this.prev_page_url = r.prev_page_url;
+        _this.total = r.total;
+      }).catch(function (error) {
+        alert(error.response.data.message);
+      });
+    }
+  },
+  computed: {
+    pathId: function pathId() {
+      return this.galleryId !== 0 ? this.galleryId : window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+    }
+  },
+  created: function created() {
+    this.getPhotos(1);
+  }
+});
+
+/***/ }),
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.photos.length > 0
+    ? _c("div", { staticClass: "photos" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("h1", { staticClass: "page-header color-red" }, [
+            _vm._v(_vm._s(_vm.photos.length) + " Photos")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.photos, function(photo) {
+              return _c("div", { staticClass: "col-md-6 col-xs-12" }, [
+                _c("div", { staticClass: "photo-img" }, [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: photo.path + "?w=700&h=400&fit=crop",
+                      alt: photo.name
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "title" }, [
+                    _c("h2", [_vm._v(_vm._s(photo.description))])
+                  ])
+                ])
+              ])
+            })
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12 text-center" }, [
+              _c("nav", [
+                _c(
+                  "ul",
+                  { staticClass: "pagination" },
+                  [
+                    _c("li", { class: _vm.prev_page_url ? null : "disabled" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: { href: "#", "aria-label": "Previous" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.getPhotos(_vm.current_page - 1)
+                            }
+                          }
+                        },
+                        [
+                          _c("span", { attrs: { "aria-hidden": "true" } }, [
+                            _vm._v("«")
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.last_page, function(index) {
+                      return _c(
+                        "li",
+                        { class: _vm.current_page === index ? "active" : null },
+                        [
+                          _c(
+                            "a",
+                            {
+                              attrs: { href: "#" },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  _vm.getPhotos(index)
+                                }
+                              }
+                            },
+                            [_vm._v(_vm._s(index))]
+                          )
+                        ]
+                      )
+                    }),
+                    _vm._v(" "),
+                    _c("li", { class: _vm.next_page_url ? null : "disabled" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: { href: "#", "aria-label": "Next" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.getPhotos(_vm.current_page + 1)
+                            }
+                          }
+                        },
+                        [
+                          _c("span", { attrs: { "aria-hidden": "true" } }, [
+                            _vm._v("»")
+                          ])
+                        ]
+                      )
+                    ])
+                  ],
+                  2
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    : _vm._e()
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7b103995", module.exports)
+  }
+}
+
+/***/ }),
+/* 350 */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define("vuejs-countdown",[],e):"object"==typeof exports?exports["vuejs-countdown"]=e():t["vuejs-countdown"]=e()}("undefined"!=typeof self?self:this,function(){return function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,e),o.l=!0,o.exports}var n={};return e.m=t,e.c=n,e.d=function(t,n,r){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:r})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=1)}([function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=null;e.default={name:"vuejsCountDown",props:{deadline:{type:String},end:{type:String},stop:{type:Boolean}},data:function(){return{now:Math.trunc((new Date).getTime()/1e3),date:null,diff:0}},created:function(){var t=this;if(!this.deadline&&!this.end)throw new Error("Missing props 'deadline' or 'end'");var e=this.deadline?this.deadline:this.end;if(this.date=Math.trunc(Date.parse(e.replace(/-/g,"/"))/1e3),!this.date)throw new Error("Invalid props value, correct the 'deadline' or 'end'");r=setInterval(function(){t.now=Math.trunc((new Date).getTime()/1e3)},1e3)},computed:{seconds:function(){return Math.trunc(this.diff)%60},minutes:function(){return Math.trunc(this.diff/60)%60},hours:function(){return Math.trunc(this.diff/60/60)%24},days:function(){return Math.trunc(this.diff/60/60/24)}},watch:{now:function(t){this.diff=this.date-this.now,(this.diff<=0||this.stop)&&(this.diff=0,clearInterval(r))}},filters:{twoDigits:function(t){return t.toString().length<=1?"0"+t.toString():t.toString()}},destroyed:function(){clearInterval(r)}}},function(t,e,n){"use strict";function r(t){n(2)}Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),i=n.n(o);for(var s in o)"default"!==s&&function(t){n.d(e,t,function(){return o[t]})}(s);var a=n(8),u=n(7),c=r,d=u(i.a,a.a,!1,c,null,null);e.default=d.exports},function(t,e,n){var r=n(3);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals);n(5)("630d476e",r,!0,{})},function(t,e,n){e=t.exports=n(4)(!1),e.push([t.i,'.vuejs-countdown{padding:0;margin:0}.vuejs-countdown li{display:inline-block;margin:0 8px;text-align:center;position:relative}.vuejs-countdown li p{margin:0}.vuejs-countdown li:after{content:":";position:absolute;top:0;right:-13px;font-size:32px}.vuejs-countdown li:first-of-type{margin-left:0}.vuejs-countdown li:last-of-type{margin-right:0}.vuejs-countdown li:last-of-type:after{content:""}.vuejs-countdown .digit{font-size:32px;font-weight:600;line-height:1.4;margin-bottom:0}.vuejs-countdown .text{text-transform:uppercase;margin-bottom:0;font-size:10px}',""])},function(t,e){function n(t,e){var n=t[1]||"",o=t[3];if(!o)return n;if(e&&"function"==typeof btoa){var i=r(o);return[n].concat(o.sources.map(function(t){return"/*# sourceURL="+o.sourceRoot+t+" */"})).concat([i]).join("\n")}return[n].join("\n")}function r(t){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(t))))+" */"}t.exports=function(t){var e=[];return e.toString=function(){return this.map(function(e){var r=n(e,t);return e[2]?"@media "+e[2]+"{"+r+"}":r}).join("")},e.i=function(t,n){"string"==typeof t&&(t=[[null,t,""]]);for(var r={},o=0;o<this.length;o++){var i=this[o][0];"number"==typeof i&&(r[i]=!0)}for(o=0;o<t.length;o++){var s=t[o];"number"==typeof s[0]&&r[s[0]]||(n&&!s[2]?s[2]=n:n&&(s[2]="("+s[2]+") and ("+n+")"),e.push(s))}},e}},function(t,e,n){function r(t){for(var e=0;e<t.length;e++){var n=t[e],r=d[n.id];if(r){r.refs++;for(var o=0;o<r.parts.length;o++)r.parts[o](n.parts[o]);for(;o<n.parts.length;o++)r.parts.push(i(n.parts[o]));r.parts.length>n.parts.length&&(r.parts.length=n.parts.length)}else{for(var s=[],o=0;o<n.parts.length;o++)s.push(i(n.parts[o]));d[n.id]={id:n.id,refs:1,parts:s}}}}function o(){var t=document.createElement("style");return t.type="text/css",f.appendChild(t),t}function i(t){var e,n,r=document.querySelector("style["+m+'~="'+t.id+'"]');if(r){if(v)return h;r.parentNode.removeChild(r)}if(_){var i=p++;r=l||(l=o()),e=s.bind(null,r,i,!1),n=s.bind(null,r,i,!0)}else r=o(),e=a.bind(null,r),n=function(){r.parentNode.removeChild(r)};return e(t),function(r){if(r){if(r.css===t.css&&r.media===t.media&&r.sourceMap===t.sourceMap)return;e(t=r)}else n()}}function s(t,e,n,r){var o=n?"":r.css;if(t.styleSheet)t.styleSheet.cssText=y(e,o);else{var i=document.createTextNode(o),s=t.childNodes;s[e]&&t.removeChild(s[e]),s.length?t.insertBefore(i,s[e]):t.appendChild(i)}}function a(t,e){var n=e.css,r=e.media,o=e.sourceMap;if(r&&t.setAttribute("media",r),g.ssrId&&t.setAttribute(m,e.id),o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */"),t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}var u="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!u)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var c=n(6),d={},f=u&&(document.head||document.getElementsByTagName("head")[0]),l=null,p=0,v=!1,h=function(){},g=null,m="data-vue-ssr-id",_="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());t.exports=function(t,e,n,o){v=n,g=o||{};var i=c(t,e);return r(i),function(e){for(var n=[],o=0;o<i.length;o++){var s=i[o],a=d[s.id];a.refs--,n.push(a)}e?(i=c(t,e),r(i)):i=[];for(var o=0;o<n.length;o++){var a=n[o];if(0===a.refs){for(var u=0;u<a.parts.length;u++)a.parts[u]();delete d[a.id]}}}};var y=function(){var t=[];return function(e,n){return t[e]=n,t.filter(Boolean).join("\n")}}()},function(t,e){t.exports=function(t,e){for(var n=[],r={},o=0;o<e.length;o++){var i=e[o],s=i[0],a=i[1],u=i[2],c=i[3],d={id:t+":"+o,css:a,media:u,sourceMap:c};r[s]?r[s].parts.push(d):n.push(r[s]={id:s,parts:[d]})}return n}},function(t,e){t.exports=function(t,e,n,r,o,i){var s,a=t=t||{},u=typeof t.default;"object"!==u&&"function"!==u||(s=t,a=t.default);var c="function"==typeof a?a.options:a;e&&(c.render=e.render,c.staticRenderFns=e.staticRenderFns,c._compiled=!0),n&&(c.functional=!0),o&&(c._scopeId=o);var d;if(i?(d=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),r&&r.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(i)},c._ssrRegister=d):r&&(d=r),d){var f=c.functional,l=f?c.render:c.beforeCreate;f?(c._injectStyles=d,c.render=function(t,e){return d.call(e),l(t,e)}):c.beforeCreate=l?[].concat(l,d):[d]}return{esModule:s,exports:a,options:c}}},function(t,e,n){"use strict";var r=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("ul",{staticClass:"vuejs-countdown"},[t.days>0?n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.days)))]),t._v(" "),n("p",{staticClass:"text"},[t._v(t._s(t.days>1?"days":"day"))])]):t._e(),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.hours)))]),t._v(" "),n("p",{staticClass:"text"},[t._v(t._s(t.hours>1?"hours":"hour"))])]),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.minutes)))]),t._v(" "),n("p",{staticClass:"text"},[t._v("min")])]),t._v(" "),n("li",[n("p",{staticClass:"digit"},[t._v(t._s(t._f("twoDigits")(t.seconds)))]),t._v(" "),n("p",{staticClass:"text"},[t._v("Sec")])])])},o=[],i={render:r,staticRenderFns:o};e.a=i}])});
+
+/***/ }),
+/* 351 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 352 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(368);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("428e7c9f", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f55dda44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminGiveaways.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 368 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.giveaway .row {\n  margin-bottom: 2rem;\n}\n.giveaway .add-form input:focus ~ label, .giveaway .add-form textarea:focus ~ label, .giveaway .add-form input:valid ~ label, .giveaway .add-form textarea:valid ~ label,\n.giveaway .edit-form input:focus ~ label,\n.giveaway .edit-form textarea:focus ~ label,\n.giveaway .edit-form input:valid ~ label,\n.giveaway .edit-form textarea:valid ~ label {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.giveaway .add-form .styled-input,\n.giveaway .edit-form .styled-input {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.giveaway .add-form .styled-input label,\n  .giveaway .edit-form .styled-input label {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.giveaway .add-form input,\n.giveaway .add-form textarea,\n.giveaway .edit-form input,\n.giveaway .edit-form textarea {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.giveaway .add-form input:focus,\n.giveaway .add-form textarea:focus,\n.giveaway .edit-form input:focus,\n.giveaway .edit-form textarea:focus {\n  outline: 0;\n}\n.giveaway .add-form input:focus ~ span,\n.giveaway .add-form textarea:focus ~ span,\n.giveaway .edit-form input:focus ~ span,\n.giveaway .edit-form textarea:focus ~ span {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.giveaway .add-form textarea,\n.giveaway .edit-form textarea {\n  width: 100%;\n  min-height: 5em;\n}\n.giveaway .add-form .form-btn,\n.giveaway .edit-form .form-btn {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.giveaway .add-form .form-btn:hover,\n  .giveaway .edit-form .form-btn:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.giveaway .add-form .form-btn,\n    .giveaway .edit-form .form-btn {\n      width: 100%;\n      text-align: center;\n}\n}\n.giveaway .add-form input[type=checkbox] + label,\n.giveaway .edit-form input[type=checkbox] + label {\n  color: #ccc;\n  font-style: italic;\n}\n.giveaway .add-form input[type=checkbox]:checked + label,\n.giveaway .edit-form input[type=checkbox]:checked + label {\n  color: #f00;\n  font-style: normal;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 369 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "giveaway" }, [
+    _vm.success !== ""
+      ? _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "alert alert-success" }, [
+              _vm._v("\n        " + _vm._s(_vm.success) + "\n      ")
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.errors.length > 0
+      ? _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "alert alert-danger" }, [
+              _c(
+                "ul",
+                _vm._l(_vm.errors, function(error) {
+                  return _c("li", [_vm._v(_vm._s(error))])
+                })
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c(
+          "div",
+          { staticClass: "styled-input" },
+          [
+            _c("datepicker", {
+              model: {
+                value: _vm.editData.ends_at,
+                callback: function($$v) {
+                  _vm.$set(_vm.editData, "ends_at", $$v)
+                },
+                expression: "editData.ends_at"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.title,
+                expression: "editData.title"
+              }
+            ],
+            attrs: { type: "text", required: "" },
+            domProps: { value: _vm.editData.title },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "title", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Title")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.description,
+                expression: "editData.description"
+              }
+            ],
+            attrs: { rows: "5", required: "" },
+            domProps: { value: _vm.editData.description },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "description", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Description")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-12" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.editData.features,
+                expression: "editData.features"
+              }
+            ],
+            attrs: { rows: "10", required: "" },
+            domProps: { value: _vm.editData.features },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.editData, "features", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Features (One per line)")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "main")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Main Image")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_2")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 2")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_3")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 3")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xs-12 col-md-6" }, [
+        _c("div", { staticClass: "styled-input" }, [
+          _c("input", {
+            attrs: { type: "file" },
+            on: {
+              change: function($event) {
+                _vm.processFile($event, "product_image_4")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v("Product Image 4")])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row edit-form" }, [
+      _c("div", { staticClass: "col-xs-12 col-md-3" }, [
+        _c(
+          "div",
+          {
+            staticClass: "btn-lrg form-btn",
+            on: {
+              click: function($event) {
+                _vm.update()
+              }
+            }
+          },
+          [_vm._v("Save")]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f55dda44", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
