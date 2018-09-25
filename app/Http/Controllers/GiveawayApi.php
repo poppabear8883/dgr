@@ -21,7 +21,7 @@ class GiveawayApi extends Controller
             $model = Giveaway::findOrFail($id);
             $model->update([
                 'ends_at' => Carbon::parse($request->ends_at),
-            ] + $request->all());
+            ] + $request->except(['ends_at']));
             return response(['success' => true], 200);
         } catch (\Exception $e) {
             return response(['message' => $e->getMessage()], 422);
