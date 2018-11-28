@@ -57,9 +57,9 @@ class Image implements ImageInterface
         $filename = $this->formatName($id, $ext);
         $image = $this->manager->make($source);
 
-        if ($validate) {
-           $this->validateImage($image);
-        }
+//        if ($validate) {
+//           $this->validateImage($image);
+//        }
 
         return $image->save($this->getPath($filename));
     }
