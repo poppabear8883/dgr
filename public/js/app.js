@@ -73983,24 +73983,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -74008,6 +73990,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "join-form",
   components: {
     DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  },
+  data: function data() {
+
+    return {
+      error: false,
+      completed: false,
+
+      frmdata: {
+        name: '',
+        email: '',
+        phone: '',
+        altphone: '',
+        whyus: '',
+        whyyou: ''
+      }
+    };
+  },
+
+
+  methods: {
+    validateInput: function validateInput() {
+      this.error = false;
+
+      if (this.frmdata.name === '' || this.frmdata.email === '' || this.frmdata.phone === '' || this.frmdata.whyyou === '' || this.frmdata.whyus === '') {
+
+        this.error = true;
+        return false;
+      }
+
+      this.submit();
+      this.completed = true;
+    },
+    submit: function submit() {
+      axios.post('/api/join/apply', this.frmdata).then(function (response) {
+        console.log(response);
+        this.completed = true;
+      }.bind(this)).catch(function (error) {
+        console.log(error);
+      });
+    }
   }
 });
 
@@ -74029,71 +74051,154 @@ var render = function() {
       }
     },
     [
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("First Name")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Last Name")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Street Address")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", placeholder: "optional" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Additional Address")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("City")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("State")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4 col-sm-6" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "text", required: "" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Zip")])
+      _vm.error
+        ? _c(
+            "div",
+            { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+            [_vm._v("\n        Check your input and try again.\n    ")]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.completed
+        ? _c("div", [
+            _c("h2", { staticClass: "page-header color-red" }, [
+              _vm._v("Thank you for your interest!")
             ])
           ])
-        ])
-      ]),
+        : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" }, [
+      _c("div", { staticClass: "col-md-6 col-md-offset-3" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("textarea", { attrs: { required: "" } }),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.name,
+                    expression: "frmdata.name"
+                  }
+                ],
+                attrs: { type: "text", required: "" },
+                domProps: { value: _vm.frmdata.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "name", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Full Name")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.email,
+                    expression: "frmdata.email"
+                  }
+                ],
+                attrs: { type: "text", required: "" },
+                domProps: { value: _vm.frmdata.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "email", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Email")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.phone,
+                    expression: "frmdata.phone"
+                  }
+                ],
+                attrs: { type: "text", required: "" },
+                domProps: { value: _vm.frmdata.phone },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "phone", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Phone #")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 col-sm-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.altphone,
+                    expression: "frmdata.altphone"
+                  }
+                ],
+                attrs: { type: "text", placeholder: "optional" },
+                domProps: { value: _vm.frmdata.altphone },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "altphone", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", [_vm._v("Alt. Phone #")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xs-12" }, [
+            _c("div", { staticClass: "styled-input" }, [
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.whyus,
+                    expression: "frmdata.whyus"
+                  }
+                ],
+                attrs: { required: "" },
+                domProps: { value: _vm.frmdata.whyus },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "whyus", $event.target.value)
+                  }
+                }
+              }),
               _vm._v(" "),
               _c("label", [_vm._v("Why did YOU choose US ?")])
             ])
@@ -74101,24 +74206,39 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [
-              _c("textarea", { attrs: { required: "" } }),
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.frmdata.whyyou,
+                    expression: "frmdata.whyyou"
+                  }
+                ],
+                attrs: { required: "" },
+                domProps: { value: _vm.frmdata.whyyou },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.frmdata, "whyyou", $event.target.value)
+                  }
+                }
+              }),
               _vm._v(" "),
               _c("label", [_vm._v("Why should WE choose YOU ?")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12" }, [
-            _c("div", { staticClass: "styled-input" }, [
-              _c("input", { attrs: { type: "file" } }),
-              _vm._v(" "),
-              _c("label", [_vm._v("Attach Your Resume")])
             ])
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Apply Now!")])
+      _c("div", { staticClass: "col-md-6 col-md-offset-3" }, [
+        _c(
+          "div",
+          { staticClass: "btn-lrg form-btn", on: { click: _vm.validateInput } },
+          [_vm._v("Apply Now!")]
+        )
       ])
     ]
   )

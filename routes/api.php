@@ -11,6 +11,10 @@
 |
 */
 
+Route::prefix('join')->group(function () {
+    Route::post('/apply', 'ApplyController@apply');
+});
+
 /* Giveaway API Routes */
 Route::prefix('giveaway')->group(function () {
     Route::post('/referral', 'GiveawayController@referral');
