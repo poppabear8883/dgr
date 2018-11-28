@@ -68947,11 +68947,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -68985,41 +68980,26 @@ var staticRenderFns = [
           _c(
             "div",
             {
-              staticClass: "hidden-sm col-md-4 col-lg-4 text-center nrlb-logo"
+              staticClass:
+                "col-sm-6 col-md-4 col-md-offset-3 col-lg-4 col-lg-offset-3"
             },
             [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://noroofleftbehind.com/program/oh/1353",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "img-responsive",
-                    attrs: { src: "/images/no-roof-left-behind2.png" }
-                  })
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm-6 col-md-4 col-lg-4" }, [
-            _c("div", { staticClass: "info" }, [
-              _c("p", [
-                _vm._v("\n                        Free Inspections - "),
-                _c("span", { staticClass: "color-red" }, [_vm._v("Call Now!")])
-              ]),
-              _vm._v(" "),
-              _c("h1", [
-                _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
-                  _vm._v("937-439-0554")
+              _c("div", { staticClass: "info" }, [
+                _c("p", [
+                  _vm._v("\n                        Free Inspections - "),
+                  _c("span", { staticClass: "color-red" }, [
+                    _vm._v("Call Now!")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", [
+                  _c("a", { attrs: { href: "tel:1-937-439-0554" } }, [
+                    _vm._v("937-439-0554")
+                  ])
                 ])
               ])
-            ])
-          ])
+            ]
+          )
         ])
       ])
     ])
@@ -69694,7 +69674,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass: "text-center animated tada delay-2-5s",
-                attrs: { href: "#" }
+                attrs: { href: "/contact" }
               },
               [_vm._v("Free Inspection")]
             )
@@ -69970,32 +69950,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -70021,10 +69975,6 @@ var render = function() {
         "div",
         { staticClass: "container text-center" },
         [
-          _c("h2", { staticClass: "page-header color-red" }, [
-            _vm._v("AFFILIATES")
-          ]),
-          _vm._v(" "),
           _c(
             "carousel",
             {
@@ -70110,25 +70060,6 @@ var render = function() {
                       staticClass: "img-responsive",
                       staticStyle: { "margin-top": "25px" },
                       attrs: { src: "/img/provia-logo.png?w=250&h=85" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("slide", [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://noroofleftbehind.com/program/oh/1353",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      staticStyle: { "margin-top": "25px" },
-                      attrs: { src: "/img/no-roof-left-behind.png?w=180&h=85" }
                     })
                   ]
                 )
@@ -70234,41 +70165,7 @@ var staticRenderFns = [
     return _c("footer", [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
-            _c("h3", { staticClass: "color-red" }, [_vm._v("Stay Updated")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "\n                        You want to get updates about promotions and/or contests?\n                        Fill in your email address and click Submit!\n                    "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("div", { staticClass: "input-group" }, [
-                _c("div", { staticClass: "input-group-addon" }, [
-                  _c("i", { staticClass: "fa fa-envelope" })
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "email" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group-btn" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-default",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Submit")]
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-4" }, [
             _c("h3", { staticClass: "color-red" }, [_vm._v("Qualifications")]),
             _vm._v(" "),
             _c("ul", [
@@ -70296,7 +70193,7 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-4" }, [
             _c("h3", { staticClass: "color-red" }, [_vm._v("Insurances")]),
             _vm._v(" "),
             _c("ul", [
@@ -70326,7 +70223,7 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-3" }, [
+          _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-4" }, [
             _c("h3", { staticClass: "color-red" }, [_vm._v("Contact")]),
             _vm._v(" "),
             _c("address", [

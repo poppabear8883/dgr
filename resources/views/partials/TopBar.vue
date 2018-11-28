@@ -7,12 +7,7 @@
                         <img class="img-responsive" src="/images/site-logo.png">
                     </a>
                 </div>
-                <div class="hidden-sm col-md-4 col-lg-4 text-center nrlb-logo">
-                    <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
-                        <img class="img-responsive" src="/images/no-roof-left-behind2.png">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="col-sm-6 col-md-4 col-md-offset-3 col-lg-4 col-lg-offset-3">
                     <div class="info">
                         <p>
                             Free Inspections - <span class="color-red">Call Now!</span>

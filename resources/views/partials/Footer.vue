@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="logos hidden-xs">
             <div class="container text-center">
-                <h2 class="page-header color-red">AFFILIATES</h2>
+                <!--<h2 class="page-header color-red">AFFILIATES</h2>-->
                 <carousel :autoplay="true"
                           :loop="true"
                           :autoplay-timeout="5000"
@@ -35,13 +35,6 @@
                         <a href="https://www.provia.com/" target="_blank">
                             <img class="img-responsive"
                                  src="/img/provia-logo.png?w=250&h=85"
-                                 style="margin-top: 25px;">
-                        </a>
-                    </slide>
-                    <slide>
-                        <a href="https://noroofleftbehind.com/program/oh/1353" target="_blank">
-                            <img class="img-responsive"
-                                 src="/img/no-roof-left-behind.png?w=180&h=85"
                                  style="margin-top: 25px;">
                         </a>
                     </slide>
@@ -83,27 +76,8 @@
         <footer>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3">
-                        <h3 class="color-red">Stay Updated</h3>
-                        <p>
-                            You want to get updates about promotions and/or contests?
-                            Fill in your email address and click Submit!
-                        </p>
-                        <div class="form-group">
-                            <div class="input-group">
 
-                                <div class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <input type="text" class="form-control" name="email">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3 class="color-red">Qualifications</h3>
                         <ul>
                             <li>A+ Rating with BBB</li>
@@ -120,7 +94,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3 class="color-red">Insurances</h3>
                         <ul>
                             <li>Progressive</li>
@@ -138,7 +112,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3 class="color-red">Contact</h3>
                         <address>
                             <strong>D&G Roofing & Restoration LLC</strong><br>

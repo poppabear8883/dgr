@@ -50,7 +50,7 @@
                                         <a class="text-center" href="/join-our-team">Join Our Team</a>
                                     </div>
                                     <div class="col-md-4">
-                                        <a class="text-center animated tada delay-2-5s" href="#">Free Inspection</a>
+                                        <a class="text-center animated tada delay-2-5s" href="/contact">Free Inspection</a>
                                     </div>
                                 </div>
                         </div>

@@ -13,73 +13,49 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $this->createStaging();
-
         $this->createGerri();
+        $this->createAmanda();
         $this->createMike();
-
-        // Lets generate some dummy data for testing
-        factory(Profile::class, 20)->create();
-    }
-
-    private function createStaging()
-    {
-        $user = User::create([
-            'username' => 'staging',
-            'password' => bcrypt('secret'),
-            'email' => 'staging@email.com'
-        ]);
-
-        $user->profile()->create([
-            'name' => 'Staging Account',
-            'address' => '123 street ln',
-            'city' => 'Moraine',
-            'state' => 'Ohio',
-            'zip' => '45439',
-            'county' => 'Montgomery',
-            'primary_phone' => '(937) 555-1234'
-        ]);
-
-        $user->assignRole('owner');
     }
 
     private function createGerri(): void
     {
         $user = User::create([
-            'username' => 'Gerri.Howard',
-            'password' => bcrypt('secret'),
+            'username' => 'GerriH',
+            'password' => bcrypt('heGrg3rYuZQ923yk'),
             'email' => 'gerri.dgroofing@gmail.com'
         ]);
 
-        $user->profile()->create([
-            'name' => 'Gerri Howard',
-            'address' => '123 street ln',
-            'city' => 'Moraine',
-            'state' => 'Ohio',
-            'zip' => '45439',
-            'county' => 'Montgomery',
-            'primary_phone' => '(937) 555-1234'
-        ]);
+//        $user->profile()->create([
+//            'name' => 'Gerri Howard',
+//            'address' => '123 street ln',
+//            'city' => 'Moraine',
+//            'state' => 'Ohio',
+//            'zip' => '45439',
+//            'county' => 'Montgomery',
+//            'primary_phone' => '(937) 555-1234'
+//        ]);
 
         $user->assignRole('owner');
+    }
+
+    private function createAmanda(): void
+    {
+        $user = User::create([
+            'username' => 'AmandaW',
+            'password' => bcrypt('secret'),
+            'email' => 'amanda.dgroofing@gmail.com'
+        ]);
+
+        $user->assignRole('admin');
     }
 
     private function createMike(): void
     {
         $user = User::create([
-            'username' => 'Mike.Wiley',
-            'password' => bcrypt('secret'),
+            'username' => 'MikeW',
+            'password' => bcrypt('2ttySnTrBQuXyHSk'),
             'email' => 'servnx@gmail.com'
-        ]);
-
-        $user->profile()->create([
-            'name' => 'Mike Wiley',
-            'address' => '232 Wiesen Ln',
-            'city' => 'Moraine',
-            'state' => 'Ohio',
-            'zip' => '45439',
-            'county' => 'Montgomery',
-            'primary_phone' => '(937) 555-1234'
         ]);
 
         $user->assignRole('admin');
