@@ -66953,21 +66953,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -68685,13 +68670,6 @@ var render = function() {
               _vm._v(" "),
               _c("label", [_vm._v("Main Image")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: { src: _vm.giveaway.image + "?h=100&fit=crop" }
-            })
           ])
         ])
       ]),
@@ -68711,13 +68689,6 @@ var render = function() {
               _vm._v(" "),
               _c("label", [_vm._v("Product Image")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: { src: _vm.giveaway.product_image + "?h=100&fit=crop" }
-            })
           ])
         ])
       ]),
@@ -68737,13 +68708,6 @@ var render = function() {
               _vm._v(" "),
               _c("label", [_vm._v("Product Image 2")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: { src: _vm.giveaway.product_image_2 + "?h=100&fit=crop" }
-            })
           ])
         ])
       ]),
@@ -68763,13 +68727,6 @@ var render = function() {
               _vm._v(" "),
               _c("label", [_vm._v("Product Image 3")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: { src: _vm.giveaway.product_image_3 + "?h=100&fit=crop" }
-            })
           ])
         ])
       ]),
@@ -68789,13 +68746,6 @@ var render = function() {
               _vm._v(" "),
               _c("label", [_vm._v("Product Image 4")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: { src: _vm.giveaway.product_image_4 + "?h=100&fit=crop" }
-            })
           ])
         ])
       ]),

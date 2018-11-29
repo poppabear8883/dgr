@@ -53,9 +53,6 @@
               <label>Main Image</label>
             </div>
           </div>
-          <div class="col-md-4">
-            <img class="img-responsive" :src="`${giveaway.image}?h=100&fit=crop`" />
-          </div>
         </div>
       </div>
 
@@ -66,9 +63,6 @@
               <input type="file" @change="processFile($event, 'product_image')"/>
               <label>Product Image</label>
             </div>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" :src="`${giveaway.product_image}?h=100&fit=crop`" />
           </div>
         </div>
       </div>
@@ -81,9 +75,6 @@
               <label>Product Image 2</label>
             </div>
           </div>
-          <div class="col-md-4">
-            <img class="img-responsive" :src="`${giveaway.product_image_2}?h=100&fit=crop`" />
-          </div>
         </div>
       </div>
 
@@ -95,9 +86,6 @@
               <label>Product Image 3</label>
             </div>
           </div>
-          <div class="col-md-4">
-            <img class="img-responsive" :src="`${giveaway.product_image_3}?h=100&fit=crop`" />
-          </div>
         </div>
       </div>
 
@@ -108,9 +96,6 @@
               <input type="file" @change="processFile($event, 'product_image_4')"/>
               <label>Product Image 4</label>
             </div>
-          </div>
-          <div class="col-md-4">
-            <img class="img-responsive" :src="`${giveaway.product_image_4}?h=100&fit=crop`" />
           </div>
         </div>
       </div>

@@ -11,9 +11,9 @@ use League\Glide\Server;
 class Image implements ImageInterface
 {
 
-    protected $minWidth = 800;
+    protected $minWidth = 500;
 
-    protected $minHeight = 800;
+    protected $minHeight = 500;
 
     protected $prefix = 'img';
 
@@ -57,9 +57,9 @@ class Image implements ImageInterface
         $filename = $this->formatName($id, $ext);
         $image = $this->manager->make($source);
 
-//        if ($validate) {
-//           $this->validateImage($image);
-//        }
+        if ($validate) {
+           $this->validateImage($image);
+        }
 
         return $image->save($this->getPath($filename));
     }
@@ -131,11 +131,11 @@ class Image implements ImageInterface
     {
         $wide = null;
 
-        if ($wide = $image->width() < 800 || $image->height() < 800) {
-            $dimension = $wide ? 'wide' : 'high';
+        if ($wide = $image->width() < $this->minWidth || $image->height() < $this->minHeight) {
+            $dimension = $wide ? $this->minWidth . 'px wide' : $this->minHeight . 'px high';
 
             throw new \Exception(
-                "Image resolution is too small. Should be at least 800 $dimension"
+                "Image resolution is too small. Should be at least $dimension"
             );
         }
 

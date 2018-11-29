@@ -19,6 +19,7 @@ class ImageController extends Controller
 
     public function show(Request $request, $path)
     {
+        ini_set('memory_limit', '512M');
         return $this->server->getImageResponse($path, $request->all());
     }
 }
