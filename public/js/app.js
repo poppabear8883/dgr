@@ -72768,6 +72768,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -72775,6 +72783,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "contact-form",
   components: {
     DgForm: __WEBPACK_IMPORTED_MODULE_0_Components_Form___default.a
+  },
+  data: function data() {
+
+    return {
+      error: false,
+      completed: false,
+
+      frmdata: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      }
+    };
+  },
+
+
+  methods: {
+    validateInput: function validateInput() {
+      this.error = false;
+
+      if (this.frmdata.name === '' || this.frmdata.email === '' || this.frmdata.message === '') {
+
+        this.error = true;
+        return false;
+      }
+
+      this.submit();
+      this.completed = true;
+    },
+    submit: function submit() {
+      axios.post('/api/contact', this.frmdata).then(function (response) {
+        console.log(response);
+        this.completed = true;
+      }.bind(this)).catch(function (error) {
+        console.log(error);
+      });
+    }
   }
 });
 
@@ -72905,8 +72951,47 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "col-xs-12" }, [
+        _vm.error
+          ? _c(
+              "div",
+              { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+              [
+                _vm._v(
+                  "\n            Check your input and try again.\n        "
+                )
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.completed
+          ? _c("div", [
+              _c("h2", { staticClass: "page-header color-red" }, [
+                _vm._v("Thank you for contacting D&G Roofing!")
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
         _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.frmdata.name,
+                expression: "frmdata.name"
+              }
+            ],
+            attrs: { type: "text", required: "" },
+            domProps: { value: _vm.frmdata.name },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.frmdata, "name", $event.target.value)
+              }
+            }
+          }),
           _vm._v(" "),
           _c("label", [_vm._v("Name")])
         ])
@@ -72914,7 +72999,26 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-md-6 col-sm-12" }, [
         _c("div", { staticClass: "styled-input" }, [
-          _c("input", { attrs: { type: "text", required: "" } }),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.frmdata.email,
+                expression: "frmdata.email"
+              }
+            ],
+            attrs: { type: "text", required: "" },
+            domProps: { value: _vm.frmdata.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.frmdata, "email", $event.target.value)
+              }
+            }
+          }),
           _vm._v(" "),
           _c("label", [_vm._v("Email")])
         ])
@@ -72925,7 +73029,26 @@ var render = function() {
           "div",
           { staticClass: "styled-input", staticStyle: { float: "right" } },
           [
-            _c("input", { attrs: { type: "text", placeholder: "optional" } }),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.frmdata.phone,
+                  expression: "frmdata.phone"
+                }
+              ],
+              attrs: { type: "text", placeholder: "optional" },
+              domProps: { value: _vm.frmdata.phone },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.frmdata, "phone", $event.target.value)
+                }
+              }
+            }),
             _vm._v(" "),
             _c("label", [_vm._v("Phone Number")])
           ]
@@ -72934,14 +73057,37 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "col-xs-12" }, [
         _c("div", { staticClass: "styled-input" }, [
-          _c("textarea", { attrs: { required: "" } }),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.frmdata.message,
+                expression: "frmdata.message"
+              }
+            ],
+            attrs: { required: "" },
+            domProps: { value: _vm.frmdata.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.frmdata, "message", $event.target.value)
+              }
+            }
+          }),
           _vm._v(" "),
           _c("label", [_vm._v("Message")])
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xs-12" }, [
-        _c("div", { staticClass: "btn-lrg form-btn" }, [_vm._v("Send Message")])
+        _c(
+          "div",
+          { staticClass: "btn-lrg form-btn", on: { click: _vm.validateInput } },
+          [_vm._v("Send Message")]
+        )
       ])
     ]
   )
@@ -73830,6 +73976,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -73898,23 +74045,27 @@ var render = function() {
       }
     },
     [
-      _vm.error
-        ? _c(
-            "div",
-            { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-            [_vm._v("\n        Check your input and try again.\n    ")]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.completed
-        ? _c("div", [
-            _c("h2", { staticClass: "page-header color-red" }, [
-              _vm._v("Thank you for your interest!")
-            ])
-          ])
-        : _vm._e(),
-      _vm._v(" "),
       _c("div", { staticClass: "col-md-6 col-md-offset-3" }, [
+        _vm.error
+          ? _c(
+              "div",
+              { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+              [
+                _vm._v(
+                  "\n            Check your input and try again.\n        "
+                )
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.completed
+          ? _c("div", [
+              _c("h2", { staticClass: "page-header color-red" }, [
+                _vm._v("Thank you for your interest!")
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-xs-12" }, [
             _c("div", { staticClass: "styled-input" }, [

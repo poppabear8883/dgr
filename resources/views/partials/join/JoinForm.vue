@@ -3,15 +3,16 @@
              sub-title="We can't wait to meet you!"
              container="container-fluid">
 
-        <div class="alert alert-danger" role="alert" v-if="error">
-            Check your input and try again.
-        </div>
-
-        <div v-if="completed">
-            <h2 class="page-header color-red">Thank you for your interest!</h2>
-        </div>
-
         <div class="col-md-6 col-md-offset-3">
+
+            <div class="alert alert-danger" role="alert" v-if="error">
+                Check your input and try again.
+            </div>
+
+            <div v-if="completed">
+                <h2 class="page-header color-red">Thank you for your interest!</h2>
+            </div>
+
             <div class="row">
                 <div class="col-xs-12">
                     <div class="styled-input">

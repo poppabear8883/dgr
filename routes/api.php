@@ -11,6 +11,10 @@
 |
 */
 
+Route::prefix('contact')->group(function () {
+    Route::post('/', 'ContactUsController@contact');
+});
+
 Route::prefix('join')->group(function () {
     Route::post('/apply', 'ApplyController@apply');
 });
