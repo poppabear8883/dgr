@@ -6,7 +6,11 @@
     RewriteEngine On
 
     RewriteCond %{HTTPS} !=on
-    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+    RewriteRule .* https://dgroofingcontractor.com%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{HTTPS} =on
+    RewriteCond %{HTTP_HOST} ^www\.dgroofingcontractor\.com$
+    RewriteRule .* https://dgroofingcontractor.com%{REQUEST_URI} [R=301,L]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
