@@ -3,45 +3,57 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 0 ? 'active' : null]"
-                         @click="active = 0"
-                         src="/images/icon_roofing_circle.png">
-                    <br />
+                    <a href="services#roofing">
+                        <img :class="['tab', 'img-responsive', active === 0 ? 'active' : null]"
+                             @click="active = 0"
+                             src="/images/icon_roofing_circle.png">
+                    </a>
+                    <br/>
                     Residential Roofing
                 </div>
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 1 ? 'active' : null]"
-                         @click="active = 1"
-                         src="/images/icon_siding_circle.png" />
-                    <br />
+                    <a href="services#siding">
+                        <img :class="['tab', 'img-responsive', active === 1 ? 'active' : null]"
+                             @click="active = 1"
+                             src="/images/icon_siding_circle.png"/>
+                    </a>
+                    <br/>
                     Siding
                 </div>
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 2 ? 'active' : null]"
-                         @click="active = 2"
-                         src="/images/icon_windows_circle.png" />
-                    <br />
+                    <a href="services#windows">
+                        <img :class="['tab', 'img-responsive', active === 2 ? 'active' : null]"
+                             @click="active = 2"
+                             src="/images/icon_windows_circle.png"/>
+                    </a>
+                    <br/>
                     Windows
                 </div>
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 3 ? 'active' : null]"
-                         @click="active = 3"
-                         src="/images/icon_gutters_circle.png" />
-                    <br />
+                    <a href="services#gutters">
+                        <img :class="['tab', 'img-responsive', active === 3 ? 'active' : null]"
+                             @click="active = 3"
+                             src="/images/icon_gutters_circle.png"/>
+                    </a>
+                    <br/>
                     Gutters
                 </div>
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 4 ? 'active' : null]"
-                         @click="active = 4"
-                         src="/images/icon_doors_circle.png" />
-                    <br />
+                    <a href="services#doors">
+                        <img :class="['tab', 'img-responsive', active === 4 ? 'active' : null]"
+                             @click="active = 4"
+                             src="/images/icon_doors_circle.png"/>
+                    </a>
+                    <br/>
                     Doors
                 </div>
                 <div class="col-md-2 text-center">
-                    <img :class="['tab', 'img-responsive', active === 5 ? 'active' : null]"
-                         @click="active = 5"
-                         src="/images/icon_commercial_circle.png" />
-                    <br />
+                    <a href="services#commercial">
+                        <img :class="['tab', 'img-responsive', active === 5 ? 'active' : null]"
+                             @click="active = 5"
+                             src="/images/icon_commercial_circle.png"/>
+                    </a>
+                    <br/>
                     Commercial
                 </div>
             </div>
@@ -82,7 +94,8 @@
                     tenants are safe throughout the repairs.
                 </p>
 
-                <img class="img-responsive img-shadow" src="images/dayton-cincinnati-ohio-259600.jpg" alt="45449 roofing">
+                <img class="img-responsive img-shadow" src="images/dayton-cincinnati-ohio-259600.jpg"
+                     alt="45449 roofing">
 
                 <div slot="aimg" style="margin-bottom: 10px">
                     <div class="row">
@@ -90,10 +103,12 @@
                             <img class="img-responsive" src="images/certainteed.png" alt="CertainTeed">
                         </div>
                         <div class="col-md-4">
-                            <img class="img-responsive" src="images/mueller-roofing.png" alt="Mueller Roofing Dayton Ohio">
+                            <img class="img-responsive" src="images/mueller-roofing.png"
+                                 alt="Mueller Roofing Dayton Ohio">
                         </div>
                         <div class="col-md-4">
-                            <img class="img-responsive" src="images/certainteed-certified-dealer.png" alt="CertainTeed Certified Installer">
+                            <img class="img-responsive" src="images/certainteed-certified-dealer.png"
+                                 alt="CertainTeed Certified Installer">
                         </div>
                     </div>
                 </div>
@@ -123,7 +138,8 @@
             <media-section title="Siding">
 
                 <p>
-                    At D & G Roofing & Restoration, we know that the right siding can make all the difference in the look
+                    At D & G Roofing & Restoration, we know that the right siding can make all the difference in the
+                    look
                     and feel of your property. With a wide variety of styles and options for you to choose from, we're
                     confident our knowledgeable team can make the dreams you have for your home's appearance a reality.
                     Our range of choices allows us to work with your goals to make sure the job is done right. We'll be
@@ -199,7 +215,7 @@
 
                 <p>
                     At D&G roofing and Restoration, we understand how important it is to select the
-                    right windows for your home or business.  No matter your budget, we’ll be glad to work
+                    right windows for your home or business. No matter your budget, we’ll be glad to work
                     with you to provide the quality products you’re looking for and the excellent service
                     you deserve.
                 </p>
@@ -224,7 +240,8 @@
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img class="img-responsive" src="/images/recycle-planet.png" alt="D & G Roofing cares about our planet">
+                        <img class="img-responsive" src="/images/recycle-planet.png"
+                             alt="D & G Roofing cares about our planet">
                     </div>
                 </div>
 
@@ -246,9 +263,12 @@
             <media-section title="Gutters">
 
                 <p>
-                    Gutters serve the very important function of diverting rain from your roof to avoid structural damage,
-                    damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use a
-                    company with the right experience and selection of products. That's where D & G Roofing & Restoration in
+                    Gutters serve the very important function of diverting rain from your roof to avoid structural
+                    damage,
+                    damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use
+                    a
+                    company with the right experience and selection of products. That's where D & G Roofing &
+                    Restoration in
                     Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior
                     service and quality gutter solutions.
                 </p>
@@ -256,11 +276,14 @@
                 <h4 class="page-header color-red">BENEFIT FROM OUR EXPERTISE</h4>
                 <p>
                     At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.
-                    Our professionally trained installers are dedicated to your complete satisfaction, and we go out of our
+                    Our professionally trained installers are dedicated to your complete satisfaction, and we go out of
+                    our
                     way to keep our pricing reasonable and affordable.
 
-                    With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect your property on a
-                    whole while adding to its overall value. So let's get the process started: Call today to schedule your
+                    With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect
+                    your property on a
+                    whole while adding to its overall value. So let's get the process started: Call today to schedule
+                    your
                     estimate and learn more about the products we offer.
                 </p>
             </media-section>
@@ -314,16 +337,19 @@
 
                 <h4 class="page-header color-red">Roofing</h4>
                 <p>
-                    <strong>Asphalt Shingles:</strong> D&G Roofing and Restoration are CertainTeed Master Elite Certified
+                    <strong>Asphalt Shingles:</strong> D&G Roofing and Restoration are CertainTeed Master Elite
+                    Certified
                     Installers. We are not just here to put a roof on, we are here to help solve problems. We use
                     top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.
                 </p>
                 <p>
-                    <strong>EPDM Rubber Roofing:</strong> This application is used for flat surfaces. It’s proven hail resistant and
+                    <strong>EPDM Rubber Roofing:</strong> This application is used for flat surfaces. It’s proven hail
+                    resistant and
                     has superior resistance to extreme heat and fire.
                 </p>
                 <p>
-                    <strong>TPO Membrane Roofing:</strong> This application is used for flat surfaces. TPO has become the fastest
+                    <strong>TPO Membrane Roofing:</strong> This application is used for flat surfaces. TPO has become
+                    the fastest
                     growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is
                     Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO
                     can significantly reduce air conditioning costs. Particularly for buildings in hot climates.
@@ -364,28 +390,28 @@
 </template>
 
 <script>
-  export default {
-    name: 'tabbed-services',
-    data() {
-      return {
-        hash_ids: {
-          '#roofing': 0,
-          '#siding': 1,
-          '#windows': 2,
-          '#gutters': 3,
-          '#doors': 4,
-          '#commercial': 5
-        },
+    export default {
+        name: 'tabbed-services',
+        data() {
+            return {
+                hash_ids: {
+                    '#roofing': 0,
+                    '#siding': 1,
+                    '#windows': 2,
+                    '#gutters': 3,
+                    '#doors': 4,
+                    '#commercial': 5
+                },
 
-        active: 0,
-      }
-    },
-    created() {
-      if (window.location.hash !== "") {
-        this.active = _.get(this.hash_ids, window.location.hash);
-      }
+                active: 0,
+            }
+        },
+        created() {
+            if (window.location.hash !== "") {
+                this.active = _.get(this.hash_ids, window.location.hash);
+            }
+        }
     }
-  }
 </script>
 
 <style lang="scss" scoped>
