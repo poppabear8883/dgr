@@ -14,9 +14,30 @@ Route::get('/community', function() {
     return view('community');
 });
 
-Route::get('/services', function () {
+Route::get('/roofing', function () {
     return view('services');
 });
+
+Route::get('/siding', function () {
+    return view('services');
+});
+
+Route::get('/windows', function () {
+    return view('services');
+});
+
+Route::get('/gutters', function () {
+    return view('services');
+});
+
+Route::get('/doors', function () {
+    return view('services');
+});
+
+Route::get('/commercial', function () {
+    return view('services');
+});
+
 
 Route::get('/galleries', function () {
     return view('galleries');

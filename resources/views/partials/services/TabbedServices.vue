@@ -3,54 +3,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 text-center">
-                    <a href="services#roofing">
+                    <a href="/roofing">
                         <img :class="['tab', 'img-responsive', active === 0 ? 'active' : null]"
-                             @click="active = 0"
                              src="/images/icon_roofing_circle.png">
                     </a>
                     <br/>
                     Residential Roofing
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="services#siding">
+                    <a href="/siding">
                         <img :class="['tab', 'img-responsive', active === 1 ? 'active' : null]"
-                             @click="active = 1"
                              src="/images/icon_siding_circle.png"/>
                     </a>
                     <br/>
                     Siding
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="services#windows">
+                    <a href="/windows">
                         <img :class="['tab', 'img-responsive', active === 2 ? 'active' : null]"
-                             @click="active = 2"
                              src="/images/icon_windows_circle.png"/>
                     </a>
                     <br/>
                     Windows
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="services#gutters">
+                    <a href="/gutters">
                         <img :class="['tab', 'img-responsive', active === 3 ? 'active' : null]"
-                             @click="active = 3"
                              src="/images/icon_gutters_circle.png"/>
                     </a>
                     <br/>
                     Gutters
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="services#doors">
+                    <a href="/doors">
                         <img :class="['tab', 'img-responsive', active === 4 ? 'active' : null]"
-                             @click="active = 4"
                              src="/images/icon_doors_circle.png"/>
                     </a>
                     <br/>
                     Doors
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="services#commercial">
+                    <a href="/commercial">
                         <img :class="['tab', 'img-responsive', active === 5 ? 'active' : null]"
-                             @click="active = 5"
                              src="/images/icon_commercial_circle.png"/>
                     </a>
                     <br/>
@@ -390,28 +384,26 @@
 </template>
 
 <script>
-    export default {
-        name: 'tabbed-services',
-        data() {
-            return {
-                hash_ids: {
-                    '#roofing': 0,
-                    '#siding': 1,
-                    '#windows': 2,
-                    '#gutters': 3,
-                    '#doors': 4,
-                    '#commercial': 5
-                },
-
-                active: 0,
-            }
+  export default {
+    name: 'tabbed-services',
+    data() {
+      return {
+        url_ids: {
+          'roofing': 0,
+          'siding': 1,
+          'windows': 2,
+          'gutters': 3,
+          'doors': 4,
+          'commercial': 5
         },
-        created() {
-            if (window.location.hash !== "") {
-                this.active = _.get(this.hash_ids, window.location.hash);
-            }
-        }
+
+        active: 0,
+      }
+    },
+    created() {
+      this.active = _.get(this.url_ids, window.location.pathname.replace('/',''));
     }
+  }
 </script>
 
 <style lang="scss" scoped>
