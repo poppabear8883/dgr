@@ -71975,6 +71975,62 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -72021,7 +72077,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Residential Roofing\n            ")
+          _vm._v("\n        Residential Roofing\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
@@ -72037,7 +72093,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Siding\n            ")
+          _vm._v("\n        Siding\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
@@ -72053,7 +72109,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Windows\n            ")
+          _vm._v("\n        Windows\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
@@ -72069,7 +72125,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Gutters\n            ")
+          _vm._v("\n        Gutters\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
@@ -72085,7 +72141,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Doors\n            ")
+          _vm._v("\n        Doors\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2 text-center" }, [
@@ -72101,7 +72157,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("br"),
-          _vm._v("\n                Commercial\n            ")
+          _vm._v("\n        Commercial\n      ")
         ])
       ])
     ]),
@@ -72116,103 +72172,159 @@ var render = function() {
               {
                 staticClass: "pull-right",
                 attrs: {
-                  title: "Roofing",
-                  img: "/images/certainteed-home.jpg",
+                  title: "Certainteed Certified Installer",
+                  img: "images/certainteed-certified-dealer.png",
                   "img-width": "550px",
-                  "img-alt": "dayton cincinnati ohio roofing contractors"
+                  "img-alt":
+                    "dayton cincinnati ohio roofing contractors Certainteed Certified Installer"
                 }
               },
               [
                 _c("p", [
                   _vm._v(
-                    "\n                Whether you are in need of a new roof on your exiting home or are re-roofing an addition to\n                your property, D&G Roofing and Restoration is the team to trust in the Dayton and Cincinnati\n                area. Our dedicated, professional roofers are on hand to provide you with quality residential or\n                commercial re-roofing services.\n            "
+                    "\n        At D&G Roofing and Restoration, we are CertainTeed Shingle Master Installers. Most of our installers have been\n        with us since we opened our doors.\n        Our shingle of choice when it comes to composition asphalt shingles, is CertainTeed, as their shingle is high\n        quality. It has the industry's toughest fiber glass mat, the strongest material available and the best\n        warranty. The Landmark Series shingle endure time and weather beautifully. They come with the exclusive\n        StreakFighter warranty, protecting your roof from streaking that can be caused by airborne algae. The Landmark\n        Series also has four levels of high performance shingles in weight and thickness. The heavier the shingle, the\n        more depth, thickness and dimension it offers.\n\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and\n                Restoration and let us show you why we are worthy of your business. Call today to learn more\n                or to schedule an estimate today. 937-439-0554\n            "
+                    "\n        D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient. We don’t believe in cutting\n        corners or skimping on quality of materials, instead we believe in doing things right the first time so that\n        you walk away more than satisfied. We want to earn your trust as a client, and we will go the extra mile to\n        complete your project on time and within budget.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                No matter your business or building size, D&G Roofing and Restoration offers quality\n                commercial roofing solutions in the Dayton and Cincinnati area.\n            "
+                    "\n        Your home is a significant investment, so don’t just trust anyone, turn to D&G Roofing and Restoration and let\n        us show you why we are worthy of your business. Call today to learn more or to schedule an estimate today.\n        937-439-0554\n      "
                   )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "media-section",
+              {
+                staticClass: "pull-right",
+                attrs: {
+                  title: "The CertainTeed Integrity Roof System",
+                  img: "images/integrity-roof-system.jpg",
+                  "img-width": "550px",
+                  "img-alt":
+                    "dayton cincinnati ohio roofing contractors asphalt roofing"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n        The Integrity Roof System is designed to provide optimum performance — no matter how bad weather conditions\n        are. After all, better quality shingles mean longer-lasting roofs. Add in underlayment and accessory products,\n        and you’ve got a roof system that really works. When you choose an Integrity Roof System you gain the\n        advantage of having CertainTeed as your single manufacturing source to stand behind its roof system\n        components. If different brands of products are installed on your roof, then you do not gain the full value of\n        a complete roof system.\n      "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "media-section",
+              {
+                staticClass: "pull-right",
+                attrs: {
+                  title: "Dimensional Shingles",
+                  img: "images/dimensional-shingles.png",
+                  "img-width": "550px",
+                  "img-alt":
+                    "dayton cincinnati ohio roofing contractors asphalt roofing"
+                }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n        Dimensional Shingles (or Architectural Laminated Shingles) are now the predominant roofing shingles installed\n        in North America. These products are manufactured as dual layered products (or multi-layered in the case of\n        CertainTeed’s tri-laminate technology) and provide a thicker and richer appearance on the roof (a\n        multi-dimensional look). Dimensional Roofing Shingles also typically are heavier weight than Strip Roofing\n        Shingles and usually have improved warranty protections, which can range from 30-years to Lifetime.\n        CertainTeed’s Landmark® Series roofing shingles are a prototypically design for a Dimensional Roofing Shingle.\n      "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "page-header color-red" }, [
+                  _vm._v("Luxury Shingles")
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                D&G Roofing and Restoration’s services are as reliable, trustworthy and efficient . We don’t\n                believe in cutting corners or skimping on quality of materials, instead we believe in doing things\n                right the first time so that you walk away more than satisfied. We want to earn your trust as a\n                client, and we will go the extra mile to complete your project on time and within budget. We\n                also specialize in working with your property managers to make sure your employees or\n                tenants are safe throughout the repairs.\n            "
+                    "\n        Luxury Shingles are usually described as laminated shingles that have a differentiated appearance or\n        functionality from traditional Dimensional Roofing Shingles. These products may have designs that mimic\n        “old-world” roofing shingles, like natural slate or natural shake roofing shingles. CertainTeed’s Grand Manor®\n        and Presidential Shake® products are prime examples of Luxury roofing shingles that provide an enhanced\n        aesthetic appeal. Luxury Roofing Shingles might also have important functional improvements such as Impact\n        Resistance or Solar Reflectivity that can possibly extend the life of the roofing system or provide lower\n        energy costs.\n      "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "media-section",
+              {
+                staticClass: "pull-right",
+                attrs: { title: "Matterhorn Shake Metal Roofing" }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n        Matterhorn Shake metal roofing panels were expertly created to perfectly capture the look of real wood with\n        the protective benefits of steel. Chiseling and cracks are used to mimic the organic look of real wood and\n        include eight separate elevation changes to replicate the irregularity of real wood shakes.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("img", {
-                  staticClass: "img-responsive img-shadow",
-                  attrs: {
-                    src: "images/dayton-cincinnati-ohio-259600.jpg",
-                    alt: "45449 roofing"
-                  }
+                  staticClass: "img-responsive",
+                  attrs: { src: "images/metal-roofing.jpg", alt: "" }
                 }),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticStyle: { "margin-bottom": "10px" },
-                    attrs: { slot: "aimg" },
-                    slot: "aimg"
-                  },
-                  [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/certainteed.png",
-                            alt: "CertainTeed"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/mueller-roofing.png",
-                            alt: "Mueller Roofing Dayton Ohio"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-4" }, [
-                        _c("img", {
-                          staticClass: "img-responsive",
-                          attrs: {
-                            src: "images/certainteed-certified-dealer.png",
-                            alt: "CertainTeed Certified Installer"
-                          }
-                        })
-                      ])
-                    ])
-                  ]
-                ),
+                _c("p", [
+                  _vm._v(
+                    "\n        Matterhorn Shake is pre-weathered, aged and distressed to recreate the look of authentic wood shakes. Our\n        paint application technique uses highlights to change the visual temperature of each panel. Optically, the\n        warm hues advance, while the cool hues recede.\n      "
+                  )
+                ]),
                 _vm._v(" "),
-                _c("div", { attrs: { slot: "bimg" }, slot: "bimg" }, [
-                  _c("h4", { staticClass: "page-header color-red" }, [
-                    _vm._v("CertainTeed Certified Installer")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    At D&G Roofing and Restoration, we are Certainteed Shingle Master Installers. Most of our\n                    installers have been with us since we opened our doors.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                    Our shingle of choice when it comes to composition asphalt shingles, is Certainteed, as their\n                    shingle is high quality. It has the industry's toughest fiber glass mat, the strongest material\n                    available and the best warranty. The Landmark Series shingle endure time and weather\n                    beautifully. They come with the exclusive StreakFighter warranty, protecting your roof from\n                    streaking that can be caused by airborne algae. The Landmark Series also has four levels of\n                    high performance shingles in weight and thickness. The heavier the shingle, the more depth,\n                    thickness and dimension it offers.\n                "
-                    )
-                  ])
+                _c("p", [
+                  _vm._v(
+                    "\n        High wind and water is no match for Matterhorn Shake metal roofing. A specialized chiseled channel is at\n        maximum height to allow constant water movement away from the roof deck. And Matterhorn's high wind rating is\n        thanks to our four point locking system secured with a patent pending concealed clip.\n      "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "media-section",
+              {
+                staticClass: "pull-right",
+                attrs: { title: "Flintlastic Flat Roofing" }
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "\n        CertainTeed Flintlastic® SA roofing membrane is a premium, self-adhering SBS modified bitumen roofing material\n        suitable for use in accordance with CertainTeed specifications for most low-slope roof system applications.\n        Flintlastic SA Cap is available in 8 colors, plus white and CoolStar highly reflective granules.\n      "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "images/flintlastic-flat-roofing.jpg", alt: "" }
+                }),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    '\n        Flintlastic SA Cap white meets or exceeds ENERGY STAR® requirements for slopes greater than 2:12" and can be\n        used to comply with the 2016 California Title 24 Part 6 Cool Roof Requirements. Visit\n        '
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: { href: "https://coolroofs.org", target: "_blank" }
+                    },
+                    [_vm._v("coolroofs.org")]
+                  ),
+                  _vm._v(" or\n        "),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "https://energystar.gov",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("energystar.gov")]
+                  ),
+                  _vm._v(" for more information.\n      ")
                 ])
               ]
             )
@@ -72229,7 +72341,7 @@ var render = function() {
             _c("media-section", { attrs: { title: "Siding" } }, [
               _c("p", [
                 _vm._v(
-                  "\n                At D & G Roofing & Restoration, we know that the right siding can make all the difference in the\n                look\n                and feel of your property. With a wide variety of styles and options for you to choose from, we're\n                confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n                Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n                here when you’re ready to take the next step.\n            "
+                  "\n        At D & G Roofing & Restoration, we know that the right siding can make all the difference in the\n        look\n        and feel of your property. With a wide variety of styles and options for you to choose from, we're\n        confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n        Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n        here when you’re ready to take the next step.\n      "
                 )
               ]),
               _vm._v(" "),
@@ -72293,7 +72405,7 @@ var render = function() {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n                textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n                be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n            "
+                  "\n        Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n        textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n        be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n      "
                 )
               ]),
               _vm._v(" "),
@@ -72303,13 +72415,13 @@ var render = function() {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n                and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n                and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n            "
+                  "\n        With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n        and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n        and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n      "
                 )
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n                Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n                an appointment.\n            "
+                  "\n        If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n        Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n        an appointment.\n      "
                 )
               ]),
               _vm._v(" "),
@@ -72358,19 +72470,19 @@ var render = function() {
               [
                 _c("p", [
                   _vm._v(
-                    "\n                Are you in the market for new windows? You have come to the right place.\n                Our replacement windows are a great investment, so why not take the plunge and\n                choose a window that is easy to clean and operate.\n            "
+                    "\n        Are you in the market for new windows? You have come to the right place.\n        Our replacement windows are a great investment, so why not take the plunge and\n        choose a window that is easy to clean and operate.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                At D&G roofing and Restoration, we understand how important it is to select the\n                right windows for your home or business. No matter your budget, we’ll be glad to work\n                with you to provide the quality products you’re looking for and the excellent service\n                you deserve.\n            "
+                    "\n        At D&G roofing and Restoration, we understand how important it is to select the\n        right windows for your home or business. No matter your budget, we’ll be glad to work\n        with you to provide the quality products you’re looking for and the excellent service\n        you deserve.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                Our windows come in a wide variety of sizes and styles, and we would be happy to walk\n                you through your options and help you select the windows that will best serve your property’s\n                needs.\n            "
+                    "\n        Our windows come in a wide variety of sizes and styles, and we would be happy to walk\n        you through your options and help you select the windows that will best serve your property’s\n        needs.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72382,7 +72494,7 @@ var render = function() {
                   _c("div", { staticClass: "col-md-8" }, [
                     _c("p", [
                       _vm._v(
-                        "\n                        We are always looking for ways to help our environment.\n                        Our energy efficient windows can do more than just save you money;\n                        they can also help you conserve resources, which mean our planet benefits as well.\n                    "
+                        "\n            We are always looking for ways to help our environment.\n            Our energy efficient windows can do more than just save you money;\n            they can also help you conserve resources, which mean our planet benefits as well.\n          "
                       )
                     ]),
                     _vm._v(" "),
@@ -72450,7 +72562,7 @@ var render = function() {
             _c("media-section", { attrs: { title: "Gutters" } }, [
               _c("p", [
                 _vm._v(
-                  "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural\n                damage,\n                damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use\n                a\n                company with the right experience and selection of products. That's where D & G Roofing &\n                Restoration in\n                Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n                service and quality gutter solutions.\n            "
+                  "\n        Gutters serve the very important function of diverting rain from your roof to avoid structural\n        damage,\n        damp walls, and mold. And when it comes to gutter installation or replacement, it's important to use\n        a\n        company with the right experience and selection of products. That's where D & G Roofing &\n        Restoration in\n        Dayton, OH comes in. As an established gutter installation company, we pride ourselves on superior\n        service and quality gutter solutions.\n      "
                 )
               ]),
               _vm._v(" "),
@@ -72460,7 +72572,7 @@ var render = function() {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n                Our professionally trained installers are dedicated to your complete satisfaction, and we go out of\n                our\n                way to keep our pricing reasonable and affordable.\n\n                With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect\n                your property on a\n                whole while adding to its overall value. So let's get the process started: Call today to schedule\n                your\n                estimate and learn more about the products we offer.\n            "
+                  "\n        At D & G Roofing & Restoration, our experience with gutter installation is evident on every job.\n        Our professionally trained installers are dedicated to your complete satisfaction, and we go out of\n        our\n        way to keep our pricing reasonable and affordable.\n\n        With gutter installation from D & G Roofing and Restoration, you'll be doing your part to protect\n        your property on a\n        whole while adding to its overall value. So let's get the process started: Call today to schedule\n        your\n        estimate and learn more about the products we offer.\n      "
                 )
               ])
             ])
@@ -72487,13 +72599,13 @@ var render = function() {
               [
                 _c("p", [
                   _vm._v(
-                    "\n                Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing\n                and Restoration, we offer the quality replacement doors and the outstanding service you’re\n                looking for. We are committed to offering the great service our customers deserve, while\n                providing well crafted, meticulously installed doors in a variety of styles, and welcome the\n                opportunity to walk you through the products we have to offer.\n            "
+                    "\n        Are you interested in enhancing the look or function of your property’s doors? At D&G Roofing\n        and Restoration, we offer the quality replacement doors and the outstanding service you’re\n        looking for. We are committed to offering the great service our customers deserve, while\n        providing well crafted, meticulously installed doors in a variety of styles, and welcome the\n        opportunity to walk you through the products we have to offer.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n                OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n                Call us today to learn more and schedule a free consultation.\n            "
+                    "\n        When you want beautiful, functional, quality replacement doors for your Dayton or Cincinnati\n        OH home or business, the professionals at D&G Roofing and Restoration have you covered.\n        Call us today to learn more and schedule a free consultation.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72543,7 +72655,7 @@ var render = function() {
               [
                 _c("p", [
                   _vm._v(
-                    "\n                At D&G Roofing and Restoration, we offer a wide variety of applications for your business or\n                multi-family units. Whether you are in need of a repair or a full replacement, we have you\n                covered.\n            "
+                    "\n        At D&G Roofing and Restoration, we offer a wide variety of applications for your business or\n        multi-family units. Whether you are in need of a repair or a full replacement, we have you\n        covered.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72554,21 +72666,21 @@ var render = function() {
                 _c("p", [
                   _c("strong", [_vm._v("Asphalt Shingles:")]),
                   _vm._v(
-                    " D&G Roofing and Restoration are CertainTeed Master Elite\n                Certified\n                Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n                top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n            "
+                    " D&G Roofing and Restoration are CertainTeed Master Elite\n        Certified\n        Installers. We are not just here to put a roof on, we are here to help solve problems. We use\n        top of the line Limited Lifetime Certainteed materials with the best of the industry warranties.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _c("strong", [_vm._v("EPDM Rubber Roofing:")]),
                   _vm._v(
-                    " This application is used for flat surfaces. It’s proven hail\n                resistant and\n                has superior resistance to extreme heat and fire.\n            "
+                    " This application is used for flat surfaces. It’s proven hail\n        resistant and\n        has superior resistance to extreme heat and fire.\n      "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _c("strong", [_vm._v("TPO Membrane Roofing:")]),
                   _vm._v(
-                    " This application is used for flat surfaces. TPO has become\n                the fastest\n                growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n                Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n                can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n            "
+                    " This application is used for flat surfaces. TPO has become\n        the fastest\n        growing segment in the commercial roofing industry, and for good reason. Carlisle TPO is\n        Energy Star qualified, Cool Roof Rating Council certified. The high reflectivity of Carlisle’s TPO\n        can significantly reduce air conditioning costs. Particularly for buildings in hot climates.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72578,7 +72690,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                We offer a wide variety of products for your commercial property, whether you need a\n                repair or a full replacement, we are here to help. Check out our siding section for more\n                details on our siding selections.\n            "
+                    "\n        We offer a wide variety of products for your commercial property, whether you need a\n        repair or a full replacement, we are here to help. Check out our siding section for more\n        details on our siding selections.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72588,7 +72700,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n                Gutters serve the very important function of diverting rain from your roof to avoid structural\n                damage, damp walls and mold. When it comes to gutter installation, it's important to use a\n                company with the right experience and quality products. That's where D&G Roofing and\n                Restoration comes in.\n            "
+                    "\n        Gutters serve the very important function of diverting rain from your roof to avoid structural\n        damage, damp walls and mold. When it comes to gutter installation, it's important to use a\n        company with the right experience and quality products. That's where D&G Roofing and\n        Restoration comes in.\n      "
                   )
                 ]),
                 _vm._v(" "),
@@ -72599,7 +72711,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n                    At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.\n                    Check out our window and door section on this site for more information.\n                "
+                      "\n          At D&G Roofing and Restoration we use a wide variety of energy efficient windows and doors.\n          Check out our window and door section on this site for more information.\n        "
                     )
                   ]),
                   _vm._v(" "),
@@ -72609,7 +72721,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n                    At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally\n                    trained installers are dedicated to your complete satisfaction, and we go out of our way to keep\n                    our pricing reasonable and affordable. Call today and join our family of satisfied customers.\n                "
+                      "\n          At D&G Roofing and Restoration, our experience is evident on every job. Our Professionally\n          trained installers are dedicated to your complete satisfaction, and we go out of our way to keep\n          our pricing reasonable and affordable. Call today and join our family of satisfied customers.\n        "
                     )
                   ])
                 ])
