@@ -70555,7 +70555,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _vm._m(0, false, false),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 text-center" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
             class: [
               "tab",
@@ -70583,7 +70583,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 text-center" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
             class: [
               "tab",
@@ -70611,7 +70611,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 text-center" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
             class: [
               "tab",
@@ -70639,7 +70639,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 text-center" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
             class: [
               "tab",
@@ -70667,7 +70667,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 text-center" }, [
+        _c("div", { staticClass: "col-md-2 text-center" }, [
           _c("img", {
             class: [
               "tab",
