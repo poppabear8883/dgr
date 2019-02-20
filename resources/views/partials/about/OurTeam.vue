@@ -8,7 +8,7 @@
                     <h2 class="page-header color-red">Our Team</h2>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 0 ? 'active' : null]"
                          @click="active = 0"
                          src="/images/duane.jpg"
@@ -21,7 +21,7 @@
                     </h5>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 1 ? 'active' : null]"
                          @click="active = 1"
                          src="/images/gerri.jpg"
@@ -34,7 +34,7 @@
                     </h5>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 2 ? 'active' : null]"
                          @click="active = 2"
                          src="/images/mike.jpg"
@@ -47,7 +47,7 @@
                     </h5>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 3 ? 'active' : null]"
                          @click="active = 3"
                          src="/images/amanda.jpg"
@@ -60,7 +60,7 @@
                     </h5>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 4 ? 'active' : null]"
                          @click="active = 4"
                          src="/images/brian.jpg"
