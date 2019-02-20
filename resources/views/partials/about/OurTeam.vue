@@ -59,6 +59,19 @@
                         </small>
                     </h5>
                 </div>
+
+                <div class="col-md-3 text-center">
+                    <img :class="['tab', 'img-responsive', 'img-circle', active === 4 ? 'active' : null]"
+                         @click="active = 4"
+                         src="/images/brian.jpg"
+                         alt="">
+                    <h5>
+                        BRIAN MENDENHALL<br>
+                        <small :class="active === 4 ? 'color-red' : null">
+                            Sales Professional
+                        </small>
+                    </h5>
+                </div>
             </div>
 
             <!-- CONTENT CONTAINERS -->
@@ -135,6 +148,20 @@
                         Amanda has ten years in customer service experience with five years office experience.
                         She is currently attending school for business management. She is a great asset to D & G
                         Roofing and Restoration and customer service is Amanda’s top priority.
+                    </p>
+                </media-section>
+            </div>
+
+            <!-- BRIAN MENDENHALL -->
+            <div v-if="active === 4" class="row">
+                <media-section
+                  title="About Brian Mendenhall"
+                  subtitle="Sales Professional"
+                  img="images/brian.jpg"
+                  img-width="250px"
+                  img-alt="brian mendenhall">
+                    <p>
+                        Bio Coming Soon ...
                     </p>
                 </media-section>
             </div>

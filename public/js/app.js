@@ -70503,6 +70503,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "ourteam",
@@ -70638,6 +70665,34 @@ var render = function() {
               )
             ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 text-center" }, [
+          _c("img", {
+            class: [
+              "tab",
+              "img-responsive",
+              "img-circle",
+              _vm.active === 4 ? "active" : null
+            ],
+            attrs: { src: "/images/brian.jpg", alt: "" },
+            on: {
+              click: function($event) {
+                _vm.active = 4
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [
+            _vm._v("\n                    BRIAN MENDENHALL"),
+            _c("br"),
+            _vm._v(" "),
+            _c("small", { class: _vm.active === 4 ? "color-red" : null }, [
+              _vm._v(
+                "\n                        Sales Professional\n                    "
+              )
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -70748,6 +70803,35 @@ var render = function() {
                   _c("p", [
                     _vm._v(
                       "\n                    Amanda has ten years in customer service experience with five years office experience.\n                    She is currently attending school for business management. She is a great asset to D & G\n                    Roofing and Restoration and customer service is Amanda’s top priority.\n                "
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.active === 4
+        ? _c(
+            "div",
+            { staticClass: "row" },
+            [
+              _c(
+                "media-section",
+                {
+                  attrs: {
+                    title: "About Brian Mendenhall",
+                    subtitle: "Sales Professional",
+                    img: "images/brian.jpg",
+                    "img-width": "250px",
+                    "img-alt": "brian mendenhall"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n                    Bio Coming Soon ...\n                "
                     )
                   ])
                 ]
