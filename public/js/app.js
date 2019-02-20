@@ -69477,7 +69477,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
         home: { type: Boolean, default: false },
-        bgImg: { type: String, default: 'images/headers/header.jpg' },
+        bgImg: { type: String, default: 'images/headers/header_2.jpg' },
         bgPos: { type: String, default: 'center' },
         bgColor: { type: String, default: '#FFFFFF' },
         color: { type: String, default: '#000000' }
