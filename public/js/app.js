@@ -70530,6 +70530,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "ourteam",
@@ -70831,7 +70833,7 @@ var render = function() {
                 [
                   _c("p", [
                     _vm._v(
-                      "\n                    Bio Coming Soon ...\n                "
+                      "\n                  Brian comes to us with 25+ years in the building and construction industry.  With his vast\n                  knowledge in the industry, Brian looks to make your experience with D&G Roofing and Restoration a\n                  pleasant and satisfying experience from beginning to completion.\n                "
                     )
                   ])
                 ]

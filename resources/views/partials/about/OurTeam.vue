@@ -161,7 +161,9 @@
                   img-width="250px"
                   img-alt="brian mendenhall">
                     <p>
-                        Bio Coming Soon ...
+                      Brian comes to us with 25+ years in the building and construction industry.  With his vast
+                      knowledge in the industry, Brian looks to make your experience with D&G Roofing and Restoration a
+                      pleasant and satisfying experience from beginning to completion.
                     </p>
                 </media-section>
             </div>
