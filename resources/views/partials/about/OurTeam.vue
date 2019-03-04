@@ -37,7 +37,7 @@
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 2 ? 'active' : null]"
                          @click="active = 2"
-                         src="/images/mike.jpg"
+                         src="/images/mike_2.jpg"
                          alt="">
                     <h5>
                         MIKE WALKER<br>
@@ -50,7 +50,7 @@
                 <div class="col-md-2 text-center">
                     <img :class="['tab', 'img-responsive', 'img-circle', active === 3 ? 'active' : null]"
                          @click="active = 3"
-                         src="/images/amanda.jpg"
+                         src="/images/amanda_2.jpg"
                          alt="">
                     <h5>
                         AMANDA WILLMAN<br>
@@ -124,7 +124,7 @@
                 <media-section
                         title="About Mike Walker"
                         subtitle="Residential Operations Manager"
-                        img="images/mike.jpg"
+                        img="images/mike_2.jpg"
                         img-width="250px"
                         img-alt="mike walker">
                     <p>
@@ -141,7 +141,7 @@
                 <media-section
                         title="About Amanda Willman"
                         subtitle="Administrative Assistant"
-                        img="images/amanda.jpg"
+                        img="images/amanda_2.jpg"
                         img-width="250px"
                         img-alt="amanda willman">
                     <p>

@@ -70621,7 +70621,7 @@ var render = function() {
               "img-circle",
               _vm.active === 2 ? "active" : null
             ],
-            attrs: { src: "/images/mike.jpg", alt: "" },
+            attrs: { src: "/images/mike_2.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 2
@@ -70649,7 +70649,7 @@ var render = function() {
               "img-circle",
               _vm.active === 3 ? "active" : null
             ],
-            attrs: { src: "/images/amanda.jpg", alt: "" },
+            attrs: { src: "/images/amanda_2.jpg", alt: "" },
             on: {
               click: function($event) {
                 _vm.active = 3
@@ -70767,7 +70767,7 @@ var render = function() {
                   attrs: {
                     title: "About Mike Walker",
                     subtitle: "Residential Operations Manager",
-                    img: "images/mike.jpg",
+                    img: "images/mike_2.jpg",
                     "img-width": "250px",
                     "img-alt": "mike walker"
                   }
@@ -70796,7 +70796,7 @@ var render = function() {
                   attrs: {
                     title: "About Amanda Willman",
                     subtitle: "Administrative Assistant",
-                    img: "images/amanda.jpg",
+                    img: "images/amanda_2.jpg",
                     "img-width": "250px",
                     "img-alt": "amanda willman"
                   }
