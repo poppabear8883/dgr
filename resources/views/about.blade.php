@@ -25,7 +25,7 @@
             img-alt="Duane and Gerri">
         <p>
             D & G Roofing & Restoration is a General Contracting company based in Dayton, Ohio.
-            We have over 20 years of combined service in the field. D & G Roofing services Dayton, C
+            We have over 30 years of combined service in the field. D & G Roofing services Dayton, C
             olumbus, Cincinnati and all surrounding areas. D & G Roofing & Restoration specializes in
             reroofs, siding and gutter installation. We also specialize in Insurance claim settlements.
             Our goal is always to provide excellent customer service and quality workmanship to every
