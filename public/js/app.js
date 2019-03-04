@@ -69900,6 +69900,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -70114,6 +70156,112 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("footer", [
       _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row bg-white" }, [
+          _c("div", { staticClass: "col-md-3" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("img", {
+                attrs: {
+                  src:
+                    "https://www.greensky.com/merchantkit/images/finance_buttons/headers/header_320.jpg?v=1.0.99",
+                  alt: "Financing Options from GreenSky",
+                  tabindex: "0"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("img", {
+                attrs: {
+                  src:
+                    "https://www.greensky.com/merchantkit/images/finance_buttons/footers/footer_320.jpg?v=1.0.99",
+                  width: "320",
+                  height: "73",
+                  alt:
+                    "Financing for GreenSky&#169; credit programs is provided by federally insured, federal and state chartered financial institutions without regard to race,color, religion,natinal origin, sex or familialstatus. NMLS #1416362; CT SLC-1416362; NJMT #1501607 C22",
+                  tabindex: "0"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 padding-top-25" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=4123&channel=External-Button-03",
+                  target: "_blank",
+                  tabindex: "0"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src:
+                      "https://www.greensky.com/merchantkit/images/finance_buttons/plans/4123_320x100.jpg?v=1.0.99",
+                    width: "320",
+                    height: "100",
+                    alt:
+                      "4123 - 12 Months No Interest, with Payments (36 months) - (24 Principal Pmts)"
+                  }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 padding-top-25" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=4188&channel=External-Button-03",
+                  target: "_blank",
+                  tabindex: "0"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src:
+                      "https://www.greensky.com/merchantkit/images/finance_buttons/plans/4188_320x100.jpg?v=1.0.99",
+                    width: "320",
+                    height: "100",
+                    alt:
+                      "4188 - 18 Months No Interest, with Payments - (66 Principal Pmts)"
+                  }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 padding-top-25" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=1969&channel=External-Button-03",
+                  target: "_blank",
+                  tabindex: "0"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src:
+                      "https://www.greensky.com/merchantkit/images/finance_buttons/plans/1969_320x100.jpg?v=1.0.99",
+                    width: "320",
+                    height: "100",
+                    alt: "1969 - Reduced Rate 9.99% for 96 Months"
+                  }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-xs-12 col-sm-12 col-md-4" }, [
             _c("h3", { staticClass: "color-red" }, [_vm._v("Qualifications")]),
@@ -72117,6 +72265,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tabbed-services',
@@ -72427,7 +72579,47 @@ var render = function() {
             _c("media-section", { attrs: { title: "Siding" } }, [
               _c("p", [
                 _vm._v(
-                  "\n        At D & G Roofing & Restoration, we know that the right siding can make all the difference in the\n        look\n        and feel of your property. With a wide variety of styles and options for you to choose from, we're\n        confident our knowledgeable team can make the dreams you have for your home's appearance a reality.\n        Our range of choices allows us to work with your goals to make sure the job is done right. We'll be\n        here when you’re ready to take the next step.\n      "
+                  "\n        At D & G Roofing & Restoration, we know that the right siding can make all the difference in the\n        look and feel of your property. With a wide variety of styles and options for you to choose from,\n        we're confident our knowledgeable team can make the dreams you have for your home's\n        appearance a reality. Our range of choices allows us to work with your goals to make sure the\n        job is done right. We'll be here when you’re ready to take the next step.\n      "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n        If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n        Restoration, we're committed to ensuring your satisfaction and peace of mind. Call\n        today to set up an appointment.\n      "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "page-header color-red" }, [
+                _vm._v("Vinyl – Royal Building Products")
+              ]),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _vm._v(
+                    "\n          The beautiful low-gloss woodgrain captures the look and feel of natural wood\n        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "A partial rollover hem provides exceptional wind load resistance that can withstand hurricane-force winds\n          up to 140 mph\n        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "Royal Siding is low maintenance, wont warp, buckle or sag. Plus it comes with the industry-leading Double\n          Lifetime Warranty\n        "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "page-header color-red" }, [
+                _vm._v("Fiber Cement- James Hardie")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n        With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n        and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time and money\n        spent on maintenance and won’t be eaten by pesky animals or insects!\n      "
                 )
               ]),
               _vm._v(" "),
@@ -72483,32 +72675,6 @@ var render = function() {
                     }
                   })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("h4", { staticClass: "page-header color-red" }, [
-                _vm._v("Vinyl")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n        Mastic by Ply Gem provides you with a wide range of home exterior design options - from styles and\n        textures to popular colors and accessories. With Mastic you can create custom curb appeal that will\n        be the envy of the neighborhood. Mastic Siding is made in the U.S.A. and Green Certified.\n      "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h4", { staticClass: "page-header color-red" }, [
-                _vm._v("James Hardie")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n        With James Hardie Siding and trim, home owners have an exterior that’s tougher than the elements\n        and easy on the eyes. It stands up to storms, water resistant, fire resistant, helps reduce time\n        and money spent on maintenance and WON’T BE EATEN BE ANIMALS OR INSECTS.\n      "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n        If you're in the market for a home siding service, we're here for you. At D & G Roofing &\n        Restoration, we're committed to ensuring your satisfaction and peace of mind. Call today to set up\n        an appointment.\n      "
-                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "row" }, [

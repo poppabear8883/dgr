@@ -75,6 +75,48 @@
 
         <footer>
             <div class="container-fluid">
+                <div class="row bg-white">
+
+                    <div class="col-md-3">
+                        <div class="col-md-12">
+                            <img src="https://www.greensky.com/merchantkit/images/finance_buttons/headers/header_320.jpg?v=1.0.99"
+                                 alt="Financing Options from GreenSky" tabindex="0"/>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="https://www.greensky.com/merchantkit/images/finance_buttons/footers/footer_320.jpg?v=1.0.99"
+                                 width="320" height="73"
+                                 alt="Financing for GreenSky&#169; credit programs is provided by federally insured, federal and state chartered financial institutions without regard to race,color, religion,natinal origin, sex or familialstatus. NMLS #1416362; CT SLC-1416362; NJMT #1501607 C22"
+                                 tabindex="0"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 padding-top-25">
+                        <a
+                           href="https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=4123&channel=External-Button-03"
+                           target="_blank" tabindex="0"><img
+                          src="https://www.greensky.com/merchantkit/images/finance_buttons/plans/4123_320x100.jpg?v=1.0.99"
+                          width="320" height="100"
+                          alt="4123 - 12 Months No Interest, with Payments (36 months) - (24 Principal Pmts)"/></a>
+                    </div>
+
+                    <div class="col-md-3 padding-top-25">
+                        <a
+                           href="https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=4188&channel=External-Button-03"
+                           target="_blank" tabindex="0"><img
+                          src="https://www.greensky.com/merchantkit/images/finance_buttons/plans/4188_320x100.jpg?v=1.0.99"
+                          width="320" height="100"
+                          alt="4188 - 18 Months No Interest, with Payments - (66 Principal Pmts)"/></a>
+                    </div>
+
+                    <div class="col-md-3 padding-top-25">
+                        <a
+                           href="https://portal.greenskycredit.com/MerchantLoanApplication?apptype=short&merchant=81050064&dealerplan=1969&channel=External-Button-03"
+                           target="_blank" tabindex="0"><img
+                          src="https://www.greensky.com/merchantkit/images/finance_buttons/plans/1969_320x100.jpg?v=1.0.99"
+                          width="320" height="100" alt="1969 - Reduced Rate 9.99% for 96 Months"/></a>
+                    </div>
+                </div>
+
                 <div class="row">
 
                     <div class="col-xs-12 col-sm-12 col-md-4">
