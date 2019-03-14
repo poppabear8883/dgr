@@ -15,9 +15,9 @@ class Image implements ImageInterface
 
     protected $minHeight = 500;
 
-    protected $prefix = 'img';
+    protected $prefix = 'images';
 
-    protected $basePath = 'app/images';
+    protected $basePath = 'public/images';
 
 
     /**
@@ -44,15 +44,8 @@ class Image implements ImageInterface
 
     /**
      * Creates a Image and saves it to the filesystem
-     *
-     * @param $id
-     * @param $source
-     * @param string $ext
-     * @param bool $validate
-     * @return \Intervention\Image\Image
-     * @throws \Exception
      */
-    public function makeImage($id, $source, $ext = 'jpg', $validate = true)
+    public function makeImage($id, $source, $width, $height, $ext = 'jpg', $validate = true)
     {
         $filename = $this->formatName($id, $ext);
         $image = $this->manager->make($source);
@@ -61,7 +54,8 @@ class Image implements ImageInterface
            $this->validateImage($image);
         }
 
-        return $image->save($this->getPath($filename));
+        return $image->fit($width, $height)
+            ->save($this->getPath($filename));
     }
 
     /**
@@ -72,18 +66,7 @@ class Image implements ImageInterface
      */
     public function getPath($filename)
     {
-        return storage_path($this->basePath().'/'.$filename);
-    }
-
-    /**
-     * Gets the full Cover Cache path
-     *
-     * @param $filename
-     * @return string
-     */
-    public function getCachePath($filename)
-    {
-        return storage_path($this->basePath().'/.cache/'.$filename);
+        return base_path($this->basePath().'/'.$filename);
     }
 
     /**

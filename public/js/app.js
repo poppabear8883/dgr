@@ -74839,8 +74839,8 @@ var render = function() {
                 staticClass: "img-responsive",
                 attrs: {
                   src: gallery.img
-                    ? gallery.img + "?w=700&h=400&fit=crop"
-                    : "/img/default-cover.jpg?w=700&h=400&fit=crop",
+                    ? "" + gallery.img
+                    : "/images/galleries/default-cover.jpg",
                   alt: gallery.name
                 }
               }),

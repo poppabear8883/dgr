@@ -56,26 +56,29 @@ class GalleryRepository implements GalleryInterface
     public function create(array $data)
     {
         $image = null;
+        $source = $data['img'];
+        $name = $data['name'];
+        $desc = $data['description'];
 
-        if ($this->exists($data['name'])) {
-            throw new \Exception('Gallery ' . $data['name'] . ' already exists');
+        if ($this->exists($name)) {
+            throw new \Exception('Gallery ' . $name . ' already exists');
         }
 
         $gallery = $this->gallery->create([
-            'name' => $data['name'],
-            'description' => $data['description']
+            'name' => $name,
+            'description' => $desc
         ]);
 
-        if ($data['img'] !== '') {
+        if ($source !== '') {
             try {
-                $image = $this->image->makeImage($gallery->id, $data['img']);
+                $image = $this->image->makeImage($gallery->id, $source, 700, 400);
             } catch (\Exception $e) {
                 $gallery->delete();
                 throw $e;
             }
 
             $updated = $gallery->update([
-                'img' => "/img/$image->basename"
+                'img' => "/images/$image->basename"
             ]);
 
             if (!$updated) {
@@ -104,12 +107,15 @@ class GalleryRepository implements GalleryInterface
     {
         $resource = $this->findById($id);
         $image = null;
+        $source = $data['img'];
+        $name = $data['name'];
+        $desc = $data['description'];
 
-        if ($data['name'] !== $resource->name || $data['description'] !== $resource->description) {
+        if ($name !== $resource->name || $desc !== $resource->description) {
 
             $updated = $resource->update([
-                'name' => $data['name'],
-                'description' => $data['description']
+                'name' => $name,
+                'description' => $desc
             ]);
 
             if (!$updated) {
@@ -117,21 +123,21 @@ class GalleryRepository implements GalleryInterface
             }
         }
 
-        if ($data['img'] !== $resource->img) {
+        if ($source !== $resource->img) {
 
             try {
-                $image = $this->image->makeImage($resource->id, $data['img']);
+                $image = $this->image->makeImage($resource->id, $source, 700, 400);
             } catch (\Exception $e) {
                 throw $e;
             }
 
-            if ($resource->img !== null) {
-                $this->image->deleteCache($resource->img);
-                $this->image->deleteImage(basename($resource->img));
-            }
+//            if ($resource->img !== null) {
+//                $this->image->deleteCache($resource->img);
+//                $this->image->deleteImage(basename($resource->img));
+//            }
 
             $updated = $resource->update([
-                'img' => "/img/$image->basename"
+                'img' => "/images/$image->basename"
             ]);
 
             if (!$updated) {
