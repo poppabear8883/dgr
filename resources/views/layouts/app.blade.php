@@ -65,9 +65,6 @@
                     <li><a href="/admin/galleries">Galleries</a></li>
                     <li><a href="/admin/photos">Photos</a></li>
                 </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="/admin/giveaway">Giveaway</a></li>
-                </ul>
             </div>
             @endif
 

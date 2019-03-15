@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+const Vue = window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -25,10 +25,8 @@ Vue.component('tabs', require('Components/Tabs.vue'));
 
 // Admin Views (Pages)
 Vue.component('dashboard', require('Views/admin/Dashboard.vue'));
-Vue.component('admin-contacts', require('Views/admin/AdminContacts.vue'));
 Vue.component('admin-galleries', require('Views/admin/AdminGalleries.vue'));
 Vue.component('admin-photos', require('Views/admin/AdminPhotos.vue'));
-Vue.component('admin-giveaway', require('Views/admin/AdminGiveaways.vue'));
 
 // Global Layout Partials
 Vue.component('dg-top-bar', require('Views/partials/TopBar.vue'));
@@ -48,14 +46,6 @@ Vue.component('dg-join-form', require('Views/partials/join/JoinForm.vue'));
 Vue.component('dg-galleries', require('Views/partials/Galleries.vue'));
 Vue.component('dg-photos', require('Views/partials/Photos.vue'));
 
-// 3rd party
-import Countdown from 'vuejs-countdown';
-
-const app = new Vue({
+const App = new Vue({
   el: '#app',
-
-  components: {
-      Countdown
-  },
-
 });
