@@ -29144,7 +29144,6 @@ function createPatchFunction (backend) {
         removeNode(childElm);
       }
     }
-
     remove$$1.listeners = listeners;
     return remove$$1
   }
@@ -34571,23 +34570,23 @@ function genScopedSlot (
 ) {
   var isLegacySyntax = el.attrsMap['slot-scope'];
   if (el.if && !el.ifProcessed && !isLegacySyntax) {
-    return genIf(el, state, genScopedSlot, 'null');
+    return genIf(el, state, genScopedSlot, "null")
   }
   if (el.for && !el.forProcessed) {
-    return genFor(el, state, genScopedSlot);
+    return genFor(el, state, genScopedSlot)
   }
   var slotScope = el.slotScope === emptySlotScopeToken
-    ? ''
+    ? ""
     : String(el.slotScope);
-  var fn = 'function(' + slotScope + '){' +
+  var fn = "function(" + slotScope + "){" +
     "return " + (el.tag === 'template'
       ? el.if && isLegacySyntax
-        ? ('(' + (el.if) + ')?' + (genChildren(el, state) || 'undefined') + ':undefined')
+        ? ("(" + (el.if) + ")?" + (genChildren(el, state) || 'undefined') + ":undefined")
         : genChildren(el, state) || 'undefined'
       : genElement(el, state)) + "}";
   // reverse proxy v-slot without scope on this.$slots
-  var reverseProxy = slotScope ? '' : ',proxy:true';
-  return ('{key:' + (el.slotTarget || '"default"') + ',fn:' + fn + reverseProxy + '}');
+  var reverseProxy = slotScope ? "" : ",proxy:true";
+  return ("{key:" + (el.slotTarget || "\"default\"") + ",fn:" + fn + reverseProxy + "}")
 }
 
 function genChildren (
@@ -34607,15 +34606,15 @@ function genChildren (
       el$1.tag !== 'slot'
     ) {
       var normalizationType = checkSkip
-        ? state.maybeComponent(el$1) ? ',1' : ',0'
-        : '';
-      return ('' + ((altGenElement || genElement)(el$1, state)) + normalizationType);
+        ? state.maybeComponent(el$1) ? ",1" : ",0"
+        : "";
+      return ("" + ((altGenElement || genElement)(el$1, state)) + normalizationType)
     }
     var normalizationType$1 = checkSkip
       ? getNormalizationType(children, state.maybeComponent)
       : 0;
     var gen = altGenNode || genNode;
-    return ('[' + (children.map(function (c) { return gen(c, state); }).join(',')) + ']' + (normalizationType$1 ? (',' + normalizationType$1) : ''));
+    return ("[" + (children.map(function (c) { return gen(c, state); }).join(',')) + "]" + (normalizationType$1 ? ("," + normalizationType$1) : ''))
   }
 }
 
@@ -36677,7 +36676,7 @@ var render = function() {
                     attrs: {
                       src: gallery.img
                         ? "" + gallery.img
-                        : "/images/default-cover.jpg",
+                        : "/images/galleries/default-cover.jpg",
                       alt: gallery.name
                     }
                   }),
