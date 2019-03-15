@@ -62,7 +62,7 @@
             <div class="col-md-4 col-sm-6 col-xs-12" v-for="gallery in store">
                 <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
                     <img class="img-responsive"
-                         :src="gallery.img ? `${gallery.img}?w=700&h=400&fit=crop` : '/img/default-cover.jpg?w=700&h=400&fit=crop'"
+                         :src="gallery.img ? `${gallery.img}` : '/images/default-cover.jpg'"
                          :alt="gallery.name">
 
                     <div class="overlay">
@@ -123,30 +123,30 @@
           description: '',
           img: ''
         }
-      }
+      };
     },
     methods: {
       add () {
-        this.errors = []
+        this.errors = [];
 
         if (this.addData.name === '') {
-          this.errors.push(`The Name is required!`)
-          return false
+          this.errors.push(`The Name is required!`);
+          return false;
         }
 
         if (this.errors.length === 0) {
           axios.post(`/api/galleries/create`, this.addData)
             .then((response) => {
-              this.clearData()
-              this.store.push(response.data)
-              this.success = `Successfully Added ${response.data.name}`
+              this.clearData();
+              this.store.push(response.data);
+              this.success = `Successfully Added ${response.data.name}`;
             }).catch((error) => {
-            this.errors.push(error.response.data.message)
-            return false
-          })
+            this.errors.push(error.response.data.message);
+            return false;
+          });
         }
 
-        return true
+        return true;
 
       },
       edit (gallery) {
@@ -155,71 +155,71 @@
             name: gallery.name,
             description: gallery.description,
             img: gallery.img
-          }
-          this.editing_id = gallery.id
+          };
+          this.editing_id = gallery.id;
         } else {
-          this.clearData()
+          this.clearData();
         }
       },
       update (id) {
-        this.errors = []
+        this.errors = [];
 
         axios.put(`/api/galleries/update/${id}`, this.editData)
           .then((response) => {
-            this.clearData()
+            this.clearData();
 
             for (let i in this.store) {
               if (this.store[i].id === id) {
-                this.store.splice(i, 1, response.data)
-                break
+                this.store.splice(i, 1, response.data);
+                break;
               }
             }
 
-            this.success = `Successfully Updated ${response.data.name}`
+            this.success = `Successfully Updated ${response.data.name}`;
 
           }).catch((error) => {
-          this.errors.push(error.response.data.message)
-        })
+          this.errors.push(error.response.data.message);
+        });
       },
       processFile (e) {
-        let files = e.target.files || e.dataTransfer.files
-        console.log(files)
+        let files = e.target.files || e.dataTransfer.files;
+        console.log(files);
 
         if (!files.length)
-          return
+          return;
 
-        this.createImage(files[0])
+        this.createImage(files[0]);
       },
       createImage (file) {
-        let reader = new FileReader()
+        let reader = new FileReader();
 
-        let vm = this
+        let vm = this;
 
         reader.onload = (e) => {
-          this.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result
-        }
+          this.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
+        };
 
-        reader.readAsDataURL(file)
+        reader.readAsDataURL(file);
       },
       clearData () {
-        this.adding = false
-        this.editing_id = 0
+        this.adding = false;
+        this.editing_id = 0;
 
         this.addData = {
           name: '',
           description: '',
           img: ''
-        }
+        };
 
         this.editData = {
           name: '',
           description: '',
           img: ''
-        }
+        };
       }
     }
 
-  }
+  };
 </script>
 <style lang="scss" scoped>
     @import '~Sass/_variables.scss';
