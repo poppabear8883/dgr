@@ -10,12 +10,7 @@ use League\Glide\Server;
 
 class Image implements ImageInterface
 {
-
-    protected $minWidth = 500;
-
-    protected $minHeight = 500;
-
-    protected $prefix = 'images';
+    protected $prefix = 'image';
 
     protected $basePath = 'public/images';
 
@@ -45,17 +40,21 @@ class Image implements ImageInterface
     /**
      * Creates a Image and saves it to the filesystem
      */
-    public function makeImage($id, $source, $width, $height, $ext = 'jpg', $validate = true)
+    public function makeImage($id, $source, $width, $height, $dir = null)
     {
-        $filename = $this->formatName($id, $ext);
         $image = $this->manager->make($source);
+        $filename = $this->formatName($id);
 
-        if ($validate) {
-           $this->validateImage($image);
+        if ($wide = $image->width() < $width || $image->height() < $height) {
+            $dimension = $wide ? $width . 'px wide' : $height . 'px high';
+
+            throw new \Exception(
+                "Image resolution is too small. Should be at least $dimension"
+            );
         }
 
         return $image->fit($width, $height)
-            ->save($this->getPath($filename));
+            ->save($this->getPath($dir ? "{$dir}/{$filename}" : $filename));
     }
 
     /**
@@ -76,20 +75,9 @@ class Image implements ImageInterface
      * @param $ext
      * @return string
      */
-    public function formatName($id, $ext)
+    public function formatName($id)
     {
-        return $this->prefix."-$id.$ext";
-    }
-
-    /**
-     * Deletes the Cache at the given path
-     *
-     * @param $path
-     * @return bool
-     */
-    public function deleteCache($path)
-    {
-        return $this->server->deleteCache($path);
+        return $this->prefix."-$id";
     }
 
     /**
@@ -98,31 +86,9 @@ class Image implements ImageInterface
      * @param $filename
      * @return bool
      */
-    public function deleteImage($filename)
+    public function deleteImage($path)
     {
-        return $this->fs->delete(storage_path($this->basePath() . $filename));
-    }
-
-    /**
-     * Validates the Cover Image
-     *
-     * @param Intervention $image
-     * @return bool
-     * @throws \Exception
-     */
-    public function validateImage($image)
-    {
-        $wide = null;
-
-        if ($wide = $image->width() < $this->minWidth || $image->height() < $this->minHeight) {
-            $dimension = $wide ? $this->minWidth . 'px wide' : $this->minHeight . 'px high';
-
-            throw new \Exception(
-                "Image resolution is too small. Should be at least $dimension"
-            );
-        }
-
-        return true;
+        return $this->fs->delete($path);
     }
 
     public function prefix($prefix = null)
@@ -141,23 +107,5 @@ class Image implements ImageInterface
         }
 
         return $this->basePath = $path;
-    }
-
-    public function minWidth($px = null)
-    {
-        if ($px === null) {
-            return $this->minWidth;
-        }
-
-        return $this->minWidth = $px;
-    }
-
-    public function minHeight($px = null)
-    {
-        if ($px === null) {
-            return $this->minHeight;
-        }
-
-        return $this->minHeight = $px;
     }
 }

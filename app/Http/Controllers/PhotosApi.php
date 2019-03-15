@@ -61,6 +61,6 @@ class PhotosApi extends Controller
      */
     public function destroy($id)
     {
-        return response($this->repo->delete($id));
+        return response(['message' => $this->repo->delete($id)]);
     }
 }

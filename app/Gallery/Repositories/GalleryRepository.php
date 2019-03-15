@@ -71,14 +71,14 @@ class GalleryRepository implements GalleryInterface
 
         if ($source !== '') {
             try {
-                $image = $this->image->makeImage($gallery->id, $source, 700, 400);
+                $image = $this->image->makeImage($gallery->id, $source, 700, 400, 'galleries');
             } catch (\Exception $e) {
                 $gallery->delete();
                 throw $e;
             }
 
             $updated = $gallery->update([
-                'img' => "/images/$image->basename"
+                'img' => "/images/galleries/$image->basename"
             ]);
 
             if (!$updated) {
@@ -137,7 +137,7 @@ class GalleryRepository implements GalleryInterface
 //            }
 
             $updated = $resource->update([
-                'img' => "/images/$image->basename"
+                'img' => "/images/galleries/$image->basename"
             ]);
 
             if (!$updated) {
@@ -156,7 +156,10 @@ class GalleryRepository implements GalleryInterface
      */
     public function delete($id)
     {
-        return $this->findById($id)->delete();
+        $resource = $this->findById($id);
+        $resource->photos()->detach();
+        $this->image->deleteImage('/galleries/' . basename($resource->img));
+        return $resource->delete();
     }
 
     /**

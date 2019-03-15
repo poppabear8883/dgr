@@ -50,27 +50,31 @@ class PhotoRepository implements PhotoInterface
     public function create(array $data)
     {
         $image = null;
+        $name = $data['name'];
+        $desc = $data['description'];
+        $source = $data['img'];
+        $galleries = $data['galleries'];
 
-        if ($this->exists($data['name'])) {
-            throw new \Exception('Photo '.$data['name'].' already exists');
+        if ($this->exists($name)) {
+            throw new \Exception('Photo '.$name.' already exists');
         }
 
         $photo = $this->photo->create([
-            'name' => $data['name'],
-            'description' => $data['description']
+            'name' => $name,
+            'description' => $desc
         ]);
 
         try {
-            $image = $this->image->makeImage($photo->id, $data['img']);
+            $image = $this->image->makeImage($photo->id, $source, 700, 400, 'galleries/photos');
         } catch (\Exception $e) {
             $photo->delete();
             throw $e;
         }
 
-        $photo->galleries()->attach($data['galleries']);
+        $photo->galleries()->attach($galleries);
 
         $updated = $photo->update([
-            'path' => "/img/$image->basename"
+            'path' => "/images/galleries/photos/$image->basename"
         ]);
 
         if (!$updated) {
@@ -78,7 +82,7 @@ class PhotoRepository implements PhotoInterface
             throw new \Exception('Unable to add Photo');
         }
 
-        if (!$this->exists($data['name'])) {
+        if (!$this->exists($name)) {
             $photo->delete();
             throw new \Exception('Unable to create resource');
         }
@@ -98,7 +102,14 @@ class PhotoRepository implements PhotoInterface
 
     public function delete($id)
     {
-        return $this->findById($id)->delete();
+        try {
+            $resource = $this->findById($id);
+            $resource->galleries()->detach();
+            $this->image->deleteImage($resource->img);
+            return $resource->delete();
+        } catch(\Exception $e) {
+            return $e->getMessage();
+        }
     }
 
     public function exists($name)

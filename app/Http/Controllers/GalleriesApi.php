@@ -71,6 +71,7 @@ class GalleriesApi extends Controller
      */
     public function destroy($id)
     {
-        return response($this->repo->delete($id));
+        $this->repo->delete($id);
+        return response(['message' => 'success']);
     }
 }

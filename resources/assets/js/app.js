@@ -15,7 +15,9 @@ const Vue = window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import VueCarousel from 'vue-carousel';
+import VModal from 'vue-js-modal'
 
+Vue.use(VModal);
 Vue.use(VueCarousel);
 
 //Components

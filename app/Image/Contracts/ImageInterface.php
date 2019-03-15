@@ -4,15 +4,10 @@ namespace App\Image\Contracts;
 
 interface ImageInterface
 {
-    public function makeImage($id, $source, $width, $height, $ext = 'jpg', $validate = true);
+    public function makeImage($id, $source, $width, $height, $dir = null);
     public function getPath($filename);
-    // public function getCachePath($filename);
-    public function formatName($id, $ext);
-    public function validateImage($image);
-    public function deleteCache($path);
-    public function deleteImage($filename);
+    public function formatName($id);
+    public function deleteImage($path);
     public function prefix($prefix = null);
     public function basePath($path = null);
-    public function minWidth($px = null);
-    public function minHeight($px = null);
 }

@@ -30,10 +30,10 @@ Route::prefix('galleries')->group(function () {
     Route::get('/{id}', 'GalleriesApi@photos');
     Route::get('/paginate/{perpage}', 'GalleriesApi@paginate');
 
-    Route::middleware('auth:api')->group(function () {
+    Route::middleware('auth')->group(function () {
         Route::post('/create', 'GalleriesApi@create');
         Route::put('/update/{id}', 'GalleriesApi@update');
-        Route::delete('/delete/{id}', 'GalleriesApi@destroy');
+        Route::delete('/{id}', 'GalleriesApi@destroy');
     });
 });
 
@@ -41,16 +41,9 @@ Route::prefix('galleries')->group(function () {
 Route::prefix('photos')->group(function () {
     Route::get('/', 'PhotosApi@all');
 
-    Route::middleware('auth:api')->group(function () {
+    Route::middleware('auth')->group(function () {
         Route::post('/create', 'PhotosApi@create');
         Route::put('/update/{id}', 'PhotosApi@update');
-        Route::delete('/delete/{id}', 'PhotosApi@destroy');
-    });
-});
-
-/* Giveaway API Routes */
-Route::prefix('giveaway')->group(function () {
-    Route::middleware('auth:api')->group(function () {
-        Route::put('/{id}', 'GiveawayApi@update');
+        Route::delete('/{id}', 'PhotosApi@destroy');
     });
 });
