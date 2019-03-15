@@ -14,7 +14,7 @@
     "axios": "^0.16.2",
     "bootstrap-sass": "^3.4.1",
     "cross-env": "^5.2.0",
-    "laravel-mix": "^1.0",
+    "laravel-mix": "^1.7.2",
     "lodash": "^4.17.11",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.9",
