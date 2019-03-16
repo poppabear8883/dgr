@@ -25,6 +25,14 @@
           <i :class="['fa', adding ? 'fa-minus' : 'fa-plus']"></i>
         </button>
       </div>
+      <div v-if="!adding" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-6">
+        <div class="search-form">
+          <div class="styled-input">
+            <input v-model="search" type="text"/>
+            <label>Filter</label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div v-if="adding" class="row add-form">
@@ -58,7 +66,7 @@
     </div> <!-- row -->
 
     <div v-else class="row">
-      <div class="col-md-2 col-sm-4 col-xs-6" v-for="gallery in store">
+      <div class="col-md-2 col-sm-4 col-xs-6" v-for="gallery in filteredList">
         <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
           <img class="img-responsive"
                :src="gallery.img ? `/${gallery.img}` : '/images/galleries/default-cover.jpg'"
@@ -112,10 +120,11 @@
 <script>
   export default {
     props: {
-      galleries: { required: true },
+      galleries: {required: true},
     },
-    data() {
+    data () {
       return {
+        search: '',
         adding: false,
         editing_id: 0,
         store: this.galleries,
@@ -133,8 +142,15 @@
         },
       };
     },
+    computed: {
+      filteredList () {
+        return this.galleries.filter(gallery => {
+          return gallery.description.toLowerCase().includes(this.search.toLowerCase());
+        });
+      }
+    },
     methods: {
-      add() {
+      add () {
         this.errors = [];
 
         if (this.addData.name === '') {
@@ -158,7 +174,7 @@
         return true;
 
       },
-      edit(gallery) {
+      edit (gallery) {
         if (gallery.name !== this.editData.name) {
           this.editData = {
             name: gallery.name,
@@ -171,7 +187,7 @@
           this.clearData();
         }
       },
-      update(id) {
+      update (id) {
         this.$modal.hide('edit-form');
 
         this.errors = [];
@@ -193,7 +209,7 @@
           this.errors.push(error.response.data.message);
         });
       },
-      destroy(id) {
+      destroy (id) {
         this.$modal.hide('edit-form');
 
         axios.delete(`/api/galleries/${id}`)
@@ -204,7 +220,7 @@
           this.errors.push(error.response.data.message);
         });
       },
-      processFile(e) {
+      processFile (e) {
         let files = e.target.files || e.dataTransfer.files;
         console.log(files);
 
@@ -213,7 +229,7 @@
 
         this.createImage(files[0]);
       },
-      createImage(file) {
+      createImage (file) {
         let reader = new FileReader();
 
         let vm = this;
@@ -224,7 +240,7 @@
 
         reader.readAsDataURL(file);
       },
-      clearData() {
+      clearData () {
         this.adding = false;
         this.editing_id = 0;
 
@@ -240,7 +256,7 @@
           img: '',
         };
       },
-      reload(force = false, delay = 2000) {
+      reload (force = false, delay = 2000) {
         this.success = this.success + ' Refreshing page ...';
         window.scrollTo(0, 0);
         setTimeout(() => window.location.reload(force), delay);
@@ -258,7 +274,8 @@
     }
 
     .add-form,
-    .edit-form {
+    .edit-form,
+    .search-form {
 
       .container {
         width: 500px;

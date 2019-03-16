@@ -25,6 +25,14 @@
           <i :class="['fa', adding ? 'fa-minus' : 'fa-plus']"></i>
         </button>
       </div>
+      <div v-if="!adding" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-6">
+        <div class="search-form">
+          <div class="styled-input">
+            <input v-model="search" type="text"/>
+            <label>Filter</label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div v-if="adding" class="row add-form">
@@ -66,7 +74,7 @@
 
     <div v-else class="row">
 
-      <div class="col-md-2 col-sm-4 col-xs-6" v-for="photo in store">
+      <div class="col-md-2 col-sm-4 col-xs-6" v-for="photo in filteredList">
         <div :class="['photo-img', editing_id !== 0 ? 'editing' : null]">
           <img class="img-responsive"
                :src="`/${photo.img}`"
@@ -127,6 +135,7 @@
     },
     data() {
       return {
+        search: '',
         adding: false,
         editing_id: 0,
         store: this.photos,
@@ -144,6 +153,13 @@
           galleries: [],
         },
       };
+    },
+    computed: {
+      filteredList () {
+        return this.photos.filter(photo => {
+          return photo.description.toLowerCase().includes(this.search.toLowerCase());
+        });
+      }
     },
     methods: {
       add() {
@@ -275,7 +291,8 @@
     }
 
     .add-form,
-    .edit-form {
+    .edit-form,
+    .search-form {
 
       .container {
         width: 500px;

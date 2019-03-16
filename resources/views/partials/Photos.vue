@@ -6,7 +6,7 @@
                 <div class="col-md-6 col-xs-12" v-for="photo in photos">
                     <div class="photo-img">
                         <img class="img-responsive"
-                             :src="`${photo.path}?w=700&h=400&fit=crop`"
+                             :src="`/${photo.img}`"
                              :alt="photo.name">
 
                         <div class="title">

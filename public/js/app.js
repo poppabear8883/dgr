@@ -35795,7 +35795,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.galleries .row[data-v-18d8650c] {\n  margin-bottom: 2rem;\n}\n.galleries .add-form .container[data-v-18d8650c],\n.galleries .edit-form .container[data-v-18d8650c] {\n  width: 500px;\n}\n.galleries .add-form .fa-trash[data-v-18d8650c],\n.galleries .edit-form .fa-trash[data-v-18d8650c] {\n  padding-top: 30px;\n}\n.galleries .add-form input:focus ~ label[data-v-18d8650c], .galleries .add-form textarea:focus ~ label[data-v-18d8650c], .galleries .add-form input:valid ~ label[data-v-18d8650c], .galleries .add-form textarea:valid ~ label[data-v-18d8650c],\n.galleries .edit-form input:focus ~ label[data-v-18d8650c],\n.galleries .edit-form textarea:focus ~ label[data-v-18d8650c],\n.galleries .edit-form input:valid ~ label[data-v-18d8650c],\n.galleries .edit-form textarea:valid ~ label[data-v-18d8650c] {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.galleries .add-form .styled-input[data-v-18d8650c],\n.galleries .edit-form .styled-input[data-v-18d8650c] {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.galleries .add-form .styled-input label[data-v-18d8650c],\n  .galleries .edit-form .styled-input label[data-v-18d8650c] {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.galleries .add-form input[data-v-18d8650c],\n.galleries .add-form textarea[data-v-18d8650c],\n.galleries .edit-form input[data-v-18d8650c],\n.galleries .edit-form textarea[data-v-18d8650c] {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.galleries .add-form input[data-v-18d8650c]:focus,\n.galleries .add-form textarea[data-v-18d8650c]:focus,\n.galleries .edit-form input[data-v-18d8650c]:focus,\n.galleries .edit-form textarea[data-v-18d8650c]:focus {\n  outline: 0;\n}\n.galleries .add-form input:focus ~ span[data-v-18d8650c],\n.galleries .add-form textarea:focus ~ span[data-v-18d8650c],\n.galleries .edit-form input:focus ~ span[data-v-18d8650c],\n.galleries .edit-form textarea:focus ~ span[data-v-18d8650c] {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.galleries .add-form textarea[data-v-18d8650c],\n.galleries .edit-form textarea[data-v-18d8650c] {\n  width: 100%;\n  min-height: 15em;\n}\n.galleries .add-form .form-btn[data-v-18d8650c],\n.galleries .edit-form .form-btn[data-v-18d8650c] {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.galleries .add-form .form-btn[data-v-18d8650c]:hover,\n  .galleries .edit-form .form-btn[data-v-18d8650c]:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.galleries .add-form .form-btn[data-v-18d8650c],\n    .galleries .edit-form .form-btn[data-v-18d8650c] {\n      width: 100%;\n      text-align: center;\n}\n}\n.galleries .add-form input[type=checkbox] + label[data-v-18d8650c],\n.galleries .edit-form input[type=checkbox] + label[data-v-18d8650c] {\n  color: #ccc;\n  font-style: italic;\n}\n.galleries .add-form input[type=checkbox]:checked + label[data-v-18d8650c],\n.galleries .edit-form input[type=checkbox]:checked + label[data-v-18d8650c] {\n  color: #f00;\n  font-style: normal;\n}\n.galleries .gallery-img[data-v-18d8650c] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.galleries .gallery-img:hover .overlay[data-v-18d8650c] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.galleries .gallery-img:hover h2[data-v-18d8650c], .galleries .gallery-img:hover a.info[data-v-18d8650c] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.galleries .gallery-img:hover img[data-v-18d8650c] {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.galleries .gallery-img .overlay[data-v-18d8650c] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img img[data-v-18d8650c] {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.galleries .gallery-img h2[data-v-18d8650c] {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.galleries .gallery-img a.info[data-v-18d8650c] {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 70px 0 0;\n    padding: 7px 14px;\n}\n.galleries .gallery-img a.info[data-v-18d8650c]:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
+    exports.push([module.i, "\n.galleries .row[data-v-18d8650c] {\n  margin-bottom: 2rem;\n}\n.galleries .add-form .container[data-v-18d8650c],\n.galleries .edit-form .container[data-v-18d8650c],\n.galleries .search-form .container[data-v-18d8650c] {\n  width: 500px;\n}\n.galleries .add-form .fa-trash[data-v-18d8650c],\n.galleries .edit-form .fa-trash[data-v-18d8650c],\n.galleries .search-form .fa-trash[data-v-18d8650c] {\n  padding-top: 30px;\n}\n.galleries .add-form input:focus ~ label[data-v-18d8650c], .galleries .add-form textarea:focus ~ label[data-v-18d8650c], .galleries .add-form input:valid ~ label[data-v-18d8650c], .galleries .add-form textarea:valid ~ label[data-v-18d8650c],\n.galleries .edit-form input:focus ~ label[data-v-18d8650c],\n.galleries .edit-form textarea:focus ~ label[data-v-18d8650c],\n.galleries .edit-form input:valid ~ label[data-v-18d8650c],\n.galleries .edit-form textarea:valid ~ label[data-v-18d8650c],\n.galleries .search-form input:focus ~ label[data-v-18d8650c],\n.galleries .search-form textarea:focus ~ label[data-v-18d8650c],\n.galleries .search-form input:valid ~ label[data-v-18d8650c],\n.galleries .search-form textarea:valid ~ label[data-v-18d8650c] {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.galleries .add-form .styled-input[data-v-18d8650c],\n.galleries .edit-form .styled-input[data-v-18d8650c],\n.galleries .search-form .styled-input[data-v-18d8650c] {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.galleries .add-form .styled-input label[data-v-18d8650c],\n  .galleries .edit-form .styled-input label[data-v-18d8650c],\n  .galleries .search-form .styled-input label[data-v-18d8650c] {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.galleries .add-form input[data-v-18d8650c],\n.galleries .add-form textarea[data-v-18d8650c],\n.galleries .edit-form input[data-v-18d8650c],\n.galleries .edit-form textarea[data-v-18d8650c],\n.galleries .search-form input[data-v-18d8650c],\n.galleries .search-form textarea[data-v-18d8650c] {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.galleries .add-form input[data-v-18d8650c]:focus,\n.galleries .add-form textarea[data-v-18d8650c]:focus,\n.galleries .edit-form input[data-v-18d8650c]:focus,\n.galleries .edit-form textarea[data-v-18d8650c]:focus,\n.galleries .search-form input[data-v-18d8650c]:focus,\n.galleries .search-form textarea[data-v-18d8650c]:focus {\n  outline: 0;\n}\n.galleries .add-form input:focus ~ span[data-v-18d8650c],\n.galleries .add-form textarea:focus ~ span[data-v-18d8650c],\n.galleries .edit-form input:focus ~ span[data-v-18d8650c],\n.galleries .edit-form textarea:focus ~ span[data-v-18d8650c],\n.galleries .search-form input:focus ~ span[data-v-18d8650c],\n.galleries .search-form textarea:focus ~ span[data-v-18d8650c] {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.galleries .add-form textarea[data-v-18d8650c],\n.galleries .edit-form textarea[data-v-18d8650c],\n.galleries .search-form textarea[data-v-18d8650c] {\n  width: 100%;\n  min-height: 15em;\n}\n.galleries .add-form .form-btn[data-v-18d8650c],\n.galleries .edit-form .form-btn[data-v-18d8650c],\n.galleries .search-form .form-btn[data-v-18d8650c] {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.galleries .add-form .form-btn[data-v-18d8650c]:hover,\n  .galleries .edit-form .form-btn[data-v-18d8650c]:hover,\n  .galleries .search-form .form-btn[data-v-18d8650c]:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.galleries .add-form .form-btn[data-v-18d8650c],\n    .galleries .edit-form .form-btn[data-v-18d8650c],\n    .galleries .search-form .form-btn[data-v-18d8650c] {\n      width: 100%;\n      text-align: center;\n}\n}\n.galleries .add-form input[type=checkbox] + label[data-v-18d8650c],\n.galleries .edit-form input[type=checkbox] + label[data-v-18d8650c],\n.galleries .search-form input[type=checkbox] + label[data-v-18d8650c] {\n  color: #ccc;\n  font-style: italic;\n}\n.galleries .add-form input[type=checkbox]:checked + label[data-v-18d8650c],\n.galleries .edit-form input[type=checkbox]:checked + label[data-v-18d8650c],\n.galleries .search-form input[type=checkbox]:checked + label[data-v-18d8650c] {\n  color: #f00;\n  font-style: normal;\n}\n.galleries .gallery-img[data-v-18d8650c] {\n  width: 100%;\n  height: 100%;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.galleries .gallery-img:hover .overlay[data-v-18d8650c] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.galleries .gallery-img:hover h2[data-v-18d8650c], .galleries .gallery-img:hover a.info[data-v-18d8650c] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.galleries .gallery-img:hover img[data-v-18d8650c] {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.galleries .gallery-img .overlay[data-v-18d8650c] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.galleries .gallery-img img[data-v-18d8650c] {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.galleries .gallery-img h2[data-v-18d8650c] {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.galleries .gallery-img a.info[data-v-18d8650c] {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 70px 0 0;\n    padding: 7px 14px;\n}\n.galleries .gallery-img a.info[data-v-18d8650c]:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
 
 // exports
 
@@ -35917,6 +35917,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -35924,6 +35932,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   data: function data() {
     return {
+      search: '',
       adding: false,
       editing_id: 0,
       store: this.galleries,
@@ -35942,9 +35951,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
 
+      computed: {
+        filteredList: function filteredList () {
+          var _this = this;
+
+          return this.galleries.filter(function (gallery) {
+            return gallery.description.toLowerCase().includes(_this.search.toLowerCase());
+          });
+        }
+      },
   methods: {
     add: function add() {
-      var _this = this;
+      var _this2 = this;
 
       this.errors = [];
 
@@ -35955,12 +35973,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       if (this.errors.length === 0) {
         axios.post('/api/galleries/create', this.addData).then(function (response) {
-          _this.clearData();
-          _this.store.push(response.data);
-          _this.success = 'Successfully Added ' + response.data.name;
-          _this.reload();
+          _this2.clearData();
+          _this2.store.push(response.data);
+          _this2.success = 'Successfully Added ' + response.data.name;
+          _this2.reload();
         }).catch(function (error) {
-          _this.errors.push(error.response.data.message);
+          _this2.errors.push(error.response.data.message);
           return false;
         });
       }
@@ -35981,38 +35999,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }
     },
     update: function update(id) {
-      var _this2 = this;
+      var _this3 = this;
 
       this.$modal.hide('edit-form');
 
       this.errors = [];
 
       axios.put('/api/galleries/update/' + id, this.editData).then(function (response) {
-        _this2.clearData();
+        _this3.clearData();
 
-        for (var i in _this2.store) {
-          if (_this2.store[i].id === id) {
-            _this2.store.splice(i, 1, response.data);
+        for (var i in _this3.store) {
+          if (_this3.store[i].id === id) {
+            _this3.store.splice(i, 1, response.data);
             break;
           }
         }
 
-        _this2.success = 'Successfully Updated ' + response.data.name;
-        _this2.reload();
+        _this3.success = 'Successfully Updated ' + response.data.name;
+        _this3.reload();
       }).catch(function (error) {
-        _this2.errors.push(error.response.data.message);
+        _this3.errors.push(error.response.data.message);
       });
     },
     destroy: function destroy(id) {
-      var _this3 = this;
+      var _this4 = this;
 
       this.$modal.hide('edit-form');
 
       axios.delete('/api/galleries/' + id).then(function (response) {
-        _this3.success = 'Successfully Deleted gallery with id of ' + id;
-        _this3.reload();
+        _this4.success = 'Successfully Deleted gallery with id of ' + id;
+        _this4.reload();
       }).catch(function (error) {
-        _this3.errors.push(error.response.data.message);
+        _this4.errors.push(error.response.data.message);
       });
     },
     processFile: function processFile(e) {
@@ -36024,14 +36042,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.createImage(files[0]);
     },
     createImage: function createImage(file) {
-      var _this4 = this;
+      var _this5 = this;
 
       var reader = new FileReader();
 
       var vm = this;
 
       reader.onload = function (e) {
-        _this4.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
+        _this5.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
       };
 
       reader.readAsDataURL(file);
@@ -36119,7 +36137,42 @@ var render = function() {
             },
             [_c("i", { class: ["fa", _vm.adding ? "fa-minus" : "fa-plus"] })]
           )
-        ])
+        ]),
+        _vm._v(' '),
+        !_vm.adding
+          ? _c(
+          'div',
+          {staticClass: 'col-xs-12 col-sm-6 col-md-3 col-md-offset-6'},
+          [
+            _c('div', {staticClass: 'search-form'}, [
+              _c('div', {staticClass: 'styled-input'}, [
+                _c('input', {
+                  directives: [
+                    {
+                      name: 'model',
+                      rawName: 'v-model',
+                      value: _vm.search,
+                      expression: 'search'
+                    }
+                  ],
+                  attrs: {type: 'text'},
+                  domProps: {value: _vm.search},
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return;
+                      }
+                      _vm.search = $event.target.value;
+                    }
+                  }
+                }),
+                _vm._v(' '),
+                _c('label', [_vm._v('Filter')])
+              ])
+            ])
+          ]
+          )
+          : _vm._e()
       ]),
       _vm._v(" "),
       _vm.adding
@@ -36215,7 +36268,7 @@ var render = function() {
         : _c(
             "div",
             { staticClass: "row" },
-            _vm._l(_vm.store, function(gallery) {
+        _vm._l(_vm.filteredList, function (gallery) {
               return _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
                 _c(
                   "div",
@@ -36481,7 +36534,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.photos .row[data-v-6dd1ff32] {\n  margin-bottom: 2rem;\n}\n.photos .add-form .container[data-v-6dd1ff32],\n.photos .edit-form .container[data-v-6dd1ff32] {\n  width: 500px;\n}\n.photos .add-form .fa-trash[data-v-6dd1ff32],\n.photos .edit-form .fa-trash[data-v-6dd1ff32] {\n  padding-top: 30px;\n}\n.photos .add-form input:focus ~ label[data-v-6dd1ff32], .photos .add-form textarea:focus ~ label[data-v-6dd1ff32], .photos .add-form input:valid ~ label[data-v-6dd1ff32], .photos .add-form textarea:valid ~ label[data-v-6dd1ff32],\n.photos .edit-form input:focus ~ label[data-v-6dd1ff32],\n.photos .edit-form textarea:focus ~ label[data-v-6dd1ff32],\n.photos .edit-form input:valid ~ label[data-v-6dd1ff32],\n.photos .edit-form textarea:valid ~ label[data-v-6dd1ff32] {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.photos .add-form .styled-input[data-v-6dd1ff32],\n.photos .edit-form .styled-input[data-v-6dd1ff32] {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.photos .add-form .styled-input label[data-v-6dd1ff32],\n  .photos .edit-form .styled-input label[data-v-6dd1ff32] {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.photos .add-form input[data-v-6dd1ff32],\n.photos .add-form textarea[data-v-6dd1ff32],\n.photos .edit-form input[data-v-6dd1ff32],\n.photos .edit-form textarea[data-v-6dd1ff32] {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.photos .add-form input[data-v-6dd1ff32]:focus,\n.photos .add-form textarea[data-v-6dd1ff32]:focus,\n.photos .edit-form input[data-v-6dd1ff32]:focus,\n.photos .edit-form textarea[data-v-6dd1ff32]:focus {\n  outline: 0;\n}\n.photos .add-form input:focus ~ span[data-v-6dd1ff32],\n.photos .add-form textarea:focus ~ span[data-v-6dd1ff32],\n.photos .edit-form input:focus ~ span[data-v-6dd1ff32],\n.photos .edit-form textarea:focus ~ span[data-v-6dd1ff32] {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.photos .add-form textarea[data-v-6dd1ff32],\n.photos .edit-form textarea[data-v-6dd1ff32] {\n  width: 100%;\n  min-height: 15em;\n}\n.photos .add-form .form-btn[data-v-6dd1ff32],\n.photos .edit-form .form-btn[data-v-6dd1ff32] {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.photos .add-form .form-btn[data-v-6dd1ff32]:hover,\n  .photos .edit-form .form-btn[data-v-6dd1ff32]:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.photos .add-form .form-btn[data-v-6dd1ff32],\n    .photos .edit-form .form-btn[data-v-6dd1ff32] {\n      width: 100%;\n      text-align: center;\n}\n}\n.photos .add-form input[type=checkbox] + label[data-v-6dd1ff32],\n.photos .edit-form input[type=checkbox] + label[data-v-6dd1ff32] {\n  color: #ccc;\n  font-style: italic;\n}\n.photos .add-form input[type=checkbox]:checked + label[data-v-6dd1ff32],\n.photos .edit-form input[type=checkbox]:checked + label[data-v-6dd1ff32] {\n  color: #f00;\n  font-style: normal;\n}\n.photos .photo-img[data-v-6dd1ff32] {\n  width: 100%;\n  height: 100%;\n  min-height: 100px;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.photos .photo-img:hover .overlay[data-v-6dd1ff32] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.photos .photo-img:hover h2[data-v-6dd1ff32], .photos .photo-img:hover a.info[data-v-6dd1ff32] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.photos .photo-img:hover img[data-v-6dd1ff32] {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.photos .photo-img .overlay[data-v-6dd1ff32] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.photos .photo-img img[data-v-6dd1ff32] {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.photos .photo-img h2[data-v-6dd1ff32] {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.photos .photo-img a.info[data-v-6dd1ff32] {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 70px 0 0;\n    padding: 7px 14px;\n}\n.photos .photo-img a.info[data-v-6dd1ff32]:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
+    exports.push([module.i, "\n.photos .row[data-v-6dd1ff32] {\n  margin-bottom: 2rem;\n}\n.photos .add-form .container[data-v-6dd1ff32],\n.photos .edit-form .container[data-v-6dd1ff32],\n.photos .search-form .container[data-v-6dd1ff32] {\n  width: 500px;\n}\n.photos .add-form .fa-trash[data-v-6dd1ff32],\n.photos .edit-form .fa-trash[data-v-6dd1ff32],\n.photos .search-form .fa-trash[data-v-6dd1ff32] {\n  padding-top: 30px;\n}\n.photos .add-form input:focus ~ label[data-v-6dd1ff32], .photos .add-form textarea:focus ~ label[data-v-6dd1ff32], .photos .add-form input:valid ~ label[data-v-6dd1ff32], .photos .add-form textarea:valid ~ label[data-v-6dd1ff32],\n.photos .edit-form input:focus ~ label[data-v-6dd1ff32],\n.photos .edit-form textarea:focus ~ label[data-v-6dd1ff32],\n.photos .edit-form input:valid ~ label[data-v-6dd1ff32],\n.photos .edit-form textarea:valid ~ label[data-v-6dd1ff32],\n.photos .search-form input:focus ~ label[data-v-6dd1ff32],\n.photos .search-form textarea:focus ~ label[data-v-6dd1ff32],\n.photos .search-form input:valid ~ label[data-v-6dd1ff32],\n.photos .search-form textarea:valid ~ label[data-v-6dd1ff32] {\n  font-size: .8em;\n  color: #9b9b9b;\n  top: -10px;\n  left: -5px;\n  -webkit-transition: all 0.225s ease;\n  transition: all 0.225s ease;\n}\n.photos .add-form .styled-input[data-v-6dd1ff32],\n.photos .edit-form .styled-input[data-v-6dd1ff32],\n.photos .search-form .styled-input[data-v-6dd1ff32] {\n  float: left;\n  width: 100%;\n  margin: 1rem 0;\n  position: relative;\n  border-radius: 4px;\n}\n.photos .add-form .styled-input label[data-v-6dd1ff32],\n  .photos .edit-form .styled-input label[data-v-6dd1ff32],\n  .photos .search-form .styled-input label[data-v-6dd1ff32] {\n    color: #FFFFFF;\n    padding: 1.3rem 30px 1rem 30px;\n    position: absolute;\n    top: 10px;\n    left: 0;\n    -webkit-transition: all 0.25s ease;\n    transition: all 0.25s ease;\n    pointer-events: none;\n}\n.photos .add-form input[data-v-6dd1ff32],\n.photos .add-form textarea[data-v-6dd1ff32],\n.photos .edit-form input[data-v-6dd1ff32],\n.photos .edit-form textarea[data-v-6dd1ff32],\n.photos .search-form input[data-v-6dd1ff32],\n.photos .search-form textarea[data-v-6dd1ff32] {\n  border: 0;\n  width: 100%;\n  font-size: 1.5rem;\n  background-color: #353536;\n  color: #FFFFFF;\n  border-radius: 4px;\n  padding: 25px 25px 20px;\n}\n.photos .add-form input[data-v-6dd1ff32]:focus,\n.photos .add-form textarea[data-v-6dd1ff32]:focus,\n.photos .edit-form input[data-v-6dd1ff32]:focus,\n.photos .edit-form textarea[data-v-6dd1ff32]:focus,\n.photos .search-form input[data-v-6dd1ff32]:focus,\n.photos .search-form textarea[data-v-6dd1ff32]:focus {\n  outline: 0;\n}\n.photos .add-form input:focus ~ span[data-v-6dd1ff32],\n.photos .add-form textarea:focus ~ span[data-v-6dd1ff32],\n.photos .edit-form input:focus ~ span[data-v-6dd1ff32],\n.photos .edit-form textarea:focus ~ span[data-v-6dd1ff32],\n.photos .search-form input:focus ~ span[data-v-6dd1ff32],\n.photos .search-form textarea:focus ~ span[data-v-6dd1ff32] {\n  width: 100%;\n  -webkit-transition: all 0.075s ease;\n  transition: all 0.075s ease;\n}\n.photos .add-form textarea[data-v-6dd1ff32],\n.photos .edit-form textarea[data-v-6dd1ff32],\n.photos .search-form textarea[data-v-6dd1ff32] {\n  width: 100%;\n  min-height: 15em;\n}\n.photos .add-form .form-btn[data-v-6dd1ff32],\n.photos .edit-form .form-btn[data-v-6dd1ff32],\n.photos .search-form .form-btn[data-v-6dd1ff32] {\n  margin-top: 20px;\n  padding: 7px 35px;\n  border-radius: 60px;\n  display: inline-block;\n  background-color: #EE001B;\n  color: white;\n  font-size: 18px;\n  cursor: pointer;\n  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);\n  -webkit-transition: all 300ms ease;\n  transition: all 300ms ease;\n}\n.photos .add-form .form-btn[data-v-6dd1ff32]:hover,\n  .photos .edit-form .form-btn[data-v-6dd1ff32]:hover,\n  .photos .search-form .form-btn[data-v-6dd1ff32]:hover {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);\n}\n@media (max-width: 768px) {\n.photos .add-form .form-btn[data-v-6dd1ff32],\n    .photos .edit-form .form-btn[data-v-6dd1ff32],\n    .photos .search-form .form-btn[data-v-6dd1ff32] {\n      width: 100%;\n      text-align: center;\n}\n}\n.photos .add-form input[type=checkbox] + label[data-v-6dd1ff32],\n.photos .edit-form input[type=checkbox] + label[data-v-6dd1ff32],\n.photos .search-form input[type=checkbox] + label[data-v-6dd1ff32] {\n  color: #ccc;\n  font-style: italic;\n}\n.photos .add-form input[type=checkbox]:checked + label[data-v-6dd1ff32],\n.photos .edit-form input[type=checkbox]:checked + label[data-v-6dd1ff32],\n.photos .search-form input[type=checkbox]:checked + label[data-v-6dd1ff32] {\n  color: #f00;\n  font-style: normal;\n}\n.photos .photo-img[data-v-6dd1ff32] {\n  width: 100%;\n  height: 100%;\n  min-height: 100px;\n  float: left;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  cursor: default;\n  margin-bottom: 1rem;\n}\n.photos .photo-img:hover .overlay[data-v-6dd1ff32] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n}\n.photos .photo-img:hover h2[data-v-6dd1ff32], .photos .photo-img:hover a.info[data-v-6dd1ff32] {\n    opacity: 1;\n    filter: alpha(opacity=100);\n    -webkit-transform: translatey(0);\n            transform: translatey(0);\n    -webkit-transition-delay: .2s;\n            transition-delay: .2s;\n}\n.photos .photo-img:hover img[data-v-6dd1ff32] {\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.photos .photo-img .overlay[data-v-6dd1ff32] {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    overflow: hidden;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n.photos .photo-img img[data-v-6dd1ff32] {\n    display: block;\n    position: relative;\n    -webkit-transition: all .4s linear;\n    transition: all .4s linear;\n}\n.photos .photo-img h2[data-v-6dd1ff32] {\n    text-transform: uppercase;\n    color: #fff;\n    text-align: center;\n    position: relative;\n    font-size: 17px;\n    background: rgba(0, 0, 0, 0.6);\n    -webkit-transform: translatey(-100px);\n            transform: translatey(-100px);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    padding: 10px;\n}\n.photos .photo-img a.info[data-v-6dd1ff32] {\n    text-decoration: none;\n    display: inline-block;\n    text-transform: uppercase;\n    color: #fff;\n    border: 1px solid #fff;\n    background-color: transparent;\n    opacity: 0;\n    filter: alpha(opacity=0);\n    -webkit-transition: all .2s ease-in-out;\n    transition: all .2s ease-in-out;\n    margin: 70px 0 0;\n    padding: 7px 14px;\n}\n.photos .photo-img a.info[data-v-6dd1ff32]:hover {\n      -webkit-box-shadow: 0 0 5px #fff;\n              box-shadow: 0 0 5px #fff;\n}\n", ""]);
 
 // exports
 
@@ -36613,6 +36666,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -36621,6 +36682,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   data: function data() {
     return {
+      search: '',
       adding: false,
       editing_id: 0,
       store: this.photos,
@@ -36640,9 +36702,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
 
+      computed: {
+        filteredList: function filteredList () {
+          var _this = this;
+
+          return this.photos.filter(function (photo) {
+            return photo.description.toLowerCase().includes(_this.search.toLowerCase());
+          });
+        }
+      },
   methods: {
     add: function add() {
-      var _this = this;
+      var _this2 = this;
 
       this.$modal.hide('edit-form');
       this.errors = [];
@@ -36658,12 +36729,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       if (this.errors.length === 0) {
         axios.post('/api/photos/create', this.addData).then(function (response) {
-          _this.clearData();
-          _this.store.push(response.data);
-          _this.success = 'Successfully Added ' + response.data.name;
-          _this.reload();
+          _this2.clearData();
+          _this2.store.push(response.data);
+          _this2.success = 'Successfully Added ' + response.data.name;
+          _this2.reload();
         }).catch(function (error) {
-          _this.errors.push(error.response.data.message);
+          _this2.errors.push(error.response.data.message);
           return false;
         });
       }
@@ -36684,38 +36755,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }
     },
     update: function update(id) {
-      var _this2 = this;
+      var _this3 = this;
 
       this.$modal.hide('edit-form');
 
       this.errors = [];
 
       axios.put('/api/photos/update/' + id, this.editData).then(function (response) {
-        _this2.clearData();
+        _this3.clearData();
 
-        for (var i in _this2.store) {
-          if (_this2.store[i].id === id) {
-            _this2.store.splice(i, 1, response.data);
+        for (var i in _this3.store) {
+          if (_this3.store[i].id === id) {
+            _this3.store.splice(i, 1, response.data);
             break;
           }
         }
 
-        _this2.success = 'Successfully Updated ' + response.data.name;
-        _this2.reload();
+        _this3.success = 'Successfully Updated ' + response.data.name;
+        _this3.reload();
       }).catch(function (error) {
-        _this2.errors.push(error.response.data.message);
+        _this3.errors.push(error.response.data.message);
       });
     },
     destroy: function destroy(id) {
-      var _this3 = this;
+      var _this4 = this;
 
       this.$modal.hide('edit-form');
 
       axios.delete('/api/photos/' + id).then(function (response) {
-        _this3.success = 'Successfully Deleted photo with id of ' + id;
-        _this3.reload();
+        _this4.success = 'Successfully Deleted photo with id of ' + id;
+        _this4.reload();
       }).catch(function (error) {
-        _this3.errors.push(error.response.data.message);
+        _this4.errors.push(error.response.data.message);
       });
     },
     processFile: function processFile(e) {
@@ -36726,15 +36797,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.createImage(files[0]);
     },
     createImage: function createImage(file) {
-      var _this4 = this;
+      var _this5 = this;
 
       var reader = new FileReader();
 
       var vm = this;
 
       reader.onload = function (e) {
-        _this4.adding ? vm.addData.name = file.name : vm.editData.img = file.name;
-        _this4.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
+        _this5.adding ? vm.addData.name = file.name : vm.editData.img = file.name;
+        _this5.adding ? vm.addData.img = e.target.result : vm.editData.img = e.target.result;
       };
 
       reader.readAsDataURL(file);
@@ -36822,7 +36893,42 @@ var render = function() {
             },
             [_c("i", { class: ["fa", _vm.adding ? "fa-minus" : "fa-plus"] })]
           )
-        ])
+        ]),
+        _vm._v(' '),
+        !_vm.adding
+          ? _c(
+          'div',
+          {staticClass: 'col-xs-12 col-sm-6 col-md-3 col-md-offset-6'},
+          [
+            _c('div', {staticClass: 'search-form'}, [
+              _c('div', {staticClass: 'styled-input'}, [
+                _c('input', {
+                  directives: [
+                    {
+                      name: 'model',
+                      rawName: 'v-model',
+                      value: _vm.search,
+                      expression: 'search'
+                    }
+                  ],
+                  attrs: {type: 'text'},
+                  domProps: {value: _vm.search},
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return;
+                      }
+                      _vm.search = $event.target.value;
+                    }
+                  }
+                }),
+                _vm._v(' '),
+                _c('label', [_vm._v('Filter')])
+              ])
+            ])
+          ]
+          )
+          : _vm._e()
       ]),
       _vm._v(" "),
       _vm.adding
@@ -36957,7 +37063,7 @@ var render = function() {
         : _c(
             "div",
             { staticClass: "row" },
-            _vm._l(_vm.store, function(photo) {
+        _vm._l(_vm.filteredList, function (photo) {
               return _c("div", { staticClass: "col-md-2 col-sm-4 col-xs-6" }, [
                 _c(
                   "div",
@@ -43548,10 +43654,7 @@ var render = function() {
                 _c("div", { staticClass: "photo-img" }, [
                   _c("img", {
                     staticClass: "img-responsive",
-                    attrs: {
-                      src: photo.path + "?w=700&h=400&fit=crop",
-                      alt: photo.name
-                    }
+                    attrs: {src: "/" + photo.img, alt: photo.name}
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "title" }, [
