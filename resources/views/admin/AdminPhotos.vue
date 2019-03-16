@@ -138,7 +138,6 @@
         search: '',
         adding: false,
         editing_id: 0,
-        store: this.photos,
         success: '',
         errors: [],
         addData: {
@@ -178,8 +177,6 @@
         if (this.errors.length === 0) {
           axios.post(`/api/photos/create`, this.addData)
             .then((response) => {
-              this.clearData();
-              this.store.push(response.data);
               this.success = `Successfully Added ${response.data.name}`;
               this.reload();
             }).catch((error) => {
@@ -211,15 +208,6 @@
 
         axios.put(`/api/photos/update/${id}`, this.editData)
           .then((response) => {
-            this.clearData();
-
-            for (let i in this.store) {
-              if (this.store[i].id === id) {
-                this.store.splice(i, 1, response.data);
-                break;
-              }
-            }
-
             this.success = `Successfully Updated ${response.data.name}`;
             this.reload();
           }).catch((error) => {
