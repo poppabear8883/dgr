@@ -12,8 +12,7 @@ class Image implements ImageInterface
 {
     protected $prefix = 'image';
 
-    protected $basePath = 'public/images';
-
+    protected $imagePath;
 
     /**
      * @var Filesystem
@@ -40,10 +39,25 @@ class Image implements ImageInterface
     /**
      * Creates a Image and saves it to the filesystem
      */
-    public function makeImage($id, $source, $width, $height, $dir = null)
+    public function makeImage($id, $source, $width, $height)
     {
         $image = $this->manager->make($source);
-        $filename = $this->formatName($id);
+
+        switch ($image->mime()) {
+            case 'image/jpeg':
+                $ext = '.jpg';
+                break;
+            case 'image/png':
+                $ext = '.png';
+                break;
+            case 'image/gif':
+                $ext = '.gif';
+                break;
+            default:
+                $ext = '';
+        }
+
+        $filename = $this->prefix . '-' . $id . $ext;
 
         if ($wide = $image->width() < $width || $image->height() < $height) {
             $dimension = $wide ? $width . 'px wide' : $height . 'px high';
@@ -54,38 +68,9 @@ class Image implements ImageInterface
         }
 
         return $image->fit($width, $height)
-            ->save($this->getPath($dir ? "{$dir}/{$filename}" : $filename));
+            ->save(public_path($this->imagePath . '/' . $filename));
     }
 
-    /**
-     * Gets the full Cover path
-     *
-     * @param $filename
-     * @return string
-     */
-    public function getPath($filename)
-    {
-        return base_path($this->basePath().'/'.$filename);
-    }
-
-    /**
-     * Formats the Covers filename
-     *
-     * @param $id
-     * @param $ext
-     * @return string
-     */
-    public function formatName($id)
-    {
-        return $this->prefix."-$id";
-    }
-
-    /**
-     * Deletes the Cover
-     *
-     * @param $filename
-     * @return bool
-     */
     public function deleteImage($path)
     {
         return $this->fs->delete($path);
@@ -100,12 +85,12 @@ class Image implements ImageInterface
         return $this->prefix = $prefix;
     }
 
-    public function basePath($path = null)
+    public function imagePath($path = null)
     {
         if ($path === null) {
-            return $this->basePath;
+            return $this->imagePath;
         }
 
-        return $this->basePath = $path;
+        return $this->imagePath = 'images/' . $path;
     }
 }

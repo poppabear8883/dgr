@@ -24,6 +24,7 @@ class GalleryRepository implements GalleryInterface
         $this->gallery = $gallery;
         $this->image = $image;
         $this->image->prefix('gallery');
+        $this->image->imagePath('galleries');
     }
 
     /**
@@ -41,7 +42,7 @@ class GalleryRepository implements GalleryInterface
      *
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function paginate(int $per_page)
+    public function paginate($per_page)
     {
         return $this->gallery->paginate($per_page);
     }
@@ -71,14 +72,14 @@ class GalleryRepository implements GalleryInterface
 
         if ($source !== '') {
             try {
-                $image = $this->image->makeImage($gallery->id, $source, 700, 400, 'galleries');
+                $image = $this->image->makeImage($gallery->id, $source, 700, 400);
             } catch (\Exception $e) {
                 $gallery->delete();
                 throw $e;
             }
 
             $updated = $gallery->update([
-                'img' => "/images/galleries/$image->basename"
+                'img' => $this->image->imagePath() . '/' . $image->basename
             ]);
 
             if (!$updated) {
@@ -131,13 +132,8 @@ class GalleryRepository implements GalleryInterface
                 throw $e;
             }
 
-//            if ($resource->img !== null) {
-//                $this->image->deleteCache($resource->img);
-//                $this->image->deleteImage(basename($resource->img));
-//            }
-
             $updated = $resource->update([
-                'img' => "/images/galleries/$image->basename"
+                'img' => $this->image->imagePath() . '/' . $image->basename
             ]);
 
             if (!$updated) {
@@ -157,9 +153,8 @@ class GalleryRepository implements GalleryInterface
     public function delete($id)
     {
         $resource = $this->findById($id);
-        $path = trim(str_replace_first('/', '', $resource->img));
         $resource->photos()->detach();
-        $this->image->deleteImage($path);
+        $this->image->deleteImage($resource->img);
         return $resource->delete();
     }
 

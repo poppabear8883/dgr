@@ -24,6 +24,7 @@ class PhotoRepository implements PhotoInterface
         $this->photo = $photo;
         $this->image = $image;
         $this->image->prefix('photo');
+        $this->image->imagePath('galleries/photos');
     }
 
 
@@ -61,11 +62,12 @@ class PhotoRepository implements PhotoInterface
 
         $photo = $this->photo->create([
             'name' => $name,
-            'description' => $desc
+            'description' => $desc,
+            'img' => ''
         ]);
 
         try {
-            $image = $this->image->makeImage($photo->id, $source, 700, 400, 'galleries/photos');
+            $image = $this->image->makeImage($photo->id, $source, 700, 400);
         } catch (\Exception $e) {
             $photo->delete();
             throw $e;
@@ -74,7 +76,7 @@ class PhotoRepository implements PhotoInterface
         $photo->galleries()->attach($galleries);
 
         $updated = $photo->update([
-            'path' => "/images/galleries/photos/$image->basename"
+            'img' => $this->image->imagePath() . '/' . $image->basename
         ]);
 
         if (!$updated) {
@@ -103,9 +105,8 @@ class PhotoRepository implements PhotoInterface
     public function delete($id)
     {
         $resource = $this->findById($id);
-        $path = trim(str_replace_first('/', '', $resource->img));
         $resource->galleries()->detach();
-        $this->image->deleteImage($path);
+        $this->image->deleteImage($resource->img);
         return $resource->delete();
     }
 

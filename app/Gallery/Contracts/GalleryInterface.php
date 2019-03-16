@@ -5,7 +5,8 @@ namespace App\Gallery\Contracts;
 interface GalleryInterface
 {
     public function all();
-    public function paginate(int $per_page);
+
+    public function paginate($per_page);
     public function findById($id);
     public function findByName($name);
     public function create(array $data);

@@ -69,7 +69,7 @@
       <div class="col-md-2 col-sm-4 col-xs-6" v-for="photo in store">
         <div :class="['photo-img', editing_id !== 0 ? 'editing' : null]">
           <img class="img-responsive"
-               :src="imageSrc(photo)"
+               :src="`/${photo.img}`"
                :alt="photo.description">
 
           <div class="overlay" @click.prevent="edit(photo)">
@@ -240,9 +240,6 @@
         };
 
         reader.readAsDataURL(file);
-      },
-      imageSrc(photo) {
-        return `${photo.path}`;
       },
       clearData() {
         this.adding = false;

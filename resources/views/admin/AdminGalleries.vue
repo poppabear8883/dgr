@@ -61,7 +61,7 @@
       <div class="col-md-2 col-sm-4 col-xs-6" v-for="gallery in store">
         <div :class="['gallery-img', editing_id !== 0 ? 'editing' : null]">
           <img class="img-responsive"
-               :src="gallery.img ? `${gallery.img}` : '/images/galleries/default-cover.jpg'"
+               :src="gallery.img ? `/${gallery.img}` : '/images/galleries/default-cover.jpg'"
                :alt="gallery.name">
 
           <div class="overlay" @click.prevent="edit(gallery)">

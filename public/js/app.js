@@ -35064,7 +35064,8 @@ if (false) {(function () {
 
     module.exports = Component.exports
 
-    /***/ }),
+    /***/
+  }),
   /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36229,7 +36230,7 @@ var render = function() {
                       staticClass: "img-responsive",
                       attrs: {
                         src: gallery.img
-                          ? "" + gallery.img
+                          ? '/' + gallery.img
                           : "/images/galleries/default-cover.jpg",
                         alt: gallery.name
                       }
@@ -36738,9 +36739,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       reader.readAsDataURL(file);
     },
-    imageSrc: function imageSrc(photo) {
-      return '' + photo.path;
-    },
     clearData: function clearData() {
       this.adding = false;
       this.editing_id = 0;
@@ -36972,10 +36970,7 @@ var render = function() {
                   [
                     _c("img", {
                       staticClass: "img-responsive",
-                      attrs: {
-                        src: _vm.imageSrc(photo),
-                        alt: photo.description
-                      }
+                      attrs: {src: "/" + photo.img, alt: photo.description}
                     }),
                     _vm._v(" "),
                     _c(
