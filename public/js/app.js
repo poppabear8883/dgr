@@ -36141,33 +36141,33 @@ var render = function() {
         _vm._v(' '),
         !_vm.adding
           ? _c(
-          'div',
-          {staticClass: 'col-xs-12 col-sm-6 col-md-3 col-md-offset-6'},
+          "div",
+          {staticClass: "col-xs-12 col-sm-6 col-md-3 col-md-offset-6"},
           [
-            _c('div', {staticClass: 'search-form'}, [
-              _c('div', {staticClass: 'styled-input'}, [
-                _c('input', {
+            _c("div", {staticClass: "search-form"}, [
+              _c("div", {staticClass: "styled-input"}, [
+                _c("input", {
                   directives: [
                     {
-                      name: 'model',
-                      rawName: 'v-model',
+                      name: "model",
+                      rawName: "v-model",
                       value: _vm.search,
-                      expression: 'search'
+                      expression: "search"
                     }
                   ],
-                  attrs: {type: 'text'},
+                  attrs: {type: "text"},
                   domProps: {value: _vm.search},
                   on: {
                     input: function ($event) {
                       if ($event.target.composing) {
-                        return;
+                        return
                       }
-                      _vm.search = $event.target.value;
+                      _vm.search = $event.target.value
                     }
                   }
                 }),
-                _vm._v(' '),
-                _c('label', [_vm._v('Filter')])
+                _vm._v(" "),
+                _c("label", [_vm._v("Filter")])
               ])
             ])
           ]
@@ -36685,7 +36685,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       search: '',
       adding: false,
       editing_id: 0,
-      store: this.photos,
       success: '',
       errors: [],
       addData: {
@@ -36729,8 +36728,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       if (this.errors.length === 0) {
         axios.post('/api/photos/create', this.addData).then(function (response) {
-          _this2.clearData();
-          _this2.store.push(response.data);
           _this2.success = 'Successfully Added ' + response.data.name;
           _this2.reload();
         }).catch(function (error) {
@@ -36762,15 +36759,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.errors = [];
 
       axios.put('/api/photos/update/' + id, this.editData).then(function (response) {
-        _this3.clearData();
-
-        for (var i in _this3.store) {
-          if (_this3.store[i].id === id) {
-            _this3.store.splice(i, 1, response.data);
-            break;
-          }
-        }
-
         _this3.success = 'Successfully Updated ' + response.data.name;
         _this3.reload();
       }).catch(function (error) {
@@ -36897,33 +36885,33 @@ var render = function() {
         _vm._v(' '),
         !_vm.adding
           ? _c(
-          'div',
-          {staticClass: 'col-xs-12 col-sm-6 col-md-3 col-md-offset-6'},
+          "div",
+          {staticClass: "col-xs-12 col-sm-6 col-md-3 col-md-offset-6"},
           [
-            _c('div', {staticClass: 'search-form'}, [
-              _c('div', {staticClass: 'styled-input'}, [
-                _c('input', {
+            _c("div", {staticClass: "search-form"}, [
+              _c("div", {staticClass: "styled-input"}, [
+                _c("input", {
                   directives: [
                     {
-                      name: 'model',
-                      rawName: 'v-model',
+                      name: "model",
+                      rawName: "v-model",
                       value: _vm.search,
-                      expression: 'search'
+                      expression: "search"
                     }
                   ],
-                  attrs: {type: 'text'},
+                  attrs: {type: "text"},
                   domProps: {value: _vm.search},
                   on: {
                     input: function ($event) {
                       if ($event.target.composing) {
-                        return;
+                        return
                       }
-                      _vm.search = $event.target.value;
+                      _vm.search = $event.target.value
                     }
                   }
                 }),
-                _vm._v(' '),
-                _c('label', [_vm._v('Filter')])
+                _vm._v(" "),
+                _c("label", [_vm._v("Filter")])
               ])
             ])
           ]
