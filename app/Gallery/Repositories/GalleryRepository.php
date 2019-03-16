@@ -157,8 +157,9 @@ class GalleryRepository implements GalleryInterface
     public function delete($id)
     {
         $resource = $this->findById($id);
+        $path = trim(str_replace_first('/', '', $resource->img));
         $resource->photos()->detach();
-        $this->image->deleteImage('/galleries/' . basename($resource->img));
+        $this->image->deleteImage($path);
         return $resource->delete();
     }
 

@@ -39,7 +39,7 @@ class PhotoRepository implements PhotoInterface
 
     public function findByName($name)
     {
-       return $this->photo->where('name', $name)->first();
+        return $this->photo->where('name', $name)->first();
     }
 
     /**
@@ -56,7 +56,7 @@ class PhotoRepository implements PhotoInterface
         $galleries = $data['galleries'];
 
         if ($this->exists($name)) {
-            throw new \Exception('Photo '.$name.' already exists');
+            throw new \Exception('Photo ' . $name . ' already exists');
         }
 
         $photo = $this->photo->create([
@@ -102,14 +102,11 @@ class PhotoRepository implements PhotoInterface
 
     public function delete($id)
     {
-        try {
-            $resource = $this->findById($id);
-            $resource->galleries()->detach();
-            $this->image->deleteImage($resource->img);
-            return $resource->delete();
-        } catch(\Exception $e) {
-            return $e->getMessage();
-        }
+        $resource = $this->findById($id);
+        $path = trim(str_replace_first('/', '', $resource->img));
+        $resource->galleries()->detach();
+        $this->image->deleteImage($path);
+        return $resource->delete();
     }
 
     public function exists($name)
