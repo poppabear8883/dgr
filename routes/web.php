@@ -69,8 +69,5 @@ Route::middleware('auth')->group(function() {
     Route::prefix('admin')->group(function() {
         Route::resource('galleries', 'GalleriesController');
         Route::resource('photos', 'PhotosController');
-
-//        Route::get('giveaway', 'GiveawayController@admin');
-//        Route::put('giveaway/{id}', 'GiveawayController@update');
     });
 });

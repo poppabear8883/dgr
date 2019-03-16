@@ -12,20 +12,7 @@ class GiveawayController extends Controller
 {
     public function show()
     {
-        $giveaway = Giveaway::latest()->first();
-        $ended = false;
-
-        if (Carbon::parse($giveaway->ends_at, 'America/New_York') <= Carbon::now('America/New_York')) {
-            $ended = true;
-        }
-
-        return view('giveaways', [
-            'ended' => $ended,
-            'ends_at' => Carbon::parse($giveaway->ends_at)->toFormattedDateString(),
-            'giveaway' => $giveaway,
-            'features' => explode("\n", $giveaway->features),
-            'previous' => PreviousGiveaway::latest()->first()
-        ]);
+        return view('giveaways');
     }
 
     public function referral(Request $request)
@@ -64,11 +51,5 @@ class GiveawayController extends Controller
         });
 
         return response()->json(['message' => 'Request completed'], 200);
-    }
-
-    public function admin()
-    {
-        $giveaway = Giveaway::latest()->first();
-        return view('admin.giveaways', compact('giveaway'));
     }
 }

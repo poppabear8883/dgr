@@ -17,8 +17,7 @@ class CreatePhotosTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->string('path')->default(storage_path('app/images/'));
-            $table->string('route')->default('/img/photos');
+            $table->string('img');
             $table->timestamps();
         });
     }
